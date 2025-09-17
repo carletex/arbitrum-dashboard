@@ -25,6 +25,8 @@ docker compose up -d
 yarn drizzle-kit push
 # import data
 yarn db:seed
+# if you want to wipe the database
+yarn db:wipe
 ```
 
 Note: If you get any issues with the database, you can restart by:
