@@ -3,7 +3,7 @@ import { integer, jsonb, pgTable, text, timestamp, uuid, varchar } from "drizzle
 // Canonical proposals table (one row per proposal)
 export const proposals = pgTable("proposal", {
   id: uuid("id").defaultRandom().primaryKey(),
-  title: varchar("title", { length: 500 }).notNull(),
+  title: text("title").notNull(),
   author_name: varchar("author_name", { length: 255 }),
   category: varchar("category", { length: 50 }),
 
@@ -34,12 +34,12 @@ export const snapshotStage = pgTable("snapshot_stage", {
     .references(() => proposals.id, { onDelete: "set null" })
     .unique(),
 
-  snapshot_id: varchar("snapshot_id", { length: 100 }).unique(),
+  snapshot_id: text("snapshot_id").unique(),
   title: text("title"),
   author_name: varchar("author_name", { length: 255 }),
   url: text("url"),
 
-  status: varchar("status", { length: 20 }),
+  status: varchar("status", { length: 50 }),
   voting_start: timestamp("voting_start"),
   voting_end: timestamp("voting_end"),
 
@@ -56,14 +56,14 @@ export const tallyStage = pgTable("tally_stage", {
     .references(() => proposals.id, { onDelete: "set null" })
     .unique(),
 
-  tally_proposal_id: varchar("tally_proposal_id", { length: 100 }).unique(),
+  tally_proposal_id: text("tally_proposal_id").unique(),
   title: text("title"),
   author_name: varchar("author_name", { length: 255 }),
   url: text("url"),
-  onchain_id: varchar("onchain_id", { length: 200 }),
+  onchain_id: text("onchain_id"),
 
-  status: varchar("status", { length: 30 }),
-  substatus: varchar("substatus", { length: 30 }),
+  status: varchar("status", { length: 50 }),
+  substatus: varchar("substatus", { length: 50 }),
   substatus_deadline: timestamp("substatus_deadline"),
 
   start_timestamp: timestamp("start_timestamp"),
