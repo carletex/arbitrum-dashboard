@@ -79,7 +79,6 @@ async function seed() {
         { optionId: "1", label: "For", votes: "1000000", voters: 150 },
         { optionId: "2", label: "Against", votes: "50000", voters: 20 },
       ] as unknown as object,
-      voters_count: 170,
     });
 
     await db.insert(tallyStage).values({
@@ -95,7 +94,6 @@ async function seed() {
         { optionId: 1, label: "For", votes: "2000000", voters: 200 },
         { optionId: 0, label: "Against", votes: "100000", voters: 30 },
       ] as unknown as object,
-      voters_count: 230,
     });
 
     // Proposal 2: forum + snapshot only
@@ -121,7 +119,6 @@ async function seed() {
         { optionId: "1", label: "For", votes: "500000", voters: 75 },
         { optionId: "2", label: "Against", votes: "300000", voters: 45 },
       ] as unknown as object,
-      voters_count: 120,
     });
 
     // Proposal 3: forum only

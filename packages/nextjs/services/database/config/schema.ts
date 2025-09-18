@@ -1,4 +1,4 @@
-import { bigint, integer, jsonb, numeric, pgTable, text, timestamp, uuid, varchar } from "drizzle-orm/pg-core";
+import { integer, jsonb, pgTable, text, timestamp, uuid, varchar } from "drizzle-orm/pg-core";
 
 // Canonical proposals table (one row per proposal)
 export const proposals = pgTable("proposal", {
@@ -44,8 +44,6 @@ export const snapshotStage = pgTable("snapshot_stage", {
   voting_end: timestamp("voting_end"),
 
   options: jsonb("options"), // flexible voting options
-  votes_total: numeric("votes_total", { precision: 78, scale: 0 }),
-  voters_count: integer("voters_count"),
 
   last_activity: timestamp("last_activity"),
   updated_at: timestamp("updated_at").defaultNow(),
@@ -72,8 +70,6 @@ export const tallyStage = pgTable("tally_stage", {
   end_timestamp: timestamp("end_timestamp"),
 
   options: jsonb("options"), // flexible voting options
-  votes_total: numeric("votes_total", { precision: 78, scale: 0 }),
-  voters_count: bigint("voters_count", { mode: "number" }),
 
   last_activity: timestamp("last_activity"),
   updated_at: timestamp("updated_at").defaultNow(),
