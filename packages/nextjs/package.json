@@ -7,6 +7,8 @@
     "check-types": "tsc --noEmit --incremental",
     "db:seed": "tsx services/database/seed.ts",
     "db:wipe": "tsx services/database/wipe.ts",
+    "proposals:sync": "tsx scripts/fetchAllProposals.ts",
+    "proposals:sync:latest": "tsx scripts/fetchAllProposals.ts latest",
     "drizzle-kit": "drizzle-kit",
     "dev": "next dev",
     "format": "prettier --write . '!(node_modules|.next|contracts)/**/*'",

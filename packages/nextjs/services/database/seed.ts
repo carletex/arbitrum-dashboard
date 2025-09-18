@@ -25,13 +25,25 @@ if (process.env.POSTGRES_URL?.includes(PRODUCTION_DATABASE_HOSTNAME)) {
 
 const proposalsData = [
   {
-    name: "Proposal 1",
+    title: "Test Proposal 1",
+    author_address: "0x1234567890123456789012345678901234567890",
+    overall_status: "ACTIVE",
+    created_at: new Date(),
+    chain_id: "42161",
   },
   {
-    name: "Proposal 2",
+    title: "Test Proposal 2",
+    author_address: "0x2234567890123456789012345678901234567890",
+    overall_status: "EXECUTED",
+    created_at: new Date(),
+    chain_id: "42161",
   },
   {
-    name: "Proposal 3",
+    title: "Test Proposal 3",
+    author_address: "0x3234567890123456789012345678901234567890",
+    overall_status: "DEFEATED",
+    created_at: new Date(),
+    chain_id: "42161",
   },
 ];
 
