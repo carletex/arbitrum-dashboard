@@ -14,6 +14,7 @@ export const proposals = pgTable("proposal", {
 // Forum stage (nullable foreign key; linked later)
 export const forumStage = pgTable("forum_stage", {
   id: uuid("id").defaultRandom().primaryKey(),
+  original_id: varchar("original_id", { length: 255 }),
   proposal_id: uuid("proposal_id")
     .references(() => proposals.id, { onDelete: "set null" })
     .unique(),
