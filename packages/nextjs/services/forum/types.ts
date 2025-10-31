@@ -19,7 +19,8 @@ export type Topic = {
   id: number;
   title: string;
   fancy_title: string;
-  post_count: number;
+  posts_count: number;
+  slug: string;
   last_posted_at: Date | string;
   posters: Poster[];
 };

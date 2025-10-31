@@ -2,7 +2,7 @@ import { createForumStage, getAllOriginalIds } from "~~/services/database/reposi
 import { createProposal } from "~~/services/database/repositories/proposals";
 import { ForumPostsAPIResponseData, ForumUser, Topic } from "~~/services/forum/types";
 
-const FORUM_API_URL = "https://forum.arbitrum.foundation/c/proposals/7.json?page=";
+const FORUM_URL = "https://forum.arbitrum.foundation";
 const MAX_PAGES = 0;
 
 /**
@@ -11,7 +11,7 @@ const MAX_PAGES = 0;
 const fetchForumPostsFromAPI = async (
   page: number,
 ): Promise<{ users: Record<number, ForumUser>; topics: Topic[]; hasMorePages: boolean }> => {
-  const response = await fetch(`${FORUM_API_URL}${page}`);
+  const response = await fetch(`${FORUM_URL}/c/proposals/7.json?page=${page}`);
   const data: ForumPostsAPIResponseData = await response.json();
 
   const usersMappedByUserId = data.users?.reduce(
@@ -43,7 +43,9 @@ export async function importForumPosts() {
         // Create a new proposal if it doesn't exist
         if (!existingForumsOriginalIds.includes(topic.id.toString())) {
           // "Original Poster" seems to be always the first poster (and there some weird naming sometimes on that field)
-          const authorName = users[topic.posters[0].user_id]?.name;
+          const originalPosterId = topic.posters[0].user_id;
+          const authorName = users[originalPosterId]?.name || users[originalPosterId]?.username;
+          const postUrl = `${FORUM_URL}/t/${topic.slug}/${topic.id}`;
 
           // Create proposal
           const proposal = await createProposal({
@@ -59,7 +61,10 @@ export async function importForumPosts() {
             original_id: topic.id.toString(),
             title: topic.fancy_title || topic.title,
             author_name: authorName ?? undefined,
-            message_count: topic.post_count,
+            message_count: topic.posts_count,
+            last_message_at: new Date(topic.last_posted_at),
+            updated_at: new Date(),
+            url: postUrl,
           });
           console.log("Created forum stage:", forumStage.title);
         }

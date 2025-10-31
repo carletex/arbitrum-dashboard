@@ -24,7 +24,6 @@ export const forumStage = pgTable("forum_stage", {
   url: text("url"),
   message_count: integer("message_count").default(0),
   last_message_at: timestamp("last_message_at"),
-
   updated_at: timestamp("updated_at").defaultNow(),
 });
 
