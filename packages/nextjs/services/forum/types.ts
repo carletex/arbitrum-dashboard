@@ -11,7 +11,6 @@ export type ForumUser = {
 };
 
 export type TopicListData = {
-  more_topics_url?: string;
   topics: Topic[];
 };
 
