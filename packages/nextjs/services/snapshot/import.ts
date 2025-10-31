@@ -9,7 +9,7 @@ const SNAPSHOT_GRAPHQL_URL = "https://hub.snapshot.org/graphql";
 const GRAPHQL_QUERY = `
   query ArbitrumDAOProposals {
     proposals(
-      first: 100,
+      first: 1000,
       skip: 0,
       where: {
         space_in: ["arbitrumfoundation.eth"]
