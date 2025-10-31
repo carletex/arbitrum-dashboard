@@ -60,3 +60,12 @@ To iterate fast on the database locally:
 - Copy `seed.data.example.ts` to `seed.data.ts`, tweak as needed and run `yarn db:seed` (will delete existing data)
 
 We'd switch to a migration model when ready (site live).
+
+### Imports
+
+You can locally call the (snapshot) import route like
+
+```sh
+curl -X POST http://localhost:3000/api/import-snapshot-proposals \
+  -H "Authorization: Bearer my-cron-secret"
+```
