@@ -1,4 +1,8 @@
-import { createForumStage, getAllOriginalIds } from "~~/services/database/repositories/forum";
+import {
+  createForumStage,
+  getAllOriginalIds,
+  updateForumStageByOriginalId,
+} from "~~/services/database/repositories/forum";
 import { createProposal } from "~~/services/database/repositories/proposals";
 import { ForumPostsAPIResponseData, ForumUser, Topic } from "~~/services/forum/types";
 
@@ -40,8 +44,8 @@ export async function importForumPosts() {
       const { users, topics, hasMorePages } = await fetchForumPostsFromAPI(page);
 
       for (const topic of topics) {
-        // Create a new proposal if it doesn't exist
         if (!existingForumsOriginalIds.includes(topic.id.toString())) {
+          // Create a new proposal and forum stage if it doesn't exist
           // "Original Poster" seems to be always the first poster (and there some weird naming sometimes on that field)
           const originalPosterId = topic.posters[0].user_id;
           const authorName = users[originalPosterId]?.name || users[originalPosterId]?.username;
@@ -67,6 +71,18 @@ export async function importForumPosts() {
             url: postUrl,
           });
           console.log("Created forum stage:", forumStage.title);
+        } else {
+          // Update existing forum stage with latest activity data
+          const postUrl = `${FORUM_URL}/t/${topic.slug}/${topic.id}`;
+
+          const forumStage = await updateForumStageByOriginalId(topic.id.toString(), {
+            title: topic.fancy_title || topic.title,
+            message_count: topic.posts_count,
+            last_message_at: new Date(topic.last_posted_at),
+            updated_at: new Date(),
+            url: postUrl,
+          });
+          console.log("Updated forum stage:", forumStage.title);
         }
       }
 
@@ -78,4 +94,6 @@ export async function importForumPosts() {
     console.error("Error in importForumPosts:", error);
     throw error;
   }
+
+  console.log("Forum posts imported successfully");
 }
