@@ -63,7 +63,16 @@ We'd switch to a migration model when ready (site live).
 
 ### Imports
 
-You can locally call the (snapshot) import route like
+You can locally call the import routes like:
+
+**Forum posts:**
+
+```sh
+curl -X POST http://localhost:3000/api/import-forum-posts \
+  -H "Authorization: Bearer my-cron-secret"
+```
+
+**Snapshot proposals:**
 
 ```sh
 curl -X POST http://localhost:3000/api/import-snapshot-proposals \

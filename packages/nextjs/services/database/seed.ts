@@ -59,6 +59,7 @@ async function seed() {
     // Proposal 1: forum + snapshot + tally
     await db.insert(forumStage).values({
       proposal_id: proposal1.id,
+      original_id: "123",
       title: proposal1.title,
       author_name: proposal1.author_name,
       url: "https://forum.example.com/t/update-security-council",
@@ -99,6 +100,7 @@ async function seed() {
     // Proposal 2: forum + snapshot only
     await db.insert(forumStage).values({
       proposal_id: proposal2.id,
+      original_id: "456",
       title: proposal2.title,
       author_name: proposal2.author_name,
       url: "https://forum.example.com/t/gaming-catalyst",
@@ -124,6 +126,7 @@ async function seed() {
     // Proposal 3: forum only
     await db.insert(forumStage).values({
       proposal_id: proposal3.id,
+      original_id: "789",
       title: proposal3.title,
       author_name: proposal3.author_name,
       url: "https://forum.example.com/t/ecosystem-growth",
