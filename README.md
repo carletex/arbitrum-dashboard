@@ -6,6 +6,21 @@
 - Yarn ([v1](https://classic.yarnpkg.com/en/docs/install/) or [v2+](https://yarnpkg.com/getting-started/install))
 - [Git](https://git-scm.com/downloads)
 
+## Environment Variables
+
+Create a `.env.local` file in `packages/nextjs/` with the following variables:
+
+```bash
+# Tally API key for fetching proposals
+# Get your API key from https://www.tally.xyz/
+TALLY_API_KEY=your_tally_api_key_here
+
+# Secret for protecting import endpoints (used by cron jobs)
+# Set a secure random string for production
+CRON_SECRET=your_cron_secret_here
+
+**Note:** The `.env.local` file is gitignored and should not be committed to version control.
+
 ## Quickstart
 
 1. Clone the repo
@@ -76,5 +91,12 @@ curl -X POST http://localhost:3000/api/import-forum-posts \
 
 ```sh
 curl -X POST http://localhost:3000/api/import-snapshot-proposals \
+  -H "Authorization: Bearer my-cron-secret"
+```
+
+**Tally proposals:**
+
+```sh
+curl -X POST http://localhost:3000/api/import-tally-proposals \
   -H "Authorization: Bearer my-cron-secret"
 ```
