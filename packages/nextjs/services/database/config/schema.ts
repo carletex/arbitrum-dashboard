@@ -1,4 +1,4 @@
-import { integer, jsonb, pgTable, text, timestamp, uuid, varchar } from "drizzle-orm/pg-core";
+import { boolean, integer, jsonb, pgTable, text, timestamp, uuid, varchar } from "drizzle-orm/pg-core";
 
 // Canonical proposals table (one row per proposal)
 export const proposals = pgTable("proposal", {
@@ -73,4 +73,11 @@ export const tallyStage = pgTable("tally_stage", {
 
   last_activity: timestamp("last_activity"),
   updated_at: timestamp("updated_at").defaultNow(),
+});
+
+// Users table for admin management
+export const users = pgTable("user", {
+  address: varchar("address", { length: 42 }).primaryKey(),
+  isAdmin: boolean("is_admin").default(false).notNull(),
+  createdAt: timestamp("created_at").defaultNow(),
 });
