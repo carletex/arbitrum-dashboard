@@ -137,6 +137,7 @@ async function seed() {
     // Seed admin users
     const adminAddresses = [
       "0x55b9CB0bCf56057010b9c471e7D42d60e1111EEa", // shiv
+      "0x24a81Ca18B220388563fBD751ac0b911a17a3Bc3", // deployer carletex
     ];
 
     for (const address of adminAddresses) {
