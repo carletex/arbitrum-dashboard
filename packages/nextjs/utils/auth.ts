@@ -45,9 +45,11 @@ export const providers = [
           return null;
         }
 
-        const nextAuthUrl =
-          new URL(process.env.NEXTAUTH_URL as string) ||
-          (process.env.VERCEL_URL ? `https://${process.env.VERCEL_URL}` : null);
+        const configuredDomain =
+          process.env.NEXT_PUBLIC_VERCEL_ENV === "production"
+            ? `https://${process.env.NEXT_PUBLIC_VERCEL_PROJECT_PRODUCTION_URL}`
+            : `https://${process.env.NEXT_PUBLIC_VERCEL_URL}`;
+        const nextAuthUrl = new URL(process.env.NEXTAUTH_URL as string) || new URL(configuredDomain);
 
         if (!nextAuthUrl || siweMessage.domain !== nextAuthUrl.host) {
           return null;
