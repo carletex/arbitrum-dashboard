@@ -1,6 +1,6 @@
 import {
   createTallyStage,
-  getAllTallyProposalIds,
+  getAllTallyStagesForComparison,
   updateTallyStageByTallyProposalId,
 } from "~~/services/database/repositories/tally";
 import { TALLY_GOVERNORS, TallyAPIResponse, TallyProposal } from "~~/services/tally/types";
@@ -228,6 +228,92 @@ const transformProposalData = (proposal: TallyProposal) => {
   };
 };
 
+type ExistingTallyStage = {
+  tally_proposal_id: string | null;
+  title: string | null;
+  author_name: string | null;
+  url: string | null;
+  onchain_id: string | null;
+  status: string | null;
+  substatus: string | null;
+  substatus_deadline: Date | null;
+  start_timestamp: Date | null;
+  end_timestamp: Date | null;
+  options: unknown;
+  last_activity: Date | null;
+};
+
+/**
+ * Normalize an object by sorting its keys recursively (for consistent comparison)
+ */
+const normalizeForComparison = (obj: unknown): string => {
+  if (obj === null || obj === undefined) {
+    return JSON.stringify(obj);
+  }
+
+  if (Array.isArray(obj)) {
+    return JSON.stringify(
+      obj.map(item => (typeof item === "object" ? JSON.parse(normalizeForComparison(item)) : item)),
+    );
+  }
+
+  if (typeof obj === "object") {
+    const sortedObj: Record<string, unknown> = {};
+    Object.keys(obj)
+      .sort()
+      .forEach(key => {
+        sortedObj[key] = (obj as Record<string, unknown>)[key];
+      });
+    return JSON.stringify(sortedObj, Object.keys(sortedObj).sort());
+  }
+
+  return JSON.stringify(obj);
+};
+
+/**
+ * Check if the proposal data has changed compared to the existing tally stage
+ */
+const hasChanges = (existing: ExistingTallyStage, proposal: TallyProposal): boolean => {
+  const transformedData = transformProposalData(proposal);
+
+  const existingStartTimestamp = existing.start_timestamp?.getTime() ?? null;
+  const existingEndTimestamp = existing.end_timestamp?.getTime() ?? null;
+  const existingLastActivity = existing.last_activity?.getTime() ?? null;
+
+  const newStartTimestamp = transformedData.start_timestamp?.getTime() ?? null;
+  const newEndTimestamp = transformedData.end_timestamp?.getTime() ?? null;
+  const newLastActivity = transformedData.last_activity?.getTime() ?? null;
+
+  // Use normalized comparison for options to ignore property order
+  const optionsChanged = normalizeForComparison(existing.options) !== normalizeForComparison(transformedData.options);
+
+  const changes = {
+    title: existing.title !== transformedData.title,
+    author_name: existing.author_name !== transformedData.author_name,
+    url: existing.url !== transformedData.url,
+    onchain_id: existing.onchain_id !== transformedData.onchain_id,
+    status: existing.status !== transformedData.status,
+    start_timestamp: existingStartTimestamp !== newStartTimestamp,
+    end_timestamp: existingEndTimestamp !== newEndTimestamp,
+    last_activity: existingLastActivity !== newLastActivity,
+    options: optionsChanged,
+  };
+
+  const hasAnyChanges = Object.values(changes).some(changed => changed);
+
+  if (hasAnyChanges) {
+    console.log("Changes detected for proposal:", proposal.id);
+    console.log(
+      "Changed fields:",
+      Object.entries(changes)
+        .filter(([, changed]) => changed)
+        .map(([field]) => field),
+    );
+  }
+
+  return hasAnyChanges;
+};
+
 /**
  * Create a new tally stage for a proposal
  */
@@ -257,7 +343,12 @@ const updateExistingTallyStage = async (proposal: TallyProposal) => {
  */
 export async function importTallyProposals() {
   try {
-    const existingTallyIds = await getAllTallyProposalIds();
+    const existingTallyStages = await getAllTallyStagesForComparison();
+    const tallyStageMap = new Map(
+      existingTallyStages
+        .filter(tallyStage => tallyStage.tally_proposal_id)
+        .map(validTallyStage => [validTallyStage.tally_proposal_id, validTallyStage]),
+    );
 
     console.log("Fetching Tally proposals...");
 
@@ -285,17 +376,12 @@ export async function importTallyProposals() {
 
     console.log(`Processing ${uniqueProposals.size} unique Tally proposals (${allProposals.length} total fetched)`);
 
-    // Convert existing IDs to Set for faster lookups
-    const existingTallyIdsSet = new Set(existingTallyIds);
-
     for (const proposal of uniqueProposals.values()) {
-      const isNewProposal = !existingTallyIdsSet.has(proposal.id);
+      const existing = tallyStageMap.get(proposal.id);
 
-      if (isNewProposal) {
+      if (!existing) {
         await createNewTallyStage(proposal);
-        // Add to set to prevent duplicates within the same batch
-        existingTallyIdsSet.add(proposal.id);
-      } else {
+      } else if (hasChanges(existing, proposal)) {
         await updateExistingTallyStage(proposal);
       }
     }

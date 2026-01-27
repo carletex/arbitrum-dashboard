@@ -5,14 +5,25 @@ import { db } from "~~/services/database/config/postgresClient";
 
 type TallyStageData = InferInsertModel<typeof tallyStage>;
 
-export async function getAllTallyProposalIds() {
-  const tallyIds = await db.query.tallyStage.findMany({
+export async function getAllTallyStagesForComparison() {
+  const tallyStages = await db.query.tallyStage.findMany({
     columns: {
       tally_proposal_id: true,
+      title: true,
+      author_name: true,
+      url: true,
+      onchain_id: true,
+      status: true,
+      substatus: true,
+      substatus_deadline: true,
+      start_timestamp: true,
+      end_timestamp: true,
+      options: true,
+      last_activity: true,
     },
   });
 
-  return tallyIds.map(item => item.tally_proposal_id).filter((id): id is string => id !== null);
+  return tallyStages;
 }
 
 export async function createTallyStage(tallyStageData: TallyStageData) {
