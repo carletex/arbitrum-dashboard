@@ -5,14 +5,19 @@ import { db } from "~~/services/database/config/postgresClient";
 
 type SnapshotStageData = InferInsertModel<typeof snapshotStage>;
 
-export async function getAllSnapshotIds() {
-  const snapshotIds = await db.query.snapshotStage.findMany({
+export async function getAllSnapshotStagesForComparison() {
+  return db.query.snapshotStage.findMany({
     columns: {
       snapshot_id: true,
+      title: true,
+      author_name: true,
+      status: true,
+      voting_start: true,
+      voting_end: true,
+      options: true,
+      url: true,
     },
   });
-
-  return snapshotIds.map(item => item.snapshot_id);
 }
 
 export async function createSnapshotStage(snapshotStageData: SnapshotStageData) {

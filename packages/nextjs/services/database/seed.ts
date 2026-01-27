@@ -1,5 +1,5 @@
 import { PRODUCTION_DATABASE_HOSTNAME } from "./config/postgresClient";
-import { forumStage, proposals, snapshotStage, tallyStage } from "./config/schema";
+import { forumStage, proposals, snapshotStage, tallyStage, users } from "./config/schema";
 import { spawnSync } from "child_process";
 import * as dotenv from "dotenv";
 import { drizzle } from "drizzle-orm/node-postgres";
@@ -29,7 +29,7 @@ async function seed() {
   });
   await client.connect();
   const db = drizzle(client, {
-    schema: { proposals, forumStage, snapshotStage, tallyStage },
+    schema: { proposals, forumStage, snapshotStage, tallyStage, users },
     casing: "snake_case",
   });
 
@@ -133,6 +133,23 @@ async function seed() {
       message_count: 8,
       last_message_at: new Date("2024-02-18"),
     });
+
+    // Seed admin users
+    const adminAddresses = [
+      "0x55b9CB0bCf56057010b9c471e7D42d60e1111EEa", // shiv
+      "0x24a81Ca18B220388563fBD751ac0b911a17a3Bc3", // deployer carletex
+    ];
+
+    for (const address of adminAddresses) {
+      await db
+        .insert(users)
+        .values({
+          address: address.toLowerCase(),
+          isAdmin: true,
+        })
+        .onConflictDoNothing();
+    }
+    console.log(`✅ Seeded ${adminAddresses.length} admin user(s)`);
 
     console.log("✅ Database seeded successfully");
   } catch (error) {
