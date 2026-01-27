@@ -1,6 +1,6 @@
 import {
   createForumStage,
-  getAllOriginalIds,
+  getAllForumStagesForComparison,
   updateForumStageByOriginalId,
 } from "~~/services/database/repositories/forum";
 import { createProposal } from "~~/services/database/repositories/proposals";
@@ -83,6 +83,31 @@ const createProposalAndForumStage = async (topic: Topic, users: Record<number, F
   console.log("Created forum stage:", forumStage.title);
 };
 
+type ExistingForumStage = {
+  original_id: string | null;
+  title: string | null;
+  message_count: number | null;
+  last_message_at: Date | null;
+  url: string | null;
+};
+
+/**
+ * Check if the topic data has changed compared to the existing forum stage
+ */
+const hasChanges = (existing: ExistingForumStage, topic: Topic): boolean => {
+  const newTitle = topic.fancy_title || topic.title;
+  const newUrl = buildPostUrl(topic);
+  const newLastMessageAt = new Date(topic.last_posted_at).getTime();
+  const existingLastMessageAt = existing.last_message_at?.getTime() ?? 0;
+
+  return (
+    existing.title !== newTitle ||
+    existing.message_count !== topic.posts_count ||
+    existingLastMessageAt !== newLastMessageAt ||
+    existing.url !== newUrl
+  );
+};
+
 /**
  * Update an existing forum stage with latest activity data
  */
@@ -104,7 +129,12 @@ const updateForumStage = async (topic: Topic) => {
  */
 export async function importForumPosts() {
   try {
-    const existingForumsOriginalIds = await getAllOriginalIds();
+    const existingForumStages = await getAllForumStagesForComparison();
+    const forumStageMap = new Map(
+      existingForumStages
+        .filter(forumStage => forumStage.original_id)
+        .map(validForumStage => [validForumStage.original_id, validForumStage]),
+    );
 
     // Iterate over all the API pages
     for (let page = 0; page <= MAX_PAGES; page++) {
@@ -121,11 +151,11 @@ export async function importForumPosts() {
       }
 
       for (const topic of topics) {
-        const isNewTopic = !existingForumsOriginalIds.includes(topic.id.toString());
+        const existing = forumStageMap.get(topic.id.toString());
 
-        if (isNewTopic) {
+        if (!existing) {
           await createProposalAndForumStage(topic, users);
-        } else {
+        } else if (hasChanges(existing, topic)) {
           await updateForumStage(topic);
         }
       }

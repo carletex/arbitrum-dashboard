@@ -5,14 +5,16 @@ import { db } from "~~/services/database/config/postgresClient";
 
 type ForumStageData = InferInsertModel<typeof forumStage>;
 
-export async function getAllOriginalIds() {
-  const originalIds = await db.query.forumStage.findMany({
+export async function getAllForumStagesForComparison() {
+  return db.query.forumStage.findMany({
     columns: {
       original_id: true,
+      title: true,
+      message_count: true,
+      last_message_at: true,
+      url: true,
     },
   });
-
-  return originalIds.map(originalId => originalId.original_id);
 }
 
 export async function createForumStage(forumStageData: ForumStageData) {
