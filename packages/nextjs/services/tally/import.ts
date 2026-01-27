@@ -186,11 +186,9 @@ const fetchAllTallyProposalsForGovernor = async (governorId: string): Promise<Ta
  * Transform Tally proposal to database format
  */
 const transformProposalData = (proposal: TallyProposal) => {
-  // Construct URL - Tally proposals are typically accessible via their ID
-  // Format: https://www.tally.xyz/governance/{governor-slug}/proposal/{proposal-id}
-  const url = proposal.governor.slug
-    ? `https://www.tally.xyz/governance/${proposal.governor.slug}/proposal/${proposal.id}`
-    : null;
+  // Construct URL - Tally proposals use onchainId in the URL
+  // Format: https://www.tally.xyz/gov/arbitrum/proposal/{onchain-id}
+  const url = proposal.onchainId ? `https://www.tally.xyz/gov/arbitrum/proposal/${proposal.onchainId}` : null;
 
   // Get author name from creator or proposer
   const authorName = proposal.creator.name || proposal.proposer.name || proposal.creator.address;
