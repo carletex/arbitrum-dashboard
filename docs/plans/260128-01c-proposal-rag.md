@@ -7,7 +7,7 @@
 - Build ingestion, retrieval API, and a minimal UI with citations.
 
 ## Clarifications
-- Corpus: include full Snapshot body and forum content when available, in addition to proposal + stage summary.
+- Corpus: use proposal + stage summary/metadata only; do not rely on Snapshot or forum body in v1.
 - Ingestion: manual trigger only (no scheduled job in v1).
 - Models: OpenAI embeddings + OpenAI LLM.
 - Retrieval: top-K similarity with filters by stage/status.
@@ -19,6 +19,7 @@
 
 ## Non-Goals
 - Automatic scheduled ingestion.
+- Fetching or storing long-form Snapshot/forum bodies in v1.
 - Full evaluation harness or offline benchmarks.
 - Streaming chat UI with multi-turn memory in v1.
 
@@ -56,17 +57,17 @@ Required keys for each node:
 1. Fetch proposal + stage rows.
 2. Build a canonical document per proposal:
    - Title, author, category
-   - Forum content + metadata
-   - Snapshot body + status/voting window/options
+   - Forum metadata + URL (no body in v1)
+   - Snapshot metadata + URL (no body in v1)
    - Tally status + deadlines + options
 3. Chunk documents (NodeParser) and attach metadata.
 4. Embed chunks with OpenAI embeddings (`text-embedding-3-small`, 1536 dims).
 5. Write nodes into LlamaIndex vector store tables.
 
 ### Data Enrichment and Fallbacks
-- If snapshot body is missing in DB, extend the Snapshot importer to persist `body`.
-- If forum content is not stored, fetch full topic content during ingestion.
-- If long-form content is missing, fallback to title + metadata to avoid empty docs.
+- Do not fetch or persist Snapshot/forum bodies in v1.
+- Ensure links and metadata are present to avoid empty docs.
+- Plan a future ingestion upgrade to include bodies when available.
 
 ### Idempotency
 - Compute a `content_hash` per chunk.
