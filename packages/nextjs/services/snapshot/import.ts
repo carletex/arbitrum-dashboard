@@ -62,6 +62,7 @@ const transformProposalData = (proposal: SnapshotProposal) => {
   return {
     snapshot_id: proposal.id,
     title: proposal.title,
+    body: proposal.body,
     author_name: proposal.author,
     url: proposal.link,
     status: proposal.state,

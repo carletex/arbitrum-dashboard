@@ -36,6 +36,7 @@ export const snapshotStage = pgTable("snapshot_stage", {
 
   snapshot_id: text("snapshot_id").unique(),
   title: text("title"),
+  body: text("body"), // Full proposal body for matching
   author_name: varchar("author_name", { length: 255 }),
   url: text("url"),
 
@@ -57,9 +58,12 @@ export const tallyStage = pgTable("tally_stage", {
 
   tally_proposal_id: text("tally_proposal_id").unique(),
   title: text("title"),
+  description: text("description"), // Full proposal description for matching
   author_name: varchar("author_name", { length: 255 }),
   url: text("url"),
   onchain_id: text("onchain_id"),
+  discourse_url: text("discourse_url"),
+  snapshot_url: text("snapshot_url"),
 
   status: varchar("status", { length: 50 }),
   substatus: varchar("substatus", { length: 50 }),

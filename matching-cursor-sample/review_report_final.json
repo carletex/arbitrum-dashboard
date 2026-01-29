@@ -1,0 +1,3799 @@
+{
+  "snapshot_matched_by_link": [
+    {
+      "id": "9a79972c-8180-4e03-86a8-eb552a60c0b0",
+      "title": "OpCo \u2013 Oversight and Transparency Committee (OAT) Elections",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "6c4e2f12-a2f8-4ed4-b0ed-c19cff5c3b3a",
+      "matched_title": "OpCo \u2013 A DAO-adjacent Entity for Strategy Execution",
+      "score": 100,
+      "method": "forum_link_slug (opco-a-dao-adjacent-entity-for...)",
+      "forum_links": [
+        [
+          "opco-a-dao-adjacent-entity-for-strategy-execution",
+          "27361"
+        ],
+        [
+          "opco-oat-applications-nominations",
+          "28555"
+        ],
+        [
+          "updates-to-the-arbitrum-daos-procedures",
+          "27762"
+        ],
+        [
+          "the-arbitrum-dao-delegate-code-of-conduct",
+          "27761"
+        ],
+        [
+          "the-arbitrum-dao-delegate-code-of-conduct",
+          "27761"
+        ],
+        [
+          "updates-to-the-arbitrum-daos-procedures",
+          "27762"
+        ],
+        [
+          "opco-oat-applications-nominations",
+          "28555"
+        ],
+        [
+          "opco-oat-applications-nominations",
+          "28555"
+        ],
+        [
+          "opco-oat-applications-nominations",
+          "28555"
+        ],
+        [
+          "opco-oat-applications-nominations",
+          "28555"
+        ],
+        [
+          "opco-oat-applications-nominations",
+          "28555"
+        ],
+        [
+          "opco-oat-applications-nominations",
+          "28555"
+        ],
+        [
+          "opco-oat-applications-nominations",
+          "28555"
+        ],
+        [
+          "opco-oat-applications-nominations",
+          "28555"
+        ],
+        [
+          "opco-oat-applications-nominations",
+          "28555"
+        ],
+        [
+          "opco-oat-applications-nominations",
+          "28555"
+        ],
+        [
+          "opco-oat-applications-nominations",
+          "28555"
+        ],
+        [
+          "opco-oat-applications-nominations",
+          "28555"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "d6efd785-1e10-477a-b762-71ddb5a69419",
+      "title": "Approve the Nova Fee Sweep Action",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "619a77f3-ea95-43b4-82f2-68307dfd5b9b",
+      "matched_title": "AIP: Timeboost + Nova Fee Sweep",
+      "score": 100,
+      "method": "forum_link_slug (aip-timeboost-nova-fee-sweep...)",
+      "forum_links": [
+        [
+          "aip-timeboost-nova-fee-sweep",
+          "28247"
+        ]
+      ],
+      "category": "standard"
+    }
+  ],
+  "snapshot_matched_by_title": [
+    {
+      "id": "046b6160-c761-48c8-9028-93242451b078",
+      "title": "Time Management in Arbitrum\u2019s Governance",
+      "author": "0xAbAbE91A907fAdff921720C43ABe4098e7245E99",
+      "proposal_id": "1f5dae8b-aeb5-4069-99ba-ccd0d4bd7afc",
+      "matched_title": "Proposal: Time Management in Arbitrum\u2019s Governance",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "06d247aa-7748-43f4-8599-8b81687636d0",
+      "title": "AIP: ArbOS Version 20 \u201cAtlas\u201d",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "8b760c14-6f2b-4069-b326-23653e5c20f9",
+      "matched_title": "AIP: ArbOS Version 20 \u201cAtlas\u201d",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "arbitrum-arbos-upgrades",
+          "19695"
+        ],
+        [
+          "aip-arbos-version-11",
+          "19696"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "0732e698-bfe3-47b1-a631-4846521bb435",
+      "title": "Entropy Advisors: Exclusively Working With Arbitrum DAO",
+      "author": "0xA7860E99e3ce0752D1ac53b974E309fFf80277C6",
+      "proposal_id": "4224208f-d822-44d0-bc71-f273d2c211ac",
+      "matched_title": "Entropy Advisors: Exclusively Working With Arbitrum DAO",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "08a26dd9-f7d4-4cc6-8267-f9465c095298",
+      "title": "Procurement Framework | Security : Non-Constitutional Proposal",
+      "author": "0xAD16ebE6FfC7d96624A380F394cD64395B0C6144",
+      "proposal_id": "29eef831-d8dd-42d6-a3ef-55ee60ad0d12",
+      "matched_title": "[PROPOSAL] - Procurement Framework | Security : Non-Constitutional Proposal (Prev RFP)",
+      "score": 95.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "proposal-consolidate-security-proposals-into-a-rfp-process",
+          "19328"
+        ],
+        [
+          "public-consultation-re-consolidate-security-proposals-into-an-rfp-process",
+          "19478"
+        ],
+        [
+          "proposal-non-constitutional-procurement-framework-security-service-providers",
+          "19704"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "09c74ce6-01ce-4a18-9210-ecd7304b6f04",
+      "title": "ArbitrumDAO Governance Analytics Dashboard",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "d87e28b8-f884-4350-a5a3-fb71040fb399",
+      "matched_title": "[RFC] ArbitrumDAO Governance Analytics Dashboard",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "arb-staking-unlock-arb-utility-and-align-governance",
+          "25084"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "0d01b7aa-e322-4272-93fb-2512dc211ebd",
+      "title": "Extend AGV Council Term and Align Future Elections with Operational Cadence",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "a2362c69-20bc-4a84-aed9-c26aeaa58b3c",
+      "matched_title": "Proposal: Extend AGV Council Term and Align Future Elections with Operational Cadence",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "0d3237f4-1e83-4de1-b6c3-7db17fc296b7",
+      "title": "[Non-Emergency Action] Fix Fee Oversight ArbOS v20 \u201cAtlas\u201d",
+      "author": "0xA7860E99e3ce0752D1ac53b974E309fFf80277C6",
+      "proposal_id": "8b760c14-6f2b-4069-b326-23653e5c20f9",
+      "matched_title": "AIP: ArbOS Version 20 \u201cAtlas\u201d",
+      "score": 78.78048780487804,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "118c8c0b-c868-4862-9789-fa8f3c748c3b",
+      "title": "AIP: Funds to bootstrap the first BoLD validator - Bond sentiment.",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "a9880cfd-abf2-42dd-83b8-5b413f62976e",
+      "matched_title": "Funds to bootstrap the first BoLD validator",
+      "score": 95.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "aip-bold-permissionless-validation-for-arbitrum",
+          "23232"
+        ],
+        [
+          "aip-bold-permissionless-validation-for-arbitrum",
+          "23232"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "120eb03c-9f4b-4ca5-8d12-4529ba57278b",
+      "title": "Proposal: Activate support for account abstraction endpoint on One and Nova",
+      "author": "0xdb5781a835b60110298fF7205D8ef9678Ff1f800",
+      "proposal_id": "92122494-8acf-4be9-9ab7-8799ea1bcb80",
+      "matched_title": "AIP-2: Activate support for account abstraction endpoint on One and Nova",
+      "score": 97.01492537313433,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "12c4fe7b-053d-4efb-8fa9-743ea6165bac",
+      "title": "Non-Constitutional: Stable Treasury Endowment Program 2.0",
+      "author": "0x1B686eE8E31c5959D9F5BBd8122a58682788eeaD",
+      "proposal_id": "5fa790fc-90b0-4b97-91b0-1ca7aaed9e61",
+      "matched_title": "Non-Constitutional: Stable Treasury Endowment Program 2.0",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "step-committee-recommendations",
+          "25097"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "147850d8-467c-411b-8fd6-514f2dcd8ec7",
+      "title": "[CONSTITUTIONAL] Register $BORING in the Arbitrum generic-custom gateway",
+      "author": "0x1B686eE8E31c5959D9F5BBd8122a58682788eeaD",
+      "proposal_id": "ff68624b-58b6-469e-96fe-1394347efd7a",
+      "matched_title": "[CONSTITUTIONAL] Register $BORING in the Arbitrum generic-custom gateway",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "enhancing-multichain-governance-upgrading-rari-governance-token-on-arbitrum",
+          "26096"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "14e5083d-23c9-48c7-b3df-49dc3050ca06",
+      "title": "Hackathon Continuation Program",
+      "author": "0x13BDaE8c5F0fC40231F0E6A4ad70196F59138548",
+      "proposal_id": "368aed1b-6c46-4fda-85f0-e511557ccae7",
+      "matched_title": "Hackathon Continuation Program",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "16339df6-6a56-46e5-9f52-c33b57e5589a",
+      "title": "Strategic Treasury Management on Arbitrum",
+      "author": "0x583E3EDc26E1B8620341bce90547197bfE2c1ddD",
+      "proposal_id": "650e3d12-8fd9-44a6-adae-3cf10eeacc95",
+      "matched_title": "Strategic Treasury Management on Arbitrum",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "strategic-treasury-management-on-arbitrum",
+          "25301"
+        ],
+        [
+          "strategic-treasury-management-on-arbitrum",
+          "25301"
+        ],
+        [
+          "strategic-treasury-management-on-arbitrum",
+          "25301"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "18208c02-5875-4a12-a8e6-e3f497fdbf16",
+      "title": "An EIP-4824 powered daoURI for Arbitrum DAO",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "cce01beb-b47e-4ce5-97e8-1f70fe8928b8",
+      "matched_title": "An EIP-4824 powered daoURI for Arbitrum DAO",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "197bc554-53b1-414a-8a20-1aa41b0a4d0b",
+      "title": "[Pyth Network] Arbitrum LTIPP Extension Request",
+      "author": "0xB933AEe47C438f22DE0747D57fc239FE37878Dd1",
+      "proposal_id": "fe37f1fc-826a-4204-bb60-19b9824e99a1",
+      "matched_title": "[RFC] Pyth Network Arbitrum LTIPP Extension Request",
+      "score": 97.82608695652173,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "pyth-network-ltipp-application-draft",
+          "22003"
+        ],
+        [
+          "synthetix-ltipp-application-final",
+          "22023"
+        ],
+        [
+          "pyth-network-bi-weekly-update-26-august-2024",
+          "26525"
+        ],
+        [
+          "pyth-network-ltipp-application-draft",
+          "22003"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "1ec92100-b1f7-4bca-abde-4f97acaac0cc",
+      "title": "ArbitrumHub Evolution: The Next Step in Streamlining Information Access and Raising Awareness for Arbitrum DAO",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "06b4161a-b995-4fb6-b2f9-be8922525d73",
+      "matched_title": "[Non-Constitutional] ArbitrumHub Evolution: The Next Step in Streamlining Information Access and Raising Awareness for Arbitrum DAO",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "2036abf3-9abe-4407-8d5a-9fda1aa44ef6",
+      "title": "[Constitutional] AIP: Update the Upgrade Executors",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "e0f1fa85-fc35-4365-ade9-992cd4fcf1ea",
+      "matched_title": "[Constitutional] AIP: Update the Upgrade Executors",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "2058a248-0498-455e-90f4-a9853a2811ec",
+      "title": "Ethereum Protocol Attackathon Sponsorship",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "6eb471fe-0dfd-4896-ac56-84911e119975",
+      "matched_title": "Ethereum Protocol Attackathon Sponsorship",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "21b03db8-bf8d-4bc4-9380-8f3f88d2a62a",
+      "title": "[Non-Constitutional] Betting on Builders: Infinite Launchpad Proposal",
+      "author": "0x1B686eE8E31c5959D9F5BBd8122a58682788eeaD",
+      "proposal_id": "f592a0b9-fb96-498f-b22f-4ef0642490df",
+      "matched_title": "Betting on Builders: Infinite Launchpad Proposal",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "betting-on-builders-infinite-launchpad-proposal",
+          "24665"
+        ],
+        [
+          "betting-on-builders-infinite-launchpad-proposal",
+          "24665"
+        ],
+        [
+          "team-6-builder-pathways-towards-adoption",
+          "21510"
+        ],
+        [
+          "thankarb-a-strategy-framework-platform-for-arbitrum-s-success",
+          "19130"
+        ],
+        [
+          "thankarb-a-strategy-framework-platform-for-arbitrum-s-success",
+          "19130"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "21e28dff-7dc3-479e-b604-bdc7f7bb1e5f",
+      "title": "Funding Gas Rebate and Trading Competition Program to Amplify Arbitrum\u2019s Ecosystem Growth ",
+      "author": "0x9808E45C613eBA00bA18fB3D314dC4d4712c4A85",
+      "proposal_id": "88869b7b-e6f6-46b0-945c-2e7ba3f71ac5",
+      "matched_title": "Proposal for Funding Gas Rebate and Trading Competition Program to Amplify Arbitrum\u2019s Ecosystem Growth",
+      "score": 97.8021978021978,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "23ce61b9-ab49-433b-a117-dcbed410dbf0",
+      "title": "Kwenta x Perennial: Arbitrum Onboarding Incentives",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "1a55fe98-8f1c-4335-9717-84e38d170f40",
+      "matched_title": "Kwenta x Perennial: Arbitrum Onboarding Incentives (UPDATED)",
+      "score": 95.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "kwenta-x-perennial-arbitrum-onboarding-incentives-updated",
+          "22736"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "256fe115-a9c5-421a-967c-d52f82472db9",
+      "title": "[Aave DAO] LTIPP Grant Extension Request",
+      "author": "0xB933AEe47C438f22DE0747D57fc239FE37878Dd1",
+      "proposal_id": "8ec7a902-da36-45b0-8546-f692d44f90d8",
+      "matched_title": "RFC: Aave DAO LTIPP Grant Extension Request",
+      "score": 97.43589743589743,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "25c3c785-10b4-4cf7-8b39-6e98b1503bf0",
+      "title": "Subsidy Fund for Security Services",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "5b5c2bee-b959-4950-b07b-c4f4f236d2bf",
+      "matched_title": "[Non-constitutional] Subsidy Fund for Security Services",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "26417af6-bb43-46f4-bc8f-802c71808b27",
+      "title": "[Non-Constitutional] - Updates to the DIP, The Complete 1.7 Version",
+      "author": "0xAbAbE91A907fAdff921720C43ABe4098e7245E99",
+      "proposal_id": "d084ab5c-4680-4848-b8e0-03a27bdb35cf",
+      "matched_title": "Proposal - Updates to the DIP, The Complete 1.7 Version",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "community-guidelines",
+          "12807"
+        ],
+        [
+          "community-guidelines",
+          "12807"
+        ],
+        [
+          "non-constitutional-arbitrum-dao-delegate-code-of-conduct-formalizing-the-daos-operations",
+          "27188"
+        ],
+        [
+          "incentive-program-delegate-application",
+          "20945"
+        ],
+        [
+          "community-guidlines",
+          "12807"
+        ],
+        [
+          "incentive-program-delegate-application",
+          "20945"
+        ],
+        [
+          "delegate-incentive-program-questions-and-feedback",
+          "20946"
+        ],
+        [
+          "dip-v1-60-updates-thread",
+          "28018"
+        ],
+        [
+          "delegate-incentive-program-results-july-2024",
+          "26098"
+        ],
+        [
+          "delegate-incentive-program-payment-distribution-thread",
+          "23368"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "274a6fdf-666e-473c-91c7-fbed96c64843",
+      "title": "Catalyze Arbitrum Gaming: HADOUKEN!",
+      "author": "0xF92F185AbD9E00F56cb11B0b709029633d1E37B4",
+      "proposal_id": "8be0a6f1-ee7c-4e3e-8314-fc7ea7ba8ab1",
+      "matched_title": "[Non-Constitutional] Arbitrum Aegis",
+      "score": 74.64285714285714,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "27e343a5-7636-46c4-ad12-772ebea973d8",
+      "title": "Safeguarding Software Developers\u2019 Rights & the Right to Privacy",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "08bc7918-8046-444c-b689-ebea647cb0ee",
+      "matched_title": "Proposal [Non-Constitutional]: Defending Open Source: A United Stand for Developer Rights and Software Freedom",
+      "score": 100,
+      "method": "manual_override",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "2c7525f7-0ea5-41a6-8617-f681994fa695",
+      "title": "Request to Increase the Stylus Sprint Committee's Budget",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "3cf1ec4f-a12f-4fb2-b60d-fe6590c4f7f8",
+      "matched_title": "Request to Increase the Stylus Sprint Committee\u2019s Budget",
+      "score": 98.21428571428571,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "stylus-sprint-results-announcing-the-accepted-applications",
+          "28294"
+        ],
+        [
+          "stylus-sprint-results-announcing-the-accepted-applications",
+          "28294"
+        ],
+        [
+          "non-constitutional-rfc-arbitrum-d-a-o-domain-allocator-offerings-grant-program-season-3",
+          "27584"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "2ee02391-a119-45c6-98bb-26b8489f1d40",
+      "title": "Proposal [Non-Constitutional]: Establish the ArbitrumDAO Procurement Committee",
+      "author": "0xAD16ebE6FfC7d96624A380F394cD64395B0C6144",
+      "proposal_id": "b33055a5-c37c-4e6e-9670-556ae47037fc",
+      "matched_title": "Proposal [Non-Constitutional]: Establish the ArbitrumDAO Procurement Committee",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "proposal-non-constitutional-establish-the-arbitrumdao-procurement-committee",
+          "20064"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "2f81fc6b-59c6-4ac5-b9e1-7979e538f766",
+      "title": "Proposal to Temporary Extend Delegate Incentive System.",
+      "author": "0xAbAbE91A907fAdff921720C43ABe4098e7245E99",
+      "proposal_id": "c21e4910-7b8d-45bf-8c76-8fdc213ba73b",
+      "matched_title": "Proposal to Temporary Extend Delegate Incentive System",
+      "score": 98.9010989010989,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "32772aa6-43c2-4a37-a0ab-187da39de5f1",
+      "title": "Expand Tally Support for the Arbitrum DAO",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "e8a80636-54ab-4267-afa5-a7d09582e0dd",
+      "matched_title": "Expand Tally Support for the Arbitrum DAO",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "tally-final-stip-round-1",
+          "17557"
+        ],
+        [
+          "aip-changes-to-the-constitution-and-the-security-council-election-process",
+          "20856"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "33a040c5-1200-45f8-ad3b-0ca161358386",
+      "title": "Arbitrum Strategic Objective Setting (SOS) \u2013 Defining the DAO\u2019s Interim Goals",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "c1cafe92-1805-4119-83db-a73e72f8af5d",
+      "matched_title": "Arbitrum Strategic Objective Setting (SOS) \u2013 Defining the DAO\u2019s Interim Goals",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "35b0e89e-360d-45a1-a5df-da77b295b908",
+      "title": "AIP: Funds to bootstrap the first BoLD validator - Operational cost sentiment.",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "a9880cfd-abf2-42dd-83b8-5b413f62976e",
+      "matched_title": "Funds to bootstrap the first BoLD validator",
+      "score": 95.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "aip-bold-permissionless-validation-for-arbitrum",
+          "23232"
+        ],
+        [
+          "aip-bold-permissionless-validation-for-arbitrum",
+          "23232"
+        ],
+        [
+          "aip-bold-permissionless-validation-for-arbitrum",
+          "23232"
+        ],
+        [
+          "aip-funds-to-bootstrap-the-first-bold-validator",
+          "24506"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "3977f1eb-ffe4-43c1-a52a-9ee586e8b702",
+      "title": "[Non-Constitutional AIP] Front-end interface to force transaction inclusion during sequencer downtime",
+      "author": "0xAbAbE91A907fAdff921720C43ABe4098e7245E99",
+      "proposal_id": "3bb5052d-c3ef-4193-a196-254cba9012cf",
+      "matched_title": "Tally: Front-end interface to force transaction inclusion during sequencer downtime",
+      "score": 95.1219512195122,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "3a70d6a9-8d9b-4f44-8ad8-4af11e9fbca5",
+      "title": "Pilot for a Questbook Jumpstart fund for problem definition and DAO improvement",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "e2b61b23-62f9-4904-856b-411b812d16aa",
+      "matched_title": "Jumpstart fund for DAO improvement",
+      "score": 90.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "questbook-dda-program-phase-2-request-for-continuation",
+          "21326"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "3f1ae956-1ee8-4f94-bf25-f4a5befe3b65",
+      "title": "The Arbitrum Coalition",
+      "author": "0xA5dF0cf3F95C6cd97d998b9D990a86864095d9b0",
+      "proposal_id": "1e59f2ca-6aaa-4075-a973-496eb23023f4",
+      "matched_title": "Proposal: The Arbitrum Coalition",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "3fa3b7ad-30c9-4b03-94b7-592449e100fb",
+      "title": "Proposal: Empowering Early Contributors: The community Arbiter Proposal",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "d1d0f31c-566f-4594-b91c-e05743ebd8ba",
+      "matched_title": "Proposal: Empowering Early Contributors: The community Arbiter Proposal",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "41029d9f-3f9b-4477-976b-81446bf70f1d",
+      "title": "[Constitutional] AIP: Remove Cost Cap on Arbitrum Nova",
+      "author": "0xd333Bc5c9670C9cEb18f9A2CF02C6E86807a8227",
+      "proposal_id": "1647c07f-d868-4389-be1f-fd6ea307c6c1",
+      "matched_title": "[Constitutional] AIP: Remove Cost Cap on Arbitrum Nova",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "410a1610-ef2b-4c49-956c-9c54136b3547",
+      "title": "Entropy Advisors: Exclusively Working with the Arbitrum DAO, Year 2 and Year 3",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "68b61ef6-76f1-445f-b00d-ffa84543e077",
+      "matched_title": "Entropy Advisors: Exclusively Working with the Arbitrum DAO, Y2-Y3",
+      "score": 92.03125,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "entropy-advisors-exclusively-working-with-arbitrum-dao",
+          "25246"
+        ],
+        [
+          "a-vision-for-the-future-of-arbitrum",
+          "28962"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "417c8582-be76-49c4-abef-d773958bad2a",
+      "title": "Audit Committee Technical Expert Elections",
+      "author": "0xA7860E99e3ce0752D1ac53b974E309fFf80277C6",
+      "proposal_id": "c9da3d25-ffe8-4a83-bcf2-6a0dd5a2e8ed",
+      "matched_title": "Audit Committee Technical Expert Elections",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "arbitrum-audit-program-technical-expert-applications",
+          "29176"
+        ],
+        [
+          "updates-to-the-arbitrum-daos-procedures",
+          "27762"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "426507cd-94c2-4dff-9966-f9b8f4ed0c5b",
+      "title": "[Non-constitutional] Incentives Detox Proposal",
+      "author": "0x1B686eE8E31c5959D9F5BBd8122a58682788eeaD",
+      "proposal_id": "f24b70fa-a09a-4f41-a090-a5227e078ad7",
+      "matched_title": "[RFC] Incentives Detox Proposal",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "arbitrums-short-term-incentive-program-arbitrum-improvement-proposal",
+          "16131"
+        ],
+        [
+          "proposal-to-backfund-successful-stip-proposals-savvy-dao-final",
+          "19046"
+        ],
+        [
+          "long-term-incentives-pilot-program",
+          "20223"
+        ],
+        [
+          "double-down-on-stip-successes-stip-bridge",
+          "22353"
+        ],
+        [
+          "proposal-to-improve-future-incentive-programs",
+          "18948"
+        ],
+        [
+          "discussion-reframing-incentives-on-arbitrum",
+          "19817"
+        ],
+        [
+          "serious-people-proposed-kpis-for-arbitrum-grant-programs-ltipp",
+          "20416"
+        ],
+        [
+          "a-new-thesis-for-network-level-incentives-programs",
+          "20757"
+        ],
+        [
+          "learnings-from-stip-community-interview-summaries-and-notes",
+          "20916"
+        ],
+        [
+          "stip-analysis-ardc-research-deliverables",
+          "23438"
+        ],
+        [
+          "openblocks-stip-incentive-efficacy-analysis",
+          "23687"
+        ],
+        [
+          "rfc-thoughts-on-the-end-game-perpetual-incentives-program",
+          "23720"
+        ],
+        [
+          "memories-of-a-grantor-cow-thoughts-about-incentives-program-and-what-could-be-next",
+          "25406"
+        ],
+        [
+          "research-bounty-selections",
+          "25012"
+        ],
+        [
+          "treasure-delegate-communication-thread",
+          "18873"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "42c1db4c-c94c-4657-9d08-516f3119a837",
+      "title": "Proposal [Non-Constitutional]: Establish the \u2018Arbitrum Research & Development Collective",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "0593649d-0b8c-4724-9ba1-6adda1d38593",
+      "matched_title": "Proposal [Non-Constitutional]: Establish the \u2018Arbitrum Research & Development Collective\u2019",
+      "score": 99.37106918238993,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "4400d02f-adec-4887-8f12-d5821436abea",
+      "title": "Non-Constitutional AIP: Arbitrum Security Enhancement Fund",
+      "author": "0x190473B3071946df65306989972706A4c006A561",
+      "proposal_id": "1dd49112-56df-417b-98e6-882b6116f534",
+      "matched_title": "Non-Constitutional AIP: Arbitrum Security Enhancement Fund",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "4848d383-3667-4995-bb48-d3cc47f541ba",
+      "title": "Timeline Extension for STIP and Backfund Grantees",
+      "author": "0xAD16ebE6FfC7d96624A380F394cD64395B0C6144",
+      "proposal_id": "314ed089-4ffd-4e39-930d-39db6d2f8850",
+      "matched_title": "Timeline Extension for STIP and Backfund Grantees",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "490497dd-c2ce-4235-b0fb-f00f5513f2c3",
+      "title": "Accelerating Arbitrum - leveraging Camelot as an ecosystem hub to support native builders",
+      "author": "0x2e3BEf6830Ae84bb4225D318F9f61B6b88C147bF",
+      "proposal_id": "deb12682-102f-40ef-9ec1-e0fd3a9fd36d",
+      "matched_title": "Proposal: Accelerating Arbitrum - leveraging Camelot as an ecosystem hub to support native builders",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "4ceb05a5-21e9-41c9-b143-0cd7b4ac92ea",
+      "title": "Consolidate Idle USDC to the ATMC\u2019s Stablecoin Balance",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "fef116df-1070-4cbe-8770-72e48933e1b5",
+      "matched_title": "Consolidate Idle USDC to the ATMC\u2019s Stablecoin Balance",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "establishing-a-dao-events-budget-for-2025",
+          "26734"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "4ceca8f9-99bb-426a-a9c2-5e8d0eef6998",
+      "title": "Constitutional AIP - Security Council Improvement Proposal",
+      "author": "0x1B686eE8E31c5959D9F5BBd8122a58682788eeaD",
+      "proposal_id": "ae6b72ed-9931-4f2e-9c94-164cf6885e68",
+      "matched_title": "Constitutional AIP - Security Council Improvement Proposal",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "50c3fe78-528d-4298-b06e-2c8387d95825",
+      "title": "[NON-CONSTITUTIONAL] Arbitrum Onboarding V2: A Governance Bootcamp",
+      "author": "0xAbAbE91A907fAdff921720C43ABe4098e7245E99",
+      "proposal_id": "07658eee-210d-4baa-8475-91389f10416a",
+      "matched_title": "[NON-CONSTITUTIONAL] Arbitrum Onboarding V2: A Governance Bootcamp",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "non-constitutional-arbitrum-onboarding-v2-a-governance-bootcamp",
+          "27546"
+        ],
+        [
+          "onboarding-pilot-program-final-report-milestone-3",
+          "26046"
+        ],
+        [
+          "non-constitutional-arbitrum-onboarding-v2-a-governance-bootcamp",
+          "27546"
+        ],
+        [
+          "arbitrum-onboarding-working-group-experiment",
+          "22849"
+        ],
+        [
+          "introducing-arbitrum-fellowships",
+          "23235"
+        ],
+        [
+          "arbitrum-onboarding-working-group-milestone-1-status-update",
+          "23621"
+        ],
+        [
+          "arbitrum-onboarding-working-group-milestone-2-status-update",
+          "24867"
+        ],
+        [
+          "onboarding-pilot-program-final-report-milestone-3",
+          "26046"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "50d32006-4d7f-4acb-9107-900f64108200",
+      "title": "[Non-consitutional] User Research: Why build on Arbitrum?",
+      "author": "0xA5dF0cf3F95C6cd97d998b9D990a86864095d9b0",
+      "proposal_id": "a19926f4-e7a3-4a7b-a0c1-9032e007e68d",
+      "matched_title": "[Non-consitutional] User Research: Why do people even build on Arbitrum, anyway?",
+      "score": 83.21167883211679,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "5517ad31-90bd-4fde-b255-4d55a806064e",
+      "title": "(V2) Arbitrum Research & Development Collective",
+      "author": "0x560b03B06eF02B24F994e470d949008cda5e1841",
+      "proposal_id": "0593649d-0b8c-4724-9ba1-6adda1d38593",
+      "matched_title": "Proposal [Non-Constitutional]: Establish the \u2018Arbitrum Research & Development Collective\u2019",
+      "score": 88.80434782608695,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "55532cfb-59ba-465f-9019-e99971a860ea",
+      "title": "Long-Term Incentives Pilot Program",
+      "author": "0x33DB27C21E0f7a2f3351A4C6DDceDFB9F713410b",
+      "proposal_id": "dbd9e717-37fb-435c-a26e-3ef5060838de",
+      "matched_title": "Long Term Incentives Pilot Program",
+      "score": 97.05882352941177,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "long-term-incentives-pilot-program",
+          "20223"
+        ],
+        [
+          "stip-bi-weekly-update-template",
+          "19436"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "5818cb25-f809-4467-9712-97161aebffd1",
+      "title": " Change Arbitrum Expansion Program to allow deployments of new Orbit chains on any blockchain",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "335f60f0-1ac1-4bd5-97a7-92911994019f",
+      "matched_title": "Temperature Check: Change Arbitrum Expansion Program to allow deployments of new Orbit chains on any blockchain",
+      "score": 95.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "the-arbitrum-expansion-program-and-developer-guild",
+          "20722"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "5d4434c7-84de-4f7c-b399-81bbf29a3d12",
+      "title": "Arbitrum Research and Development Collective V2 - Extension",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "6c9caa8e-08a9-4493-8c54-aaea783cb1c0",
+      "matched_title": "Arbitrum Research and Development Collective V2 - Extension",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "5e4eeae9-8e63-4f16-b296-89d7486ee215",
+      "title": "Adjust the Voting Power of the Arbitrum Community Pool & Ratify the Agentic Governance Pivot",
+      "author": "0x1B686eE8E31c5959D9F5BBd8122a58682788eeaD",
+      "proposal_id": "701acb43-5882-4110-92a3-d68f39346452",
+      "matched_title": "[RFC] Proposal to Adjust the Voting Power of the Arbitrum Community Pool & Ratifying the Agentic Governance Pivot",
+      "score": 96.84210526315789,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "agentic-governance-initiative-agi",
+          "29244"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "6104fee7-a488-4fdf-bad7-53c0a2c6066c",
+      "title": "AIP: Batch Poster Manager and Sequencer Inbox Finality Fix",
+      "author": "0xAbAbE91A907fAdff921720C43ABe4098e7245E99",
+      "proposal_id": "48d6515f-d057-4ba1-bb33-e3ec472acd07",
+      "matched_title": "AIP: Batch Poster Manager and Sequencer Inbox Finality Fix",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "aip-arbos-version-20",
+          "20957"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "627a6a8f-f87d-461c-bd08-e9704ae4017a",
+      "title": "ArbitrumDAO Off-site",
+      "author": "0x1B686eE8E31c5959D9F5BBd8122a58682788eeaD",
+      "proposal_id": "ac4e5a30-4d14-46f5-afb7-e8cbde8fa455",
+      "matched_title": "ArbitrumDAO Off-site - Directional proposal",
+      "score": 95.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "arbitrumdao-off-site-directional-proposal",
+          "25660"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "62a2d47a-2fa4-445f-baa4-85543e9d0dd6",
+      "title": "[Constitutional] AIP: Constitutional Quorum Threshold Reduction",
+      "author": "0xd333Bc5c9670C9cEb18f9A2CF02C6E86807a8227",
+      "proposal_id": "e6fe1310-79cc-4203-ade0-9bbb99626fad",
+      "matched_title": "[Constitutional] AIP: Constitutional Quorum Threshold Reduction",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "67d696c1-5a32-4b24-9cdc-bda8595fa815",
+      "title": "[Non-Constitutional] Arbitrum Token Swap Pilot Program",
+      "author": "0x8326D18edfC50B4335113C33b25116ec268FF3fE",
+      "proposal_id": "0706b4b7-fb5f-46be-9a27-d30aaf08eb0c",
+      "matched_title": "[Non-Constitutional] Arbitrum Token Swap Pilot Program",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "684a0983-6b5b-44ba-bdf3-cb2f9569372e",
+      "title": "GovHack Devcon in Bangkok - Hack Humanity",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "ce0455f5-f7f9-4ef7-9656-fcb23b66f352",
+      "matched_title": "GovHack Devcon in Bangkok - Hack Humanity",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "govhack-ethdenver-2024-impact-report-hack-humanity",
+          "23239"
+        ],
+        [
+          "govhack-ethcc-brussels-2024-impact-report-hack-humanity",
+          "26530"
+        ],
+        [
+          "non-constitutional-arbitrum-proposals-app-govhack-brussels-winner",
+          "25370"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "69afd1bc-b975-4e82-81a1-78c7074bbe42",
+      "title": "An (EIP-4824 powered) daoURI for the Arbitrum DAO",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "cce01beb-b47e-4ce5-97e8-1f70fe8928b8",
+      "matched_title": "An EIP-4824 powered daoURI for Arbitrum DAO",
+      "score": 93.47826086956522,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "69eb98f5-b5b2-4141-bae9-c4b1ea9ecdb6",
+      "title": "Delegate to Voter Enfranchisement Pool \u2014 Event Horizon",
+      "author": "0xE93D59CC0bcECFD4ac204827eF67c5266079E2b5",
+      "proposal_id": "046f9a56-cae7-477d-bbc7-d31ea0b8bc34",
+      "matched_title": "Delegate to Voter Enfranchisement Pool \u2014 Event Horizon",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "delegate-to-a-public-access-public-good-citizen-enfranchisement-pool-through-event-horizon",
+          "21523"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "6d76927b-f239-4be7-a4da-6b4b4b38e17b",
+      "title": "Adopt a Delegate Code of Conduct & Formalize Operations",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "122ad932-e774-490c-bc35-08302834f554",
+      "matched_title": "[Non-Constitutional] Arbitrum DAO Delegate Code of Conduct + Formalizing the DAO\u2019s Operations",
+      "score": 80.31496062992126,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "non-constitutional-arbitrum-dao-delegate-code-of-conduct-formalizing-the-daos-operations",
+          "27188"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "6d7e34cb-8ca3-4b47-88cd-55a108ef93be",
+      "title": "Arbitrum Short-term incentive Program",
+      "author": "0xF92F185AbD9E00F56cb11B0b709029633d1E37B4",
+      "proposal_id": "751dfaa5-48cf-43c5-bdbe-6ea0c3f559fa",
+      "matched_title": "Arbitrum\u2019s Short-Term Incentive Program (Arbitrum Improvement Proposal)",
+      "score": 89.86486486486486,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "arbitrums-short-term-incentive-program-arbitrum-improvement-proposal",
+          "16131"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "6e1451e5-aaa2-47a9-83dc-a76d76643f0f",
+      "title": "Arbitrum as official sponsor of Ethereum Mexico 2023",
+      "author": "0xAbAbE91A907fAdff921720C43ABe4098e7245E99",
+      "proposal_id": "0f70d135-7249-401a-8f65-2bf65bb86cec",
+      "matched_title": "Proposal: Arbitrum as official sponsor of Ethereum Mexico 2023",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "6f2be545-3292-4130-bdc3-c5835347fdb9",
+      "title": "Arbitrum D.A.O. Domain Allocator Offerings) Grant Program  - Season 3",
+      "author": "0xAbAbE91A907fAdff921720C43ABe4098e7245E99",
+      "proposal_id": "2011a7cd-80f8-4470-8a23-0b9707e1f1f6",
+      "matched_title": "[Non-Constitutional] [RFC] Arbitrum D.A.O. (Domain Allocator Offerings) Grant Program - Season 3",
+      "score": 95.1048951048951,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "delegated-domain-allocation-by-questbook",
+          "14081"
+        ],
+        [
+          "rfc-arbitrum-as-the-home-of-builders-embracing-chain-abstraction",
+          "27250"
+        ],
+        [
+          "delegated-domain-allocation-by-questbook",
+          "14081"
+        ],
+        [
+          "questbook-dda-program-phase-2-request-for-continuation",
+          "21326"
+        ],
+        [
+          "questbook-dda-program-update-thread",
+          "23672"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "70f12fbb-43ca-4f53-a5e7-13ff63b6fac8",
+      "title": "ArbitrumDAO Off-site",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "ac4e5a30-4d14-46f5-afb7-e8cbde8fa455",
+      "matched_title": "ArbitrumDAO Off-site - Directional proposal",
+      "score": 95.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "724085c3-40f4-46f0-9ad8-fbf7854f8229",
+      "title": "AIP: Support RIP-7212 for Account Abstraction Wallets (ArbOS 30)",
+      "author": "0x1B686eE8E31c5959D9F5BBd8122a58682788eeaD",
+      "proposal_id": "a4e35b4a-4432-47c6-b2d9-e8a33eff1611",
+      "matched_title": "AIP: Support RIP-7212 for Account Abstraction Wallets (ArbOS 30)",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "aip-activate-stylus-and-enable-next-gen-webassembly-smart-contracts",
+          "22970"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "72c51be1-4e1b-4d42-9b97-19caaafb04bb",
+      "title": "Proposal: Building the Future of NFTs: The Rarible Protocol - Arbitrum Integration Proposal [REVISED]",
+      "author": "0x1B686eE8E31c5959D9F5BBd8122a58682788eeaD",
+      "proposal_id": "fa550ff6-92b4-49f2-b8c1-380fcefc41ff",
+      "matched_title": "Proposal: Building the Future of NFTs: The Rarible Protocol - Arbitrum Integration Proposal [REVISED]",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "75e17e2b-6ac3-4971-ad70-22896bfbc5e5",
+      "title": "Arbitrum Multi-sig Support Service (MSS)",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "6ded108a-d01e-45f5-b55a-ee3dd8267195",
+      "matched_title": "[RFC] Arbitrum Multi-sig Support Service (MSS)",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "rfc-arbitrum-multi-sig-support-service-mss",
+          "23737"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "7688e282-9250-488d-9025-2ea287caf79f",
+      "title": "AIP 1.05: Return 700M $ARB to the DAO Treasury [REAL]",
+      "author": "0x4bca130D4D1387Ec00705Dc24e8eB63488136e71",
+      "proposal_id": "19111efb-2382-4c58-b19c-9f070a5d428b",
+      "matched_title": "Proposal: Return 700M $ARB to the DAO Treasury",
+      "score": 95.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "77ec22e5-5eef-4604-b89b-7f5876bd3a15",
+      "title": "AGV Council Compensation Calibration: Startup-Phase Bonus for Current Council Members",
+      "author": "0x4F685B29514eed0c9D929386E86D9cd81981118B",
+      "proposal_id": "82012921-30ba-46a9-8cbd-a85e6852482f",
+      "matched_title": "Proposal: AGV Council Compensation Calibration: Benchmark for Next Term & Startup-Phase Bonus",
+      "score": 79.56521739130436,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "proposal-agv-council-compensation-calibration-benchmark-for-next-term-startup-phase-bonus",
+          "29424"
+        ],
+        [
+          "proposal-agv-council-compensation-calibration-benchmark-for-next-term-startup-phase-bonus",
+          "29424"
+        ],
+        [
+          "proposal-agv-council-compensation-calibration-benchmark-for-next-term-startup-phase-bonus",
+          "29424"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "78f967eb-995b-48f6-83db-f4ef65ad55cc",
+      "title": "AIP: ArbOS Version 11",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "e6a8f6cc-29b7-4e7a-950d-5ba9e04ee929",
+      "matched_title": "AIP: ArbOS Version 11",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "arbitrum-arbos-upgrades",
+          "19695"
+        ],
+        [
+          "aip-7-arbitrum-one-governance-parameter-fixes",
+          "15920"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "7b36defa-f064-42e3-999c-8e0abc10522e",
+      "title": "Transparency and Standardized Metrics for Orbit Chains",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "c28cac76-decc-4ab5-961e-2158912c775d",
+      "matched_title": "[Non-Constitutional] Transparency and Standardized Metrics for Orbit Chains on growthepie.xyz Allowing Data-Driven Decision Making",
+      "score": 95.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "arb-staking-unlock-arb-utility-and-align-governance",
+          "25084"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "7d115cf8-9352-4e41-b620-0e2bc74d03e5",
+      "title": "Request for Continuation of the Arbitrum DDA Program Request",
+      "author": "0xAbAbE91A907fAdff921720C43ABe4098e7245E99",
+      "proposal_id": "147ba20a-f48c-4cee-84bc-d84caa3ebc6a",
+      "matched_title": "Arbitrum Audit Program",
+      "score": 77.72727272727272,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "7ff24300-0818-42aa-9300-cdbd52b69aff",
+      "title": "Proposal: Build Optimal Onboarding for STIP Teams (BOOST)",
+      "author": "0xA7860E99e3ce0752D1ac53b974E309fFf80277C6",
+      "proposal_id": "8644213f-289b-419d-9c0e-0a1c4ff05ff2",
+      "matched_title": "Proposal: Build Optimal Onboarding for STIP Teams (BOOST)",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "81c76077-0615-465a-87e4-eda49a30bd7c",
+      "title": "Proposal to Backfund Successful STIP Proposals",
+      "author": "0x1B686eE8E31c5959D9F5BBd8122a58682788eeaD",
+      "proposal_id": "5dcb102d-c118-42b1-987c-a2f3e5452219",
+      "matched_title": "Proposal to Backfund Successful STIP Proposals (Savvy DAO) [FINAL]",
+      "score": 95.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "arbitrums-short-term-incentive-program-arbitrum-improvement-proposal",
+          "16131"
+        ],
+        [
+          "arbitrums-short-term-incentive-program-arbitrum-improvement-proposal",
+          "16131"
+        ],
+        [
+          "arbitrums-short-term-incentive-program-arbitrum-improvement-proposal",
+          "16131"
+        ],
+        [
+          "arbitrums-short-term-incentive-program-arbitrum-improvement-proposal",
+          "16131"
+        ],
+        [
+          "arbitrums-short-term-incentive-program-arbitrum-improvement-proposal",
+          "16131"
+        ],
+        [
+          "arbitrums-short-term-incentive-program-arbitrum-improvement-proposal",
+          "16131"
+        ],
+        [
+          "arbitrums-short-term-incentive-program-arbitrum-improvement-proposal",
+          "16131"
+        ],
+        [
+          "arbitrums-short-term-incentive-program-arbitrum-improvement-proposal",
+          "16131"
+        ],
+        [
+          "arbitrums-short-term-incentive-program-arbitrum-improvement-proposal",
+          "16131"
+        ],
+        [
+          "proposal-grow-arbitrum-stip-teams-by-leveraging-quest-protocol-built-by-rabbithole",
+          "19185"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "85176857-bc05-480f-8891-21d453d58a2f",
+      "title": "Proposal to onboard Matrixed.Link as a validator for Arbitrum",
+      "author": "0xF8E93a7D954F7d31D5Fa54Bc0Eb0E384412a158d",
+      "proposal_id": "480db779-eacc-40f9-93b2-ea1006c1a6ce",
+      "matched_title": "Proposal to onboard Matrixed.Link as a validator for Arbitrum One",
+      "score": 96.2962962962963,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "8538a940-aa1f-4534-8f98-429da99dd320",
+      "title": "Updating the OpCo Foundation\u2019s Operational Capability",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "3d885f2c-f065-4936-b259-fa8eefe2f623",
+      "matched_title": "Updating the OpCo Foundation\u2019s Operational Capability",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "89801acb-8742-461c-a836-6d5a1fa19af9",
+      "title": "Pilot Phase: M&A for Arbitrum DAO",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "e59fc4a4-152c-4620-a554-6a319c3a995a",
+      "matched_title": "Pilot Phase: M&A for Arbitrum DAO",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "pilot-phase-m-a-for-arbitrum-dao",
+          "23588"
+        ],
+        [
+          "m-a-for-arbitrum-dao",
+          "23205"
+        ],
+        [
+          "start-of-arbitrum-m-a-working-group",
+          "22520"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "8bd7b4c1-f860-4b52-934e-173edff91f5d",
+      "title": "Arbitrum Treasury Management Council - Consolidating Efforts",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "bafb6034-dc01-4085-959c-66d659ed6cdd",
+      "matched_title": "Arbitrum Treasury Management Council - Consolidating Efforts",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "8eb57678-ca5f-41e9-8575-81de56c808e6",
+      "title": "[NON-CONSTITUTIONAL] Pilot Phase: Arbitrum Ventures Initiative",
+      "author": "0x1B686eE8E31c5959D9F5BBd8122a58682788eeaD",
+      "proposal_id": "fc1ffb7c-9b52-4aae-8c08-79c53f6f937d",
+      "matched_title": "[Non-Constitutional] Pilot Phase: Arbitrum Venture Initiative",
+      "score": 98.76543209876543,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "non-constitutional-pilot-phase-arbitrum-venture-initiative",
+          "24247"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "935459c1-06ed-49b3-9668-2adc9ec2d458",
+      "title": "Arbitrum DAO Grants - Delegated Domain Allocation by Questbook",
+      "author": "0xb29A655f3D67B2B6724Fb22B2C2303cB660c946B",
+      "proposal_id": "4a95d871-0eae-4aa0-8d85-bd9b169aa760",
+      "matched_title": "Proposal: Arbitrum Grants DAO",
+      "score": 90.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "93b5ac7d-02eb-42ae-b640-b24ebccfc97f",
+      "title": "[Non-Constitutional]: Arbitrum Stable Treasury Endowment Program",
+      "author": "0x1B686eE8E31c5959D9F5BBd8122a58682788eeaD",
+      "proposal_id": "b7efb413-f717-42f7-bc0a-7029a6b9c1ad",
+      "matched_title": "Final: Arbitrum Stable Treasury Endowment Program",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "98de1728-62de-49f6-8874-d3e8eff68809",
+      "title": "Set up a Sub-Committee for the Security Services Subsidy Fund",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "910d14a4-c992-437a-8976-04dac42d6f4b",
+      "matched_title": "Proposal [Non-Constitutional]: Set up a Sub-Committee for the Security Services Subsidy Fund",
+      "score": 95.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "non-constitutional-subsidy-fund-for-security-services",
+          "22958"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "9c0ed2c5-baad-4664-a0d2-36c427005698",
+      "title": "[Non-constitutional] ARB Incentives: User Acquisition for dApps & Protocols",
+      "author": "0x1B686eE8E31c5959D9F5BBd8122a58682788eeaD",
+      "proposal_id": "9aa842ac-a123-4d87-add3-e131a71af554",
+      "matched_title": "[Non-constitutional][RFC] ARB Incentives: User Acquisition for dApps & Protocols",
+      "score": 95.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "rfc-incentives-detox-proposal",
+          "25849"
+        ],
+        [
+          "rfc-incentives-detox-proposal",
+          "25849"
+        ],
+        [
+          "arbs-wake-up-call-a-critical-pivot-is-necessary",
+          "27706"
+        ],
+        [
+          "arbs-wake-up-call-a-critical-pivot-is-necessary",
+          "27706"
+        ],
+        [
+          "rfc-incentives-detox-proposal",
+          "25849"
+        ],
+        [
+          "rfc-incentives-detox-proposal",
+          "25849"
+        ],
+        [
+          "rfc-incentives-detox-proposal",
+          "25849"
+        ],
+        [
+          "rfc-incentives-detox-proposal",
+          "25849"
+        ],
+        [
+          "openblock-labs-stip-efficacy-sybil-analysis-2-24",
+          "21441"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "9e1d5dce-b88f-4f97-a8fa-bbd8db0e6ef3",
+      "title": "OpCo \u2013 A DAO-adjacent Entity for Strategy Execution",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "6c4e2f12-a2f8-4ed4-b0ed-c19cff5c3b3a",
+      "matched_title": "OpCo \u2013 A DAO-adjacent Entity for Strategy Execution",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "the-opco-scale-structure-synergy",
+          "22737"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "9e74e039-5ad1-4609-8e20-fc3db49a1106",
+      "title": "Wind Down the MSS + Transfer Payment Responsibilities to the Arbitrum Foundation",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "bdb4da76-667b-452d-b2ce-8a924cacb1ed",
+      "matched_title": "Wind Down the MSS + Transfer Payment Responsibilities to the Arbitrum Foundation",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "mss-for-arbitrum-communication-thread-arbitrum-multisig-support-service",
+          "26508"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "9effc89f-702b-465d-9c30-7ac954467564",
+      "title": "[Non-Constitutional] Whitelist Infura Nova Validator",
+      "author": "0xA5dF0cf3F95C6cd97d998b9D990a86864095d9b0",
+      "proposal_id": "4c1d960e-1539-471e-907f-464558486d14",
+      "matched_title": "AIP: Whitelist Infura Nova Validator",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "a0a36fef-b761-4ca9-b764-0ef290d7b040",
+      "title": "Double-Down on STIP Successes (STIP-Bridge) ",
+      "author": "0xAbAbE91A907fAdff921720C43ABe4098e7245E99",
+      "proposal_id": "9732d0be-5d79-4438-aca5-2b3264efc22f",
+      "matched_title": "Double-Down on STIP Successes (STIP-Bridge)",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "a137723b-78e3-4695-acc6-4f8d1a00b7e6",
+      "title": "Let\u2019s improve our governance forum with three proposals.app feature integrations",
+      "author": "0xA7860E99e3ce0752D1ac53b974E309fFf80277C6",
+      "proposal_id": "93e8d79a-b5ef-4665-befb-b2f2f70808d1",
+      "matched_title": "[Non-Constitutional] Let\u2019s improve our governance forum with three proposals.app feature integrations",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "arbitrum-proposals-app-govhack-brussels-winner",
+          "25370"
+        ],
+        [
+          "june-3-2025-open-discussion-of-proposals-governance-call",
+          "29377"
+        ],
+        [
+          "wind-down-the-mss-transfer-payment-responsibilities-to-the-arbitrum-foundation",
+          "29279"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "a1d7d459-261f-44ec-bbdb-1f8c7939f102",
+      "title": "[Non-Constitutional] Treasury Management v1.2 ",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "8700ebe2-ec2c-4fa8-9261-99f9c38b35ea",
+      "matched_title": "[Non-Constitutional] Treasury Management v1.2",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "non-constitutional-treasury-management-v1-2",
+          "26967"
+        ],
+        [
+          "treasury-management-working-group-call",
+          "26723"
+        ],
+        [
+          "treasury-management-working-group-call",
+          "26723"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "a23e6f95-3b31-4897-b5a0-2d7e1280dd9e",
+      "title": "DeFi Renaissance Incentive Program (DRIP)",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "4b6eb958-04a4-4d84-a0d1-b25fd9993479",
+      "matched_title": "DeFi Renaissance Incentive Program (DRIP)",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "rfc-incentives-detox-proposal",
+          "25849"
+        ],
+        [
+          "stip-analysis-ardc-risk-deliverables-insights-key-findings",
+          "25515"
+        ],
+        [
+          "ardc-research-deliverables",
+          "23438"
+        ],
+        [
+          "arbs-wake-up-call-a-critical-pivot-is-necessary",
+          "27706"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "a6118e3f-7aa6-4660-9fb5-d861ab9b3350",
+      "title": "Restitution For Extensively Delayed ArbitrumDAO Minigrant Winners",
+      "author": "0xb29A655f3D67B2B6724Fb22B2C2303cB660c946B",
+      "proposal_id": "86c2d5b5-b996-4f71-b66e-d322619f64ae",
+      "matched_title": "Proposal for Financial Restitution For ArbitrumDAO Grant Winners",
+      "score": 73.25581395348837,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "proposal-for-financial-restitution-for-arbitrumdao-grant-winners",
+          "27020"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "a6de1867-5e4b-4aec-9d50-74383e8f463a",
+      "title": " Empowering Early Contributors: The community Arbiter Proposal 2.0",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "887c50dd-e4b8-4da5-9377-f13dd8f6ddae",
+      "matched_title": "[Non-Constitutional]: Empowering Early Contributors: The community Arbiter Proposal 2.0",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "non-constitutional-empowering-early-contributors-the-community-arbiter-proposal-2-0",
+          "20404"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "a9520ef7-d73b-40c5-97b7-431d405c3a86",
+      "title": "STIP-Bridge Operational Budget",
+      "author": "0xAbAbE91A907fAdff921720C43ABe4098e7245E99",
+      "proposal_id": "6fd6f5f9-6d02-4218-9d32-424cb9f46f24",
+      "matched_title": "STIP-Bridge Operational Budget",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "start-of-stip-b-streams-and-timeline-of-incentives",
+          "25014"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "a9b31534-9702-4eaf-a1e2-1fc806dc8bff",
+      "title": "AIP: Activate Stylus and Enable Next-Gen WebAssembly Smart Contracts (ArbOS 30)",
+      "author": "0x1B686eE8E31c5959D9F5BBd8122a58682788eeaD",
+      "proposal_id": "066f5491-e3e6-49d3-ab03-ddccb7644d16",
+      "matched_title": "AIP: Activate Stylus and Enable Next-Gen WebAssembly Smart Contracts (ArbOS 30)",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "aip-activate-stylus-and-enable-next-gen-webassembly-smart-contracts-arbos-30",
+          "22970"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "aa28c03a-4991-4c97-97ca-10f8eb1876e4",
+      "title": "AIP: Nova Fee Router Proposal (ArbOS 30)",
+      "author": "0x1B686eE8E31c5959D9F5BBd8122a58682788eeaD",
+      "proposal_id": "5d7ceb2e-6ee9-4091-9604-48714389e3e8",
+      "matched_title": "AIP: Nova Fee Router Proposal (ArbOS 30)",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "ae642512-3962-47aa-aa00-33301ee10fe3",
+      "title": "[Temperature Check] Should we try a Delegate Incentive Program like the Arbitrum Triple Dip?",
+      "author": "0xE594469fDe6AE29943a64f81d95c20F5F8eB2e04",
+      "proposal_id": "2fb9d9e2-b0b8-456d-8d3c-3053b62777ce",
+      "matched_title": "Proposal - Delegate Incentive Program (DIP)",
+      "score": 81.02941176470588,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "dvp-quorum-for-arbitrumdao",
+          "29996"
+        ],
+        [
+          "a-vision-for-the-future-of-arbitrum",
+          "28962"
+        ],
+        [
+          "dip-v1-6-from-engagement-to-rewards-a-comprehensive-analysis-of-the-delegate-incentives-program",
+          "29475"
+        ],
+        [
+          "dip-1-5-6-feedback-survey-results",
+          "29951"
+        ],
+        [
+          "proposal-revert-the-delegate-incentive-program-dip-to-version-1-5",
+          "29867"
+        ],
+        [
+          "proposal-revert-the-delegate-incentive-program-dip-to-version-1-5",
+          "29867"
+        ],
+        [
+          "proposal-revert-the-delegate-incentive-program-dip-to-version-1-5",
+          "29867"
+        ],
+        [
+          "proposal-revert-the-delegate-incentive-program-dip-to-version-1-5",
+          "29867"
+        ],
+        [
+          "delegate-incentive-program-1-7-application-thread-and-code-of-conduct-adherence",
+          "27969"
+        ],
+        [
+          "community-guidelines",
+          "12807"
+        ],
+        [
+          "the-arbitrum-dao-code-of-conduct",
+          "29713"
+        ],
+        [
+          "dip-v1-7-delegate-incentive-program-results-august-2025",
+          "29977"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "af1aeea6-57a4-4cad-bf58-357ec7c61df9",
+      "title": "Proposal: [Non-Constitutional] Funding for Into the Dungeons: Machinata - a PvP Digital Miniature Game V2",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "715a6847-ec6f-4a82-800d-fa69dd17086f",
+      "matched_title": "Proposal: [Non-Constitutional] Funding for Into the Dungeons: Machinata - a PvP Digital Miniature Game V2",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "proposal-non-constitutional-funding-for-into-the-dungeons-machinata-a-pvp-digital-miniature-game",
+          "20806"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "afeeaada-f83f-47fa-95c0-4c97223e9812",
+      "title": "Arbitrum Growth Circles Event Proposal",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "e2926f74-c861-4f23-8705-01e5651f9b80",
+      "matched_title": "Arbitrum Growth Circles Event Proposal",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "avis-ecosystem-investment-thesis-and-its-ethos",
+          "28131"
+        ],
+        [
+          "avi-meet-the-farstar-team",
+          "28159"
+        ],
+        [
+          "arbitrum-ventures-initiative-hub",
+          "26008"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "b184f9c7-cdf8-4a95-905c-9314e1052706",
+      "title": "Unifying Arbitrum\u2019s Mission, Vision, Purpose (MVP)",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "ea61eb25-9eac-405b-a9f6-c021c6e47f5e",
+      "matched_title": "Unifying Arbitrum\u2019s Mission, Vision, Purpose (MVP)",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "unifying-arbitrum-dao-s-vision-mission-and-goals",
+          "26537"
+        ],
+        [
+          "unifying-arbitrum-dao-s-vision-mission-and-goals",
+          "26537"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "b32033d2-a375-4281-b696-8b57d7788e53",
+      "title": "Constitutional AIP: Proposal to adopt Timeboost, a new transaction ordering policy ",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "ff0ce443-ab64-4e38-bc93-7c438ecc9fba",
+      "matched_title": "Constitutional AIP: Proposal to adopt Timeboost, a new transaction ordering policy",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "b66ab83c-8f83-462d-9ee1-797594b954df",
+      "title": "Should the DAO Create COI & Self Voting Policies?",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "9d7f6b51-eabd-41de-9a85-c15df05d3160",
+      "matched_title": "Should the DAO Create COI & Self Voting Policies?",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "should-the-dao-create-coi-self-voting-policies",
+          "26062"
+        ],
+        [
+          "community-guidelines",
+          "12807"
+        ],
+        [
+          "self-voting-policy-discussion-arbitrumdao-constitution",
+          "20886"
+        ],
+        [
+          "self-voting-policy-discussion-arbitrumdao-constitution",
+          "20886"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "b7274dfb-805d-4c11-9997-d58512d12641",
+      "title": "[CONSTITUTIONAL] AIP: ArbOS Version 40 Callisto",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "e76ff9a8-79c4-416f-bfe1-28036640f84d",
+      "matched_title": "[CONSTITUTIONAL] AIP: ArbOS Version 40 Callisto",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "arbitrum-arbos-upgrades",
+          "19695"
+        ],
+        [
+          "arbitrum-arbos-upgrades",
+          "19695"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "b874633b-a2ea-4776-923f-4fd461492d6b",
+      "title": "Synthetix LTIP Grant Extension Request",
+      "author": "0x1B686eE8E31c5959D9F5BBd8122a58682788eeaD",
+      "proposal_id": "52117f80-c2ec-4c2a-8705-c3219f4cf2d0",
+      "matched_title": "[RFC] Synthetix LTIP Grant Extension Request",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "synthetix-ltipp-application-final",
+          "22023"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "b933df2d-1bf0-471a-9a2b-e825b29f7844",
+      "title": "[Non-Constitutional] Funds to Bolster Foundation\u2019s Strategic Partnerships Budget",
+      "author": "0xB933AEe47C438f22DE0747D57fc239FE37878Dd1",
+      "proposal_id": "3468a7eb-11df-4db6-8bfe-a298f56b18d9",
+      "matched_title": "[Non-Constitutional] Funds to Bolster Foundation\u2019s Strategic Partnerships Budget",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "bcb5dd70-aeb3-4c88-8ac7-55bda402324a",
+      "title": "The Watchdog: Arbitrum DAO's Grant Misuse Bounty Program",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "8b312cb1-622d-4b42-836e-64da66fe78ca",
+      "matched_title": "The Watchdog: Arbitrum DAO\u2019s Grant Misuse Bounty Program",
+      "score": 98.21428571428571,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "stip-announcement-multisig-returns-leftover-funds",
+          "26383"
+        ],
+        [
+          "potential-misuse-of-funds-furucombo",
+          "25496"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "be0b63fe-e0a9-41c8-b99e-7ad3c3efb268",
+      "title": "[Replace Oversight Committee with MSS] Delegate to Voter Enfranchisement Pool \u2014 Event Horizon",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "046f9a56-cae7-477d-bbc7-d31ea0b8bc34",
+      "matched_title": "Delegate to Voter Enfranchisement Pool \u2014 Event Horizon",
+      "score": 95.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "bf07c7e9-8599-4243-bc6d-cb33b4119b77",
+      "title": "Designing and operating the reporting and information function",
+      "author": "0xF92F185AbD9E00F56cb11B0b709029633d1E37B4",
+      "proposal_id": "ac9d16c9-9106-4a60-a6b8-301539519100",
+      "matched_title": "Designing and Operating the Reporting and Information Function",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "designing-and-operating-the-reporting-and-information-function",
+          "27609"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "bf316c1a-0229-42e0-abe1-b572cb04d58b",
+      "title": "Multisig Support Service (MSS) Elections",
+      "author": "0x560b03B06eF02B24F994e470d949008cda5e1841",
+      "proposal_id": "6ded108a-d01e-45f5-b55a-ee3dd8267195",
+      "matched_title": "[RFC] Arbitrum Multi-sig Support Service (MSS)",
+      "score": 81.42857142857143,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "c0439441-3ba5-4b51-ba9d-49c6b37e4f2c",
+      "title": "[CONSTITUTIONAL] Proposal: For Arbitrum DAO to register the Sky Custom Gateway contracts in the Router",
+      "author": "0x583E3EDc26E1B8620341bce90547197bfE2c1ddD",
+      "proposal_id": "780b8fd8-760b-4355-bef9-07dd8ea4cef4",
+      "matched_title": "[CONSTITUTIONAL] Proposal: For Arbitrum DAO to register the Sky Custom Gateway contracts in the Router",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "c1b47f89-d689-4317-a5af-ce0c7f7da880",
+      "title": "Establishing a DAO Events Budget for 2025",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "dbc54f07-158c-4c5f-a603-0980c3c95ad7",
+      "matched_title": "Establishing a DAO Events Budget for 2025",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "establishing-a-dao-events-budget-for-2025",
+          "26734"
+        ],
+        [
+          "govhack-ethcc-brussels-2024-impact-report-hack-humanity",
+          "26530"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "c2491cc7-fd87-4a26-b898-7ac5597cc9e9",
+      "title": "Updating the Code of Conduct & DAO\u2019s Procedures",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "f00fcce0-cf32-49e1-82c7-dee02a2e3c68",
+      "matched_title": "Updating the Code of Conduct & DAO\u2019s Procedures",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "should-the-dao-default-to-using-shielded-voting-for-snapshot-votes",
+          "25884"
+        ],
+        [
+          "should-the-dao-create-coi-self-voting-policies",
+          "26062"
+        ],
+        [
+          "community-guidelines",
+          "12807"
+        ],
+        [
+          "unifying-arbitrum-s-mission-vision-purpose-mvp",
+          "27275"
+        ],
+        [
+          "community-guidelines",
+          "12807"
+        ],
+        [
+          "how-to-submit-a-dao-proposal",
+          "13494"
+        ],
+        [
+          "should-the-dao-create-coi-self-voting-policies",
+          "26062"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "c305a76c-72f7-4996-a4bf-9ec314230d89",
+      "title": "AIP: Raise the gas target, min L2 base fee, & implement improvements to the pricing algorithm",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "0145ff08-0c72-44bc-b717-56093dbac7df",
+      "matched_title": "AIP: Raise the gas target, min L2 base fee, & implement improvements to the pricing algorithm",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "a-vision-for-the-future-of-arbitrum",
+          "28962"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "c51da4f1-3bbf-428f-8e29-bb4702ae7ec1",
+      "title": "AIP 1.05: Return 700M $ARB to the DAO Treasury ",
+      "author": "0x4bca130D4D1387Ec00705Dc24e8eB63488136e71",
+      "proposal_id": "19111efb-2382-4c58-b19c-9f070a5d428b",
+      "matched_title": "Proposal: Return 700M $ARB to the DAO Treasury",
+      "score": 95.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "c61cd1f6-b521-4c7a-ae25-78ec1635f3b8",
+      "title": "Improving Predictability in Arbitrum DAO\u2019s Operations",
+      "author": "0x5a35923eD6950EFF4412eF6d27CeA8b1d405a844",
+      "proposal_id": "784e8333-60a4-4a68-9911-70e32730a893",
+      "matched_title": "Improving Predictability in Arbitrum DAO\u2019s Operations",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "rfc-1-time-management-in-arbitrumdao-governance",
+          "15718"
+        ],
+        [
+          "rfc-create-a-standardized-guideline-for-non-security-council-elections",
+          "20915"
+        ],
+        [
+          "rfc-create-a-standardized-guideline-for-non-security-council-elections",
+          "20915"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "c6fd1069-55d7-48c1-89fe-a4db1257d3bb",
+      "title": "Research on context and retention",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "ece50e3c-1bed-4a88-ac9b-0c1f8ec063bc",
+      "matched_title": "Research on context and retention",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "community-health-analytics-and-reputation-nfts-in-arbitrumdao",
+          "24859"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "c8a9aedd-6514-4bdc-839f-b79a3e54e38b",
+      "title": "ArbitrumDAO Procurement Committee Phase II",
+      "author": "0x560b03B06eF02B24F994e470d949008cda5e1841",
+      "proposal_id": "8a9fa763-d068-42ac-8304-c3e0599e27b2",
+      "matched_title": "[NON-CONSTITUTIONAL] Arbitrum DAO Procurement Committee: Phase II Proposal",
+      "score": 90.47619047619047,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "cb23ae7f-8edd-4645-b3cf-c98627416bd2",
+      "title": "Transfer 8,500 ETH from the Treasury to ATMC\u2019s ETH Treasury Strategies",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "30b2f80e-459c-407b-9869-9cf5b1c7ba74",
+      "matched_title": "Transfer 8,500 ETH from the Treasury to ATMC\u2019s ETH Treasury Strategies",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "arbitrum-treasury-management-atm-council-details",
+          "29626"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "cb9da1b8-b91c-4cca-9896-d3f4b53a1995",
+      "title": "[CONSTITUTIONAL] AIP: ArbOS Version 50 Dia",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "a952f794-c52c-455c-9066-159fad3bd18c",
+      "matched_title": "[CONSTITUTIONAL] AIP: ArbOS Version 50 Dia",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "arbitrum-arbos-upgrades",
+          "19695"
+        ],
+        [
+          "aip-arbos-31-bianca-activation-of-arbitrum-stylus-rip-7212-support-nova-fee-router-proposal",
+          "25904"
+        ],
+        [
+          "disclosure-of-support-for-eip-2537-on-arbitrum-one-and-nova",
+          "29720"
+        ],
+        [
+          "non-constitutional-proposal-to-direct-the-arbitrum-foundation-to-implement-an-extended-version-of-eip-7907-and-for-the-dao-to-ratify-its-deployment-on-arbitrum-one",
+          "29375"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "d070e163-4882-4a21-b3b7-2dc24b4eaa61",
+      "title": "GovHack at ETH CC (Brussels)",
+      "author": "0xF92F185AbD9E00F56cb11B0b709029633d1E37B4",
+      "proposal_id": "9bc9202f-4567-49b6-9bf5-814c46cfb707",
+      "matched_title": "GovHack at ETH CC (Brussels)",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "d153a2d3-dcb2-434f-9d8b-71c16c57e282",
+      "title": "[Non-Constitutional] Arbitrum DAO Delegate Incentive Program",
+      "author": "0xAbAbE91A907fAdff921720C43ABe4098e7245E99",
+      "proposal_id": "3135e14f-c274-4b6b-aeb9-edf0ccbe5892",
+      "matched_title": "Arbitrum Triple Dip (Delegate Incentive Program)",
+      "score": 85.0574712643678,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "proposal-delegate-incentive-program-dip",
+          "26496"
+        ],
+        [
+          "proposal-delegate-incentive-program-dip",
+          "26496"
+        ],
+        [
+          "proposal-delegate-incentive-program-dip",
+          "26496"
+        ],
+        [
+          "proposal-delegate-incentive-program-dip",
+          "26496"
+        ],
+        [
+          "proposal-delegate-incentive-program-dip",
+          "26496"
+        ],
+        [
+          "proposal-delegate-incentive-program-dip",
+          "26496"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "d1b1a614-96cd-44dc-bbc1-c4955574ff06",
+      "title": "AIP: BoLD - permissionless validation for Arbitrum",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "232201b8-fc63-4d1b-8d87-ca3eb3f2f1dd",
+      "matched_title": "AIP: BOLD - permissionless validation for Arbitrum",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "aip-bold-permissionless-validation-for-arbitrum",
+          "23232"
+        ],
+        [
+          "aip-bold-permissionless-validation-for-arbitrum",
+          "23232"
+        ],
+        [
+          "aip-bold-permissionless-validation-for-arbitrum",
+          "23232"
+        ],
+        [
+          "aip-bold-permissionless-validation-for-arbitrum",
+          "23232"
+        ],
+        [
+          "aip-bold-permissionless-validation-for-arbitrum",
+          "23232"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "d624e3e0-80ed-416a-aa7f-6e40ea6bec91",
+      "title": "Pilot Stage \u2013 Treasury Backed Vaults research and development",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "a6034557-17f3-4924-bb9b-19765d039a69",
+      "matched_title": "[Non-Constitutional] Pilot Stage: Treasury Backed Vaults research and development",
+      "score": 97.52066115702479,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "dao-owned-liquidations-using-collaterized-debt-positions",
+          "21109"
+        ],
+        [
+          "arbitrum-treasury-and-sustainability-working-group",
+          "18978"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "d72eca89-ae7e-4620-a951-011a3fd022bc",
+      "title": "Revert the Delegate Incentive Program (DIP) to Version 1.5",
+      "author": "0xE594469fDe6AE29943a64f81d95c20F5F8eB2e04",
+      "proposal_id": "558ba170-42ee-46ea-88f6-e0a225e8bac7",
+      "matched_title": "Proposal: Revert the Delegate Incentive Program (DIP) to Version 1.5",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "proposal-updates-to-the-dip-the-complete-1-7-version",
+          "29635"
+        ],
+        [
+          "dip-v1-5-delegate-incentive-program-questions-and-feedback",
+          "27798"
+        ],
+        [
+          "proposal-updates-to-the-dip-the-complete-1-7-version",
+          "29635"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "d8a4a093-1a43-46d8-b772-e3bf8f630438",
+      "title": "Fund the Stylus Sprint",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "8e6aa3b6-e17a-4d3d-944a-4b6d083f9ffb",
+      "matched_title": "[RFC] Fund The Stylus Sprint",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "rfc-fund-the-stylus-sprint",
+          "26437"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "d95ca125-3023-493f-8ed3-da821f877eed",
+      "title": "Reallocate Redeemed USDM Funds to STEP 2 Budget",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "68900e2a-c573-4772-b3a4-190bac0d1489",
+      "matched_title": "Reallocate Redeemed USDM Funds to STEP 2 Budget",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "wisdomtree-wtgxx-step-application",
+          "28756"
+        ],
+        [
+          "step-2-application-spiko-ustbl",
+          "28752"
+        ],
+        [
+          "franklin-onchain-u-s-government-money-fund-fobxx-step-application",
+          "23655"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "db47ef6f-4e92-42cb-8ffe-d02a45996970",
+      "title": "Proposal: Activate ARB Staking",
+      "author": "0xBbE98D590d7eB99F4a236587f2441826396053d3",
+      "proposal_id": "11aab4c2-8c52-4514-bcbf-5e7264669d0f",
+      "matched_title": "Request for Comment: Proposal to Activate ARB Staking",
+      "score": 95.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "e029efe1-39ee-4e4b-acd1-500420975df1",
+      "title": "Rewarding Active Delegates (RAD) Program",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "fec7fc2e-d1e0-44f7-aba7-bd0f0b879e1f",
+      "matched_title": "Rewarding Active Delegates (RAD) Program",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "e1b303d9-9c43-44dc-a11a-e5b11be63923",
+      "title": "The DAO Incentive Program (DIP 2.0)",
+      "author": "0xd333Bc5c9670C9cEb18f9A2CF02C6E86807a8227",
+      "proposal_id": "0aa883bd-539b-4d80-b9a8-59cab824ca4f",
+      "matched_title": "The DAO Incentive Program (DIP 2.0)",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "e51c1348-f1f3-466b-950e-6faa6c28c373",
+      "title": "[Constitutional] Extend Delay on L2Time Lock ",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "24a12298-df86-4c2c-b11e-a61e920ff0a2",
+      "matched_title": "Constitutional - Extend Delay on L2Time Lock",
+      "score": 96.42857142857143,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "e5ba3098-a349-445c-a498-e79984051a74",
+      "title": "[Constitutional] AIP: DVP Quorum",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "1ae6c807-cde1-4c8d-85aa-6230cddacfe8",
+      "matched_title": "[Constitutional] AIP: DVP Quorum",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "dvp-quorum-for-arbitrumdao",
+          "29996"
+        ],
+        [
+          "dvp-quorum-for-arbitrumdao",
+          "29996"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "e69edb1f-3a36-412b-8b5b-af95ba7403a9",
+      "title": "Proposal: Experimental Incentive System for Active ArbitrumDAO Delegates",
+      "author": "0xAbAbE91A907fAdff921720C43ABe4098e7245E99",
+      "proposal_id": "476f048d-caa6-4760-a5ee-dc05e7f3a22b",
+      "matched_title": "Proposal: Experimental Incentive System for Active ArbitrumDAO Delegates",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "rfc-2-delegate-incentive-system-for-arbitrumdao",
+          "15720"
+        ],
+        [
+          "draft-experimental-incentive-system-for-active-arbitrumdao-delegates",
+          "16501"
+        ],
+        [
+          "arbitrums-short-term-incentive-program-arbitrum-improvement-proposal",
+          "16131"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "e7e1d509-41a8-4b2f-b9b0-18cad2836db5",
+      "title": "AGV Council Compensation Calibration: Benchmark for Future Council Terms",
+      "author": "0x4F685B29514eed0c9D929386E86D9cd81981118B",
+      "proposal_id": "82012921-30ba-46a9-8cbd-a85e6852482f",
+      "matched_title": "Proposal: AGV Council Compensation Calibration: Benchmark for Next Term & Startup-Phase Bonus",
+      "score": 82.85714285714285,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "proposal-agv-council-compensation-calibration-benchmark-for-next-term-startup-phase-bonus",
+          "29424"
+        ],
+        [
+          "proposal-agv-council-compensation-calibration-benchmark-for-next-term-startup-phase-bonus",
+          "29424"
+        ],
+        [
+          "proposal-agv-council-compensation-calibration-benchmark-for-next-term-startup-phase-bonus",
+          "29424"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "edc3f2c9-0bd0-4a3a-83e4-be4c8485a331",
+      "title": "Terms of Tenure for STEP program manager",
+      "author": "0x1B686eE8E31c5959D9F5BBd8122a58682788eeaD",
+      "proposal_id": "7c0b3397-cc1c-4356-8f70-6ee2bcd6fb2f",
+      "matched_title": "**Non-Constitutional: Terms of Tenure for STEP Program Manager**",
+      "score": 95.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "ef278ddc-7edb-4509-a3cd-bd2944505694",
+      "title": "[Non-consitutional]: Top-up for Hackathon Continuation Program",
+      "author": "0xd333Bc5c9670C9cEb18f9A2CF02C6E86807a8227",
+      "proposal_id": "29dbda0a-b61b-46ea-8004-a31b11bb2a1f",
+      "matched_title": "Proposal [Non-consitutional]: Top-up for Hackathon Continuation Program",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "tmc-stablecoin-withdrawal-process",
+          "28877"
+        ],
+        [
+          "proposal-non-consitutional-top-up-for-hackathon-continuation-program",
+          "29064"
+        ],
+        [
+          "hackathon-continuation-program",
+          "27492"
+        ],
+        [
+          "proposal-non-consitutional-top-up-for-hackathon-continuation-program",
+          "29064"
+        ],
+        [
+          "proposal-non-consitutional-top-up-for-hackathon-continuation-program",
+          "29064"
+        ],
+        [
+          "proposal-non-consitutional-top-up-for-hackathon-continuation-program",
+          "29064"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "ef84581c-6f56-47a9-b666-0436eb601e66",
+      "title": "ARB Staking: Unlock ARB Utility and Align Governance ",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "dde796ff-09e5-447d-a61d-cf487a51a70d",
+      "matched_title": "ARB Staking: Unlock ARB Utility and Align Governance",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "arb-staking-unlock-arb-utility-and-align-governance",
+          "25084"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "f37e29bb-e560-464c-90d2-394d62ef273b",
+      "title": "Arbitrum Audit Program",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "147ba20a-f48c-4cee-84bc-d84caa3ebc6a",
+      "matched_title": "Arbitrum Audit Program",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "f3b8f182-0565-4191-92b6-a5daf2318be1",
+      "title": "AIP-1: Arbitrum Improvement Proposal Framework",
+      "author": "0x74369AdDA9E1c8482599B4614f2f31af0d9084e8",
+      "proposal_id": "a6cad78d-173d-4bc0-bc48-6dc947ddeb3a",
+      "matched_title": "AIP-1: Arbitrum Improvement Proposal Framework",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "f4eed82b-c42a-4baf-8d60-cb007fe675fb",
+      "title": "AIP-1.2 - Foundation and DAO Governance",
+      "author": "0xA5dF0cf3F95C6cd97d998b9D990a86864095d9b0",
+      "proposal_id": "5170c7b2-2495-4657-bf9d-01ecee10f000",
+      "matched_title": "Proposal: AIP-1.2 - Foundation and DAO Governance",
+      "score": 96.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "f51f8771-a4c3-49f1-a6c4-69f1d0c9c871",
+      "title": "[Constitutional] AIP: Disable Legacy Tether Bridge",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "fae810b1-485d-4e43-b724-34e2682a7fbc",
+      "matched_title": "[Constitutional] AIP: Disable Legacy Tether Bridge",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "f556939a-3082-4407-824d-d9828a727a3e",
+      "title": "Enhancing Multichain Governance: Upgrading RARI Governance Token on Arbitrum",
+      "author": "0xb5B069370Ef24BC67F114e185D185063CE3479f8",
+      "proposal_id": "2032008d-aa79-402e-a4f3-54e0db086e38",
+      "matched_title": "Enhancing Multichain Governance: Upgrading RARI Governance Token on Arbitrum",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "f8b57572-739b-4372-b026-20dde11e62bc",
+      "title": "AIP-1.1 - Lockup, Budget, Transparency",
+      "author": "0xA5dF0cf3F95C6cd97d998b9D990a86864095d9b0",
+      "proposal_id": "a406d108-5058-415e-a98d-b7cfd65c5d13",
+      "matched_title": "Proposal: AIP-1.1 - Lockup, Budget, Transparency",
+      "score": 95.89041095890411,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "fa93e686-f97e-45b0-947b-49cafef635bd",
+      "title": "[Non-constitutional] Proposal to fund Plurality Labs Milestone 1B(ridge)",
+      "author": "0xAD16ebE6FfC7d96624A380F394cD64395B0C6144",
+      "proposal_id": "1fefe065-b5d2-43a4-bd10-5acbe3e91cd6",
+      "matched_title": "[Non-constitutional] Proposal to fund Plurality Labs Milestone 1B(ridge)",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "aip-3-non-constitutional-fund-the-arbitrum-grants-framework-proposal-milestone-1",
+          "14976"
+        ],
+        [
+          "plurality-labs-milestone-1-review",
+          "20198"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "fb7bdee9-ad3b-4747-a3fb-ba98b92f4e89",
+      "title": "Should the DAO Default to using Shielded Voting for Snapshot Votes?",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "376033c8-02de-4f94-8ec7-3ae12d291d7a",
+      "matched_title": "Should the DAO Default to using Shielded Voting for Snapshot Votes?",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "fc43a8a2-8e00-4d15-849b-37b99ba66794",
+      "title": "Proposal for Piloting Enhancements and Strengthening the Sustainability of ArbitrumHub in the Year Ahead",
+      "author": "0xd333Bc5c9670C9cEb18f9A2CF02C6E86807a8227",
+      "proposal_id": "b526eec7-4913-4be1-9fe3-6868c692a541",
+      "matched_title": "Non-Constitutional: Proposal for Piloting Enhancements and Strengthening the Sustainability of ArbitrumHub in the Year Ahead",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "non-constitutional-arbitrumhub-evolution-the-next-step-in-streamlining-information-access-and-raising-awareness-for-arbitrum-dao",
+          "24857"
+        ],
+        [
+          "non-constitutional-proposal-for-maintenance-and-continuous-enhancement-of-arbitrumhub-to-meet-the-evolving-needs-of-the-arbitrum-ecosystem-and-dao",
+          "27667"
+        ],
+        [
+          "the-arbitrum-foundation-bi-annual-progress-update-h1-2024",
+          "26538"
+        ]
+      ],
+      "category": "standard"
+    },
+    {
+      "id": "fe41579d-ba4f-4f71-b404-de7bd031f4b7",
+      "title": "[Non-Constitutional] Fund the Arbitrum Grants Framework Proposal Milestone 1",
+      "author": "0x1B686eE8E31c5959D9F5BBd8122a58682788eeaD",
+      "proposal_id": "30085a33-37f1-4048-a8f5-9caf88ec6f0a",
+      "matched_title": "AIP - 3 [Non-Constitutional] Fund the Arbitrum Grants Framework Proposal Milestone 1",
+      "score": 95.0,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "ffc4fb91-f3e2-4c8c-ab8f-95f23d2dbe4b",
+      "title": "Partner with ETH Bucharest 2025",
+      "author": "0x1B686eE8E31c5959D9F5BBd8122a58682788eeaD",
+      "proposal_id": "b35f38ce-cf96-44eb-b428-e45e1281812f",
+      "matched_title": "Partner with ETH Bucharest 2025 - Eastern Europe\u2019s Leading Ethereum Conference and Hackathon",
+      "score": 95.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "final-report-arbitrum-workshop-and-hackathon-in-bucharest-romania",
+          "27478"
+        ]
+      ],
+      "category": "standard"
+    }
+  ],
+  "snapshot_low_confidence": [
+    {
+      "id": "23fa91a6-6454-4590-8558-ecd6d2729609",
+      "title": "Streamlining the LTIPP Bounties",
+      "author": "0x1B686eE8E31c5959D9F5BBd8122a58682788eeaD",
+      "proposal_id": "06b4161a-b995-4fb6-b2f9-be8922525d73",
+      "matched_title": "[Non-Constitutional] ArbitrumHub Evolution: The Next Step in Streamlining Information Access and Raising Awareness for Arbitrum DAO",
+      "score": 61.276595744680854,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "low_confidence"
+    },
+    {
+      "id": "4a56d674-a59d-4fcc-a141-99c5f254ee54",
+      "title": "TMC Recommendation",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "82012921-30ba-46a9-8cbd-a85e6852482f",
+      "matched_title": "Proposal: AGV Council Compensation Calibration: Benchmark for Next Term & Startup-Phase Bonus",
+      "score": 63.333333333333336,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "low_confidence"
+    },
+    {
+      "id": "4dae7853-c7c0-4c14-a286-6e8032060296",
+      "title": "LTIPP Retroactive Community Funding Selections",
+      "author": "0xAbAbE91A907fAdff921720C43ABe4098e7245E99",
+      "proposal_id": "48b9fc68-fc13-4924-a816-31cf736a5193",
+      "matched_title": "AIP - 6 : Security Council Elections",
+      "score": 62.29508196721312,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "ltipp-retroactive-community-funding",
+          "26903"
+        ],
+        [
+          "ltipp-retroactive-community-funding",
+          "26903"
+        ],
+        [
+          "ltipp-retroactive-community-funding",
+          "26903"
+        ],
+        [
+          "ltipp-retroactive-community-funding",
+          "26903"
+        ],
+        [
+          "ltipp-retroactive-community-funding",
+          "26903"
+        ],
+        [
+          "ltipp-retroactive-community-funding",
+          "26903"
+        ],
+        [
+          "ltipp-retroactive-community-funding",
+          "26903"
+        ]
+      ],
+      "category": "low_confidence"
+    },
+    {
+      "id": "50e3ec68-0569-4c0d-a165-c9f4ae4466f2",
+      "title": "TMC ARB Recommendation",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "ece50e3c-1bed-4a88-ac9b-0c1f8ec063bc",
+      "matched_title": "Research on context and retention",
+      "score": 61.62162162162162,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "low_confidence"
+    },
+    {
+      "id": "5bb4eb50-842e-47ff-8d98-6b54a333d3e9",
+      "title": "Furucombo's Misuse of Funds",
+      "author": "0xAbAbE91A907fAdff921720C43ABe4098e7245E99",
+      "proposal_id": "8b312cb1-622d-4b42-836e-64da66fe78ca",
+      "matched_title": "The Watchdog: Arbitrum DAO\u2019s Grant Misuse Bounty Program",
+      "score": 56.29629629629629,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "stip-analysis-ardc-research-deliverables",
+          "23438"
+        ],
+        [
+          "potential-misuse-of-funds-furucombo",
+          "25496"
+        ],
+        [
+          "furucombo-used-arbitrum-grants-to-incentivize-stealing-user-funds",
+          "23269"
+        ]
+      ],
+      "category": "low_confidence"
+    },
+    {
+      "id": "7c332d6d-3e2a-41bb-8f44-bab90eb56b48",
+      "title": "Grant Request - Curve Finance",
+      "author": "0xF92F185AbD9E00F56cb11B0b709029633d1E37B4",
+      "proposal_id": "649b23aa-829e-4164-9891-158e7c92f8f8",
+      "matched_title": "Proposal: Grant Request for Koryntia - Pioneering the Next Generation of DeFi Lending",
+      "score": 64.77272727272728,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "low_confidence"
+    },
+    {
+      "id": "9db7c798-f210-4e80-8c81-ce4b34540839",
+      "title": "Consolidate Security Proposals into a RFP Process",
+      "author": "0xAD16ebE6FfC7d96624A380F394cD64395B0C6144",
+      "proposal_id": "ae6b72ed-9931-4f2e-9c94-164cf6885e68",
+      "matched_title": "Constitutional AIP - Security Council Improvement Proposal",
+      "score": 58.69565217391305,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "rfc-consolidate-security-proposals-into-a-rfp-process",
+          "19328"
+        ]
+      ],
+      "category": "low_confidence"
+    },
+    {
+      "id": "a59dab53-b873-4976-a89c-f5a6aedc0747",
+      "title": "TMC Stablecoin Recommendation",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "fef116df-1070-4cbe-8770-72e48933e1b5",
+      "matched_title": "Consolidate Idle USDC to the ATMC\u2019s Stablecoin Balance",
+      "score": 60.943396226415096,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "low_confidence"
+    },
+    {
+      "id": "a7c4346d-1b96-482e-b93d-bf78e3c7772c",
+      "title": "Gaming Catalyst Program (GCP) Council Voting",
+      "author": "0x1B686eE8E31c5959D9F5BBd8122a58682788eeaD",
+      "proposal_id": "147ba20a-f48c-4cee-84bc-d84caa3ebc6a",
+      "matched_title": "Arbitrum Audit Program",
+      "score": 56.136363636363626,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "gcp-council-nominations",
+          "25093"
+        ],
+        [
+          "nominated-gaming-venture-council-members",
+          "25075"
+        ]
+      ],
+      "category": "low_confidence"
+    },
+    {
+      "id": "c8e4e040-afe7-43fb-9119-23ba585addff",
+      "title": "GCP Council Re-Confirmation Vote for John Kennedy",
+      "author": "0xF92F185AbD9E00F56cb11B0b709029633d1E37B4",
+      "proposal_id": "7b922f96-3858-4f74-8803-89a2932525e2",
+      "matched_title": "[Non-Constitutional] GCP Clawback",
+      "score": 55.88235294117647,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "low_confidence"
+    },
+    {
+      "id": "d01a8201-d6cd-466f-861b-debae9a6e764",
+      "title": "GCP Council Re-Confirmation Vote for Tim Chang",
+      "author": "0xF92F185AbD9E00F56cb11B0b709029633d1E37B4",
+      "proposal_id": "bafb6034-dc01-4085-959c-66d659ed6cdd",
+      "matched_title": "Arbitrum Treasury Management Council - Consolidating Efforts",
+      "score": 58.46153846153846,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "low_confidence"
+    },
+    {
+      "id": "d5abea92-909f-44a5-9080-42d9c65d6de3",
+      "title": "Approval of STEP 2 Committee's Preferred Allocations",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": "c9da3d25-ffe8-4a83-bcf2-6a0dd5a2e8ed",
+      "matched_title": "Audit Committee Technical Expert Elections",
+      "score": 55.0,
+      "method": "title_fuzzy",
+      "forum_links": [
+        [
+          "wisdomtree-wtgxx-step-application",
+          "28756"
+        ],
+        [
+          "step-2-application-spiko-ustbl",
+          "28752"
+        ],
+        [
+          "franklin-onchain-u-s-government-money-fund-fobxx-step-application",
+          "23655"
+        ]
+      ],
+      "category": "low_confidence"
+    },
+    {
+      "id": "dc943fb4-525a-4211-94f7-5e5177a373eb",
+      "title": "Approval of STEP committee recommendations",
+      "author": "0x1B686eE8E31c5959D9F5BBd8122a58682788eeaD",
+      "proposal_id": "c9da3d25-ffe8-4a83-bcf2-6a0dd5a2e8ed",
+      "matched_title": "Audit Committee Technical Expert Elections",
+      "score": 56.197183098591545,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "low_confidence"
+    },
+    {
+      "id": "e17539e4-5f62-4d12-90e4-f2c41cfbfbb1",
+      "title": "GovMonth Sensemaking - Growth and Innovation",
+      "author": "0xf9551c66995eD3Ff9bb05C9Fd7ff148Bd75dc99a",
+      "proposal_id": "0d79476b-80fc-4325-900f-63b724c7f08f",
+      "matched_title": "Proposal: Transforming Arbitrum\u2019s Financial Ecosystem \u2013 Enhancing Sustainable Growth and Innovation through SushiSwap\u2019s Bond Program",
+      "score": 64.77272727272728,
+      "method": "title_fuzzy",
+      "forum_links": [],
+      "category": "low_confidence"
+    }
+  ],
+  "snapshot_unmatched": [
+    {
+      "id": "cd9c7e53-a74d-471e-94ca-8de3f35f9489",
+      "title": "GMC's Preferred Allocations (7,500 ETH)",
+      "author": "0xb4c064f466931B8d0F637654c916E3F203c46f13",
+      "proposal_id": null,
+      "matched_title": null,
+      "score": null,
+      "method": null,
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "e907af2a-fcbd-4216-b177-1a058e628650",
+      "title": "GovMonth Sensemaking - Reducing Friction",
+      "author": "0xf9551c66995eD3Ff9bb05C9Fd7ff148Bd75dc99a",
+      "proposal_id": null,
+      "matched_title": null,
+      "score": null,
+      "method": null,
+      "forum_links": [],
+      "category": "standard"
+    },
+    {
+      "id": "f8fbc4a1-349d-4236-b9ad-ec311a276def",
+      "title": "Proposal for Approval of DeDaub as the ADPC Security Advisor",
+      "author": "0xAD16ebE6FfC7d96624A380F394cD64395B0C6144",
+      "proposal_id": null,
+      "matched_title": null,
+      "score": null,
+      "method": null,
+      "forum_links": [],
+      "category": "standard"
+    }
+  ],
+  "tally_matched": [
+    {
+      "id": "00ed2e84-5d4f-4fe7-b2bd-b373dd2bfb4a",
+      "title": "AIP: ArbOS Version 11",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "9bdf4977-65ac-49b0-9259-771878d68869",
+      "matched_title": "AIP-7: Arbitrum One Governance parameter fixes",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "03918d79-5d53-446e-bf9a-f357a2ba6530",
+      "title": "# Entropy Advisors: Exclusively Working with the Arbitrum DAO, Y2-Y3",
+      "author": "Entropy Advisors",
+      "proposal_id": "4224208f-d822-44d0-bc71-f273d2c211ac",
+      "matched_title": "Entropy Advisors: Exclusively Working With Arbitrum DAO",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "0aa67e93-c398-42bd-8733-dfd9efa539d8",
+      "title": "# GovHack at ETH CC (Brussels)",
+      "author": "coinflipcanda",
+      "proposal_id": "9bc9202f-4567-49b6-9bf5-814c46cfb707",
+      "matched_title": "GovHack at ETH CC (Brussels)",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "category": "standard"
+    },
+    {
+      "id": "0c430e2a-f12f-4c5f-ae40-9b44f077db09",
+      "title": "Enhancing Multichain Governance: Upgrading RARI Governance Token on Arbitrum",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "2032008d-aa79-402e-a4f3-54e0db086e38",
+      "matched_title": "Enhancing Multichain Governance: Upgrading RARI Governance Token on Arbitrum",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "category": "standard"
+    },
+    {
+      "id": "129317df-3b93-46c4-a205-4e8bbf527923",
+      "title": "# Changes to the Constitution and the Security Council Election Process",
+      "author": "DK (Premia)",
+      "proposal_id": "879b9bd9-230b-4492-b4f7-e38fcd084182",
+      "matched_title": "AIP: Changes to the Constitution and the Security Council Election Process",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "category": "standard"
+    },
+    {
+      "id": "16a316e3-c650-41cf-a336-01492f569e13",
+      "title": "AIP: ArbOS 20 \u201cAtlas\u201d - Arbitrum Support for Dencun + Batch Poster Improvements ",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "8b760c14-6f2b-4069-b326-23653e5c20f9",
+      "matched_title": "AIP: ArbOS Version 20 \u201cAtlas\u201d",
+      "score": 100,
+      "method": "manual_override",
+      "category": "standard"
+    },
+    {
+      "id": "1f55ed35-a75b-416e-a7a4-0c3ab4a1ef07",
+      "title": "[UPDATED] Proposal to Establish the Arbitrum Research & Development Collective",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "1e59f2ca-6aaa-4075-a973-496eb23023f4",
+      "matched_title": "Proposal: The Arbitrum Coalition",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "1fe9b75f-c81a-4e27-a69c-239eeda7a8c8",
+      "title": "Proposal [Non-Constitutional]: Establish the ArbitrumDAO Procurement Committee",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "2098ff60-ef7d-4841-b3c4-8938e40ddfa6",
+      "matched_title": "Proposal [Non-Constitutional]: **Procurement Framework [Security Service Providers]**",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "2052398b-8fb8-4ffb-8e21-9a84115b4d54",
+      "title": "[UPDATED] Experimental Delegates Incentive System",
+      "author": "SEED Gov",
+      "proposal_id": "476f048d-caa6-4760-a5ee-dc05e7f3a22b",
+      "matched_title": "Proposal: Experimental Incentive System for Active ArbitrumDAO Delegates",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "24e25124-d9e4-48e0-bd6f-f757f8525b33",
+      "title": "# Constitutional AIP - Security Council Improvement Proposal ",
+      "author": "L2BEAT \ud83d\udc97",
+      "proposal_id": "ae6b72ed-9931-4f2e-9c94-164cf6885e68",
+      "matched_title": "Constitutional AIP - Security Council Improvement Proposal",
+      "score": 95.0,
+      "method": "title_fuzzy",
+      "category": "standard"
+    },
+    {
+      "id": "26c3dee4-8ba2-48d9-9cc2-483a9597338f",
+      "title": "[Non-Constitutional] Funds to Bolster Foundation\u2019s Strategic Partnerships Budget ",
+      "author": "Blockworks Advisory",
+      "proposal_id": "3468a7eb-11df-4db6-8bfe-a298f56b18d9",
+      "matched_title": "[Non-Constitutional] Funds to Bolster Foundation\u2019s Strategic Partnerships Budget",
+      "score": 99.35483870967742,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "2f7b1985-c6d8-4d8d-931f-0d3abcee74c9",
+      "title": "AIP: Building the Future of NFTs: The Rarible Protocol - Arbitrum Integration",
+      "author": "L2BEAT \ud83d\udc97",
+      "proposal_id": "2c0cb262-da77-4426-8521-972362a73f3a",
+      "matched_title": "Proposal: Building the Future of NFTs: The Rarible Protocol - Arbitrum Integration Proposal",
+      "score": 95.0,
+      "method": "title_fuzzy",
+      "category": "standard"
+    },
+    {
+      "id": "2fa56d13-b4e6-4625-afa0-9e7e6328e6d2",
+      "title": "Delegate to Voter Enfranchisement Pool \u2014 Event Horizon",
+      "author": "L2BEAT \ud83d\udc97",
+      "proposal_id": "96466913-b7ea-4be7-9ffb-6b4fe0db66be",
+      "matched_title": "[RFC] Empowering Underrepresented Delegates ",
+      "score": 90.2439024390244,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "3f0e5fa3-a7b3-453e-8341-782f132562b7",
+      "title": "# AIP-7: Arbitrum One Governance Parameter Fixes",
+      "author": "yoav.eth",
+      "proposal_id": "9bdf4977-65ac-49b0-9259-771878d68869",
+      "matched_title": "AIP-7: Arbitrum One Governance parameter fixes",
+      "score": 96.62921348314607,
+      "method": "title_fuzzy",
+      "category": "standard"
+    },
+    {
+      "id": "44bb5a06-39e8-4ad7-8efe-f8dd4309e427",
+      "title": "Constitutional AIP - Extend Delay on L2Time Lock",
+      "author": "Blockworks Advisory",
+      "proposal_id": "24a12298-df86-4c2c-b11e-a61e920ff0a2",
+      "matched_title": "Constitutional - Extend Delay on L2Time Lock",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "47f214d1-8a7c-4c60-8816-9adf2f914f74",
+      "title": "The Watchdog: Arbitrum DAO\u2019s Grant Misuse Bounty Program",
+      "author": "Entropy Advisors",
+      "proposal_id": "2011a7cd-80f8-4470-8a23-0b9707e1f1f6",
+      "matched_title": "[Non-Constitutional] [RFC] Arbitrum D.A.O. (Domain Allocator Offerings) Grant Program - Season 3",
+      "score": 98.83720930232558,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "4836bfc9-f3c9-4f95-b673-e4db7718165d",
+      "title": "# Arbitrum Stable Treasury Endowment Program",
+      "author": "L2BEAT \ud83d\udc97",
+      "proposal_id": "b33055a5-c37c-4e6e-9670-556ae47037fc",
+      "matched_title": "Proposal [Non-Constitutional]: Establish the ArbitrumDAO Procurement Committee",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "4893773f-7287-4dbb-ad49-8c5db4bb4985",
+      "title": "ARB Staking: Unlock ARB Utility and Align Governance",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "dde796ff-09e5-447d-a61d-cf487a51a70d",
+      "matched_title": "ARB Staking: Unlock ARB Utility and Align Governance",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "category": "standard"
+    },
+    {
+      "id": "4a0be42a-4961-4aa5-a144-0d9f17ace970",
+      "title": "UPDATED - Ethereum Protocol Attackathon Sponsorship",
+      "author": "Blockworks Advisory",
+      "proposal_id": "6eb471fe-0dfd-4896-ac56-84911e119975",
+      "matched_title": "Ethereum Protocol Attackathon Sponsorship",
+      "score": 97.61904761904762,
+      "method": "title_fuzzy",
+      "category": "standard"
+    },
+    {
+      "id": "4f1c3f21-afe4-456e-9de6-dd1eb4cac461",
+      "title": "[NON-CONSTITUTIONAL] Pilot Phase: Arbitrum Ventures Initiative",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "fc1ffb7c-9b52-4aae-8c08-79c53f6f937d",
+      "matched_title": "[Non-Constitutional] Pilot Phase: Arbitrum Venture Initiative",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "4f2a1752-f4ae-4926-9f30-993ca83afa8e",
+      "title": "# Double-Down on STIP Successes (STIP-Bridge)",
+      "author": "L2BEAT \ud83d\udc97",
+      "proposal_id": "9732d0be-5d79-4438-aca5-2b3264efc22f",
+      "matched_title": "Double-Down on STIP Successes (STIP-Bridge)",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "category": "standard"
+    },
+    {
+      "id": "517c8ab5-2662-447a-a8ea-dc8ce24be0de",
+      "title": "Treasury Management V1.2",
+      "author": "Entropy Advisors",
+      "proposal_id": "8700ebe2-ec2c-4fa8-9261-99f9c38b35ea",
+      "matched_title": "[Non-Constitutional] Treasury Management v1.2",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "category": "standard"
+    },
+    {
+      "id": "52fa30e5-9dd9-4678-a5fa-0c3ec3f06565",
+      "title": "# Request to Increase the Stylus Sprint Committee\u2019s Budget",
+      "author": "Entropy Advisors",
+      "proposal_id": "2011a7cd-80f8-4470-8a23-0b9707e1f1f6",
+      "matched_title": "[Non-Constitutional] [RFC] Arbitrum D.A.O. (Domain Allocator Offerings) Grant Program - Season 3",
+      "score": 98.83720930232558,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "552910ad-47ff-4e56-9e4c-d3543d94bb86",
+      "title": "# ArbitrumDAO Contribution; Safeguarding Software Developers\u2019 Rights",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "08bc7918-8046-444c-b689-ebea647cb0ee",
+      "matched_title": "Proposal [Non-Constitutional]: Defending Open Source: A United Stand for Developer Rights and Software Freedom",
+      "score": 100,
+      "method": "manual_override",
+      "category": "standard"
+    },
+    {
+      "id": "563594d5-2990-4195-936d-283ca9c87aa2",
+      "title": "[UPDATED] Proposal to Establish the Arbitrum Research & Development Collective",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "1e59f2ca-6aaa-4075-a973-496eb23023f4",
+      "matched_title": "Proposal: The Arbitrum Coalition",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "5dbae9ed-8cf7-49e1-8440-9dcd07684e93",
+      "title": "Arbitrum Hackathon Builder Continuation Program",
+      "author": "MaxLomu",
+      "proposal_id": "368aed1b-6c46-4fda-85f0-e511557ccae7",
+      "matched_title": "Hackathon Continuation Program",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "60551765-ac44-470c-b5dc-35c91485ab7c",
+      "title": "Expand Tally Support for the Arbitrum DAO",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "879b9bd9-230b-4492-b4f7-e38fcd084182",
+      "matched_title": "AIP: Changes to the Constitution and the Security Council Election Process",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "6196b67b-7281-4b7e-bd48-67ad7d21b676",
+      "title": "[Constitutional AIP] Activate Arbitrum BoLD + Infura Nova Validator Whitelist ",
+      "author": "Entropy Advisors",
+      "proposal_id": "4c1d960e-0ff6-47ba-92cf-d0612f84d2f6",
+      "matched_title": "Manual",
+      "score": 100,
+      "method": "manual_override",
+      "category": "standard"
+    },
+    {
+      "id": "62e14e4c-c321-48d7-a4f9-b8c331531e81",
+      "title": "# Proposal to Establish the Arbitrum Research & Development Collective",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "2098ff60-ef7d-4841-b3c4-8938e40ddfa6",
+      "matched_title": "Proposal [Non-Constitutional]: **Procurement Framework [Security Service Providers]**",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "65846b98-e331-48ba-a7aa-6403a5d4ecb2",
+      "title": "AIP - 3 [Non-Constitutional] Fund the Grants Framework Proposal Milestone 1",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "30085a33-37f1-4048-a8f5-9caf88ec6f0a",
+      "matched_title": "AIP - 3 [Non-Constitutional] Fund the Arbitrum Grants Framework Proposal Milestone 1",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "67da0c67-5083-43e1-9651-bbbcdb649743",
+      "title": "Upgrade Governor Contracts by Transfering Timelock Roles to the New Governors",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "e8a80636-54ab-4267-afa5-a7d09582e0dd",
+      "matched_title": "Expand Tally Support for the Arbitrum DAO",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "69aa34b8-686b-4f55-809c-6a485e528dd8",
+      "title": "# Grant Request - Curve Finance",
+      "author": "coinflipcanda",
+      "proposal_id": "6cbb16b1-271e-41c3-9d5e-0350030143a5",
+      "matched_title": "Proposal: Request to match my donation to boostrap Curve Lending on Arbitrum",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "6e2d5e89-f206-4f65-8e53-e19bb5a27231",
+      "title": "# Pilot Phase: M&A for Arbitrum DAO",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "e59fc4a4-152c-4620-a554-6a319c3a995a",
+      "matched_title": "Pilot Phase: M&A for Arbitrum DAO",
+      "score": 98.41269841269842,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "70392e35-e75b-458a-851b-1a474b0754e9",
+      "title": "[Constitutional] AIP: Constitutional Quorum Threshold Reduction",
+      "author": "Entropy Advisors",
+      "proposal_id": "e6fe1310-79cc-4203-ade0-9bbb99626fad",
+      "matched_title": "[Constitutional] AIP: Constitutional Quorum Threshold Reduction",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "category": "standard"
+    },
+    {
+      "id": "72e4acf6-75a4-4767-9be5-5a494b3491ab",
+      "title": "[CONSTITUTIONAL] AIP: ArbOS Version 40 Callisto",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "e76ff9a8-79c4-416f-bfe1-28036640f84d",
+      "matched_title": "[CONSTITUTIONAL] AIP: ArbOS Version 40 Callisto",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "78eef766-660b-402c-815d-646d449532d4",
+      "title": "AIP 9: Arbitrum Short-term Incentive Program",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "ee3b0b7b-916f-4ef8-aebf-d78b7190af21",
+      "matched_title": "Arbitrum Now: a pragmatic approach for the Moment",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "79d56b3c-fab3-4898-84b3-6473c5e56e2d",
+      "title": "# Front-end interface to force transaction inclusion during sequencer downtime",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "3bb5052d-c3ef-4193-a196-254cba9012cf",
+      "matched_title": "Tally: Front-end interface to force transaction inclusion during sequencer downtime",
+      "score": 94.61077844311377,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "7ef50567-761d-4243-850b-f169cb237e18",
+      "title": "[Non-Constitutional] Arbitrum DAO Delegate Incentive Program",
+      "author": "SEED Gov",
+      "proposal_id": "9a41b7b8-4525-4ff8-92a9-46e99c6a87fa",
+      "matched_title": "Delegate Incentive Program Extension",
+      "score": 75.0,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "859f5dc7-e66b-4d31-b061-7058cd3ae8e4",
+      "title": "Fund the Stylus Sprint",
+      "author": "Entropy Advisors",
+      "proposal_id": "066f5491-e3e6-49d3-ab03-ddccb7644d16",
+      "matched_title": "AIP: Activate Stylus and Enable Next-Gen WebAssembly Smart Contracts (ArbOS 30)",
+      "score": 93.7062937062937,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "885a5674-63e7-41df-a361-f72e8e9ef224",
+      "title": "Establishing a DAO Events Budget for 2025",
+      "author": "Entropy Advisors",
+      "proposal_id": "dbc54f07-158c-4c5f-a603-0980c3c95ad7",
+      "matched_title": "Establishing a DAO Events Budget for 2025",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "category": "standard"
+    },
+    {
+      "id": "8a09f45b-979f-4050-8d4f-25e8c07a3235",
+      "title": "[Updated] Proposal to Establish the Arbitrum Research & Development Collective",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "1e59f2ca-6aaa-4075-a973-496eb23023f4",
+      "matched_title": "Proposal: The Arbitrum Coalition",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "8f43860f-5f21-4fc3-a79d-fea0982f4b95",
+      "title": "[NON-CONSTITUTIONAL] Arbitrum Onboarding V2: A Governance Bootcamp",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "42c15476-ef0e-46d7-af77-fed41f5aee34",
+      "matched_title": "How to submit a DAO Proposal",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "90003074-a630-4dd1-9774-9abe22605197",
+      "title": "AIP-1.2 - Foundation and DAO Governance",
+      "author": "L2BEAT \ud83d\udc97",
+      "proposal_id": "5170c7b2-2495-4657-bf9d-01ecee10f000",
+      "matched_title": "Proposal: AIP-1.2 - Foundation and DAO Governance",
+      "score": 98.9010989010989,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "90b4a672-a6f0-4895-9bdf-114930dbc2dd",
+      "title": "Funds to bootstrap the first BoLD validator",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "232201b8-fc63-4d1b-8d87-ca3eb3f2f1dd",
+      "matched_title": "AIP: BOLD - permissionless validation for Arbitrum",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "90e60f25-1596-4ac5-8203-cbc6695b1999",
+      "title": "AIP-1.1 - Lockup, Budget, Transparency [UPDATED]",
+      "author": "L2BEAT \ud83d\udc97",
+      "proposal_id": "a406d108-5058-415e-a98d-b7cfd65c5d13",
+      "matched_title": "Proposal: AIP-1.1 - Lockup, Budget, Transparency",
+      "score": 98.82352941176471,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "965bb511-4500-41a1-98d8-00b433694e84",
+      "title": "[Constitutional] ArbOS 31 \u201cBianca\u201d (Stylus, RIP-7212 Support, Nova Fee Router)",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "853efdb4-c59f-449c-abef-2b08ccbdae09",
+      "matched_title": "AIP: ArbOS 31 \u201cBianca\u201d - Activation of Arbitrum Stylus, RIP-7212 Support, & Nova Fee Router Proposal",
+      "score": 75.64102564102564,
+      "method": "title_fuzzy",
+      "category": "standard"
+    },
+    {
+      "id": "9784c538-6d06-44da-92cd-279872973602",
+      "title": " Empowering Early Contributors: The community Arbiter Proposal 2.0",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "887c50dd-e4b8-4da5-9377-f13dd8f6ddae",
+      "matched_title": "[Non-Constitutional]: Empowering Early Contributors: The community Arbiter Proposal 2.0",
+      "score": 99.39393939393939,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "9fcad038-54dd-4b3b-a697-689025727436",
+      "title": "Arbitrum DAO Grants - Delegated Domain Allocation by Questbook",
+      "author": "bobrossi.eth",
+      "proposal_id": "d304a4de-9f43-40fa-bf0e-7ee2834ec533",
+      "matched_title": "Delegated Domain Allocation by Questbook - Arbitrum DAO Grants",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "a1625aea-0b55-4dcc-be5c-e3546aad0c29",
+      "title": "[NON-CONSTITUTIONAL] Arbitrum DAO Procurement Committee: Phase II Proposal",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "5b5c2bee-b959-4950-b07b-c4f4f236d2bf",
+      "matched_title": "[Non-constitutional] Subsidy Fund for Security Services",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "a46975c4-29ec-4381-bab0-b9691ae221f9",
+      "title": "[CONSTITUTIONAL] Remove Cost Cap, Update Executors, Disable Legacy USDT Bridge",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "fae810b1-485d-4e43-b724-34e2682a7fbc",
+      "matched_title": "[Constitutional] AIP: Disable Legacy Tether Bridge",
+      "score": 76.0,
+      "method": "title_fuzzy",
+      "category": "standard"
+    },
+    {
+      "id": "a6b1c63d-ef4d-4e46-9d1e-f8c718f4d7c6",
+      "title": "# Request for Continuation of the Arbitrum DDA Program Request",
+      "author": "SEED Gov",
+      "proposal_id": "d304a4de-9f43-40fa-bf0e-7ee2834ec533",
+      "matched_title": "Delegated Domain Allocation by Questbook - Arbitrum DAO Grants",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "a7d5f3e0-b5e1-473e-a159-3a67140cd778",
+      "title": "# Kwenta x Perennial: Arbitrum Onboarding Incentives",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "1a55fe98-8f1c-4335-9717-84e38d170f40",
+      "matched_title": "Kwenta x Perennial: Arbitrum Onboarding Incentives (UPDATED)",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "aa381cd5-f248-435c-95ef-7d4a4b852f77",
+      "title": "[CONSTITUTIONAL] Register the Sky Custom Gateway contracts in the Router",
+      "author": "kpk",
+      "proposal_id": "780b8fd8-760b-4355-bef9-07dd8ea4cef4",
+      "matched_title": "[CONSTITUTIONAL] Proposal: For Arbitrum DAO to register the Sky Custom Gateway contracts in the Router",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "af182ec7-7a0c-48d1-89be-a3a1bbded155",
+      "title": "# Catalyze Gaming Ecosystem Growth on Arbitrum",
+      "author": "coinflipcanda",
+      "proposal_id": "0d17e2e1-80b5-4f67-85f9-8d6190381641",
+      "matched_title": "Catalyze Gaming Ecosystem Growth on Arbitrum",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "b61333fa-7ee8-44bf-8eac-5fbc256ed2be",
+      "title": "[CONSTITUTIONAL] Register $BORING in the Arbitrum generic-custom gateway",
+      "author": "L2BEAT \ud83d\udc97",
+      "proposal_id": "2032008d-aa79-402e-a4f3-54e0db086e38",
+      "matched_title": "Enhancing Multichain Governance: Upgrading RARI Governance Token on Arbitrum",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "b6edd1c4-7222-4e14-8004-7565ead40e60",
+      "title": "# [Non-constitutional] Proposal to fund Plurality Labs Milestone 1B(ridge)",
+      "author": "DK (Premia)",
+      "proposal_id": "30085a33-37f1-4048-a8f5-9caf88ec6f0a",
+      "matched_title": "AIP - 3 [Non-Constitutional] Fund the Arbitrum Grants Framework Proposal Milestone 1",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "bf8bbdc2-b189-40c3-8659-dbe788a14d77",
+      "title": "# Experimental Delegates Incentive System",
+      "author": "SEED Gov",
+      "proposal_id": "476f048d-caa6-4760-a5ee-dc05e7f3a22b",
+      "matched_title": "Proposal: Experimental Incentive System for Active ArbitrumDAO Delegates",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "c0f92f0d-5739-4198-b3c5-7067d98d0122",
+      "title": "Empowering Early Contributors: The community Arbiter Proposal",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "d1d0f31c-566f-4594-b91c-e05743ebd8ba",
+      "matched_title": "Proposal: Empowering Early Contributors: The community Arbiter Proposal",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "category": "standard"
+    },
+    {
+      "id": "c18ce630-763d-4f6e-8765-971dd7a2a45e",
+      "title": "# OpCo: A DAO-adjacent Entity for Strategy Execution",
+      "author": "Entropy Advisors",
+      "proposal_id": "99679436-b072-42d8-aafe-67982c09c347",
+      "matched_title": "The OpCo - Scale, Structure, & Synergy",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "c63e4745-7b57-4a71-ac65-44f95c0817fd",
+      "title": "[Constitutional] AIP: Activate ArbOS 51 (Dia) and Gas Pricing Updates",
+      "author": "Entropy Advisors",
+      "proposal_id": "a952f794-6c33-453b-9e30-83e67dda98e2",
+      "matched_title": "Manual",
+      "score": 100,
+      "method": "manual_override",
+      "category": "standard"
+    },
+    {
+      "id": "ce8fc2dd-c320-4483-906b-81f479831626",
+      "title": "# Ethereum Protocol Attackathon Sponsorship",
+      "author": "coinflipcanda",
+      "proposal_id": "6eb471fe-0dfd-4896-ac56-84911e119975",
+      "matched_title": "Ethereum Protocol Attackathon Sponsorship",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "category": "standard"
+    },
+    {
+      "id": "d20165b4-b4ba-4d3b-81a0-55b413925be6",
+      "title": "[CONSTITUTIONAL] Register the Sky Custom Gateway contracts in the Router",
+      "author": "kpk",
+      "proposal_id": "780b8fd8-760b-4355-bef9-07dd8ea4cef4",
+      "matched_title": "[CONSTITUTIONAL] Proposal: For Arbitrum DAO to register the Sky Custom Gateway contracts in the Router",
+      "score": 95.0,
+      "method": "title_fuzzy",
+      "category": "standard"
+    },
+    {
+      "id": "d2b70670-8e3b-40cb-9a92-d3c251d7c1ab",
+      "title": "Entropy Advisors: Exclusively Working With Arbitrum DAO",
+      "author": "coinflipcanda",
+      "proposal_id": "a6cad78d-173d-4bc0-bc48-6dc947ddeb3a",
+      "matched_title": "AIP-1: Arbitrum Improvement Proposal Framework",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "d80f7357-2d49-45fa-b7ef-e344d0a34d6a",
+      "title": "[NON-CONSTITUTIONAL] Arbitrum Audit Program",
+      "author": "Entropy Advisors",
+      "proposal_id": "147ba20a-f48c-4cee-84bc-d84caa3ebc6a",
+      "matched_title": "Arbitrum Audit Program",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "category": "standard"
+    },
+    {
+      "id": "da906254-a5fe-46bf-910b-4f5e3f2b0c2c",
+      "title": "# [Updated] Proposal to Establish the Arbitrum Research & Development Collective",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "1e59f2ca-6aaa-4075-a973-496eb23023f4",
+      "matched_title": "Proposal: The Arbitrum Coalition",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "dcd4de1d-1eae-4ce9-b4da-0f5930d7a337",
+      "title": "(V2) Arbitrum Research & Development Collective",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "1e59f2ca-6aaa-4075-a973-496eb23023f4",
+      "matched_title": "Proposal: The Arbitrum Coalition",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "df2ea4ff-8cd0-4468-b179-4f7e1963dddd",
+      "title": "Arbitrum Multi-sig Support Service (MSS) ",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "6ded108a-d01e-45f5-b55a-ee3dd8267195",
+      "matched_title": "[RFC] Arbitrum Multi-sig Support Service (MSS)",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "category": "standard"
+    },
+    {
+      "id": "e153cf3e-8110-44f2-b27a-3d8b90b6b678",
+      "title": "# Long Term Incentives Pilot Program",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "dbd9e717-37fb-435c-a26e-3ef5060838de",
+      "matched_title": "Long Term Incentives Pilot Program",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "category": "standard"
+    },
+    {
+      "id": "e365765d-1844-49d3-bc71-d143135af36a",
+      "title": "DeFi Renaissance Incentive Program (DRIP)",
+      "author": "Entropy Advisors",
+      "proposal_id": "f24b70fa-a09a-4f41-a090-a5227e078ad7",
+      "matched_title": "[RFC] Incentives Detox Proposal",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "e47e458b-8c5b-42f8-bf2a-ce31105d8dc1",
+      "title": "Arbitrum D.A.O. (Domain Allocator Offerings) Grant Program - Season 3",
+      "author": "MaxLomu",
+      "proposal_id": "2011a7cd-80f8-4470-8a23-0b9707e1f1f6",
+      "matched_title": "[Non-Constitutional] [RFC] Arbitrum D.A.O. (Domain Allocator Offerings) Grant Program - Season 3",
+      "score": 76.19047619047619,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "e5ca8df6-5493-4af4-9f63-6525ef871ca6",
+      "title": "Non-Constitutional: Stable Treasury Endowment Program 2.0",
+      "author": "L2BEAT \ud83d\udc97",
+      "proposal_id": "5fa790fc-90b0-4b97-91b0-1ca7aaed9e61",
+      "matched_title": "Non-Constitutional: Stable Treasury Endowment Program 2.0",
+      "score": 99.09909909909909,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "e612c591-b149-4212-92c9-f92c6ea0ac4b",
+      "title": "Transfer 8,500 ETH from the Treasury to ATMC\u2019s ETH Treasury Strategies",
+      "author": "Entropy Advisors",
+      "proposal_id": "bafb6034-dc01-4085-959c-66d659ed6cdd",
+      "matched_title": "Arbitrum Treasury Management Council - Consolidating Efforts",
+      "score": 77.35849056603774,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "e734005c-4707-435e-baf2-5d64b742c651",
+      "title": "AIP-1.1 - Lockup, Budget, Transparency",
+      "author": "L2BEAT \ud83d\udc97",
+      "proposal_id": "a406d108-5058-415e-a98d-b7cfd65c5d13",
+      "matched_title": "Proposal: AIP-1.1 - Lockup, Budget, Transparency",
+      "score": 98.82352941176471,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "ea728d75-c2df-461f-bf6b-01a089139536",
+      "title": "ArbitrumDAO strategic \u201cOff-site\u201d (online) updated proposal",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "ac4e5a30-4d14-46f5-afb7-e8cbde8fa455",
+      "matched_title": "ArbitrumDAO Off-site - Directional proposal",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    },
+    {
+      "id": "ed7cd2e5-d2e7-418d-8aad-3163eb917aea",
+      "title": "[Non-Constitutional] - Subsidy Fund Proposal from the ADPC",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": "5b5c2bee-ea99-411a-afbb-a1df3f8d1b11",
+      "matched_title": "Manual",
+      "score": 100,
+      "method": "manual_override",
+      "category": "standard"
+    },
+    {
+      "id": "f41dfb1e-c118-4fa0-8df0-271076c23a23",
+      "title": "# AIP-2: Activate support for account abstraction endpoint on One and Nova",
+      "author": "yoav.eth",
+      "proposal_id": "92122494-8acf-4be9-9ab7-8799ea1bcb80",
+      "matched_title": "AIP-2: Activate support for account abstraction endpoint on One and Nova",
+      "score": 97.87234042553192,
+      "method": "title_fuzzy",
+      "category": "standard"
+    },
+    {
+      "id": "fbd659f1-57fb-4e60-85e2-ff89bde73fcf",
+      "title": "Delegate to Voter Enfranchisement Pool \u2014 Event Horizon",
+      "author": "L2BEAT \ud83d\udc97",
+      "proposal_id": "046f9a56-cae7-477d-bbc7-d31ea0b8bc34",
+      "matched_title": "Delegate to Voter Enfranchisement Pool \u2014 Event Horizon",
+      "score": 100.0,
+      "method": "title_fuzzy",
+      "category": "standard"
+    },
+    {
+      "id": "fce2ff48-c9c1-463e-8441-fad52d98e436",
+      "title": "[CONSTITUTIONAL] - Adopt Timeboost + Nova Fee Sweep",
+      "author": "Entropy Advisors",
+      "proposal_id": "ff0ce443-ab64-4e38-bc93-7c438ecc9fba",
+      "matched_title": "Constitutional AIP: Proposal to adopt Timeboost, a new transaction ordering policy",
+      "score": 100,
+      "method": "forum_link_slug",
+      "category": "standard"
+    }
+  ],
+  "tally_low_confidence": [
+    {
+      "id": "18fd44f2-8cca-4e6d-88d8-434ad77f1920",
+      "title": "AIP 6: Security Council Elections Proposed Implementation Spec",
+      "author": "Blockworks Advisory",
+      "proposal_id": "218a7ce5-c967-4397-8c4f-38f7eb17f3fb",
+      "matched_title": "[Constitutional] AIP: Security Council Election Process Improvements",
+      "score": 73.6842105263158,
+      "method": "forum_link_slug",
+      "category": "low_confidence"
+    }
+  ],
+  "tally_unmatched": [
+    {
+      "id": "70f4a46e-8176-4fb5-bf1d-f3707c8c1a80",
+      "title": "art dra",
+      "author": "0xF07210273DE1ad682650F8e283cBC98778B16652",
+      "proposal_id": null,
+      "matched_title": null,
+      "score": null,
+      "method": null,
+      "category": "garbage"
+    },
+    {
+      "id": "be7b82c0-6491-4bc1-ac7c-cb2977b47630",
+      "title": "AIP 4",
+      "author": "Blockworks Advisory",
+      "proposal_id": null,
+      "matched_title": null,
+      "score": null,
+      "method": null,
+      "category": "garbage"
+    },
+    {
+      "id": "d7105e4a-629b-4d29-9076-baae706f3a20",
+      "title": "Arcubtang",
+      "author": "0xeB939516A1f91c2D386d435f3AdE8ac396E5C97a",
+      "proposal_id": null,
+      "matched_title": null,
+      "score": null,
+      "method": null,
+      "category": "garbage"
+    },
+    {
+      "id": "de219a16-f9b0-4771-91fd-1d8d0dc48d18",
+      "title": "",
+      "author": "Tyler Bench (Frisson)",
+      "proposal_id": null,
+      "matched_title": null,
+      "score": null,
+      "method": null,
+      "category": "garbage"
+    }
+  ]
+}

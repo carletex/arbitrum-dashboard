@@ -1,0 +1,122 @@
+# AI Proposal Matching Skill
+
+This skill enables you (the AI agent) to intelligently match governance proposal stages to their canonical proposals using your own semantic understanding.
+
+## Context
+
+Arbitrum DAO governance has 3 stages:
+1. **Forum** (entry point) → Creates canonical `proposal` record + `forum_stage`
+2. **Snapshot** (off-chain voting) → Creates `snapshot_stage` (needs linking)
+3. **Tally** (on-chain voting) → Creates `tally_stage` (needs linking)
+
+## The Challenge
+
+Simple string matching fails when titles differ due to:
+- Prefixes: `[RFC]`, `[Non-Constitutional]`, `[Constitutional]`, `#`, `[UPDATED]`
+- HTML entities: `&amp;` → `&`, `&rsquo;` → `'`
+- Abbreviations: `Year 2 and Year 3` → `Y2-Y3`
+- Minor rephrasing or word order changes
+
+**You can understand these variations using semantic reasoning.**
+
+## Workflow
+
+When asked to match proposals, follow this process:
+
+### Step 1: Fetch the Data
+
+Run SQL queries to get the data:
+
+```sql
+-- Get unmatched Tally stages
+SELECT id, title, author_name, discourse_url, snapshot_url
+FROM tally_stage WHERE proposal_id IS NULL;
+
+-- Get unmatched Snapshot stages
+SELECT id, title, author_name, url
+FROM snapshot_stage WHERE proposal_id IS NULL;
+
+-- Get candidate proposals (from forum)
+SELECT p.id as proposal_id, p.title, f.original_id as forum_id
+FROM proposal p
+JOIN forum_stage f ON f.proposal_id = p.id;
+```
+
+### Step 2: Analyze Each Unmatched Stage
+
+For each stage, use your reasoning to find the best match:
+
+1. **Check discourse_url** - If present, extract topic ID and match to `forum_original_id`
+2. **Semantic title matching** - Consider variations:
+   - Ignore prefixes: `[RFC]`, `[Non-Constitutional]`, `#`, `[UPDATED]`, `(V2)`
+   - Decode HTML: `&amp;` = `&`, `&rsquo;` = `'`
+   - Understand abbreviations: `Year 2` = `Y2`, `Version 2` = `V2`
+   - Handle case differences
+
+### Step 3: Assign Confidence Scores
+
+| Score | Meaning | Action |
+|-------|---------|--------|
+| 95-100 | Near-certain match | Recommend apply |
+| 85-94 | Very likely match | Recommend apply with note |
+| 70-84 | Probable match | Ask user for confirmation |
+| <70 | Uncertain | Skip or ask user |
+
+### Step 4: Apply Matches
+
+For approved matches, run:
+
+```sql
+-- For Tally stage
+UPDATE tally_stage SET proposal_id = 'proposal-uuid' WHERE id = 'stage-uuid';
+
+-- For Snapshot stage
+UPDATE snapshot_stage SET proposal_id = 'proposal-uuid' WHERE id = 'stage-uuid';
+```
+
+**Important:** Each proposal can only link to ONE tally_stage and ONE snapshot_stage (unique constraint).
+
+## Example Analysis
+
+**Stage:** `"[RFC] Fund The Stylus Sprint"`
+**Candidate:** `"Fund the Stylus Sprint"`
+**Your Analysis:** Same proposal - "[RFC]" is a common prefix for Request For Comments
+**Confidence:** 95%
+**Action:** MATCH
+
+**Stage:** `"The Watchdog: Arbitrum DAO's Grant Misuse Bounty Program"`
+**Candidate:** `"The Watchdog: Arbitrum DAO&rsquo;s Grant Misuse Bounty Program"`
+**Your Analysis:** Identical except `'` vs HTML entity `&rsquo;`
+**Confidence:** 99%
+**Action:** MATCH
+
+**Stage:** `"AIP-1.1 - Lockup, Budget, Transparency"`
+**Candidate:** `"AIP-1.2 - Foundation and DAO Governance"`
+**Your Analysis:** Different AIP numbers (1.1 vs 1.2) and different topics
+**Confidence:** 20%
+**Action:** SKIP
+
+## Output Format
+
+Present your findings as a table:
+
+| Stage | Type | Best Match | Confidence | Reasoning |
+|-------|------|------------|------------|-----------|
+| "Fund the Stylus Sprint" | tally | "Fund the Stylus Sprint" | 95% | Same title, [RFC] prefix |
+| "Entropy Advisors Y2-Y3" | snapshot | "Entropy Advisors Year 2 and Year 3" | 88% | Abbreviation |
+
+Then ask: "Would you like me to apply matches with confidence >= X%?"
+
+## Files
+
+- `services/matching/ai-matcher.ts` - Data fetching and match application
+- `services/matching/matcher.ts` - Rule-based matching (URL + title)
+- `app/api/ai-match-proposals/route.ts` - API endpoints (optional)
+
+## Quick Commands
+
+When user says "match proposals" or "run AI matching":
+1. Query the database for unmatched stages
+2. Query for candidate proposals
+3. Analyze and present recommendations
+4. Apply matches upon user approval
