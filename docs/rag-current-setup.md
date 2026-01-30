@@ -26,6 +26,66 @@ This document explains the current Proposal RAG implementation on this branch, w
 2. **Query** embeds the user question, retrieves top‑K matches with optional filters, then synthesizes an answer with citations.
 3. **UI** provides an admin page to run ingestion and query the RAG endpoint.
 
+## End‑to‑End RAG Flow (Detailed Diagram)
+
+Copy/paste this mermaid diagram anywhere you want to visualize the full flow:
+
+```mermaid
+flowchart TD
+  subgraph dataSources [DataSources]
+    ProposalTable[proposal_table]
+    ForumStage[forum_stage]
+    SnapshotStage[snapshot_stage]
+    TallyStage[tally_stage]
+  end
+
+  subgraph ingestion [IndexingStage]
+    Fetch[FetchProposalsWithStages]
+    BuildDoc[BuildCanonicalDocumentText]
+    CreateDoc[CreateLlamaIndexDocuments]
+    NodeParser[NodeParser_Default]
+    EmbedDocs[OpenAI_Embeddings]
+    VectorStore[(PGVectorStore_pgvector)]
+  end
+
+  subgraph query [QueryingStage]
+    User[UserQuestion]
+    QueryAPI[API_rag_query]
+    Validate[ValidateInputFilters]
+    EmbedQuery[OpenAI_QueryEmbedding]
+    Retrieve[VectorSearch_TopK]
+    Synthesize[LLM_ResponseSynthesizer]
+    Citations[ExtractCitations]
+    Response[AnswerWithCitations]
+  end
+
+  ProposalTable --> Fetch
+  ForumStage --> Fetch
+  SnapshotStage --> Fetch
+  TallyStage --> Fetch
+
+  Fetch --> BuildDoc
+  BuildDoc --> CreateDoc
+  CreateDoc --> NodeParser
+  NodeParser --> EmbedDocs
+  EmbedDocs --> VectorStore
+
+  User --> QueryAPI
+  QueryAPI --> Validate
+  Validate --> EmbedQuery
+  EmbedQuery --> Retrieve
+  VectorStore --> Retrieve
+  Retrieve --> Synthesize
+  Synthesize --> Citations
+  Citations --> Response
+  Response --> User
+```
+
+Legend:
+- **IndexingStage** = ingestion pipeline
+- **QueryingStage** = retrieval + synthesis pipeline
+- `NodeParser_Default` = LlamaIndex default chunking (custom parser not wired yet)
+
 ## LlamaIndex Concepts → Where They Happen Here
 
 This maps the official LlamaIndex “indexing stage” and “querying stage” concepts to the exact places in this codebase.
