@@ -63,7 +63,6 @@ export default function RagAdminPage() {
         body: JSON.stringify({
           query: query.trim(),
           filters: Object.keys(filters).length > 0 ? filters : undefined,
-          topK: 5,
         }),
       });
 

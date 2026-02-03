@@ -1,5 +1,5 @@
 // Document Builder - Creates canonical documents from proposals
-import { ProposalWithStages, RagNodeMetadata } from "./types";
+import { ProposalWithForumContent, ProposalWithStages, RagNodeMetadata } from "./types";
 import { createHash } from "crypto";
 import { Document } from "llamaindex";
 
@@ -114,6 +114,7 @@ export function buildProposalDocumentText(proposal: ProposalWithStages): string 
 
 /**
  * Compute a content hash for idempotency checking.
+ * Returns first 16 chars of SHA256 hash.
  */
 export function computeContentHash(text: string): string {
   return createHash("sha256").update(text).digest("hex").slice(0, 16);
@@ -121,10 +122,11 @@ export function computeContentHash(text: string): string {
 
 /**
  * Generate a deterministic node ID.
- * Format: ${proposal_id}:${stage}:${chunk_index}
+ * Format: ${proposal_id}__${stage}__${post_number}
+ * Uses double underscore separator (unlikely in UUIDs).
  */
-export function generateNodeId(proposalId: string, stage: string, chunkIndex: number): string {
-  return `${proposalId}:${stage}:${chunkIndex}`;
+export function generateNodeId(proposalId: string, stage: string, postNumber: number): string {
+  return `${proposalId}__${stage}__${postNumber}`;
 }
 
 /**
@@ -152,7 +154,7 @@ export function createDocumentsFromProposal(proposal: ProposalWithStages): Docum
       new Document({
         text: baseText,
         id_: generateNodeId(proposal.id, "forum", 0),
-        metadata: metadata as unknown as Record<string, unknown>,
+        metadata,
       }),
     );
   }
@@ -174,7 +176,7 @@ export function createDocumentsFromProposal(proposal: ProposalWithStages): Docum
       new Document({
         text: baseText,
         id_: generateNodeId(proposal.id, "snapshot", 0),
-        metadata: metadata as unknown as Record<string, unknown>,
+        metadata,
       }),
     );
   }
@@ -196,7 +198,7 @@ export function createDocumentsFromProposal(proposal: ProposalWithStages): Docum
       new Document({
         text: baseText,
         id_: generateNodeId(proposal.id, "tally", 0),
-        metadata: metadata as unknown as Record<string, unknown>,
+        metadata,
       }),
     );
   }
@@ -218,7 +220,55 @@ export function createDocumentsFromProposal(proposal: ProposalWithStages): Docum
       new Document({
         text: baseText,
         id_: generateNodeId(proposal.id, "forum", 0),
-        metadata: metadata as unknown as Record<string, unknown>,
+        metadata,
+      }),
+    );
+  }
+
+  return documents;
+}
+
+/**
+ * Create LlamaIndex Documents from forum posts for a proposal.
+ * Creates one document per post (not mega-documents) with stable IDs.
+ */
+export function createDocumentsFromForumStage(proposal: ProposalWithForumContent): Document[] {
+  const documents: Document[] = [];
+
+  if (!proposal.forum?.posts || proposal.forum.posts.length === 0) {
+    return documents;
+  }
+
+  for (const post of proposal.forum.posts) {
+    // Skip deleted posts
+    if (post.is_deleted) continue;
+
+    // Skip posts with empty or whitespace-only content
+    const content = post.content?.trim();
+    if (!content || content.length === 0) {
+      console.warn(`Skipping empty content for post ${post.post_number} in proposal ${proposal.id}`);
+      continue;
+    }
+
+    const metadata: RagNodeMetadata = {
+      proposal_id: proposal.id,
+      stage: "forum",
+      status: "",
+      url: `${proposal.forum.url}/${post.post_number}`,
+      source_id: proposal.forum.original_id || "",
+      post_number: post.post_number,
+      author_name: post.author_name,
+      author_username: post.author_username,
+      content_type: post.post_number === 1 ? "original" : "comment",
+      posted_at: post.posted_at,
+      reply_to_post_number: post.reply_to_post_number,
+    };
+
+    documents.push(
+      new Document({
+        id_: generateNodeId(proposal.id, "forum", post.post_number),
+        text: content,
+        metadata,
       }),
     );
   }

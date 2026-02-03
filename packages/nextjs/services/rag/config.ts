@@ -3,14 +3,14 @@
 // Environment variable defaults
 export const RAG_CONFIG = {
   // OpenAI models
-  embeddingModel: process.env.OPENAI_EMBEDDING_MODEL || "text-embedding-3-small",
-  chatModel: process.env.OPENAI_CHAT_MODEL || "gpt-4o-mini",
+  embeddingModel: process.env.OPENAI_EMBEDDING_MODEL || "text-embedding-3-large",
+  chatModel: process.env.OPENAI_CHAT_MODEL || "gpt-5-mini",
 
   // Embedding dimensions for text-embedding-3-small
   embeddingDimensions: 1536,
 
   // Query defaults
-  defaultTopK: Number(process.env.RAG_TOP_K) || 5,
+  defaultTopK: Number(process.env.RAG_TOP_K) || 15,
   maxTopK: 20,
 
   // Timeouts

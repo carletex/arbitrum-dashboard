@@ -61,6 +61,9 @@ async function main() {
     // Clean up connections
     await closeVectorStore();
     await closeDb();
+
+    // Force exit because PGVectorStore may keep internal connections open
+    process.exit(0);
   }
 }
 

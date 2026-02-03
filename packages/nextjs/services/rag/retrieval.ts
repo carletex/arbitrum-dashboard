@@ -31,6 +31,7 @@ function configureSettings(): void {
   Settings.llm = new OpenAI({
     model: RAG_CONFIG.chatModel,
     apiKey: process.env.OPENAI_API_KEY,
+    temperature: 1, // gpt-5-mini only supports temperature=1
   });
 
   Settings.embedModel = new OpenAIEmbedding({
