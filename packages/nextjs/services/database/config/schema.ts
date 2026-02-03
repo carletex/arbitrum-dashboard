@@ -15,9 +15,7 @@ export const proposals = pgTable("proposal", {
 export const forumStage = pgTable("forum_stage", {
   id: uuid("id").defaultRandom().primaryKey(),
   original_id: varchar("original_id", { length: 255 }),
-  proposal_id: uuid("proposal_id")
-    .references(() => proposals.id, { onDelete: "set null" })
-    .unique(),
+  proposal_id: uuid("proposal_id").references(() => proposals.id, { onDelete: "set null" }),
 
   title: text("title"),
   author_name: varchar("author_name", { length: 255 }),
@@ -30,9 +28,7 @@ export const forumStage = pgTable("forum_stage", {
 // Snapshot stage (nullable foreign key; linked later)
 export const snapshotStage = pgTable("snapshot_stage", {
   id: uuid("id").defaultRandom().primaryKey(),
-  proposal_id: uuid("proposal_id")
-    .references(() => proposals.id, { onDelete: "set null" })
-    .unique(),
+  proposal_id: uuid("proposal_id").references(() => proposals.id, { onDelete: "set null" }),
 
   snapshot_id: text("snapshot_id").unique(),
   title: text("title"),
@@ -51,9 +47,7 @@ export const snapshotStage = pgTable("snapshot_stage", {
 // Tally stage (nullable foreign key; linked later)
 export const tallyStage = pgTable("tally_stage", {
   id: uuid("id").defaultRandom().primaryKey(),
-  proposal_id: uuid("proposal_id")
-    .references(() => proposals.id, { onDelete: "set null" })
-    .unique(),
+  proposal_id: uuid("proposal_id").references(() => proposals.id, { onDelete: "set null" }),
 
   tally_proposal_id: text("tally_proposal_id").unique(),
   title: text("title"),
