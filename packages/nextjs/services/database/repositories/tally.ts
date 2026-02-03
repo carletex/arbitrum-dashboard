@@ -74,3 +74,9 @@ export async function getTallyStageByProposalId(proposalId: string) {
     where: eq(tallyStage.proposal_id, proposalId),
   });
 }
+
+export async function getTallyStageByOnchainId(onchainId: string) {
+  return await db.query.tallyStage.findFirst({
+    where: eq(tallyStage.onchain_id, onchainId),
+  });
+}

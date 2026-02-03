@@ -6,7 +6,7 @@
  * - Uses proposal_id from CSV (which comes from forum lookup)
  * - Ignores manual_* fields (as per user request - they are invalid for tally)
  */
-import { getTallyStageByTallyProposalId, updateTallyProposalId } from "../database/repositories/tally";
+import { getTallyStageByOnchainId, updateTallyProposalId } from "../database/repositories/tally";
 import * as dotenv from "dotenv";
 import * as fs from "fs";
 import * as path from "path";
@@ -34,11 +34,11 @@ interface ImportResult {
 }
 
 /**
- * Extract tally_proposal_id from tally URL
+ * Extract onchain_id from tally URL
  * Example: https://www.tally.xyz/gov/arbitrum/proposal/71941171835710778457735937894689629320431683601089057868136768380925169329077
  * -> 71941171835710778457735937894689629320431683601089057868136768380925169329077
  */
-function extractTallyProposalId(url: string): string | null {
+function extractOnchainId(url: string): string | null {
   if (!url) return null;
   const match = url.match(/\/proposal\/(\d+)/);
   return match ? match[1] : null;
@@ -96,11 +96,11 @@ export async function importTallyMatchesFromCsv(dryRun: boolean = false): Promis
   console.log(`Loaded ${rows.length} rows from CSV`);
 
   for (const row of rows) {
-    const tallyProposalId = extractTallyProposalId(row.tally_url);
+    const onchainId = extractOnchainId(row.tally_url);
     const proposalId = isValidUuid(row.proposal_id) ? row.proposal_id.trim() : null;
 
     // Skip rows without valid data
-    if (!tallyProposalId) {
+    if (!onchainId) {
       result.skipped++;
       continue;
     }
@@ -114,11 +114,11 @@ export async function importTallyMatchesFromCsv(dryRun: boolean = false): Promis
     result.matched++;
 
     try {
-      // Find tally_stage by tally_proposal_id using repository function
-      const existingTally = await getTallyStageByTallyProposalId(tallyProposalId);
+      // Find tally_stage by onchain_id (the ID in the URL)
+      const existingTally = await getTallyStageByOnchainId(onchainId);
 
       if (!existingTally) {
-        console.log(`Tally not found in DB: ${tallyProposalId} (${row.tally_title?.slice(0, 50)}...)`);
+        console.log(`Tally not found in DB: ${onchainId} (${row.tally_title?.slice(0, 50)}...)`);
         result.notFound++;
         continue;
       }
