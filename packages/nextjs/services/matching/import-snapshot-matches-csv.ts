@@ -2,10 +2,12 @@
  * Import verified snapshot matches from CSV into the database
  *
  * Uses URLs as natural keys for production-safe matching:
- * - Extracts snapshot_id from snapshot_url
- * - Uses proposal_id from CSV (which comes from forum lookup)
- * - Supports manual_* fields for overrides when present and valid
+ * - Finds snapshot_stage by snapshot_id (extracted from snapshot_url)
+ * - Finds forum_stage by forum_url to get the proposal_id
+ * - Links the snapshot to the proposal
+ * - Supports manual_forum_url for overrides when present
  */
+import { getForumStageByUrl } from "../database/repositories/forum";
 import { getSnapshotStageBySnapshotId, updateSnapshotProposalId } from "../database/repositories/snapshot";
 import * as dotenv from "dotenv";
 import * as fs from "fs";
@@ -21,7 +23,7 @@ interface SnapshotCsvRow {
   proposal_title: string;
   forum_title: string;
   forum_url: string;
-  proposal_id: string;
+  proposal_id: string; // Ignored - we derive this from forum_url lookup
   manual_forum_url?: string;
   manual_proposal_id?: string;
   manual_proposal_title?: string;
@@ -33,6 +35,7 @@ interface ImportResult {
   notFound: number;
   skipped: number;
   alreadyLinked: number;
+  forumNotFound: number;
   errors: string[];
 }
 
@@ -47,17 +50,68 @@ function extractSnapshotId(url: string): string | null {
 }
 
 /**
+ * Decode common HTML entities in URLs
+ */
+function decodeHtmlEntities(text: string): string {
+  if (!text) return text;
+  return text
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&rsquo;/g, "'")
+    .replace(/&lsquo;/g, "'")
+    .replace(/&ldquo;/g, '"')
+    .replace(/&rdquo;/g, '"')
+    .replace(/&ndash;/g, "–")
+    .replace(/&mdash;/g, "—");
+}
+
+/**
+ * Parse a single CSV line handling quoted fields
+ */
+function parseCsvLine(line: string, delimiter: string = ";"): string[] {
+  const result: string[] = [];
+  let current = "";
+  let inQuotes = false;
+
+  for (let i = 0; i < line.length; i++) {
+    const char = line[i];
+
+    if (char === '"') {
+      if (inQuotes && line[i + 1] === '"') {
+        // Escaped quote
+        current += '"';
+        i++;
+      } else {
+        // Toggle quote state
+        inQuotes = !inQuotes;
+      }
+    } else if (char === delimiter && !inQuotes) {
+      result.push(current.trim());
+      current = "";
+    } else {
+      current += char;
+    }
+  }
+
+  result.push(current.trim());
+  return result;
+}
+
+/**
  * Parse CSV content with semicolon delimiter
  */
 function parseCsv(content: string): SnapshotCsvRow[] {
   const lines = content.split("\n").filter(line => line.trim());
   if (lines.length < 2) return [];
 
-  const headers = lines[0].split(";").map(h => h.trim().replace(/;$/, ""));
+  const headers = parseCsvLine(lines[0]).map(h => h.trim().replace(/;$/, ""));
   const rows: SnapshotCsvRow[] = [];
 
   for (let i = 1; i < lines.length; i++) {
-    const values = lines[i].split(";");
+    const values = parseCsvLine(lines[i]);
     const row: Record<string, string> = {};
     headers.forEach((header, idx) => {
       row[header] = values[idx]?.trim() || "";
@@ -69,23 +123,18 @@ function parseCsv(content: string): SnapshotCsvRow[] {
 }
 
 /**
- * Get the effective proposal_id from a row, preferring manual override if valid
+ * Get the effective forum URL from a row, preferring manual override if valid
  */
-function getEffectiveProposalId(row: SnapshotCsvRow): string | null {
-  // Check manual_proposal_id first (if it's a valid UUID)
-  if (row.manual_proposal_id && isValidUuid(row.manual_proposal_id)) {
-    return row.manual_proposal_id.trim();
+function getEffectiveForumUrl(row: SnapshotCsvRow): string | null {
+  // Check manual_forum_url first (if it's a valid forum URL)
+  if (row.manual_forum_url && row.manual_forum_url.includes("forum.arbitrum.foundation")) {
+    return decodeHtmlEntities(row.manual_forum_url.trim());
   }
-  // Fall back to regular proposal_id
-  if (row.proposal_id && isValidUuid(row.proposal_id)) {
-    return row.proposal_id.trim();
+  // Fall back to regular forum_url
+  if (row.forum_url && row.forum_url.includes("forum.arbitrum.foundation")) {
+    return decodeHtmlEntities(row.forum_url.trim());
   }
   return null;
-}
-
-function isValidUuid(value: string): boolean {
-  const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
-  return uuidRegex.test(value.trim());
 }
 
 /**
@@ -99,6 +148,7 @@ export async function importSnapshotMatchesFromCsv(dryRun: boolean = false): Pro
     notFound: 0,
     skipped: 0,
     alreadyLinked: 0,
+    forumNotFound: 0,
     errors: [],
   };
 
@@ -114,16 +164,17 @@ export async function importSnapshotMatchesFromCsv(dryRun: boolean = false): Pro
 
   for (const row of rows) {
     const snapshotId = extractSnapshotId(row.snapshot_url);
-    const proposalId = getEffectiveProposalId(row);
+    const forumUrl = getEffectiveForumUrl(row);
+    const isManualOverride = row.manual_forum_url && row.manual_forum_url.includes("forum.arbitrum.foundation");
 
-    // Skip rows without valid data
+    // Skip rows without valid snapshot URL
     if (!snapshotId) {
       result.skipped++;
       continue;
     }
 
-    if (!proposalId) {
-      // No proposal_id means this snapshot has no match (intentional)
+    // Skip rows without forum_url (intentionally no match)
+    if (!forumUrl) {
       result.skipped++;
       continue;
     }
@@ -140,6 +191,23 @@ export async function importSnapshotMatchesFromCsv(dryRun: boolean = false): Pro
         continue;
       }
 
+      // Find forum_stage by URL to get the proposal_id
+      const forumStage = await getForumStageByUrl(forumUrl);
+
+      if (!forumStage) {
+        console.log(`Forum not found in DB: ${forumUrl} (for snapshot: ${row.snapshot_title?.slice(0, 40)}...)`);
+        result.forumNotFound++;
+        continue;
+      }
+
+      const proposalId = forumStage.proposal_id;
+
+      if (!proposalId) {
+        console.log(`Forum has no proposal_id: ${forumUrl}`);
+        result.forumNotFound++;
+        continue;
+      }
+
       // Check if already linked to the same proposal
       if (existingSnapshot.proposal_id === proposalId) {
         result.alreadyLinked++;
@@ -147,7 +215,7 @@ export async function importSnapshotMatchesFromCsv(dryRun: boolean = false): Pro
       }
 
       if (dryRun) {
-        const manualNote = row.manual_proposal_id ? " [MANUAL]" : "";
+        const manualNote = isManualOverride ? " [MANUAL]" : "";
         console.log(
           `[DRY RUN] Would link snapshot "${row.snapshot_title?.slice(0, 50)}..." to proposal ${proposalId}${manualNote}`,
         );
@@ -155,7 +223,7 @@ export async function importSnapshotMatchesFromCsv(dryRun: boolean = false): Pro
       } else {
         await updateSnapshotProposalId(existingSnapshot.id, proposalId);
 
-        const manualNote = row.manual_proposal_id ? " [MANUAL]" : "";
+        const manualNote = isManualOverride ? " [MANUAL]" : "";
         console.log(`Updated: "${row.snapshot_title?.slice(0, 50)}..." -> ${proposalId}${manualNote}`);
         result.updated++;
       }
@@ -170,8 +238,9 @@ export async function importSnapshotMatchesFromCsv(dryRun: boolean = false): Pro
   console.log(`Matched in CSV: ${result.matched}`);
   console.log(`Updated: ${result.updated}`);
   console.log(`Already linked: ${result.alreadyLinked}`);
-  console.log(`Not found in DB: ${result.notFound}`);
-  console.log(`Skipped (no match): ${result.skipped}`);
+  console.log(`Snapshot not found in DB: ${result.notFound}`);
+  console.log(`Forum not found in DB: ${result.forumNotFound}`);
+  console.log(`Skipped (no forum_url): ${result.skipped}`);
   console.log(`Errors: ${result.errors.length}`);
 
   return result;

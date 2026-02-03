@@ -2,10 +2,11 @@
  * Import verified tally matches from CSV into the database
  *
  * Uses URLs as natural keys for production-safe matching:
- * - Extracts tally_proposal_id from tally_url
- * - Uses proposal_id from CSV (which comes from forum lookup)
- * - Ignores manual_* fields (as per user request - they are invalid for tally)
+ * - Finds tally_stage by onchain_id (extracted from tally_url)
+ * - Finds forum_stage by forum_url to get the proposal_id
+ * - Links the tally to the proposal
  */
+import { getForumStageByUrl } from "../database/repositories/forum";
 import { getTallyStageByOnchainId, updateTallyProposalId } from "../database/repositories/tally";
 import * as dotenv from "dotenv";
 import * as fs from "fs";
@@ -20,8 +21,7 @@ interface TallyCsvRow {
   proposal_title: string;
   forum_title: string;
   forum_url: string;
-  proposal_id: string;
-  // manual_* fields are ignored for tally
+  proposal_id: string; // Ignored - we derive this from forum_url lookup
 }
 
 interface ImportResult {
@@ -30,6 +30,7 @@ interface ImportResult {
   notFound: number;
   skipped: number;
   alreadyLinked: number;
+  forumNotFound: number;
   errors: string[];
 }
 
@@ -45,17 +46,68 @@ function extractOnchainId(url: string): string | null {
 }
 
 /**
+ * Decode common HTML entities in URLs
+ */
+function decodeHtmlEntities(text: string): string {
+  if (!text) return text;
+  return text
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#39;/g, "'")
+    .replace(/&rsquo;/g, "'")
+    .replace(/&lsquo;/g, "'")
+    .replace(/&ldquo;/g, '"')
+    .replace(/&rdquo;/g, '"')
+    .replace(/&ndash;/g, "–")
+    .replace(/&mdash;/g, "—");
+}
+
+/**
+ * Parse a single CSV line handling quoted fields
+ */
+function parseCsvLine(line: string, delimiter: string = ";"): string[] {
+  const result: string[] = [];
+  let current = "";
+  let inQuotes = false;
+
+  for (let i = 0; i < line.length; i++) {
+    const char = line[i];
+
+    if (char === '"') {
+      if (inQuotes && line[i + 1] === '"') {
+        // Escaped quote
+        current += '"';
+        i++;
+      } else {
+        // Toggle quote state
+        inQuotes = !inQuotes;
+      }
+    } else if (char === delimiter && !inQuotes) {
+      result.push(current.trim());
+      current = "";
+    } else {
+      current += char;
+    }
+  }
+
+  result.push(current.trim());
+  return result;
+}
+
+/**
  * Parse CSV content with semicolon delimiter
  */
 function parseCsv(content: string): TallyCsvRow[] {
   const lines = content.split("\n").filter(line => line.trim());
   if (lines.length < 2) return [];
 
-  const headers = lines[0].split(";").map(h => h.trim().replace(/;$/, ""));
+  const headers = parseCsvLine(lines[0]).map(h => h.trim().replace(/;$/, ""));
   const rows: TallyCsvRow[] = [];
 
   for (let i = 1; i < lines.length; i++) {
-    const values = lines[i].split(";");
+    const values = parseCsvLine(lines[i]);
     const row: Record<string, string> = {};
     headers.forEach((header, idx) => {
       row[header] = values[idx]?.trim() || "";
@@ -64,11 +116,6 @@ function parseCsv(content: string): TallyCsvRow[] {
   }
 
   return rows;
-}
-
-function isValidUuid(value: string): boolean {
-  const uuidRegex = /^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$/i;
-  return uuidRegex.test(value.trim());
 }
 
 /**
@@ -82,6 +129,7 @@ export async function importTallyMatchesFromCsv(dryRun: boolean = false): Promis
     notFound: 0,
     skipped: 0,
     alreadyLinked: 0,
+    forumNotFound: 0,
     errors: [],
   };
 
@@ -97,16 +145,16 @@ export async function importTallyMatchesFromCsv(dryRun: boolean = false): Promis
 
   for (const row of rows) {
     const onchainId = extractOnchainId(row.tally_url);
-    const proposalId = isValidUuid(row.proposal_id) ? row.proposal_id.trim() : null;
+    const forumUrl = decodeHtmlEntities(row.forum_url?.trim());
 
-    // Skip rows without valid data
+    // Skip rows without valid tally URL
     if (!onchainId) {
       result.skipped++;
       continue;
     }
 
-    if (!proposalId) {
-      // No proposal_id means this tally has no match (intentional)
+    // Skip rows without forum_url (intentionally no match)
+    if (!forumUrl) {
       result.skipped++;
       continue;
     }
@@ -120,6 +168,23 @@ export async function importTallyMatchesFromCsv(dryRun: boolean = false): Promis
       if (!existingTally) {
         console.log(`Tally not found in DB: ${onchainId} (${row.tally_title?.slice(0, 50)}...)`);
         result.notFound++;
+        continue;
+      }
+
+      // Find forum_stage by URL to get the proposal_id
+      const forumStage = await getForumStageByUrl(forumUrl);
+
+      if (!forumStage) {
+        console.log(`Forum not found in DB: ${forumUrl} (for tally: ${row.tally_title?.slice(0, 40)}...)`);
+        result.forumNotFound++;
+        continue;
+      }
+
+      const proposalId = forumStage.proposal_id;
+
+      if (!proposalId) {
+        console.log(`Forum has no proposal_id: ${forumUrl}`);
+        result.forumNotFound++;
         continue;
       }
 
@@ -149,8 +214,9 @@ export async function importTallyMatchesFromCsv(dryRun: boolean = false): Promis
   console.log(`Matched in CSV: ${result.matched}`);
   console.log(`Updated: ${result.updated}`);
   console.log(`Already linked: ${result.alreadyLinked}`);
-  console.log(`Not found in DB: ${result.notFound}`);
-  console.log(`Skipped (no match): ${result.skipped}`);
+  console.log(`Tally not found in DB: ${result.notFound}`);
+  console.log(`Forum not found in DB: ${result.forumNotFound}`);
+  console.log(`Skipped (no forum_url): ${result.skipped}`);
   console.log(`Errors: ${result.errors.length}`);
 
   return result;
