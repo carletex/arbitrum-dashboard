@@ -58,9 +58,3 @@ export async function updateSnapshotProposalId(snapshotStageId: string, proposal
     .returning();
   return updated;
 }
-
-export async function getSnapshotStageByProposalId(proposalId: string) {
-  return await db.query.snapshotStage.findFirst({
-    where: eq(snapshotStage.proposal_id, proposalId),
-  });
-}

@@ -48,12 +48,6 @@ export async function getAllTallyStages() {
   return await db.query.tallyStage.findMany();
 }
 
-export async function getTallyStageByTallyProposalId(tallyProposalId: string) {
-  return await db.query.tallyStage.findFirst({
-    where: eq(tallyStage.tally_proposal_id, tallyProposalId),
-  });
-}
-
 export async function getTallyStageById(id: string) {
   return await db.query.tallyStage.findFirst({
     where: eq(tallyStage.id, id),
@@ -67,12 +61,6 @@ export async function updateTallyProposalId(tallyStageId: string, proposalId: st
     .where(eq(tallyStage.id, tallyStageId))
     .returning();
   return updated;
-}
-
-export async function getTallyStageByProposalId(proposalId: string) {
-  return await db.query.tallyStage.findFirst({
-    where: eq(tallyStage.proposal_id, proposalId),
-  });
 }
 
 export async function getTallyStageByOnchainId(onchainId: string) {
