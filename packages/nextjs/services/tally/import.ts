@@ -204,9 +204,18 @@ const transformProposalData = (proposal: TallyProposal) => {
     executableCalls: proposal.executableCalls,
   };
 
+  // Clean title by removing markdown headers (# ## ### etc.) from the start
+  const cleanTitle = (title: string | null): string | null => {
+    if (!title) return null;
+    return title.replace(/^#+\s*/, "").trim();
+  };
+
   return {
     tally_proposal_id: proposal.id,
-    title: proposal.metadata.title || null,
+    title:
+      cleanTitle(proposal.metadata.title) ||
+      (proposal.onchainId ? `Proposal #${proposal.onchainId}` : null) ||
+      `Tally Proposal ${proposal.id}`,
     author_name: authorName,
     url: url,
     onchain_id: proposal.onchainId || null,
