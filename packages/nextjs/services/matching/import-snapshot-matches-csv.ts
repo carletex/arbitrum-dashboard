@@ -139,9 +139,8 @@ function getEffectiveForumUrl(row: SnapshotCsvRow): string | null {
 
 /**
  * Import snapshot matches from CSV into the database
- * @param dryRun - If true, only log what would be done without making changes
  */
-export async function importSnapshotMatchesFromCsv(dryRun: boolean = false): Promise<ImportResult> {
+export async function importSnapshotMatchesFromCsv(): Promise<ImportResult> {
   const result: ImportResult = {
     matched: 0,
     updated: 0,
@@ -214,19 +213,11 @@ export async function importSnapshotMatchesFromCsv(dryRun: boolean = false): Pro
         continue;
       }
 
-      if (dryRun) {
-        const manualNote = isManualOverride ? " [MANUAL]" : "";
-        console.log(
-          `[DRY RUN] Would link snapshot "${row.snapshot_title?.slice(0, 50)}..." to proposal ${proposalId}${manualNote}`,
-        );
-        result.updated++;
-      } else {
-        await updateSnapshotProposalId(existingSnapshot.id, proposalId);
+      await updateSnapshotProposalId(existingSnapshot.id, proposalId);
 
-        const manualNote = isManualOverride ? " [MANUAL]" : "";
-        console.log(`Updated: "${row.snapshot_title?.slice(0, 50)}..." -> ${proposalId}${manualNote}`);
-        result.updated++;
-      }
+      const manualNote = isManualOverride ? " [MANUAL]" : "";
+      console.log(`Updated: "${row.snapshot_title?.slice(0, 50)}..." -> ${proposalId}${manualNote}`);
+      result.updated++;
     } catch (error) {
       const errorMessage = `Error processing "${row.snapshot_title}": ${error}`;
       console.error(errorMessage);
@@ -248,12 +239,9 @@ export async function importSnapshotMatchesFromCsv(dryRun: boolean = false): Pro
 
 // Allow running as standalone script
 if (require.main === module) {
-  const args = process.argv.slice(2);
-  const dryRun = args.includes("--dry-run");
+  console.log("Running snapshot CSV import...");
 
-  console.log(`Running snapshot CSV import${dryRun ? " (DRY RUN)" : ""}`);
-
-  importSnapshotMatchesFromCsv(dryRun)
+  importSnapshotMatchesFromCsv()
     .then(() => {
       console.log("\nImport completed!");
       process.exit(0);

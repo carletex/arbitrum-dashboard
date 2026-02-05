@@ -120,9 +120,8 @@ function parseCsv(content: string): TallyCsvRow[] {
 
 /**
  * Import tally matches from CSV into the database
- * @param dryRun - If true, only log what would be done without making changes
  */
-export async function importTallyMatchesFromCsv(dryRun: boolean = false): Promise<ImportResult> {
+export async function importTallyMatchesFromCsv(): Promise<ImportResult> {
   const result: ImportResult = {
     matched: 0,
     updated: 0,
@@ -194,15 +193,10 @@ export async function importTallyMatchesFromCsv(dryRun: boolean = false): Promis
         continue;
       }
 
-      if (dryRun) {
-        console.log(`[DRY RUN] Would link tally "${row.tally_title?.slice(0, 50)}..." to proposal ${proposalId}`);
-        result.updated++;
-      } else {
-        await updateTallyProposalId(existingTally.id, proposalId);
+      await updateTallyProposalId(existingTally.id, proposalId);
 
-        console.log(`Updated: "${row.tally_title?.slice(0, 50)}..." -> ${proposalId}`);
-        result.updated++;
-      }
+      console.log(`Updated: "${row.tally_title?.slice(0, 50)}..." -> ${proposalId}`);
+      result.updated++;
     } catch (error) {
       const errorMessage = `Error processing "${row.tally_title}": ${error}`;
       console.error(errorMessage);
@@ -224,12 +218,9 @@ export async function importTallyMatchesFromCsv(dryRun: boolean = false): Promis
 
 // Allow running as standalone script
 if (require.main === module) {
-  const args = process.argv.slice(2);
-  const dryRun = args.includes("--dry-run");
+  console.log("Running tally CSV import...");
 
-  console.log(`Running tally CSV import${dryRun ? " (DRY RUN)" : ""}`);
-
-  importTallyMatchesFromCsv(dryRun)
+  importTallyMatchesFromCsv()
     .then(() => {
       console.log("\nImport completed!");
       process.exit(0);
