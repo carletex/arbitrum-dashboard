@@ -22,6 +22,20 @@ RAG = give the model the right context at the right time.
 2. Augment: paste those snippets into the prompt
 3. Generate: ask the LLM to answer using those snippets
 
+Example:
+
+```
+<system prompt>
+
+<latest family data (chunked, only necesasry parts)>
+
+<question>
+
+<answer>
+
+<citations>
+```
+
 So the model isn’t “remembering” the answer. It’s reading the answer from your **context** and then explaining it.
 
 ### What RAG buys you
@@ -44,23 +58,6 @@ This document explains the current Proposal RAG implementation on this branch, w
 
 - We adopted **LlamaIndex conventions** for vector store tables to reduce custom glue code and align with a proven RAG workflow. This keeps ingestion, retrieval, and synthesis consistent with the upstream library.
 - We chose **pgvector on Postgres** (Neon in prod, local in dev) to keep one datastore for both relational data and embeddings, avoiding an external vector DB.
-
-### OpenAI models
-
-- OpenAI embeddings + OpenAI LLM were selected for fastest time‑to‑value and a stable SDK integration.
-- Defaults are set to `text-embedding-3-large` (1536 dims) and `gpt-5-mini`.
-
-### Manual ingestion in v1
-
-- Ingestion is manual (CLI or admin‑protected endpoint) to avoid accidental cost spikes and to keep operational control tight.
-- A scheduled pipeline can be added later once ingestion quality and cost are validated.
-
-### Metadata‑only corpus in v1
-
-> NOTE: We now ingest forum comments and OP post as well
-
-- We intentionally **do not ingest Snapshot/forum bodies** yet. v1 uses proposal + stage metadata and links only.
-- This minimizes data volume, simplifies ingestion, and avoids storing large unstructured content until we validate retrieval quality.
 
 ## Flow of RAG pipeline:
 
@@ -109,6 +106,23 @@ This document explains the current Proposal RAG implementation on this branch, w
           1. retrieve a larger set (optimize recall)
           2. rerank/filter down (optimize precision)
        4. NOTE: We haven't done the rerank part. Just playaround with recall
+
+### OpenAI models
+
+- OpenAI embeddings + OpenAI LLM were selected for fastest time‑to‑value and a stable SDK integration.
+- Defaults are set to `text-embedding-3-large` (1536 dims) and `gpt-5-mini`.
+
+### Manual ingestion in v1
+
+- Ingestion is manual (CLI or admin‑protected endpoint) to avoid accidental cost spikes and to keep operational control tight.
+- A scheduled pipeline can be added later once ingestion quality and cost are validated.
+
+### Metadata‑only corpus in v1
+
+> NOTE: We now ingest forum comments and OP post as well
+
+- We intentionally **do not ingest Snapshot/forum bodies** yet. v1 uses proposal + stage metadata and links only.
+- This minimizes data volume, simplifies ingestion, and avoids storing large unstructured content until we validate retrieval quality.
 
 ## High‑Level Flow
 
