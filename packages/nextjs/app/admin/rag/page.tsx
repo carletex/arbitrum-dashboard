@@ -17,27 +17,10 @@ interface QueryResponse {
   error?: string;
 }
 
-interface IngestionResponse {
-  success: boolean;
-  message?: string;
-  stats?: {
-    totalDocuments: number;
-    newNodes: number;
-    updatedNodes: number;
-    skippedNodes: number;
-  };
-  warnings?: string[];
-  error?: string;
-}
-
 export default function RagAdminPage() {
   const [query, setQuery] = useState("");
   const [queryResponse, setQueryResponse] = useState<QueryResponse | null>(null);
   const [queryLoading, setQueryLoading] = useState(false);
-
-  const [ingestionResponse, setIngestionResponse] = useState<IngestionResponse | null>(null);
-  const [ingestionLoading, setIngestionLoading] = useState(false);
-  const [clearFirst, setClearFirst] = useState(false);
 
   const [stageFilters, setStageFilters] = useState<string[]>([]);
   const [statusFilter, setStatusFilter] = useState("");
@@ -75,29 +58,6 @@ export default function RagAdminPage() {
       });
     } finally {
       setQueryLoading(false);
-    }
-  };
-
-  const handleIngestion = async () => {
-    setIngestionLoading(true);
-    setIngestionResponse(null);
-
-    try {
-      const res = await fetch("/api/rag/ingest", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ clearFirst }),
-      });
-
-      const data = await res.json();
-      setIngestionResponse(data);
-    } catch (error) {
-      setIngestionResponse({
-        success: false,
-        error: error instanceof Error ? error.message : "Network error",
-      });
-    } finally {
-      setIngestionLoading(false);
     }
   };
 
@@ -226,65 +186,6 @@ export default function RagAdminPage() {
             ) : (
               <div className="alert alert-error">
                 <span>{queryResponse.error}</span>
-              </div>
-            )}
-          </div>
-        )}
-      </div>
-
-      {/* Ingestion Section */}
-      <div className="bg-base-100 rounded-xl p-6 shadow-lg border border-base-300">
-        <h2 className="text-xl font-semibold mb-4">Ingestion</h2>
-        <p className="text-base-content/70 mb-4">Ingest proposals into the vector store for semantic search.</p>
-
-        <div className="flex flex-col gap-4">
-          <label className="flex items-center gap-2 cursor-pointer">
-            <input
-              type="checkbox"
-              className="checkbox checkbox-sm"
-              checked={clearFirst}
-              onChange={e => setClearFirst(e.target.checked)}
-            />
-            <span className="text-sm">Clear existing data before ingestion</span>
-          </label>
-
-          <button
-            className={`btn btn-secondary w-full ${ingestionLoading ? "loading" : ""}`}
-            onClick={handleIngestion}
-            disabled={ingestionLoading}
-          >
-            {ingestionLoading ? "Ingesting..." : "Run Ingestion"}
-          </button>
-        </div>
-
-        {/* Ingestion Response */}
-        {ingestionResponse && (
-          <div className="mt-4">
-            {ingestionResponse.success ? (
-              <div className="alert alert-success">
-                <div className="flex flex-col gap-1">
-                  <span className="font-medium">{ingestionResponse.message}</span>
-                  {ingestionResponse.stats && (
-                    <span className="text-sm">
-                      Documents: {ingestionResponse.stats.totalDocuments} | New: {ingestionResponse.stats.newNodes} |
-                      Updated: {ingestionResponse.stats.updatedNodes} | Skipped: {ingestionResponse.stats.skippedNodes}
-                    </span>
-                  )}
-                  {ingestionResponse.warnings && ingestionResponse.warnings.length > 0 && (
-                    <div className="text-sm text-warning mt-2">
-                      Warnings:
-                      <ul className="list-disc list-inside">
-                        {ingestionResponse.warnings.map((w, i) => (
-                          <li key={i}>{w}</li>
-                        ))}
-                      </ul>
-                    </div>
-                  )}
-                </div>
-              </div>
-            ) : (
-              <div className="alert alert-error">
-                <span>{ingestionResponse.error}</span>
               </div>
             )}
           </div>
