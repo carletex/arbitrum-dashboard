@@ -644,11 +644,11 @@ console.log(result.feedback); // "YES" or "NO" + reasoning
 
 **Faithfulness vs Relevancy — what's the difference?**
 
-| | Faithfulness | Relevancy |
-|---|---|---|
-| **Question asked** | "Is the response supported by context?" | "Does the response answer the query given the context?" |
-| **What it catches** | Hallucination (making stuff up) | Off-topic answers (ignoring the question) |
-| **Input to LLM** | Response text only | Query + Response combined |
+|                               | Faithfulness                                                                                                         | Relevancy                                               |
+| ----------------------------- | -------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| **Question asked**            | "Is the response supported by context?"                                                                              | "Does the response answer the query given the context?" |
+| **What it catches**           | Hallucination (making stuff up)                                                                                      | Off-topic answers (ignoring the question)               |
+| **Input to LLM**              | Response text only                                                                                                   | Query + Response combined                               |
 | **Can pass one, fail other?** | Yes: "Paris is the capital of France" is faithful to a France context, but irrelevant if the query was about Germany |
 
 ---
@@ -714,14 +714,14 @@ console.log(result.feedback); // "The response correctly identifies the vote cou
 
 ### Summary: Evaluator Comparison
 
-| | Faithfulness | Relevancy | Correctness |
-|---|---|---|---|
-| **Needs labels?** | No | No | Yes (reference answer) |
-| **Score type** | Binary (0 or 1) | Binary (0 or 1) | Float (1-5) |
-| **LLM calls** | N (per context chunk) | N (per context chunk) | 1 |
-| **Detects** | Hallucination | Off-topic answers | Incomplete/wrong answers |
-| **How it works** | SummaryIndex + refine chain | SummaryIndex + refine chain | Single chat call |
-| **Cost (5 chunks)** | ~5 LLM calls | ~5 LLM calls | 1 LLM call |
+|                     | Faithfulness                | Relevancy                   | Correctness              |
+| ------------------- | --------------------------- | --------------------------- | ------------------------ |
+| **Needs labels?**   | No                          | No                          | Yes (reference answer)   |
+| **Score type**      | Binary (0 or 1)             | Binary (0 or 1)             | Float (1-5)              |
+| **LLM calls**       | N (per context chunk)       | N (per context chunk)       | 1                        |
+| **Detects**         | Hallucination               | Off-topic answers           | Incomplete/wrong answers |
+| **How it works**    | SummaryIndex + refine chain | SummaryIndex + refine chain | Single chat call         |
+| **Cost (5 chunks)** | ~5 LLM calls                | ~5 LLM calls                | 1 LLM call               |
 
 ### Retrieval-Specific Metrics (Manual)
 
