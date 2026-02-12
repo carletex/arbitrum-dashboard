@@ -21,3 +21,15 @@ export type {
   AllowedStatus,
 } from "./types";
 export { ALLOWED_STATUSES } from "./types";
+
+// Evaluation pipeline
+export { runEvaluation, printReport, saveReport, EVAL_CONFIG, TEST_QUERIES } from "./evaluation";
+export type {
+  EvalReport,
+  EvalRunOptions,
+  EvalSummary,
+  EvalTestQuery,
+  LLMEvalResult,
+  QueryEvalResult,
+  RetrievalResult,
+} from "./evaluation";

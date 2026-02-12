@@ -11,6 +11,7 @@
     "dev": "next dev",
     "rag:setup": "tsx services/rag/setup-pgvector.ts",
     "rag:ingest": "tsx services/rag/cli-ingest.ts",
+    "rag:eval": "tsx services/rag/cli-eval.ts",
     "format": "prettier --write . '!(node_modules|.next|contracts)/**/*'",
     "lint": "next lint",
     "serve": "next start",
