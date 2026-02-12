@@ -1,0 +1,713 @@
+[
+  {
+    "tally_id": "00ed2e84-5d4f-4fe7-b2bd-b373dd2bfb4a",
+    "title": "AIP: ArbOS Version 11",
+    "canonical_proposal_id": "e6a8f6cc-29b7-4e7a-950d-5ba9e04ee929",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal 'AIP: ArbOS Version 11' has an exact title match with the candidate forum proposal. Although the author is listed as 'System' in the candidate list (common for scraped or official posts) versus 'Tyler Bench' on Tally, the specific version number and technical subject matter confirm the match.",
+    "status": "success"
+  },
+  {
+    "tally_id": "03918d79-5d53-446e-bf9a-f357a2ba6530",
+    "title": "# Entropy Advisors: Exclusively Working with the Arbitrum DAO, Y2-Y3",
+    "canonical_proposal_id": "68b61ef6-76f1-445f-b00d-ffa84543e077",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal title 'Entropy Advisors: Exclusively Working with the Arbitrum DAO, Y2-Y3' matches exactly with the forum proposal title. Both are authored by Entropy Advisors and explicitly refer to the Year 2-3 renewal.",
+    "status": "success"
+  },
+  {
+    "tally_id": "0aa67e93-c398-42bd-8733-dfd9efa539d8",
+    "title": "# GovHack at ETH CC (Brussels)",
+    "canonical_proposal_id": "9bc9202f-4567-49b6-9bf5-814c46cfb707",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal title 'GovHack at ETH CC (Brussels)' matches the Tally title almost exactly. Both refer to the specific event in Brussels. While the Tally author (coinflipcanda) differs from the Forum author (Entropy Advisors), this is a common occurrence where an organization or different delegate facilitates the forum discussion versus the on-chain submission.",
+    "status": "success"
+  },
+  {
+    "tally_id": "0c430e2a-f12f-4c5f-ae40-9b44f077db09",
+    "title": "Enhancing Multichain Governance: Upgrading RARI Governance Token on Arbitrum",
+    "canonical_proposal_id": "2032008d-aa79-402e-a4f3-54e0db086e38",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal shares an identical title ('Enhancing Multichain Governance: Upgrading RARI Governance Token on Arbitrum') with the Tally entry. Although the author listed on Tally is Tyler Bench (Frisson) and the forum author is Jana Bertram, this is a standard pattern where a delegate (Frisson) submits the on-chain proposal on behalf of the project representative.",
+    "status": "success"
+  },
+  {
+    "tally_id": "129317df-3b93-46c4-a205-4e8bbf527923",
+    "title": "# Changes to the Constitution and the Security Council Election Process",
+    "canonical_proposal_id": "879b9bd9-230b-4492-b4f7-e38fcd084182",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal title 'Changes to the Constitution and the Security Council Election Process' matches the forum proposal title 'AIP: Changes to the Constitution and the Security Council Election Process' almost exactly. The description details specific changes to the election timeline (7-day contender selection) which aligns with the content of the referenced AIP.",
+    "status": "success"
+  },
+  {
+    "tally_id": "16a316e3-c650-41cf-a336-01492f569e13",
+    "title": "AIP: ArbOS 20 “Atlas” - Arbitrum Support for Dencun + Batch Poster Improvements ",
+    "canonical_proposal_id": "8b760c14-6f2b-4069-b326-23653e5c20f9",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal is the on-chain execution for the ArbOS 20 'Atlas' upgrade. It explicitly matches the forum proposal title 'AIP: ArbOS Version 20 “Atlas”' (ID: 8b760c14...). The Tally description explains that this AIP combines the ArbOS 20 temperature check with the Batch Poster improvements, making the ArbOS 20 forum post the primary canonical source for this upgrade.",
+    "status": "success"
+  },
+  {
+    "tally_id": "18fd44f2-8cca-4e6d-88d8-434ad77f1920",
+    "title": "AIP 6: Security Council Elections Proposed Implementation Spec",
+    "canonical_proposal_id": "48b9fc68-fc13-4924-a816-31cf736a5193",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "Both the Tally entry and the forum proposal explicitly reference 'AIP 6' and 'Security Council Elections' in their titles. This is a unique identifier matching the specific implementation specification for the elections.",
+    "status": "success"
+  },
+  {
+    "tally_id": "1f55ed35-a75b-416e-a7a4-0c3ab4a1ef07",
+    "title": "[UPDATED] Proposal to Establish the Arbitrum Research & Development Collective",
+    "canonical_proposal_id": "0593649d-0b8c-4724-9ba1-6adda1d38593",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal title '[UPDATED] Proposal to Establish the Arbitrum Research & Development Collective' matches the forum proposal 'Proposal [Non-Constitutional]: Establish the ‘Arbitrum Research & Development Collective’'. Both describe the initial creation and funding of the ARDC (specifically distinguishing it from 'Term 2' or 'V2' proposals found in the list). Although the authors differ (Frisson on Tally vs Joseph on Forum), the Tally description explicitly references '@Immutablelawyer' (Joseph's handle) regarding the election process, confirming the connection.",
+    "status": "success"
+  },
+  {
+    "tally_id": "1fe9b75f-c81a-4e27-a69c-239eeda7a8c8",
+    "title": "Proposal [Non-Constitutional]: Establish the ArbitrumDAO Procurement Committee",
+    "canonical_proposal_id": "b33055a5-c37c-4e6e-9670-556ae47037fc",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal title 'Proposal [Non-Constitutional]: Establish the ArbitrumDAO Procurement Committee' matches the forum proposal title exactly. The content describes the formation of the ADPC and the funding request of 200,000 ARB, which aligns with the initial establishment proposal on the forum. Although the Tally author is Tyler Bench (Frisson) and the forum author is Joseph, this is a known collaboration for the ADPC.",
+    "status": "success"
+  },
+  {
+    "tally_id": "2052398b-8fb8-4ffb-8e21-9a84115b4d54",
+    "title": "[UPDATED] Experimental Delegates Incentive System",
+    "canonical_proposal_id": "476f048d-caa6-4760-a5ee-dc05e7f3a22b",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal description explicitly links to the forum post 'Proposal: Experimental Incentive System for Active ArbitrumDAO Delegates' (matches the title of the selected forum proposal). The content describes the experimental 6-month incentive system, which aligns perfectly with the forum proposal title, despite the author discrepancy (likely collaboration between Entropy/Cattin and SEED Gov).",
+    "status": "success"
+  },
+  {
+    "tally_id": "24e25124-d9e4-48e0-bd6f-f757f8525b33",
+    "title": "# Constitutional AIP - Security Council Improvement Proposal ",
+    "canonical_proposal_id": "ae6b72ed-9931-4f2e-9c94-164cf6885e68",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal title '# Constitutional AIP - Security Council Improvement Proposal' is a near-exact match to the forum proposal 'Constitutional AIP - Security Council Improvement Proposal'. The author for both is L2BEAT (listed as 'Krzysztof 'krst' Urbański L2BEAT 💗' on the forum), and the content regarding upgrading the Security Council for Stage 1 designation aligns.",
+    "status": "success"
+  },
+  {
+    "tally_id": "26c3dee4-8ba2-48d9-9cc2-483a9597338f",
+    "title": "[Non-Constitutional] Funds to Bolster Foundation’s Strategic Partnerships Budget ",
+    "canonical_proposal_id": "3468a7eb-11df-4db6-8bfe-a298f56b18d9",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal title '[Non-Constitutional] Funds to Bolster Foundation’s Strategic Partnerships Budget' is an exact character-for-character match to the Tally proposal title. While the author is listed as 'System' in the provided candidate list (likely due to data ingestion), the unique title confirms the match.",
+    "status": "success"
+  },
+  {
+    "tally_id": "2f7b1985-c6d8-4d8d-931f-0d3abcee74c9",
+    "title": "AIP: Building the Future of NFTs: The Rarible Protocol - Arbitrum Integration",
+    "canonical_proposal_id": "fa550ff6-92b4-49f2-b8c1-380fcefc41ff",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal description explicitly states it is the '[2nd Revision]' and an 'amended draft proposal'. This corresponds directly to the forum proposal titled 'Proposal: Building the Future of NFTs: The Rarible Protocol - Arbitrum Integration Proposal [REVISED]', distinguishing it from the earlier unrevised version (ID 2c0cb262...). Although the Tally author (L2BEAT) differs from the forum author (Jana Bertram), this is common when a delegate submits the proposal on-chain on behalf of a foundation.",
+    "status": "success"
+  },
+  {
+    "tally_id": "2fa56d13-b4e6-4625-afa0-9e7e6328e6d2",
+    "title": "Delegate to Voter Enfranchisement Pool — Event Horizon",
+    "canonical_proposal_id": "046f9a56-cae7-477d-bbc7-d31ea0b8bc34",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The title 'Delegate to Voter Enfranchisement Pool — Event Horizon' and author 'L2BEAT 💗' in the Tally entry exactly match the forum proposal with ID 046f9a56-cae7-477d-bbc7-d31ea0b8bc34.",
+    "status": "success"
+  },
+  {
+    "tally_id": "3f0e5fa3-a7b3-453e-8341-782f132562b7",
+    "title": "# AIP-7: Arbitrum One Governance Parameter Fixes",
+    "canonical_proposal_id": "9bdf4977-65ac-49b0-9259-771878d68869",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal title 'AIP-7: Arbitrum One Governance Parameter Fixes' matches the forum proposal title 'AIP-7: Arbitrum One Governance parameter fixes' exactly (ignoring capitalization and special characters).",
+    "status": "success"
+  },
+  {
+    "tally_id": "44bb5a06-39e8-4ad7-8efe-f8dd4309e427",
+    "title": "Constitutional AIP - Extend Delay on L2Time Lock",
+    "canonical_proposal_id": "24a12298-df86-4c2c-b11e-a61e920ff0a2",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal title 'Constitutional AIP - Extend Delay on L2Time Lock' is nearly identical to the forum proposal title 'Constitutional - Extend Delay on L2Time Lock'. Both refer to the specific action of extending the L2 Time Lock settings (specifically increasing the delay from 3 to 8 days, a known Blockworks Advisory proposal). The author listed on the forum ('System') is likely a placeholder or migration artifact, but the unique title confirms the match.",
+    "status": "success"
+  },
+  {
+    "tally_id": "47f214d1-8a7c-4c60-8816-9adf2f914f74",
+    "title": "The Watchdog: Arbitrum DAO’s Grant Misuse Bounty Program",
+    "canonical_proposal_id": "8b312cb1-622d-4b42-836e-64da66fe78ca",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal 'The Watchdog: Arbitrum DAO’s Grant Misuse Bounty Program' by Entropy Advisors has an exact title and author match in the candidate list.",
+    "status": "success"
+  },
+  {
+    "tally_id": "4836bfc9-f3c9-4f95-b673-e4db7718165d",
+    "title": "# Arbitrum Stable Treasury Endowment Program",
+    "canonical_proposal_id": "b7efb413-f717-42f7-bc0a-7029a6b9c1ad",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal title '# Arbitrum Stable Treasury Endowment Program' matches the forum proposal 'Final: Arbitrum Stable Treasury Endowment Program'. The description in Tally refers to 'STEP', diversifying 35 million ARB, and being a 'trial run' and 'first proposal', which distinguishes it from the 'STEP 2.0' proposal also found in the list. The author difference (L2BEAT on Tally vs Devansh Mehta on Forum) is standard, as delegates often submit proposals on behalf of authors or working groups.",
+    "status": "success"
+  },
+  {
+    "tally_id": "4893773f-7287-4dbb-ad49-8c5db4bb4985",
+    "title": "ARB Staking: Unlock ARB Utility and Align Governance",
+    "canonical_proposal_id": "dde796ff-09e5-447d-a61d-cf487a51a70d",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The title 'ARB Staking: Unlock ARB Utility and Align Governance' matches exactly between the Tally entry and the forum proposal. The author 'Frisson' (Tyler Bench) is also a match.",
+    "status": "success"
+  },
+  {
+    "tally_id": "4a0be42a-4961-4aa5-a144-0d9f17ace970",
+    "title": "UPDATED - Ethereum Protocol Attackathon Sponsorship",
+    "canonical_proposal_id": "6eb471fe-0dfd-4896-ac56-84911e119975",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally title 'UPDATED - Ethereum Protocol Attackathon Sponsorship' matches the forum proposal title 'Ethereum Protocol Attackathon Sponsorship' almost exactly. Both proposals concern funding a security audit event hosted by the Ethereum Foundation and Immunefi. The Tally entry is authored by 'Blockworks Advisory', while the forum post is by 'Rodrigo', who is likely a representative associated with the proposal.",
+    "status": "success"
+  },
+  {
+    "tally_id": "4f1c3f21-afe4-456e-9de6-dd1eb4cac461",
+    "title": "[NON-CONSTITUTIONAL] Pilot Phase: Arbitrum Ventures Initiative",
+    "canonical_proposal_id": "fc1ffb7c-9b52-4aae-8c08-79c53f6f937d",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal title '[NON-CONSTITUTIONAL] Pilot Phase: Arbitrum Ventures Initiative' matches the forum proposal '[Non-Constitutional] Pilot Phase: Arbitrum Venture Initiative' almost perfectly (singular/plural variance). The Tally description explicitly links to a forum post which discusses the Pilot Phase. Although the Tally author is Frisson (likely the delegate submitting on-chain), the forum proposal author is Lino, who is consistently associated with the AVI (Arbitrum Venture Initiative) proposals in the candidate list.",
+    "status": "success"
+  },
+  {
+    "tally_id": "4f2a1752-f4ae-4926-9f30-993ca83afa8e",
+    "title": "# Double-Down on STIP Successes (STIP-Bridge)",
+    "canonical_proposal_id": "9732d0be-5d79-4438-aca5-2b3264efc22f",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal title '# Double-Down on STIP Successes (STIP-Bridge)' matches the forum proposal 'Double-Down on STIP Successes (STIP-Bridge)' almost exactly. Although the authors differ (L2BEAT on Tally vs Savvy DAO on the forum), it is common for delegates to submit proposals on-chain on behalf of forum authors. The content describes the STIP Bridge mechanism matching the title.",
+    "status": "success"
+  },
+  {
+    "tally_id": "517c8ab5-2662-447a-a8ea-dc8ce24be0de",
+    "title": "Treasury Management V1.2",
+    "canonical_proposal_id": "8700ebe2-ec2c-4fa8-9261-99f9c38b35ea",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally entry title 'Treasury Management V1.2' matches the forum proposal title '[Non-Constitutional] Treasury Management v1.2' almost exactly. Both are authored by Entropy Advisors.",
+    "status": "success"
+  },
+  {
+    "tally_id": "52fa30e5-9dd9-4678-a5fa-0c3ec3f06565",
+    "title": "# Request to Increase the Stylus Sprint Committee’s Budget",
+    "canonical_proposal_id": "3cf1ec4f-a12f-4fb2-b60d-fe6590c4f7f8",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal title matches exactly with the forum proposal 'Request to Increase the Stylus Sprint Committee’s Budget' (ID: 3cf1ec4f-a12f-4fb2-b60d-fe6590c4f7f8). Both are authored by Entropy Advisors and address the same specific topic of increasing the allocated budget for the Stylus Sprint program.",
+    "status": "success"
+  },
+  {
+    "tally_id": "552910ad-47ff-4e56-9e4c-d3543d94bb86",
+    "title": "# ArbitrumDAO Contribution; Safeguarding Software Developers’ Rights",
+    "canonical_proposal_id": "08bc7918-8046-444c-b689-ebea647cb0ee",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally description links to an article titled 'Defending Open Source: A United Stand for Developer Rights and Software Freedom' and states it provides the context for the proposal. This matches the title of forum proposal 08bc7918 exactly. Both involve contributions to DEF and Coin Center (Axis Advisory) regarding developer rights.",
+    "status": "success"
+  },
+  {
+    "tally_id": "563594d5-2990-4195-936d-283ca9c87aa2",
+    "title": "[UPDATED] Proposal to Establish the Arbitrum Research & Development Collective",
+    "canonical_proposal_id": "0593649d-0b8c-4724-9ba1-6adda1d38593",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal is for the establishment of the Arbitrum Research & Development Collective (ARDC) for a 6-month term. The forum proposal with ID 0593649d has the matching title 'Establish the ‘Arbitrum Research & Development Collective’'. Although the Tally proposer is Tyler Bench (Frisson), the description references '@Immutablelawyer' (Joseph), who is the author of the forum proposal, indicating Frisson submitted the on-chain proposal on their behalf. The timeline (Dec 2023) and budget details correspond to the initial ARDC formation, distinguishing it from subsequent 'Term 2' or 'Extension' proposals.",
+    "status": "success"
+  },
+  {
+    "tally_id": "5dbae9ed-8cf7-49e1-8440-9dcd07684e93",
+    "title": "Arbitrum Hackathon Builder Continuation Program",
+    "canonical_proposal_id": "368aed1b-6c46-4fda-85f0-e511557ccae7",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal 'Arbitrum Hackathon Builder Continuation Program' corresponds to the forum proposal 'Hackathon Continuation Program'. The Tally description explicitly identifies RnDAO as the proposer and references the recently concluded Arbitrum CollabTech Hackathon, matching the context of the forum proposal authored by 'danielo - RnDAO'. The author difference (MaxLomu on Tally vs RnDAO on forum) is typical of a delegate submitting on behalf of a project.",
+    "status": "success"
+  },
+  {
+    "tally_id": "60551765-ac44-470c-b5dc-35c91485ab7c",
+    "title": "Expand Tally Support for the Arbitrum DAO",
+    "canonical_proposal_id": "e8a80636-54ab-4267-afa5-a7d09582e0dd",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal shares an identical title ('Expand Tally Support for the Arbitrum DAO') and author (Frisson) with the Tally entry.",
+    "status": "success"
+  },
+  {
+    "tally_id": "6196b67b-7281-4b7e-bd48-67ad7d21b676",
+    "title": "[Constitutional AIP] Activate Arbitrum BoLD + Infura Nova Validator Whitelist ",
+    "canonical_proposal_id": "232201b8-fc63-4d1b-8d87-ca3eb3f2f1dd",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal explicitly states it combines two temperature checks: 'BoLD - permissionless validation for Arbitrum' and 'Whitelist Infura’s Nova Validator'. The identified forum proposal matches the title of the primary component ('AIP: BOLD - permissionless validation for Arbitrum') exactly. While the Tally proposal bundles a secondary action (Infura Whitelist), the BoLD upgrade is the primary subject of the governance action.",
+    "status": "success"
+  },
+  {
+    "tally_id": "62e14e4c-c321-48d7-a4f9-b8c331531e81",
+    "title": "# Proposal to Establish the Arbitrum Research & Development Collective",
+    "canonical_proposal_id": "0593649d-0b8c-4724-9ba1-6adda1d38593",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal titled '# Proposal to Establish the Arbitrum Research & Development Collective' matches the forum proposal 'Proposal [Non-Constitutional]: Establish the ‘Arbitrum Research & Development Collective’'. Both describe the initial establishment of the ARDC for a 6-month term with a budget of 1.715 Million ARB. The author difference (Tyler Bench on Tally vs. Joseph on Forum) is typical for on-chain submission delegation.",
+    "status": "success"
+  },
+  {
+    "tally_id": "65846b98-e331-48ba-a7aa-6403a5d4ecb2",
+    "title": "AIP - 3 [Non-Constitutional] Fund the Grants Framework Proposal Milestone 1",
+    "canonical_proposal_id": "30085a33-37f1-4048-a8f5-9caf88ec6f0a",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal title 'AIP - 3 [Non-Constitutional] Fund the Arbitrum Grants Framework Proposal Milestone 1' is nearly identical to the Tally title. The Tally description explicitly lists 'Proposer: disruptionjoe.eth', which matches the forum author 'Disruption Joe'.",
+    "status": "success"
+  },
+  {
+    "tally_id": "67da0c67-5083-43e1-9651-bbbcdb649743",
+    "title": "Upgrade Governor Contracts by Transfering Timelock Roles to the New Governors",
+    "canonical_proposal_id": "1ca8f7f5-5288-4dda-a49b-84fdcfba8615",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal executes a technical upgrade to transfer roles to new Governor contracts, specifically enabling proposal cancellation. This matches the forum proposal titled 'Change to New Governance Contracts that Allow Proposal Cancellation' by the same author (Frisson). The description in Tally references an earlier proposal ('Expand Tally Support') as the motivation/funding source, but the actual execution corresponds to the 'Change to New Governance Contracts' forum thread.",
+    "status": "success"
+  },
+  {
+    "tally_id": "69aa34b8-686b-4f55-809c-6a485e528dd8",
+    "title": "# Grant Request - Curve Finance",
+    "canonical_proposal_id": "6cbb16b1-271e-41c3-9d5e-0350030143a5",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal details a grant request for Curve Finance where Michael Egorov matches the DAO's grant with a personal donation to bootstrap lending liquidity. The forum proposal titled 'Request to match my donation to boostrap Curve Lending on Arbitrum' by 'michwill' (Michael Egorov's handle) is the exact corresponding discussion for this unique matching grant initiative.",
+    "status": "success"
+  },
+  {
+    "tally_id": "6e2d5e89-f206-4f65-8e53-e19bb5a27231",
+    "title": "# Pilot Phase: M&A for Arbitrum DAO",
+    "canonical_proposal_id": "e59fc4a4-152c-4620-a554-6a319c3a995a",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal title '# Pilot Phase: M&A for Arbitrum DAO' matches the forum proposal title 'Pilot Phase: M&A for Arbitrum DAO' almost perfectly. The Tally description explicitly references the 8-week pilot phase, distinguishing it from the broader 'M&A for Arbitrum DAO' proposal (ID: 17ba4c8d-6813-4b48-afbc-f7a33d7c613d).",
+    "status": "success"
+  },
+  {
+    "tally_id": "70392e35-e75b-458a-851b-1a474b0754e9",
+    "title": "[Constitutional] AIP: Constitutional Quorum Threshold Reduction",
+    "canonical_proposal_id": "e6fe1310-79cc-4203-ade0-9bbb99626fad",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal title '[Constitutional] AIP: Constitutional Quorum Threshold Reduction' matches the forum proposal title exactly. While the Tally author is 'Entropy Advisors' and the forum author is listed as 'System' (likely due to the proposal being an on-chain execution or automated indexing), the specific nature of the title and the context of reducing the quorum threshold confirm this is the correct match.",
+    "status": "success"
+  },
+  {
+    "tally_id": "72e4acf6-75a4-4767-9be5-5a494b3491ab",
+    "title": "[CONSTITUTIONAL] AIP: ArbOS Version 40 Callisto",
+    "canonical_proposal_id": "e76ff9a8-79c4-416f-bfe1-28036640f84d",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal title '[CONSTITUTIONAL] AIP: ArbOS Version 40 Callisto' is an exact character-for-character match with the forum proposal title. Both refer to the specific ArbOS 40 technical upgrade.",
+    "status": "success"
+  },
+  {
+    "tally_id": "78eef766-660b-402c-815d-646d449532d4",
+    "title": "AIP 9: Arbitrum Short-term Incentive Program",
+    "canonical_proposal_id": "751dfaa5-48cf-43c5-bdbe-6ea0c3f559fa",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal 'AIP 9: Arbitrum Short-term Incentive Program' matches the forum proposal 'Arbitrum’s Short-Term Incentive Program (Arbitrum Improvement Proposal)'. Both proposals describe the same 50M ARB incentive framework, also known as STIP. The Tally description references the Arbitrum Incentives Working Group, and the forum proposal is the primary discussion thread for this specific program initiated by members of that group.",
+    "status": "success"
+  },
+  {
+    "tally_id": "79d56b3c-fab3-4898-84b3-6473c5e56e2d",
+    "title": "# Front-end interface to force transaction inclusion during sequencer downtime",
+    "canonical_proposal_id": "3bb5052d-c3ef-4193-a196-254cba9012cf",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The candidate proposal title 'Tally: Front-end interface to force transaction inclusion during sequencer downtime' matches the Tally entry title almost exactly. The Tally description explicitly identifies it as a WakeUp Labs proposal, which aligns with the candidate author 'Gonzacolo | WakeUp Labs'.",
+    "status": "success"
+  },
+  {
+    "tally_id": "7ef50567-761d-4243-850b-f169cb237e18",
+    "title": "[Non-Constitutional] Arbitrum DAO Delegate Incentive Program",
+    "canonical_proposal_id": "2fb9d9e2-b0b8-456d-8d3c-3053b62777ce",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal matches the forum proposal authored by SEEDGov titled 'Proposal - Delegate Incentive Program (DIP)'. Both titles refer to the Delegate Incentive Program (DIP), share the same author (SEED Gov), and the Tally description outlines the specifics of the program (4.2M budget, tiers, etc.) which corresponds to the main DIP proposal thread on the forum.",
+    "status": "success"
+  },
+  {
+    "tally_id": "859f5dc7-e66b-4d31-b061-7058cd3ae8e4",
+    "title": "Fund the Stylus Sprint",
+    "canonical_proposal_id": "8e6aa3b6-e17a-4d3d-944a-4b6d083f9ffb",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal 'Fund the Stylus Sprint' matches the forum proposal '[RFC] Fund The Stylus Sprint' by title and author (Entropy Advisors). The Tally description explicitly references changes made since the Snapshot phase, confirming it is the on-chain execution of the governance process initiated by the forum RFC.",
+    "status": "success"
+  },
+  {
+    "tally_id": "885a5674-63e7-41df-a361-f72e8e9ef224",
+    "title": "Establishing a DAO Events Budget for 2025",
+    "canonical_proposal_id": "dbc54f07-158c-4c5f-a603-0980c3c95ad7",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal shares the exact same title ('Establishing a DAO Events Budget for 2025') and author ('Entropy Advisors') as the Tally entry, indicating a definitive match.",
+    "status": "success"
+  },
+  {
+    "tally_id": "8a09f45b-979f-4050-8d4f-25e8c07a3235",
+    "title": "[Updated] Proposal to Establish the Arbitrum Research & Development Collective",
+    "canonical_proposal_id": "0593649d-0b8c-4724-9ba1-6adda1d38593",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal 'Proposal to Establish the Arbitrum Research & Development Collective' matches the forum proposal 'Establish the ‘Arbitrum Research & Development Collective’'. The Tally description refers to the Snapshot vote concluding on Dec 11, 2023, and outlines the establishment of the collective for a 6-month term. Although the Tally author is Tyler Bench (Frisson) and the forum author is Joseph, this is a common delegation pattern for on-chain submission; the title and subject matter (establishment vs. extension/term 2) align perfectly.",
+    "status": "success"
+  },
+  {
+    "tally_id": "8f43860f-5f21-4fc3-a79d-fea0982f4b95",
+    "title": "[NON-CONSTITUTIONAL] Arbitrum Onboarding V2: A Governance Bootcamp",
+    "canonical_proposal_id": "07658eee-210d-4baa-8475-91389f10416a",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal title '[NON-CONSTITUTIONAL] Arbitrum Onboarding V2: A Governance Bootcamp' is an exact verbatim match to the forum proposal title. While the Tally submitter is Tyler Bench (Frisson), the forum proposal is authored by Rika Goldberg (404 DAO), which aligns with the known collaboration where 404 DAO manages the Onboarding Working Group.",
+    "status": "success"
+  },
+  {
+    "tally_id": "90003074-a630-4dd1-9774-9abe22605197",
+    "title": "AIP-1.2 - Foundation and DAO Governance",
+    "canonical_proposal_id": "5170c7b2-2495-4657-bf9d-01ecee10f000",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally entry title 'AIP-1.2 - Foundation and DAO Governance' matches the forum proposal title 'Proposal: AIP-1.2 - Foundation and DAO Governance' exactly. Both refer to the specific amendment of the Constitution and Bylaws following the failure of AIP-1.",
+    "status": "success"
+  },
+  {
+    "tally_id": "90b4a672-a6f0-4895-9bdf-114930dbc2dd",
+    "title": "Funds to bootstrap the first BoLD validator",
+    "canonical_proposal_id": "a9880cfd-abf2-42dd-83b8-5b413f62976e",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal title 'Funds to bootstrap the first BoLD validator' and author 'Tyler Bench (Frisson)' correspond exactly to the forum proposal with ID a9880cfd-abf2-42dd-83b8-5b413f62976e. While there is another entry (eff1623b) with a similar title authored by 'System', the entry by Tyler Bench is the canonical author-submitted proposal.",
+    "status": "success"
+  },
+  {
+    "tally_id": "90e60f25-1596-4ac5-8203-cbc6695b1999",
+    "title": "AIP-1.1 - Lockup, Budget, Transparency [UPDATED]",
+    "canonical_proposal_id": "a406d108-5058-415e-a98d-b7cfd65c5d13",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally title 'AIP-1.1 - Lockup, Budget, Transparency [UPDATED]' matches the Forum title 'Proposal: AIP-1.1 - Lockup, Budget, Transparency'. The description in Tally notes it is an updated technical submission to fix a timestamp issue, but it implements the governance decisions of AIP-1.1 found in the corresponding forum thread.",
+    "status": "success"
+  },
+  {
+    "tally_id": "965bb511-4500-41a1-98d8-00b433694e84",
+    "title": "[Constitutional] ArbOS 31 “Bianca” (Stylus, RIP-7212 Support, Nova Fee Router)",
+    "canonical_proposal_id": "853efdb4-c59f-449c-abef-2b08ccbdae09",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal matches the forum proposal titled 'AIP: ArbOS 31 “Bianca” - Activation of Arbitrum Stylus, RIP-7212 Support, & Nova Fee Router Proposal'. The titles share the specific version name ('ArbOS 31 Bianca') and list the exact same three feature sets (Stylus, RIP-7212, Nova Fee Router).",
+    "status": "success"
+  },
+  {
+    "tally_id": "9784c538-6d06-44da-92cd-279872973602",
+    "title": " Empowering Early Contributors: The community Arbiter Proposal 2.0",
+    "canonical_proposal_id": "887c50dd-e4b8-4da5-9377-f13dd8f6ddae",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally title 'Empowering Early Contributors: The community Arbiter Proposal 2.0' matches the forum proposal '[Non-Constitutional]: Empowering Early Contributors: The community Arbiter Proposal 2.0' almost exactly. The content describes rewarding the 'Arbiter' community role, which aligns with the forum discussion led by author 'Mysterymen'.",
+    "status": "success"
+  },
+  {
+    "tally_id": "9fcad038-54dd-4b3b-a697-689025727436",
+    "title": "Arbitrum DAO Grants - Delegated Domain Allocation by Questbook",
+    "canonical_proposal_id": "d304a4de-9f43-40fa-bf0e-7ee2834ec533",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal title 'Arbitrum DAO Grants - Delegated Domain Allocation by Questbook' is a near-exact match for the forum proposal 'Delegated Domain Allocation by Questbook - Arbitrum DAO Grants'. The Tally description explicitly lists the author as 'Saurabh, Questbook', matching the forum author 'Saurabh'. The content describes the launch of the program (initial $1M budget), distinguishing it from other Questbook proposals in the list related to Phase 2 or Season 3.",
+    "status": "success"
+  },
+  {
+    "tally_id": "a1625aea-0b55-4dcc-be5c-e3546aad0c29",
+    "title": "[NON-CONSTITUTIONAL] Arbitrum DAO Procurement Committee: Phase II Proposal",
+    "canonical_proposal_id": "8a9fa763-d068-42ac-8304-c3e0599e27b2",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally entry '[NON-CONSTITUTIONAL] Arbitrum DAO Procurement Committee: Phase II Proposal' by Tyler Bench (Frisson) has an exact string match for both the title and the author in the provided forum proposals list (ID: 8a9fa763-d068-42ac-8304-c3e0599e27b2).",
+    "status": "success"
+  },
+  {
+    "tally_id": "a46975c4-29ec-4381-bab0-b9691ae221f9",
+    "title": "[CONSTITUTIONAL] Remove Cost Cap, Update Executors, Disable Legacy USDT Bridge",
+    "canonical_proposal_id": null,
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally entry is a bundled execution combining three separate Constitutional AIPs ('Remove Cost Cap on Arbitrum Nova', 'Update the Upgrade Executors', and 'Disable Legacy Tether Bridge'). Each of these components has its own distinct forum proposal (IDs 1647c07f-d868-4389-be1f-fd6ea307c6c1, e0f1fa85-fc35-4365-ade9-992cd4fcf1ea, and fae810b1-485d-4e43-b724-34e2682a7fbc respectively), but there is no single forum thread that corresponds to this specific bundled package.",
+    "status": "success"
+  },
+  {
+    "tally_id": "a6b1c63d-ef4d-4e46-9d1e-f8c718f4d7c6",
+    "title": "# Request for Continuation of the Arbitrum DDA Program Request",
+    "canonical_proposal_id": "2ad93b6a-24c8-45f9-ab27-f38e96b9fe63",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal is titled 'Request for Continuation of the Arbitrum DDA Program' and requests a budget of $4,000,000 to start a 'new program' following the initial $800k allocation. The forum proposal 'Questbook DDA Program Phase 2 Request for Continuation' (ID: 2ad93b6a-...) matches the 'Request for Continuation' nomenclature and the Phase 2 context (continuation after the first phase). While proposal 29e416dc ('Request for Additional Funding...') is similar, the explicit use of 'Continuation' in both the Tally title and the matching forum title makes 2ad93b6a the correct match.",
+    "status": "success"
+  },
+  {
+    "tally_id": "a7d5f3e0-b5e1-473e-a159-3a67140cd778",
+    "title": "# Kwenta x Perennial: Arbitrum Onboarding Incentives",
+    "canonical_proposal_id": "1a55fe98-8f1c-4335-9717-84e38d170f40",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The candidate proposal title 'Kwenta x Perennial: Arbitrum Onboarding Incentives (UPDATED)' matches the Tally title almost exactly. Furthermore, the Tally description explicitly links to the forum post containing this specific proposal title. Although the Tally author (Frisson) differs from the forum author (Jacob Phillips), this is common when delegates submit proposals on behalf of project teams.",
+    "status": "success"
+  },
+  {
+    "tally_id": "aa381cd5-f248-435c-95ef-7d4a4b852f77",
+    "title": "[CONSTITUTIONAL] Register the Sky Custom Gateway contracts in the Router",
+    "canonical_proposal_id": "780b8fd8-760b-4355-bef9-07dd8ea4cef4",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal title '[CONSTITUTIONAL] Register the Sky Custom Gateway contracts in the Router' corresponds almost exactly to the forum proposal '[CONSTITUTIONAL] Proposal: For Arbitrum DAO to register the Sky Custom Gateway contracts in the Router'. Both address the specific technical action of registering Sky ecosystem contracts.",
+    "status": "success"
+  },
+  {
+    "tally_id": "af182ec7-7a0c-48d1-89be-a3a1bbded155",
+    "title": "# Catalyze Gaming Ecosystem Growth on Arbitrum",
+    "canonical_proposal_id": "0d17e2e1-80b5-4f67-85f9-8d6190381641",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The title 'Catalyze Gaming Ecosystem Growth on Arbitrum' matches exactly between the Tally entry and the forum proposal. The Tally author 'coinflipcanda' is the handle for the forum author 'Dan Peng', and the content describes the creation of the Gaming Catalyst Program (GCP).",
+    "status": "success"
+  },
+  {
+    "tally_id": "b61333fa-7ee8-44bf-8eac-5fbc256ed2be",
+    "title": "[CONSTITUTIONAL] Register $BORING in the Arbitrum generic-custom gateway",
+    "canonical_proposal_id": "ff68624b-58b6-469e-96fe-1394347efd7a",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal title '[CONSTITUTIONAL] Register $BORING in the Arbitrum generic-custom gateway' matches the forum proposal title exactly. Although the Tally author is L2BEAT, the description explicitly states they are putting the proposal forward on behalf of the original requesters, which aligns with the forum proposal author 'Didi (Superfluid)' (Superboring is built on Superfluid).",
+    "status": "success"
+  },
+  {
+    "tally_id": "b6edd1c4-7222-4e14-8004-7565ead40e60",
+    "title": "# [Non-constitutional] Proposal to fund Plurality Labs Milestone 1B(ridge)",
+    "canonical_proposal_id": "1fefe065-b5d2-43a4-bd10-5acbe3e91cd6",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal title '[Non-constitutional] Proposal to fund Plurality Labs Milestone 1B(ridge)' matches the forum proposal title exactly. The content describes the continuation of the Plurality Labs grants framework (Milestone 1b following Milestone 1a), which aligns perfectly with the forum discussion led by Disruption Joe (Plurality Labs). The difference in author name (DK vs Disruption Joe) typically indicates that a delegate submitted the proposal on-chain on behalf of the author.",
+    "status": "success"
+  },
+  {
+    "tally_id": "bf8bbdc2-b189-40c3-8659-dbe788a14d77",
+    "title": "# Experimental Delegates Incentive System",
+    "canonical_proposal_id": "476f048d-caa6-4760-a5ee-dc05e7f3a22b",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal description explicitly includes a link to the forum proposal titled 'Proposal: Experimental Incentive System for Active ArbitrumDAO Delegates', which matches the candidate title exactly. The details regarding the 6-month duration, 50 delegates, and funding amounts are consistent with this proposal.",
+    "status": "success"
+  },
+  {
+    "tally_id": "c0f92f0d-5739-4198-b3c5-7067d98d0122",
+    "title": "Empowering Early Contributors: The community Arbiter Proposal",
+    "canonical_proposal_id": "d1d0f31c-566f-4594-b91c-e05743ebd8ba",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally title 'Empowering Early Contributors: The community Arbiter Proposal' is an exact textual match to the forum proposal title 'Proposal: Empowering Early Contributors: The community Arbiter Proposal' (ignoring the standard 'Proposal:' prefix). While there is a '2.0' version on the forum, the Tally entry does not contain the version number in the title, making the V1 forum post the canonical semantic match by title. The author discrepancy (Frisson vs Mysterymen) is typical for community proposals sponsored by a delegate for on-chain voting.",
+    "status": "success"
+  },
+  {
+    "tally_id": "c18ce630-763d-4f6e-8765-971dd7a2a45e",
+    "title": "# OpCo: A DAO-adjacent Entity for Strategy Execution",
+    "canonical_proposal_id": "6c4e2f12-a2f8-4ed4-b0ed-c19cff5c3b3a",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal title '# OpCo: A DAO-adjacent Entity for Strategy Execution' matches the forum proposal title 'OpCo – A DAO-adjacent Entity for Strategy Execution' almost exactly. Both are authored by Entropy Advisors. The Tally description references an earlier proposal by @dk3, which corresponds to a different forum thread, but the specific proposal being voted on is the one by Entropy Advisors.",
+    "status": "success"
+  },
+  {
+    "tally_id": "c63e4745-7b57-4a71-ac65-44f95c0817fd",
+    "title": "[Constitutional] AIP: Activate ArbOS 51 (Dia) and Gas Pricing Updates",
+    "canonical_proposal_id": null,
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal is a bundle of two distinct AIPs: 'ArbOS 51 Version 51 Dia' and 'Raise the gas target...'. While the forum proposal for the gas target component exists in the candidate list (ID: 0145ff08-0c72-44bc-b717-56093dbac7df), the specific forum proposal for ArbOS 51 is not present (only the superseded ArbOS 50 proposal, ID: a952f794-c52c-455c-9066-159fad3bd18c). As this on-chain vote combines two separate governance workstreams into a single execution, there is no single 1:1 matching forum proposal for the bundled entry.",
+    "status": "success"
+  },
+  {
+    "tally_id": "ce8fc2dd-c320-4483-906b-81f479831626",
+    "title": "# Ethereum Protocol Attackathon Sponsorship",
+    "canonical_proposal_id": "6eb471fe-0dfd-4896-ac56-84911e119975",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The title 'Ethereum Protocol Attackathon Sponsorship' matches exactly between the Tally entry and the forum proposal. While the authors differ (coinflipcanda vs Rodrigo), this is common when a delegate submits a proposal on behalf of a forum author or uses different handles; the unique specific title confirms the match.",
+    "status": "success"
+  },
+  {
+    "tally_id": "d20165b4-b4ba-4d3b-81a0-55b413925be6",
+    "title": "[CONSTITUTIONAL] Register the Sky Custom Gateway contracts in the Router",
+    "canonical_proposal_id": "780b8fd8-760b-4355-bef9-07dd8ea4cef4",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal title '[CONSTITUTIONAL] Register the Sky Custom Gateway contracts in the Router' is nearly identical to the forum proposal title '[CONSTITUTIONAL] Proposal: For Arbitrum DAO to register the Sky Custom Gateway contracts in the Router'. Both deal with the specific technical action of registering Sky ecosystem gateways. Although the authors differ (kpk vs SpikeWatanabe.eth), the subject matter and title specificity confirm the match.",
+    "status": "success"
+  },
+  {
+    "tally_id": "d2b70670-8e3b-40cb-9a92-d3c251d7c1ab",
+    "title": "Entropy Advisors: Exclusively Working With Arbitrum DAO",
+    "canonical_proposal_id": "4224208f-d822-44d0-bc71-f273d2c211ac",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal title 'Entropy Advisors: Exclusively Working With Arbitrum DAO' is an exact match for the forum proposal title. While the Tally author is 'coinflipcanda' (a known delegate), the forum author is the organization 'Entropy Advisors', which aligns with standard proposal practices.",
+    "status": "success"
+  },
+  {
+    "tally_id": "d80f7357-2d49-45fa-b7ef-e344d0a34d6a",
+    "title": "[NON-CONSTITUTIONAL] Arbitrum Audit Program",
+    "canonical_proposal_id": "147ba20a-f48c-4cee-84bc-d84caa3ebc6a",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The candidate proposal title 'Arbitrum Audit Program' is an exact semantic match for the Tally proposal '[NON-CONSTITUTIONAL] Arbitrum Audit Program'. The Tally description outlines the establishment of this specific program. The author listed in the candidate list ('System') is likely a placeholder for the actual forum author (often the Foundation or Entropy Advisors acting on their behalf), but the unique title confirms the link.",
+    "status": "success"
+  },
+  {
+    "tally_id": "da906254-a5fe-46bf-910b-4f5e3f2b0c2c",
+    "title": "# [Updated] Proposal to Establish the Arbitrum Research & Development Collective",
+    "canonical_proposal_id": "0593649d-0b8c-4724-9ba1-6adda1d38593",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal title 'Proposal to Establish the Arbitrum Research & Development Collective' matches the Forum proposal title 'Proposal [Non-Constitutional]: Establish the ‘Arbitrum Research & Development Collective’'. While the Tally author is Tyler Bench (Frisson) and the Forum author is Joseph, they are known collaborators on this initiative. The Tally description references moving to Snapshot in December 2023, which aligns with the timeline of the initial ARDC establishment discussed in the corresponding forum thread.",
+    "status": "success"
+  },
+  {
+    "tally_id": "dcd4de1d-1eae-4ce9-b4da-0f5930d7a337",
+    "title": "(V2) Arbitrum Research & Development Collective",
+    "canonical_proposal_id": "486725ab-4b3c-4dac-a090-ae1dac684907",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal '(V2) Arbitrum Research & Development Collective' matches the forum proposal '[NON-CONSTITUTIONAL] - Arbitrum Research and Development Collective [Term 2]'. 'V2' and 'Term 2' refer to the same renewal iteration of the ARDC. The Tally description outlines specific changes (removal of Operations Lead, removal of Hats Protocol, addition of an Extension Option) that were central to the 'Term 2' forum discussion. The Tally author (Tyler Bench/Frisson) and Forum author (Joseph) are frequent collaborators on ARDC governance.",
+    "status": "success"
+  },
+  {
+    "tally_id": "df2ea4ff-8cd0-4468-b179-4f7e1963dddd",
+    "title": "Arbitrum Multi-sig Support Service (MSS) ",
+    "canonical_proposal_id": "872c8091-a086-4949-b21f-17bae80d5918",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally entry has an exact match in the forum candidates with the ID 872c8091-a086-4949-b21f-17bae80d5918. Both share the exact title 'Arbitrum Multi-sig Support Service (MSS)' and the same author 'Tyler Bench (Frisson)'.",
+    "status": "success"
+  },
+  {
+    "tally_id": "e153cf3e-8110-44f2-b27a-3d8b90b6b678",
+    "title": "# Long Term Incentives Pilot Program",
+    "canonical_proposal_id": "dbd9e717-37fb-435c-a26e-3ef5060838de",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal has the exact title 'Long Term Incentives Pilot Program' as the forum proposal (ID: dbd9e717-37fb-435c-a26e-3ef5060838de). The description matches the well-known LTIPP initiative (45M ARB, 12 weeks, Council structure). While the Tally author is Tyler Bench (Frisson) and the Forum author is Matt, this is a known collaboration in Arbitrum DAO governance where StableLab (Matt) and Tally (Frisson) often coordinate on major initiatives.",
+    "status": "success"
+  },
+  {
+    "tally_id": "e365765d-1844-49d3-bc71-d143135af36a",
+    "title": "DeFi Renaissance Incentive Program (DRIP)",
+    "canonical_proposal_id": "4b6eb958-04a4-4d84-a0d1-b25fd9993479",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The title 'DeFi Renaissance Incentive Program (DRIP)' and author 'Entropy Advisors' match exactly between the Tally entry and the forum proposal.",
+    "status": "success"
+  },
+  {
+    "tally_id": "e47e458b-8c5b-42f8-bf2a-ce31105d8dc1",
+    "title": "Arbitrum D.A.O. (Domain Allocator Offerings) Grant Program - Season 3",
+    "canonical_proposal_id": "2011a7cd-80f8-4470-8a23-0b9707e1f1f6",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal title 'Arbitrum D.A.O. (Domain Allocator Offerings) Grant Program - Season 3' matches the forum proposal title '[Non-Constitutional] [RFC] Arbitrum D.A.O. (Domain Allocator Offerings) Grant Program - Season 3' almost exactly. The Tally description identifies JoJo as the Program Manager (PM), who is the author of the forum proposal. The content regarding the renewal for a third season and the specific domains aligns perfectly.",
+    "status": "success"
+  },
+  {
+    "tally_id": "e5ca8df6-5493-4af4-9f63-6525ef871ca6",
+    "title": "Non-Constitutional: Stable Treasury Endowment Program 2.0",
+    "canonical_proposal_id": "5fa790fc-90b0-4b97-91b0-1ca7aaed9e61",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal title 'Non-Constitutional: Stable Treasury Endowment Program 2.0' is an exact match to the Tally proposal title. While the Tally author is L2BEAT and the forum author is Devansh Mehta, this is common in DAO governance where delegates (like L2BEAT) submit on-chain proposals on behalf of authors. The subject matter (authorizing funds for STEP 2.0) aligns perfectly.",
+    "status": "success"
+  },
+  {
+    "tally_id": "e612c591-b149-4212-92c9-f92c6ea0ac4b",
+    "title": "Transfer 8,500 ETH from the Treasury to ATMC’s ETH Treasury Strategies",
+    "canonical_proposal_id": "30b2f80e-459c-407b-9869-9cf5b1c7ba74",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "There is an exact match for the proposal title ('Transfer 8,500 ETH from the Treasury to ATMC’s ETH Treasury Strategies') and the author ('Entropy Advisors') between the Tally entry and the forum proposal.",
+    "status": "success"
+  },
+  {
+    "tally_id": "e734005c-4707-435e-baf2-5d64b742c651",
+    "title": "AIP-1.1 - Lockup, Budget, Transparency",
+    "canonical_proposal_id": "a406d108-5058-415e-a98d-b7cfd65c5d13",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The title 'Proposal: AIP-1.1 - Lockup, Budget, Transparency' matches the Tally entry title 'AIP-1.1 - Lockup, Budget, Transparency' exactly. This is a specific remediation proposal (AIP-1.1) following the AIP-1 controversy, making the match unique and definite.",
+    "status": "success"
+  },
+  {
+    "tally_id": "ea728d75-c2df-461f-bf6b-01a089139536",
+    "title": "ArbitrumDAO strategic “Off-site” (online) updated proposal",
+    "canonical_proposal_id": "cd52f7d4-0092-43d6-93cb-35fa54cbc1e2",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal title 'ArbitrumDAO strategic “Off-site” (online) updated proposal' and author 'Tyler Bench (Frisson)' match exactly with the forum proposal ID cd52f7d4-0092-43d6-93cb-35fa54cbc1e2.",
+    "status": "success"
+  },
+  {
+    "tally_id": "ed7cd2e5-d2e7-418d-8aad-3163eb917aea",
+    "title": "[Non-Constitutional] - Subsidy Fund Proposal from the ADPC",
+    "canonical_proposal_id": "5b5c2bee-b959-4950-b07b-c4f4f236d2bf",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal description explicitly links to the forum discussion 'Subsidy Fund Proposal' (https://forum.arbitrum.foundation/t/non-constitutional-subsidy-fund-for-security-services/22958), which matches the title of the forum candidate '[Non-constitutional] Subsidy Fund for Security Services'. The Tally proposal implements the content discussed in that forum thread regarding the ADPC subsidy fund.",
+    "status": "success"
+  },
+  {
+    "tally_id": "f41dfb1e-c118-4fa0-8df0-271076c23a23",
+    "title": "# AIP-2: Activate support for account abstraction endpoint on One and Nova",
+    "canonical_proposal_id": "92122494-8acf-4be9-9ab7-8799ea1bcb80",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal shares an identical title ('AIP-2: Activate support for account abstraction endpoint on One and Nova') and author name (Jason Windawi) with the Tally entry description.",
+    "status": "success"
+  },
+  {
+    "tally_id": "fbd659f1-57fb-4e60-85e2-ff89bde73fcf",
+    "title": "Delegate to Voter Enfranchisement Pool — Event Horizon",
+    "canonical_proposal_id": "046f9a56-cae7-477d-bbc7-d31ea0b8bc34",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally entry matches the forum proposal with ID 046f9a56-cae7-477d-bbc7-d31ea0b8bc34 exactly by title ('Delegate to Voter Enfranchisement Pool — Event Horizon') and author ('L2BEAT 💗').",
+    "status": "success"
+  },
+  {
+    "tally_id": "fce2ff48-c9c1-463e-8441-fad52d98e436",
+    "title": "[CONSTITUTIONAL] - Adopt Timeboost + Nova Fee Sweep",
+    "canonical_proposal_id": "619a77f3-ea95-43b4-82f2-68307dfd5b9b",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Tally proposal title '[CONSTITUTIONAL] - Adopt Timeboost + Nova Fee Sweep' matches the forum proposal 'AIP: Timeboost + Nova Fee Sweep' almost exactly. The description describes combining these two specific actions, which is unique to this proposal ID among the candidates.",
+    "status": "success"
+  }
+]

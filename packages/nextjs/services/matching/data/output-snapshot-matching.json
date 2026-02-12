@@ -1,0 +1,1662 @@
+[
+  {
+    "snapshot_id": "046b6160-c761-48c8-9028-93242451b078",
+    "title": "Time Management in Arbitrum’s Governance",
+    "canonical_proposal_id": "1f5dae8b-aeb5-4069-99ba-ccd0d4bd7afc",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Time Management in Arbitrum’s Governance' matches the forum proposal title 'Proposal: Time Management in Arbitrum’s Governance' nearly exactly. The content regarding starting Snapshot votes on Mondays is the core subject of this specific proposal authored by Cattin / Entropy Advisors.",
+    "status": "success",
+    "canonical_proposal_title": "Proposal: Time Management in Arbitrum’s Governance"
+  },
+  {
+    "snapshot_id": "06d247aa-7748-43f4-8599-8b81687636d0",
+    "title": "AIP: ArbOS Version 20 “Atlas”",
+    "canonical_proposal_id": "8b760c14-6f2b-4069-b326-23653e5c20f9",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'AIP: ArbOS Version 20 “Atlas”' matches the forum proposal title exactly. The forum proposal ID '8b760c14-6f2b-4069-b326-23653e5c20f9' corresponds to the same technical upgrade (ArbOS 20) described in the Snapshot entry.",
+    "status": "success",
+    "canonical_proposal_title": "AIP: ArbOS Version 20 “Atlas”"
+  },
+  {
+    "snapshot_id": "0732e698-bfe3-47b1-a631-4846521bb435",
+    "title": "Entropy Advisors: Exclusively Working With Arbitrum DAO",
+    "canonical_proposal_id": "4224208f-d822-44d0-bc71-f273d2c211ac",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Entropy Advisors: Exclusively Working With Arbitrum DAO' is an exact character-for-character match with the forum proposal title. The author (Entropy Advisors) matches the context of the Snapshot author address. There is a related proposal for Y2-Y3, but the Snapshot title and description (referencing a one-year term) align with the initial proposal, not the extension.",
+    "status": "success",
+    "canonical_proposal_title": "Entropy Advisors: Exclusively Working With Arbitrum DAO"
+  },
+  {
+    "snapshot_id": "08a26dd9-f7d4-4cc6-8267-f9465c095298",
+    "title": "Procurement Framework | Security : Non-Constitutional Proposal",
+    "canonical_proposal_id": "29eef831-d8dd-42d6-a3ef-55ee60ad0d12",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Procurement Framework | Security : Non-Constitutional Proposal' matches the core text of the forum proposal title '[PROPOSAL] - Procurement Framework | Security : Non-Constitutional Proposal (Prev RFP)' almost exactly, including the distinctive use of the pipe '|' separator and the 'Non-Constitutional Proposal' suffix.",
+    "status": "success",
+    "canonical_proposal_title": "[PROPOSAL] - Procurement Framework | Security : Non-Constitutional Proposal (Prev RFP)"
+  },
+  {
+    "snapshot_id": "09c74ce6-01ce-4a18-9210-ecd7304b6f04",
+    "title": "ArbitrumDAO Governance Analytics Dashboard",
+    "canonical_proposal_id": "d87e28b8-f884-4350-a5a3-fb71040fb399",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'ArbitrumDAO Governance Analytics Dashboard' matches the forum proposal '[RFC] ArbitrumDAO Governance Analytics Dashboard' almost exactly. While the Snapshot description contains a link to an unrelated 'ARB Staking' proposal (likely a copy-paste error), the abstract and motivation text describe the dashboard proposed by Curia, matching the forum entry.",
+    "status": "success",
+    "canonical_proposal_title": "[RFC] ArbitrumDAO Governance Analytics Dashboard"
+  },
+  {
+    "snapshot_id": "0d01b7aa-e322-4272-93fb-2512dc211ebd",
+    "title": "Extend AGV Council Term and Align Future Elections with Operational Cadence",
+    "canonical_proposal_id": "a2362c69-20bc-4a84-aed9-c26aeaa58b3c",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal title matches the forum proposal title 'Proposal: Extend AGV Council Term and Align Future Elections with Operational Cadence' exactly (excluding the 'Proposal:' prefix). Both proposals address extending the Arbitrum Gaming Ventures (AGV) Council term to the end of 2025.",
+    "status": "success",
+    "canonical_proposal_title": "Proposal: Extend AGV Council Term and Align Future Elections with Operational Cadence"
+  },
+  {
+    "snapshot_id": "0d3237f4-1e83-4de1-b6c3-7db17fc296b7",
+    "title": "[Non-Emergency Action] Fix Fee Oversight ArbOS v20 “Atlas”",
+    "canonical_proposal_id": null,
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal describes a specific 'Non-Emergency Action' to fix a fee oversight in the ArbOS v20 'Atlas' upgrade (specifically regarding Dencun parameters). While the original 'AIP: ArbOS Version 20 “Atlas”' proposal exists in the list (ID: 8b760c14-6f2b-4069-b326-23653e5c20f9), this Snapshot represents a subsequent patch/fix to that upgrade, not the upgrade itself. There is no forum proposal in the provided candidate list that matches this specific remediation action.",
+    "status": "success",
+    "canonical_proposal_title": null
+  },
+  {
+    "snapshot_id": "118c8c0b-c868-4862-9789-fa8f3c748c3b",
+    "title": "AIP: Funds to bootstrap the first BoLD validator - Bond sentiment.",
+    "canonical_proposal_id": "eff1623b-487a-4832-8e6e-0a84c3520fca",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot entry 'AIP: Funds to bootstrap the first BoLD validator - Bond sentiment' matches the forum proposal titled 'AIP: Funds to bootstrap the first BoLD validator' (ID: eff1623b-487a-4832-8e6e-0a84c3520fca) authored by System. While there is another proposal with a similar title by Tyler Bench (ID: a9880cfd-abf2-42dd-83b8-5b413f62976e), the 'System' authored proposal includes the 'AIP:' prefix found in the Snapshot title, suggesting it is the canonical entry for the formal proposal stage.",
+    "status": "success",
+    "canonical_proposal_title": "AIP: Funds to bootstrap the first BoLD validator"
+  },
+  {
+    "snapshot_id": "120eb03c-9f4b-4ca5-8d12-4529ba57278b",
+    "title": "Proposal: Activate support for account abstraction endpoint on One and Nova",
+    "canonical_proposal_id": "92122494-8acf-4be9-9ab7-8799ea1bcb80",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The snapshot proposal matches the forum proposal 'AIP-2: Activate support for account abstraction endpoint on One and Nova' almost exactly in title and author (Jason Windawi). The content regarding the 'eth_sendRawTransactionConditional' endpoint is identical.",
+    "status": "success",
+    "canonical_proposal_title": "AIP-2: Activate support for account abstraction endpoint on One and Nova"
+  },
+  {
+    "snapshot_id": "12c4fe7b-053d-4efb-8fa9-743ea6165bac",
+    "title": "Non-Constitutional: Stable Treasury Endowment Program 2.0",
+    "canonical_proposal_id": "5fa790fc-90b0-4b97-91b0-1ca7aaed9e61",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal title 'Non-Constitutional: Stable Treasury Endowment Program 2.0' is an exact verbatim match to the Snapshot proposal title. The author (Devansh Mehta) is the known proponent of the STEP program.",
+    "status": "success",
+    "canonical_proposal_title": "Non-Constitutional: Stable Treasury Endowment Program 2.0"
+  },
+  {
+    "snapshot_id": "147850d8-467c-411b-8fd6-514f2dcd8ec7",
+    "title": "[CONSTITUTIONAL] Register $BORING in the Arbitrum generic-custom gateway",
+    "canonical_proposal_id": "ff68624b-58b6-469e-96fe-1394347efd7a",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "There is an exact character-for-character match between the Snapshot title and the forum proposal title.",
+    "status": "success",
+    "canonical_proposal_title": "[CONSTITUTIONAL] Register $BORING in the Arbitrum generic-custom gateway"
+  },
+  {
+    "snapshot_id": "14e5083d-23c9-48c7-b3df-49dc3050ca06",
+    "title": "Hackathon Continuation Program",
+    "canonical_proposal_id": "368aed1b-6c46-4fda-85f0-e511557ccae7",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot entry has an exact title match with the forum proposal 'Hackathon Continuation Program'. The Snapshot description explicitly states 'RnDAO proposes to co-fund...', which aligns with the forum author 'danielo - RnDAO'.",
+    "status": "success",
+    "canonical_proposal_title": "Hackathon Continuation Program"
+  },
+  {
+    "snapshot_id": "18208c02-5875-4a12-a8e6-e3f497fdbf16",
+    "title": "An EIP-4824 powered daoURI for Arbitrum DAO",
+    "canonical_proposal_id": "cce01beb-b47e-4ce5-97e8-1f70fe8928b8",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal has an identical title ('An EIP-4824 powered daoURI for Arbitrum DAO') to the Snapshot entry, confirming it is the canonical discussion thread for this vote.",
+    "status": "success",
+    "canonical_proposal_title": "An EIP-4824 powered daoURI for Arbitrum DAO"
+  },
+  {
+    "snapshot_id": "1ec92100-b1f7-4bca-abde-4f97acaac0cc",
+    "title": "ArbitrumHub Evolution: The Next Step in Streamlining Information Access and Raising Awareness for Arbitrum DAO",
+    "canonical_proposal_id": "06b4161a-b995-4fb6-b2f9-be8922525d73",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal title '[Non-Constitutional] ArbitrumHub Evolution: The Next Step in Streamlining Information Access and Raising Awareness for Arbitrum DAO' is an exact text match to the Snapshot entry title. The author 'BoldPanther' is consistent with previous ArbitrumHub proposals.",
+    "status": "success",
+    "canonical_proposal_title": "[Non-Constitutional] ArbitrumHub Evolution: The Next Step in Streamlining Information Access and Raising Awareness for Arbitrum DAO"
+  },
+  {
+    "snapshot_id": "2058a248-0498-455e-90f4-a9853a2811ec",
+    "title": "Ethereum Protocol Attackathon Sponsorship",
+    "canonical_proposal_id": "6eb471fe-0dfd-4896-ac56-84911e119975",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal has an identical title ('Ethereum Protocol Attackathon Sponsorship') and the author name 'Rodrigo' matches the known identity of the Snapshot author.",
+    "status": "success",
+    "canonical_proposal_title": "Ethereum Protocol Attackathon Sponsorship"
+  },
+  {
+    "snapshot_id": "21e28dff-7dc3-479e-b604-bdc7f7bb1e5f",
+    "title": "Funding Gas Rebate and Trading Competition Program to Amplify Arbitrum’s Ecosystem Growth ",
+    "canonical_proposal_id": "88869b7b-e6f6-46b0-945c-2e7ba3f71ac5",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The title of the forum proposal ('Proposal for Funding Gas Rebate and Trading Competition Program to Amplify Arbitrum’s Ecosystem Growth') matches the Snapshot title ('Funding Gas Rebate and Trading Competition Program to Amplify Arbitrum’s Ecosystem Growth') almost verbatim. The content references Rage Trade in both contexts.",
+    "status": "success",
+    "canonical_proposal_title": "Proposal for Funding Gas Rebate and Trading Competition Program to Amplify Arbitrum’s Ecosystem Growth"
+  },
+  {
+    "snapshot_id": "23fa91a6-6454-4590-8558-ecd6d2729609",
+    "title": "Streamlining the LTIPP Bounties",
+    "canonical_proposal_id": null,
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot entry 'Streamlining the LTIPP Bounties' refers to a specific amendment to the Long Term Incentives Pilot Program (LTIPP) regarding the selection process for research bounties. While the original LTIPP proposal exists in the candidate list (ID dbd9e717-37fb-435c-a26e-3ef5060838de), the specific proposal to streamline the bounty process is a separate forum topic that is not present in the provided list of candidate proposals.",
+    "status": "success",
+    "canonical_proposal_title": null
+  },
+  {
+    "snapshot_id": "256fe115-a9c5-421a-967c-d52f82472db9",
+    "title": "[Aave DAO] LTIPP Grant Extension Request",
+    "canonical_proposal_id": "8ec7a902-da36-45b0-8546-f692d44f90d8",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal '[Aave DAO] LTIPP Grant Extension Request' matches the forum proposal 'RFC: Aave DAO LTIPP Grant Extension Request' by Aave Chan Initiative. The titles and content are effectively identical, both requesting an extension for Aave's LTIPP grant.",
+    "status": "success",
+    "canonical_proposal_title": "RFC: Aave DAO LTIPP Grant Extension Request"
+  },
+  {
+    "snapshot_id": "25c3c785-10b4-4cf7-8b39-6e98b1503bf0",
+    "title": "Subsidy Fund for Security Services",
+    "canonical_proposal_id": "5b5c2bee-b959-4950-b07b-c4f4f236d2bf",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot entry shares an identical title ('Subsidy Fund for Security Services') and subject matter with the forum proposal authored by Bernard_Areta. The description in the Snapshot entry references the ADPC and the specific goal of a subsidy fund for security audits, which aligns perfectly with the forum discussion.",
+    "status": "success",
+    "canonical_proposal_title": "[Non-constitutional] Subsidy Fund for Security Services"
+  },
+  {
+    "snapshot_id": "26417af6-bb43-46f4-bc8f-802c71808b27",
+    "title": "[Non-Constitutional] - Updates to the DIP, The Complete 1.7 Version",
+    "canonical_proposal_id": "d084ab5c-4680-4848-b8e0-03a27bdb35cf",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title '[Non-Constitutional] - Updates to the DIP, The Complete 1.7 Version' matches the forum proposal title 'Proposal - Updates to the DIP, The Complete 1.7 Version' almost exactly. The author 'SEEDGov' on the forum corresponds to the Snapshot author address (0xAbAb...).",
+    "status": "success",
+    "canonical_proposal_title": "Proposal - Updates to the DIP, The Complete 1.7 Version"
+  },
+  {
+    "snapshot_id": "274a6fdf-666e-473c-91c7-fbed96c64843",
+    "title": "Catalyze Arbitrum Gaming: HADOUKEN!",
+    "canonical_proposal_id": "0d17e2e1-80b5-4f67-85f9-8d6190381641",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal 'Catalyze Arbitrum Gaming: HADOUKEN!' is the sentiment check for the Gaming Catalyst Program (GCP), requesting 200 million ARB. The forum proposal 'Catalyze Gaming Ecosystem Growth on Arbitrum' is the corresponding formal proposal for the GCP, authored by Dan Peng, which details the 200M ARB allocation and the creation of the Gaming Working Group mentioned in the Snapshot description.",
+    "status": "success",
+    "canonical_proposal_title": "Catalyze Gaming Ecosystem Growth on Arbitrum"
+  },
+  {
+    "snapshot_id": "27e343a5-7636-46c4-ad12-772ebea973d8",
+    "title": "Safeguarding Software Developers’ Rights & the Right to Privacy",
+    "canonical_proposal_id": "08bc7918-8046-444c-b689-ebea647cb0ee",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot description explicitly references a write-up titled 'Defending Open Source: A United Stand for Developer Rights and Software Freedom', which is the exact title of the matching forum proposal. The proposal content (funding DEF & Coin Center) and authorship context (Axis Advisory/Joseph) align.",
+    "status": "success",
+    "canonical_proposal_title": "Proposal [Non-Constitutional]: Defending Open Source: A United Stand for Developer Rights and Software Freedom"
+  },
+  {
+    "snapshot_id": "2c7525f7-0ea5-41a6-8617-f681994fa695",
+    "title": "Request to Increase the Stylus Sprint Committee's Budget",
+    "canonical_proposal_id": "3cf1ec4f-a12f-4fb2-b60d-fe6590c4f7f8",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Request to Increase the Stylus Sprint Committee's Budget' matches the forum proposal title exactly. The subject matter regarding additional funding for the Stylus Sprint program aligns.",
+    "status": "success",
+    "canonical_proposal_title": "Request to Increase the Stylus Sprint Committee’s Budget"
+  },
+  {
+    "snapshot_id": "2ee02391-a119-45c6-98bb-26b8489f1d40",
+    "title": "Proposal [Non-Constitutional]: Establish the ArbitrumDAO Procurement Committee",
+    "canonical_proposal_id": "b33055a5-c37c-4e6e-9670-556ae47037fc",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal title 'Proposal [Non-Constitutional]: Establish the ArbitrumDAO Procurement Committee' is an exact match to the Snapshot proposal title. The Snapshot description outlines the formation of the ADPC to oversee the previously ratified Procurement Framework, which matches the content and purpose of the identified forum proposal authored by Joseph.",
+    "status": "success",
+    "canonical_proposal_title": "Proposal [Non-Constitutional]: Establish the ArbitrumDAO Procurement Committee"
+  },
+  {
+    "snapshot_id": "2f81fc6b-59c6-4ac5-b9e1-7979e538f766",
+    "title": "Proposal to Temporary Extend Delegate Incentive System.",
+    "canonical_proposal_id": "c21e4910-7b8d-45bf-8c76-8fdc213ba73b",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Proposal to Temporary Extend Delegate Incentive System.' matches the forum proposal title 'Proposal to Temporary Extend Delegate Incentive System' exactly. The Snapshot description mentions that 'SEEDGov is working on the v1.1', and the forum proposal is authored by SEEDGov. The content describing a temporary extension to bridge the gap until the new version is finalized is identical.",
+    "status": "success",
+    "canonical_proposal_title": "Proposal to Temporary Extend Delegate Incentive System"
+  },
+  {
+    "snapshot_id": "32772aa6-43c2-4a37-a0ab-187da39de5f1",
+    "title": "Expand Tally Support for the Arbitrum DAO",
+    "canonical_proposal_id": "e8a80636-54ab-4267-afa5-a7d09582e0dd",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The title 'Expand Tally Support for the Arbitrum DAO' is an exact match between the Snapshot entry and the forum proposal. The Snapshot description references Frisson (the forum proposal author) as the delegate associated with Tally.",
+    "status": "success",
+    "canonical_proposal_title": "Expand Tally Support for the Arbitrum DAO"
+  },
+  {
+    "snapshot_id": "33a040c5-1200-45f8-ad3b-0ca161358386",
+    "title": "Arbitrum Strategic Objective Setting (SOS) – Defining the DAO’s Interim Goals",
+    "canonical_proposal_id": "c1cafe92-1805-4119-83db-a73e72f8af5d",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The title 'Arbitrum Strategic Objective Setting (SOS) – Defining the DAO’s Interim Goals' is an exact match between the Snapshot entry and the forum proposal. The author (Entropy Advisors) is also consistent with the context provided in the description.",
+    "status": "success",
+    "canonical_proposal_title": "Arbitrum Strategic Objective Setting (SOS) – Defining the DAO’s Interim Goals"
+  },
+  {
+    "snapshot_id": "35b0e89e-360d-45a1-a5df-da77b295b908",
+    "title": "AIP: Funds to bootstrap the first BoLD validator - Operational cost sentiment.",
+    "canonical_proposal_id": "a9880cfd-abf2-42dd-83b8-5b413f62976e",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot entry 'AIP: Funds to bootstrap the first BoLD validator - Operational cost sentiment' corresponds directly to the forum proposal titled 'Funds to bootstrap the first BoLD validator' authored by Tyler Bench (Frisson). The Snapshot represents the sentiment check for the funding discussed in that forum thread. The candidate 'eff1623b' (authored by System) appears to be a system-generated or duplicate entry, while the human-authored proposal is the canonical forum discussion source.",
+    "status": "success",
+    "canonical_proposal_title": "Funds to bootstrap the first BoLD validator"
+  },
+  {
+    "snapshot_id": "3977f1eb-ffe4-43c1-a52a-9ee586e8b702",
+    "title": "[Non-Constitutional AIP] Front-end interface to force transaction inclusion during sequencer downtime",
+    "canonical_proposal_id": "3bb5052d-c3ef-4193-a196-254cba9012cf",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal title 'Tally: Front-end interface to force transaction inclusion during sequencer downtime' matches the Snapshot title almost exactly. The author of the forum post is 'Gonzacolo | WakeUp Labs', which corresponds to the organization 'WakeUp Labs' mentioned explicitly in the Snapshot description.",
+    "status": "success",
+    "canonical_proposal_title": "Tally: Front-end interface to force transaction inclusion during sequencer downtime"
+  },
+  {
+    "snapshot_id": "3a70d6a9-8d9b-4f44-8ad8-4af11e9fbca5",
+    "title": "Pilot for a Questbook Jumpstart fund for problem definition and DAO improvement",
+    "canonical_proposal_id": "e2b61b23-62f9-4904-856b-411b812d16aa",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal title 'Jumpstart fund for DAO improvement' matches the section header in the Snapshot description exactly and is substantively the same as the Snapshot title. The Snapshot lists the Team Lead as 'Daniel', which corresponds to the forum author 'danielo - RnDAO'.",
+    "status": "success",
+    "canonical_proposal_title": "Jumpstart fund for DAO improvement"
+  },
+  {
+    "snapshot_id": "3f1ae956-1ee8-4f94-bf25-f4a5befe3b65",
+    "title": "The Arbitrum Coalition",
+    "canonical_proposal_id": "1e59f2ca-6aaa-4075-a973-496eb23023f4",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal 'The Arbitrum Coalition' matches the forum proposal titled 'Proposal: The Arbitrum Coalition'. The forum proposal author is 'Blockworks Advisory', which corresponds to 'Blockworks Research' mentioned in the Snapshot description as a lead member of the coalition.",
+    "status": "success",
+    "canonical_proposal_title": "Proposal: The Arbitrum Coalition"
+  },
+  {
+    "snapshot_id": "3fa3b7ad-30c9-4b03-94b7-592449e100fb",
+    "title": "Proposal: Empowering Early Contributors: The community Arbiter Proposal",
+    "canonical_proposal_id": "d1d0f31c-566f-4594-b91c-e05743ebd8ba",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The candidate proposal title 'Proposal: Empowering Early Contributors: The community Arbiter Proposal' is an exact text match to the Snapshot proposal title.",
+    "status": "success",
+    "canonical_proposal_title": "Proposal: Empowering Early Contributors: The community Arbiter Proposal"
+  },
+  {
+    "snapshot_id": "41029d9f-3f9b-4477-976b-81446bf70f1d",
+    "title": "[Constitutional] AIP: Remove Cost Cap on Arbitrum Nova",
+    "canonical_proposal_id": "1647c07f-d868-4389-be1f-fd6ea307c6c1",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The title of the Snapshot entry '[Constitutional] AIP: Remove Cost Cap on Arbitrum Nova' matches the title of the forum proposal exactly. Both address the same specific technical parameter change on Arbitrum Nova.",
+    "status": "success",
+    "canonical_proposal_title": "[Constitutional] AIP: Remove Cost Cap on Arbitrum Nova"
+  },
+  {
+    "snapshot_id": "410a1610-ef2b-4c49-956c-9c54136b3547",
+    "title": "Entropy Advisors: Exclusively Working with the Arbitrum DAO, Year 2 and Year 3",
+    "canonical_proposal_id": "68b61ef6-76f1-445f-b00d-ffa84543e077",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Entropy Advisors: Exclusively Working with the Arbitrum DAO, Year 2 and Year 3' matches the forum proposal title 'Entropy Advisors: Exclusively Working with the Arbitrum DAO, Y2-Y3' almost exactly. The content describes the renewal of their engagement for a second and third year.",
+    "status": "success",
+    "canonical_proposal_title": "Entropy Advisors: Exclusively Working with the Arbitrum DAO, Y2-Y3"
+  },
+  {
+    "snapshot_id": "417c8582-be76-49c4-abef-d773958bad2a",
+    "title": "Audit Committee Technical Expert Elections",
+    "canonical_proposal_id": "c9da3d25-ffe8-4a83-bcf2-6a0dd5a2e8ed",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot entry title 'Audit Committee Technical Expert Elections' matches the forum proposal title exactly. The content describes the election process for the Technical Expert seat, which corresponds directly to the forum proposal found.",
+    "status": "success",
+    "canonical_proposal_title": "Audit Committee Technical Expert Elections"
+  },
+  {
+    "snapshot_id": "426507cd-94c2-4dff-9966-f9b8f4ed0c5b",
+    "title": "[Non-constitutional] Incentives Detox Proposal",
+    "canonical_proposal_id": "f24b70fa-a09a-4f41-a090-a5227e078ad7",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title '[Non-constitutional] Incentives Detox Proposal' matches almost exactly with the Forum proposal '[RFC] Incentives Detox Proposal'. The unique term 'Incentives Detox' confirms the link.",
+    "status": "success",
+    "canonical_proposal_title": "[RFC] Incentives Detox Proposal"
+  },
+  {
+    "snapshot_id": "42c1db4c-c94c-4657-9d08-516f3119a837",
+    "title": "Proposal [Non-Constitutional]: Establish the ‘Arbitrum Research & Development Collective",
+    "canonical_proposal_id": "0593649d-0b8c-4724-9ba1-6adda1d38593",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Proposal [Non-Constitutional]: Establish the ‘Arbitrum Research & Development Collective' matches the forum title almost exactly. The author 'Joseph' corresponds to the text in the Snapshot description mentioning '@Immutablelawyer' (Joseph Schiarizzi). Both proposals concern the initial establishment of the ARDC, distinct from subsequent proposals for Term 2 or funding injections.",
+    "status": "success",
+    "canonical_proposal_title": "Proposal [Non-Constitutional]: Establish the ‘Arbitrum Research & Development Collective’"
+  },
+  {
+    "snapshot_id": "4400d02f-adec-4887-8f12-d5821436abea",
+    "title": "Non-Constitutional AIP: Arbitrum Security Enhancement Fund",
+    "canonical_proposal_id": "1dd49112-56df-417b-98e6-882b6116f534",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal title 'Non-Constitutional AIP: Arbitrum Security Enhancement Fund' matches the Snapshot title exactly. The forum author is listed as 'Cyfrin', which aligns with the Snapshot description stating 'Cyfrin would like to request...'.",
+    "status": "success",
+    "canonical_proposal_title": "Non-Constitutional AIP: Arbitrum Security Enhancement Fund"
+  },
+  {
+    "snapshot_id": "4848d383-3667-4995-bb48-d3cc47f541ba",
+    "title": "Timeline Extension for STIP and Backfund Grantees",
+    "canonical_proposal_id": "314ed089-4ffd-4e39-930d-39db6d2f8850",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal title 'Timeline Extension for STIP and Backfund Grantees' is an exact string match with the forum proposal title.",
+    "status": "success",
+    "canonical_proposal_title": "Timeline Extension for STIP and Backfund Grantees"
+  },
+  {
+    "snapshot_id": "490497dd-c2ce-4235-b0fb-f00f5513f2c3",
+    "title": "Accelerating Arbitrum - leveraging Camelot as an ecosystem hub to support native builders",
+    "canonical_proposal_id": "deb12682-102f-40ef-9ec1-e0fd3a9fd36d",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal title 'Proposal: Accelerating Arbitrum - leveraging Camelot as an ecosystem hub to support native builders' matches the Snapshot title exactly. The forum author 'Camelot' corresponds to the Snapshot proposal content which is authored by the Camelot team.",
+    "status": "success",
+    "canonical_proposal_title": "Proposal: Accelerating Arbitrum - leveraging Camelot as an ecosystem hub to support native builders"
+  },
+  {
+    "snapshot_id": "4a56d674-a59d-4fcc-a141-99c5f254ee54",
+    "title": "TMC Recommendation",
+    "canonical_proposal_id": null,
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal 'TMC Recommendation' is a specific partner selection vote conducted by the Treasury Management Committee (TMC). While the TMC's mandate comes from 'Treasury Management v1.2' (ID 8700ebe2...) and the snapshot evaluates candidates like Karpatkey and Avantgarde (who have their own proposals in the list), the specific forum proposal detailing this recommendation vote (typically titled 'TMC Update: Service Provider Recommendations' or similar) is not included in the provided candidate list.",
+    "status": "success",
+    "canonical_proposal_title": null
+  },
+  {
+    "snapshot_id": "4ceb05a5-21e9-41c9-b143-0cd7b4ac92ea",
+    "title": "Consolidate Idle USDC to the ATMC’s Stablecoin Balance",
+    "canonical_proposal_id": "fef116df-1070-4cbe-8770-72e48933e1b5",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Consolidate Idle USDC to the ATMC’s Stablecoin Balance' is an exact character-for-character match with the forum proposal title. The Snapshot description explicitly states 'Entropy proposes transferring...', matching the forum author 'Entropy Advisors'.",
+    "status": "success",
+    "canonical_proposal_title": "Consolidate Idle USDC to the ATMC’s Stablecoin Balance"
+  },
+  {
+    "snapshot_id": "4ceca8f9-99bb-426a-a9c2-5e8d0eef6998",
+    "title": "Constitutional AIP - Security Council Improvement Proposal",
+    "canonical_proposal_id": "ae6b72ed-9931-4f2e-9c94-164cf6885e68",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Constitutional AIP - Security Council Improvement Proposal' matches the forum proposal title exactly. The Snapshot description discusses updating the Security Council structure to meet L2BEAT's 'Stage 1' requirements, and the forum proposal is authored by L2BEAT with the same content.",
+    "status": "success",
+    "canonical_proposal_title": "Constitutional AIP - Security Council Improvement Proposal"
+  },
+  {
+    "snapshot_id": "4dae7853-c7c0-4c14-a286-6e8032060296",
+    "title": "LTIPP Retroactive Community Funding Selections",
+    "canonical_proposal_id": null,
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot vote corresponds to the forum thread 'LTIPP Retroactive Community Funding' (ID 26903) linked in the description. This specific forum proposal title is not present in the provided list of candidate proposals. While the parent proposal 'Long Term Incentives Pilot Program' (ID dbd9e717-37fb-435c-a26e-3ef5060838de) exists, this Snapshot is a specific execution vote for a budget allocation defined therein, and its specific forum thread is missing from the candidates list.",
+    "status": "success",
+    "canonical_proposal_title": null
+  },
+  {
+    "snapshot_id": "50c3fe78-528d-4298-b06e-2c8387d95825",
+    "title": "[NON-CONSTITUTIONAL] Arbitrum Onboarding V2: A Governance Bootcamp",
+    "canonical_proposal_id": "07658eee-210d-4baa-8475-91389f10416a",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title '[NON-CONSTITUTIONAL] Arbitrum Onboarding V2: A Governance Bootcamp' matches the candidate forum proposal title exactly. The author of the forum proposal (Rika Goldberg) is listed in the Snapshot description as a member of the Onboarding Working Group.",
+    "status": "success",
+    "canonical_proposal_title": "[NON-CONSTITUTIONAL] Arbitrum Onboarding V2: A Governance Bootcamp"
+  },
+  {
+    "snapshot_id": "50d32006-4d7f-4acb-9107-900f64108200",
+    "title": "[Non-consitutional] User Research: Why build on Arbitrum?",
+    "canonical_proposal_id": "a19926f4-e7a3-4a7b-a0c1-9032e007e68d",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title '[Non-consitutional] User Research: Why build on Arbitrum?' closely matches the forum proposal '[Non-consitutional] User Research: Why do people even build on Arbitrum, anyway?'. Both proposals focus on conducting user research to understand builder motivations and are associated with RnDAO (indicated by the forum author 'danielo - RnDAO' and the research context in the description).",
+    "status": "success",
+    "canonical_proposal_title": "[Non-consitutional] User Research: Why do people even build on Arbitrum, anyway?"
+  },
+  {
+    "snapshot_id": "50e3ec68-0569-4c0d-a165-c9f4ae4466f2",
+    "title": "TMC ARB Recommendation",
+    "canonical_proposal_id": null,
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "This Snapshot vote ('TMC ARB Recommendation') is a specific operational decision (selecting/rejecting investment partners for an ARB allocation) conducted by the Treasury Management Committee (TMC). It stems from the mandate established in proposal 8700ebe2-ec2c-4fa8-9261-99f9c38b35ea (Treasury Management v1.2), but strictly speaking, there is no distinct Forum Proposal in the provided list that matches the specific title or scope of this recommendation vote. It is a committee-led execution step rather than a new standalone forum proposal.",
+    "status": "success",
+    "canonical_proposal_title": null
+  },
+  {
+    "snapshot_id": "5517ad31-90bd-4fde-b255-4d55a806064e",
+    "title": "(V2) Arbitrum Research & Development Collective",
+    "canonical_proposal_id": "486725ab-4b3c-4dac-a090-ae1dac684907",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal is titled '(V2) Arbitrum Research & Development Collective' and details the structural changes for the second term of the ARDC (V2), such as the removal of the Operations Lead and Hats Protocol. This corresponds directly to the forum proposal titled '[NON-CONSTITUTIONAL] - Arbitrum Research and Development Collective [Term 2]' authored by Joseph, who is the consistent author for ARDC proposals. The 'Term 2' in the forum title is synonymous with 'V2' in the Snapshot title.",
+    "status": "success",
+    "canonical_proposal_title": "[NON-CONSTITUTIONAL] - Arbitrum Research and Development Collective [Term 2]"
+  },
+  {
+    "snapshot_id": "55532cfb-59ba-465f-9019-e99971a860ea",
+    "title": "Long-Term Incentives Pilot Program",
+    "canonical_proposal_id": "dbd9e717-37fb-435c-a26e-3ef5060838de",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal title 'Long-Term Incentives Pilot Program' matches the forum proposal title exactly. The Snapshot description links to a forum post by user 'matt_stablelab', which aligns with the forum author 'Matt'. The content describes the establishment of the pilot program (LTIPP).",
+    "status": "success",
+    "canonical_proposal_title": "Long Term Incentives Pilot Program"
+  },
+  {
+    "snapshot_id": "5818cb25-f809-4467-9712-97161aebffd1",
+    "title": " Change Arbitrum Expansion Program to allow deployments of new Orbit chains on any blockchain",
+    "canonical_proposal_id": "335f60f0-1ac1-4bd5-97a7-92911994019f",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Change Arbitrum Expansion Program to allow deployments of new Orbit chains on any blockchain' matches the Forum proposal title 'Temperature Check: Change Arbitrum Expansion Program to allow deployments of new Orbit chains on any blockchain' almost exactly, differing only by the 'Temperature Check' prefix. The content describes the same specific change to the Arbitrum Expansion Program regarding Orbit chain settlement layers.",
+    "status": "success",
+    "canonical_proposal_title": "Temperature Check: Change Arbitrum Expansion Program to allow deployments of new Orbit chains on any blockchain"
+  },
+  {
+    "snapshot_id": "5bb4eb50-842e-47ff-8d98-6b54a333d3e9",
+    "title": "Furucombo's Misuse of Funds",
+    "canonical_proposal_id": null,
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal concerns a specific enforcement action ('Furucombo's Misuse of Funds') and links to a forum post titled 'Potential Misuse of Funds - Furucombo'. None of the 294 candidate proposals in the provided list contain 'Furucombo' in the title or appear to describe this specific ban/enforcement action. The matching forum proposal is likely missing from the candidate set.",
+    "status": "success",
+    "canonical_proposal_title": null
+  },
+  {
+    "snapshot_id": "5d4434c7-84de-4f7c-b399-81bbf29a3d12",
+    "title": "Arbitrum Research and Development Collective V2 - Extension",
+    "canonical_proposal_id": "6c9caa8e-08a9-4493-8c54-aaea783cb1c0",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Arbitrum Research and Development Collective V2 - Extension' is an exact match to the forum proposal title. Both are authored by Joseph (verified via address correlation and context), and the content describes activating the second phase of the previously approved ARDC V2 funding.",
+    "status": "success",
+    "canonical_proposal_title": "Arbitrum Research and Development Collective V2 - Extension"
+  },
+  {
+    "snapshot_id": "5e4eeae9-8e63-4f16-b296-89d7486ee215",
+    "title": "Adjust the Voting Power of the Arbitrum Community Pool & Ratify the Agentic Governance Pivot",
+    "canonical_proposal_id": "701acb43-5882-4110-92a3-d68f39346452",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal title '[RFC] Proposal to Adjust the Voting Power of the Arbitrum Community Pool & Ratifying the Agentic Governance Pivot' is a near-exact match to the Snapshot title. The Snapshot description refers to 'we (L2BEAT)', and the forum proposal author, Anastassis Oikonomopoulos, is the Governance Lead at L2BEAT.",
+    "status": "success",
+    "canonical_proposal_title": "[RFC] Proposal to Adjust the Voting Power of the Arbitrum Community Pool & Ratifying the Agentic Governance Pivot"
+  },
+  {
+    "snapshot_id": "6104fee7-a488-4fdf-bad7-53c0a2c6066c",
+    "title": "AIP: Batch Poster Manager and Sequencer Inbox Finality Fix",
+    "canonical_proposal_id": "48d6515f-d057-4ba1-bb33-e3ec472acd07",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'AIP: Batch Poster Manager and Sequencer Inbox Finality Fix' matches the forum proposal title exactly. This is a Constitutional AIP proposed by the System/Foundation.",
+    "status": "success",
+    "canonical_proposal_title": "AIP: Batch Poster Manager and Sequencer Inbox Finality Fix"
+  },
+  {
+    "snapshot_id": "627a6a8f-f87d-461c-bd08-e9704ae4017a",
+    "title": "ArbitrumDAO Off-site",
+    "canonical_proposal_id": "974b4b96-0f81-4e70-a624-01fc7c9cfa05",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot description explicitly states this proposal is a 'continuation of the directional proposal' (which corresponds to candidate ac4e5a30) and that the focus is on 'format selection'. Candidate 974b4b96 is titled 'Arbitrum Offsite format: online vs IRL' and shares the same author context (RnDAO), making it the correct match for this specific stage of the governance process.",
+    "status": "success",
+    "canonical_proposal_title": "Arbitrum Offsite format: online vs IRL"
+  },
+  {
+    "snapshot_id": "62a2d47a-2fa4-445f-baa4-85543e9d0dd6",
+    "title": "[Constitutional] AIP: Constitutional Quorum Threshold Reduction",
+    "canonical_proposal_id": "e6fe1310-79cc-4203-ade0-9bbb99626fad",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot entry title '[Constitutional] AIP: Constitutional Quorum Threshold Reduction' matches the forum proposal title exactly. This is a specific constitutional amendment proposal present in both lists.",
+    "status": "success",
+    "canonical_proposal_title": "[Constitutional] AIP: Constitutional Quorum Threshold Reduction"
+  },
+  {
+    "snapshot_id": "67d696c1-5a32-4b24-9cdc-bda8595fa815",
+    "title": "[Non-Constitutional] Arbitrum Token Swap Pilot Program",
+    "canonical_proposal_id": "0706b4b7-fb5f-46be-9a27-d30aaf08eb0c",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title '[Non-Constitutional] Arbitrum Token Swap Pilot Program' matches exactly with the forum proposal title. Additionally, the Snapshot description credits 'LuukDAO' for the report, and the forum proposal is authored by LuukDAO.",
+    "status": "success",
+    "canonical_proposal_title": "[Non-Constitutional] Arbitrum Token Swap Pilot Program"
+  },
+  {
+    "snapshot_id": "684a0983-6b5b-44ba-bdf3-cb2f9569372e",
+    "title": "GovHack Devcon in Bangkok - Hack Humanity",
+    "canonical_proposal_id": "ce0455f5-f7f9-4ef7-9656-fcb23b66f352",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'GovHack Devcon in Bangkok - Hack Humanity' matches the forum proposal title exactly. The details in the description regarding the event location (Bangkok) and nature (GovHack) align perfectly.",
+    "status": "success",
+    "canonical_proposal_title": "GovHack Devcon in Bangkok - Hack Humanity"
+  },
+  {
+    "snapshot_id": "69afd1bc-b975-4e82-81a1-78c7074bbe42",
+    "title": "An (EIP-4824 powered) daoURI for the Arbitrum DAO",
+    "canonical_proposal_id": "cce01beb-b47e-4ce5-97e8-1f70fe8928b8",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'An (EIP-4824 powered) daoURI for the Arbitrum DAO' is nearly identical to the forum proposal title 'An EIP-4824 powered daoURI for Arbitrum DAO'. Both proposals discuss adopting EIP-4824 to create an onchain source of truth for DAO data.",
+    "status": "success",
+    "canonical_proposal_title": "An EIP-4824 powered daoURI for Arbitrum DAO"
+  },
+  {
+    "snapshot_id": "69eb98f5-b5b2-4141-bae9-c4b1ea9ecdb6",
+    "title": "Delegate to Voter Enfranchisement Pool — Event Horizon",
+    "canonical_proposal_id": "beda9766-8af3-4f52-b79f-f28b54afcddf",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot description explicitly links to a forum post with the URL slug 'delegate-to-a-public-access-public-good-citizen-enfranchisement-pool-through-event-horizon'. This corresponds exactly to the title of forum proposal 'beda9766-8af3-4f52-b79f-f28b54afcddf' (Delegate to a public access, public good citizen enfranchisement pool through Event Horizon) by author Event Horizon.",
+    "status": "success",
+    "canonical_proposal_title": "Delegate to a public access, public good citizen enfranchisement pool through Event Horizon"
+  },
+  {
+    "snapshot_id": "6d76927b-f239-4be7-a4da-6b4b4b38e17b",
+    "title": "Adopt a Delegate Code of Conduct & Formalize Operations",
+    "canonical_proposal_id": "122ad932-e774-490c-bc35-08302834f554",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot description includes a direct link to the forum post. The title of the linked forum post ('Non-Constitutional Arbitrum DAO Delegate Code of Conduct + Formalizing the DAO’s Operations') aligns perfectly with the candidate proposal title. The author (Entropy Advisors) is consistent with the governance context.",
+    "status": "success",
+    "canonical_proposal_title": "[Non-Constitutional] Arbitrum DAO Delegate Code of Conduct + Formalizing the DAO’s Operations"
+  },
+  {
+    "snapshot_id": "6d7e34cb-8ca3-4b47-88cd-55a108ef93be",
+    "title": "Arbitrum Short-term incentive Program",
+    "canonical_proposal_id": "751dfaa5-48cf-43c5-bdbe-6ea0c3f559fa",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal title 'Arbitrum Short-term incentive Program' matches the Forum proposal 'Arbitrum’s Short-Term Incentive Program (Arbitrum Improvement Proposal)' almost exactly. The description describes the establishment of the incentive program (STIP) to distribute ARB grants, which corresponds to the content of the forum proposal authored by tnorm (a lead on the STIP initiative).",
+    "status": "success",
+    "canonical_proposal_title": "Arbitrum’s Short-Term Incentive Program (Arbitrum Improvement Proposal)"
+  },
+  {
+    "snapshot_id": "6e1451e5-aaa2-47a9-83dc-a76d76643f0f",
+    "title": "Arbitrum as official sponsor of Ethereum Mexico 2023",
+    "canonical_proposal_id": "0f70d135-7249-401a-8f65-2bf65bb86cec",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal title 'Arbitrum as official sponsor of Ethereum Mexico 2023' matches the forum proposal title 'Proposal: Arbitrum as official sponsor of Ethereum Mexico 2023' verbatim (excluding the prefix). The subject matter regarding sponsorship of the Ethereum Mexico 2023 event is identical.",
+    "status": "success",
+    "canonical_proposal_title": "Proposal: Arbitrum as official sponsor of Ethereum Mexico 2023"
+  },
+  {
+    "snapshot_id": "6f2be545-3292-4130-bdc3-c5835347fdb9",
+    "title": "Arbitrum D.A.O. Domain Allocator Offerings) Grant Program  - Season 3",
+    "canonical_proposal_id": "2011a7cd-80f8-4470-8a23-0b9707e1f1f6",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Arbitrum D.A.O. Domain Allocator Offerings) Grant Program - Season 3' matches the forum proposal title '[Non-Constitutional] [RFC] Arbitrum D.A.O. (Domain Allocator Offerings) Grant Program - Season 3' almost exactly. Both discuss the renewal of the Questbook program for a third season, and the author 'JoJo' is identified in the Snapshot description as the PM.",
+    "status": "success",
+    "canonical_proposal_title": "[Non-Constitutional] [RFC] Arbitrum D.A.O. (Domain Allocator Offerings) Grant Program - Season 3"
+  },
+  {
+    "snapshot_id": "70f12fbb-43ca-4f53-a5e7-13ff63b6fac8",
+    "title": "ArbitrumDAO Off-site",
+    "canonical_proposal_id": "ac4e5a30-4d14-46f5-afb7-e8cbde8fa455",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'ArbitrumDAO Off-site' matches the forum proposal title 'ArbitrumDAO Off-site - Directional proposal'. The Snapshot description describes a 'temp check' to decide whether to 'explore' an offsite, which aligns with the 'Directional proposal' nature of the forum post. Both discuss the same problem statement (lack of structured platforms/engagement) and origin (EthCC conversations). Ideally, the forum author 'danielo - RnDAO' corresponds to the Snapshot author.",
+    "status": "success",
+    "canonical_proposal_title": "ArbitrumDAO Off-site - Directional proposal"
+  },
+  {
+    "snapshot_id": "724085c3-40f4-46f0-9ad8-fbf7854f8229",
+    "title": "AIP: Support RIP-7212 for Account Abstraction Wallets (ArbOS 30)",
+    "canonical_proposal_id": "a4e35b4a-4432-47c6-b2d9-e8a33eff1611",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal has an identical title ('AIP: Support RIP-7212 for Account Abstraction Wallets (ArbOS 30)') to the Snapshot entry and addresses the same technical upgrade (adoption of RIP-7212 precompile).",
+    "status": "success",
+    "canonical_proposal_title": "AIP: Support RIP-7212 for Account Abstraction Wallets (ArbOS 30)"
+  },
+  {
+    "snapshot_id": "72c51be1-4e1b-4d42-9b97-19caaafb04bb",
+    "title": "Proposal: Building the Future of NFTs: The Rarible Protocol - Arbitrum Integration Proposal [REVISED]",
+    "canonical_proposal_id": "fa550ff6-92b4-49f2-b8c1-380fcefc41ff",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal title 'Proposal: Building the Future of NFTs: The Rarible Protocol - Arbitrum Integration Proposal [REVISED]' is an exact string match with the forum proposal title. There is another similar proposal without the '[REVISED]' tag, making this the correct match for the specific snapshot entry.",
+    "status": "success",
+    "canonical_proposal_title": "Proposal: Building the Future of NFTs: The Rarible Protocol - Arbitrum Integration Proposal [REVISED]"
+  },
+  {
+    "snapshot_id": "75e17e2b-6ac3-4971-ad70-22896bfbc5e5",
+    "title": "Arbitrum Multi-sig Support Service (MSS)",
+    "canonical_proposal_id": "872c8091-a086-4949-b21f-17bae80d5918",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Arbitrum Multi-sig Support Service (MSS)' has an exact string match with the forum proposal title. While there is another candidate with the '[RFC]' prefix (ID 6ded108a-d01e-45f5-b55a-ee3dd8267195), the existence of a distinct entry without the RFC tag indicates a formal proposal thread which corresponds to the voting stage. The author of the forum post, Tyler Bench (Frisson), is a known contributor associated with this initiative.",
+    "status": "success",
+    "canonical_proposal_title": "Arbitrum Multi-sig Support Service (MSS)"
+  },
+  {
+    "snapshot_id": "7688e282-9250-488d-9025-2ea287caf79f",
+    "title": "AIP 1.05: Return 700M $ARB to the DAO Treasury [REAL]",
+    "canonical_proposal_id": "19111efb-2382-4c58-b19c-9f070a5d428b",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal 'AIP 1.05: Return 700M $ARB to the DAO Treasury [REAL]' matches the Forum proposal 'Proposal: Return 700M $ARB to the DAO Treasury'. Both explicitly refer to the controversial return of 700 million ARB tokens from the Foundation to the DAO treasury following the AIP-1 event. The titles are nearly identical in their core request.",
+    "status": "success",
+    "canonical_proposal_title": "Proposal: Return 700M $ARB to the DAO Treasury"
+  },
+  {
+    "snapshot_id": "77ec22e5-5eef-4604-b89b-7f5876bd3a15",
+    "title": "AGV Council Compensation Calibration: Startup-Phase Bonus for Current Council Members",
+    "canonical_proposal_id": "82012921-30ba-46a9-8cbd-a85e6852482f",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal 'AGV Council Compensation Calibration: Startup-Phase Bonus for Current Council Members' directly corresponds to the forum proposal 'Proposal: AGV Council Compensation Calibration: Benchmark for Next Term & Startup-Phase Bonus'. Both titles utilize unique phrasing regarding AGV Council compensation and the specific 'startup-phase bonus', and the author (Arbitrum Gaming Ventures) is consistent across contexts.",
+    "status": "success",
+    "canonical_proposal_title": "Proposal: AGV Council Compensation Calibration: Benchmark for Next Term & Startup-Phase Bonus"
+  },
+  {
+    "snapshot_id": "78f967eb-995b-48f6-83db-f4ef65ad55cc",
+    "title": "AIP: ArbOS Version 11",
+    "canonical_proposal_id": "e6a8f6cc-29b7-4e7a-950d-5ba9e04ee929",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot entry title 'AIP: ArbOS Version 11' matches exactly with the candidate forum proposal title.",
+    "status": "success",
+    "canonical_proposal_title": "AIP: ArbOS Version 11"
+  },
+  {
+    "snapshot_id": "7b36defa-f064-42e3-999c-8e0abc10522e",
+    "title": "Transparency and Standardized Metrics for Orbit Chains",
+    "canonical_proposal_id": "c28cac76-decc-4ab5-961e-2158912c775d",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot description explicitly states the full title is '[Non-Constitutional] Transparency and Standardized Metrics for Orbit Chains on growthepie.xyz Allowing Data-Driven Decision Making', which corresponds exactly to the title of the candidate forum proposal. The content regarding growthepie metrics for Orbit chains also aligns perfectly.",
+    "status": "success",
+    "canonical_proposal_title": "[Non-Constitutional] Transparency and Standardized Metrics for Orbit Chains on growthepie.xyz Allowing Data-Driven Decision Making"
+  },
+  {
+    "snapshot_id": "7c332d6d-3e2a-41bb-8f44-bab90eb56b48",
+    "title": "Grant Request - Curve Finance",
+    "canonical_proposal_id": "6cbb16b1-271e-41c3-9d5e-0350030143a5",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal titled 'Grant Request - Curve Finance' details a standalone grant where Michael Egorov matches the DAO's grant with a personal donation of 237,500 ARB to bootstrap Curve Lending. The forum proposal 'Proposal: Request to match my donation to boostrap Curve Lending on Arbitrum' by 'michwill' (Michael Egorov) aligns perfectly with the specific context, matching mechanism, and subject matter described in the Snapshot.",
+    "status": "success",
+    "canonical_proposal_title": "Proposal: Request to match my donation to boostrap Curve Lending on Arbitrum"
+  },
+  {
+    "snapshot_id": "7d115cf8-9352-4e41-b620-0e2bc74d03e5",
+    "title": "Request for Continuation of the Arbitrum DDA Program Request",
+    "canonical_proposal_id": "2ad93b6a-24c8-45f9-ab27-f38e96b9fe63",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal title 'Request for Continuation of the Arbitrum DDA Program Request' closely aligns with the forum proposal 'Questbook DDA Program Phase 2 Request for Continuation'. The description references renewing the program with a $4M budget after the initial $912k allocation, which matches the details of the Phase 2 proposal found in the forum.",
+    "status": "success",
+    "canonical_proposal_title": "Questbook DDA Program Phase 2 Request for Continuation"
+  },
+  {
+    "snapshot_id": "7ff24300-0818-42aa-9300-cdbd52b69aff",
+    "title": "Proposal: Build Optimal Onboarding for STIP Teams (BOOST)",
+    "canonical_proposal_id": "8644213f-289b-419d-9c0e-0a1c4ff05ff2",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The candidate proposal title 'Proposal: Build Optimal Onboarding for STIP Teams (BOOST)' matches the Snapshot title exactly.",
+    "status": "success",
+    "canonical_proposal_title": "Proposal: Build Optimal Onboarding for STIP Teams (BOOST)"
+  },
+  {
+    "snapshot_id": "81c76077-0615-465a-87e4-eda49a30bd7c",
+    "title": "Proposal to Backfund Successful STIP Proposals",
+    "canonical_proposal_id": "5dcb102d-c118-42b1-987c-a2f3e5452219",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Proposal to Backfund Successful STIP Proposals' matches the core of the forum proposal title 'Proposal to Backfund Successful STIP Proposals (Savvy DAO) [FINAL]'. The content describes the same initiative (backfunding approved but unfunded STIP projects, increasing budget by 21.4M), and Savvy DAO (listed author on forum) was a lead organizer of the 'Arbitrum STIP Inclusion Working Group' mentioned in the Snapshot description.",
+    "status": "success",
+    "canonical_proposal_title": "Proposal to Backfund Successful STIP Proposals (Savvy DAO) [FINAL]"
+  },
+  {
+    "snapshot_id": "85176857-bc05-480f-8891-21d453d58a2f",
+    "title": "Proposal to onboard Matrixed.Link as a validator for Arbitrum",
+    "canonical_proposal_id": "480db779-eacc-40f9-93b2-ea1006c1a6ce",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal 'Proposal to onboard Matrixed.Link as a validator for Arbitrum One' matches the Snapshot title almost exactly. The specific entity (Matrixed.Link) and the action (onboarding as a validator) are identical in both.",
+    "status": "success",
+    "canonical_proposal_title": "Proposal to onboard Matrixed.Link as a validator for Arbitrum One"
+  },
+  {
+    "snapshot_id": "8538a940-aa1f-4534-8f98-429da99dd320",
+    "title": "Updating the OpCo Foundation’s Operational Capability",
+    "canonical_proposal_id": "3d885f2c-f065-4936-b259-fa8eefe2f623",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The candidate proposal title 'Updating the OpCo Foundation’s Operational Capability' is an exact verbatim match to the Snapshot entry title. The content describes amendments to the previously approved OpCo entity.",
+    "status": "success",
+    "canonical_proposal_title": "Updating the OpCo Foundation’s Operational Capability"
+  },
+  {
+    "snapshot_id": "89801acb-8742-461c-a836-6d5a1fa19af9",
+    "title": "Pilot Phase: M&A for Arbitrum DAO",
+    "canonical_proposal_id": "e59fc4a4-152c-4620-a554-6a319c3a995a",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Pilot Phase: M&A for Arbitrum DAO' matches the forum proposal title exactly. The content describes the specific 8-week pilot phase referenced in both entries.",
+    "status": "success",
+    "canonical_proposal_title": "Pilot Phase: M&A for Arbitrum DAO"
+  },
+  {
+    "snapshot_id": "8bd7b4c1-f860-4b52-934e-173edff91f5d",
+    "title": "Arbitrum Treasury Management Council - Consolidating Efforts",
+    "canonical_proposal_id": "bafb6034-dc01-4085-959c-66d659ed6cdd",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot entry title 'Arbitrum Treasury Management Council - Consolidating Efforts' matches the forum proposal title exactly. The forum proposal is authored by Entropy Advisors, who are listed as the Execution Body in the Snapshot description.",
+    "status": "success",
+    "canonical_proposal_title": "Arbitrum Treasury Management Council - Consolidating Efforts"
+  },
+  {
+    "snapshot_id": "8eb57678-ca5f-41e9-8575-81de56c808e6",
+    "title": "[NON-CONSTITUTIONAL] Pilot Phase: Arbitrum Ventures Initiative",
+    "canonical_proposal_id": "fc1ffb7c-9b52-4aae-8c08-79c53f6f937d",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title '[NON-CONSTITUTIONAL] Pilot Phase: Arbitrum Ventures Initiative' matches the forum proposal title '[Non-Constitutional] Pilot Phase: Arbitrum Venture Initiative' almost exactly (singular vs plural Venture). The provided Snapshot description also links to a forum URL with the same title slug.",
+    "status": "success",
+    "canonical_proposal_title": "[Non-Constitutional] Pilot Phase: Arbitrum Venture Initiative"
+  },
+  {
+    "snapshot_id": "935459c1-06ed-49b3-9668-2adc9ec2d458",
+    "title": "Arbitrum DAO Grants - Delegated Domain Allocation by Questbook",
+    "canonical_proposal_id": "d304a4de-9f43-40fa-bf0e-7ee2834ec533",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Arbitrum DAO Grants - Delegated Domain Allocation by Questbook' is nearly identical to the forum proposal title 'Delegated Domain Allocation by Questbook - Arbitrum DAO Grants'. Both are authored by Saurabh/Questbook and describe the initial setup of the program.",
+    "status": "success",
+    "canonical_proposal_title": "Delegated Domain Allocation by Questbook - Arbitrum DAO Grants"
+  },
+  {
+    "snapshot_id": "93b5ac7d-02eb-42ae-b640-b24ebccfc97f",
+    "title": "[Non-Constitutional]: Arbitrum Stable Treasury Endowment Program",
+    "canonical_proposal_id": "b7efb413-f717-42f7-bc0a-7029a6b9c1ad",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title '[Non-Constitutional]: Arbitrum Stable Treasury Endowment Program' matches the forum title 'Final: Arbitrum Stable Treasury Endowment Program' almost exactly. The content describes the 'Stable Treasury Endowment Program (STEP)' as the first proposal of its kind (distinguishing it from the STEP 2.0 proposal also found in the list).",
+    "status": "success",
+    "canonical_proposal_title": "Final: Arbitrum Stable Treasury Endowment Program"
+  },
+  {
+    "snapshot_id": "98de1728-62de-49f6-8874-d3e8eff68809",
+    "title": "Set up a Sub-Committee for the Security Services Subsidy Fund",
+    "canonical_proposal_id": "910d14a4-c992-437a-8976-04dac42d6f4b",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Set up a Sub-Committee for the Security Services Subsidy Fund' matches the forum proposal title 'Proposal [Non-Constitutional]: Set up a Sub-Committee for the Security Services Subsidy Fund' nearly verbatim. The author (Joseph on forum) is a known consistent author for this initiative.",
+    "status": "success",
+    "canonical_proposal_title": "Proposal [Non-Constitutional]: Set up a Sub-Committee for the Security Services Subsidy Fund"
+  },
+  {
+    "snapshot_id": "9a79972c-8180-4e03-86a8-eb552a60c0b0",
+    "title": "OpCo – Oversight and Transparency Committee (OAT) Elections",
+    "canonical_proposal_id": "6c4e2f12-a2f8-4ed4-b0ed-c19cff5c3b3a",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot is for the election of the Oversight and Transparency Committee (OAT) for the OpCo. The Snapshot description explicitly links to the forum proposal titled 'OpCo – A DAO-adjacent Entity for Strategy Execution' (ID 6c4e2f12-a2f8-4ed4-b0ed-c19cff5c3b3a) as the source of truth for the entity's structure and the committee being elected.",
+    "status": "success",
+    "canonical_proposal_title": "OpCo – A DAO-adjacent Entity for Strategy Execution"
+  },
+  {
+    "snapshot_id": "9c0ed2c5-baad-4664-a0d2-36c427005698",
+    "title": "[Non-constitutional] ARB Incentives: User Acquisition for dApps & Protocols",
+    "canonical_proposal_id": "9aa842ac-a123-4d87-add3-e131a71af554",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal title '[Non-constitutional][RFC] ARB Incentives: User Acquisition for dApps & Protocols' is an exact match to the Snapshot title (excluding the [RFC] tag). The subject matter regarding user acquisition incentives for dApps aligns perfectly.",
+    "status": "success",
+    "canonical_proposal_title": "[Non-constitutional][RFC] ARB Incentives: User Acquisition for dApps & Protocols"
+  },
+  {
+    "snapshot_id": "9db7c798-f210-4e80-8c81-ce4b34540839",
+    "title": "Consolidate Security Proposals into a RFP Process",
+    "canonical_proposal_id": "2098ff60-ef7d-4841-b3c4-8938e40ddfa6",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal 'Consolidate Security Proposals into a RFP Process' aims to address the issue of 'piecemeal' security proposals by creating a unified 'RFP structure' and 'Procurement Framework'. This matches the forum proposal 'Proposal [Non-Constitutional]: **Procurement Framework [Security Service Providers]**' authored by Joseph. The Snapshot author address (0xAD16...) corresponds to the delegate Joseph. The content describing the background (piecemeal proposals) and the solution (inclusive RFP framework/Procurement Framework) aligns perfectly.",
+    "status": "success",
+    "canonical_proposal_title": "Proposal [Non-Constitutional]: **Procurement Framework [Security Service Providers]**"
+  },
+  {
+    "snapshot_id": "9e1d5dce-b88f-4f97-a8fa-bbd8db0e6ef3",
+    "title": "OpCo – A DAO-adjacent Entity for Strategy Execution",
+    "canonical_proposal_id": "6c4e2f12-a2f8-4ed4-b0ed-c19cff5c3b3a",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'OpCo – A DAO-adjacent Entity for Strategy Execution' is an exact character-for-character match with the forum proposal title. The description in the Snapshot also references an earlier proposal by @dk3 ('The OpCo - Scale, Structure, & Synergy'), confirming that the current Snapshot entry corresponds to the specific proposal titled 'OpCo – A DAO-adjacent Entity for Strategy Execution' (authored by Entropy Advisors on the forum).",
+    "status": "success",
+    "canonical_proposal_title": "OpCo – A DAO-adjacent Entity for Strategy Execution"
+  },
+  {
+    "snapshot_id": "9e74e039-5ad1-4609-8e20-fc3db49a1106",
+    "title": "Wind Down the MSS + Transfer Payment Responsibilities to the Arbitrum Foundation",
+    "canonical_proposal_id": "bdb4da76-667b-452d-b2ce-8a924cacb1ed",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Wind Down the MSS + Transfer Payment Responsibilities to the Arbitrum Foundation' matches exactly with the forum proposal title. The content describes Entropy proposing the sunsetting of the MSS service, which aligns with the forum author 'Entropy Advisors'.",
+    "status": "success",
+    "canonical_proposal_title": "Wind Down the MSS + Transfer Payment Responsibilities to the Arbitrum Foundation"
+  },
+  {
+    "snapshot_id": "9effc89f-702b-465d-9c30-7ac954467564",
+    "title": "[Non-Constitutional] Whitelist Infura Nova Validator",
+    "canonical_proposal_id": "4c1d960e-1539-471e-907f-464558486d14",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal title 'AIP: Whitelist Infura Nova Validator' matches the Snapshot title '[Non-Constitutional] Whitelist Infura Nova Validator' almost exactly. Both proposals concern the specific action of whitelisting Infura as a validator on Arbitrum Nova, and the forum author is identified as 'Infura'.",
+    "status": "success",
+    "canonical_proposal_title": "AIP: Whitelist Infura Nova Validator"
+  },
+  {
+    "snapshot_id": "a0a36fef-b761-4ca9-b764-0ef290d7b040",
+    "title": "Double-Down on STIP Successes (STIP-Bridge) ",
+    "canonical_proposal_id": "9732d0be-5d79-4438-aca5-2b3264efc22f",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal title 'Double-Down on STIP Successes (STIP-Bridge)' is an exact character-for-character match with the forum proposal title. The content describes the STIP Bridge initiative, which aligns perfectly.",
+    "status": "success",
+    "canonical_proposal_title": "Double-Down on STIP Successes (STIP-Bridge)"
+  },
+  {
+    "snapshot_id": "a137723b-78e3-4695-acc6-4f8d1a00b7e6",
+    "title": "Let’s improve our governance forum with three proposals.app feature integrations",
+    "canonical_proposal_id": "93e8d79a-b5ef-4665-befb-b2f2f70808d1",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal title '[Non-Constitutional] Let’s improve our governance forum with three proposals.app feature integrations' is nearly identical to the Snapshot title. The Snapshot description mentions 'proposals.app' and a budget of $60,000, consistent with the content typically found in the matching forum discussion initiated by Paulo Fonseca.",
+    "status": "success",
+    "canonical_proposal_title": "[Non-Constitutional] Let’s improve our governance forum with three proposals.app feature integrations"
+  },
+  {
+    "snapshot_id": "a1d7d459-261f-44ec-bbdb-1f8c7939f102",
+    "title": "[Non-Constitutional] Treasury Management v1.2 ",
+    "canonical_proposal_id": "8700ebe2-ec2c-4fa8-9261-99f9c38b35ea",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot entry title '[Non-Constitutional] Treasury Management v1.2' is an exact string match with the forum proposal title. The Snapshot description mentions 'Entropy' hosting calls, which aligns with the forum author 'Entropy Advisors'. Additionally, the Snapshot description explicitly provides a link to the forum post, confirming the match.",
+    "status": "success",
+    "canonical_proposal_title": "[Non-Constitutional] Treasury Management v1.2"
+  },
+  {
+    "snapshot_id": "a23e6f95-3b31-4897-b5a0-2d7e1280dd9e",
+    "title": "DeFi Renaissance Incentive Program (DRIP)",
+    "canonical_proposal_id": "4b6eb958-04a4-4d84-a0d1-b25fd9993479",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot entry has an exact title match with the forum proposal 'DeFi Renaissance Incentive Program (DRIP)'. Additionally, the Snapshot abstract explicitly states 'Entropy proposes...', which aligns with the forum author 'Entropy Advisors'.",
+    "status": "success",
+    "canonical_proposal_title": "DeFi Renaissance Incentive Program (DRIP)"
+  },
+  {
+    "snapshot_id": "a59dab53-b873-4976-a89c-f5a6aedc0747",
+    "title": "TMC Stablecoin Recommendation",
+    "canonical_proposal_id": null,
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot entry 'TMC Stablecoin Recommendation' is a specific execution vote resulting from the Treasury Management Committee's (TMC) selection process. It recommends allocating 15M ARB to a split strategy involving Karpatkey, Avantgarde, and Gauntlet. While the list contains the proposal that established the TMC (Treasury Management v1.2, ID 8700ebe2-...) and the individual proposals from the providers (Karpatkey ID 650e3d12-..., Avantgarde ID d2824c0b-...), the specific forum proposal detailing this combined recommendation (likely titled 'TMC: Stablecoin & ARB Strategy Recommendations') is not present in the provided candidate list.",
+    "status": "success",
+    "canonical_proposal_title": null
+  },
+  {
+    "snapshot_id": "a6118e3f-7aa6-4660-9fb5-d861ab9b3350",
+    "title": "Restitution For Extensively Delayed ArbitrumDAO Minigrant Winners",
+    "canonical_proposal_id": "86c2d5b5-b996-4f71-b66e-d322619f64ae",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal description explicitly links to a forum discussion with the title 'Proposal for Financial Restitution For ArbitrumDAO Grant Winners', which matches the title of the candidate proposal almost exactly. The subject matter regarding compensation for delayed minigrant payouts is identical in both.",
+    "status": "success",
+    "canonical_proposal_title": "Proposal for Financial Restitution For ArbitrumDAO Grant Winners"
+  },
+  {
+    "snapshot_id": "a6de1867-5e4b-4aec-9d50-74383e8f463a",
+    "title": " Empowering Early Contributors: The community Arbiter Proposal 2.0",
+    "canonical_proposal_id": "887c50dd-e4b8-4da5-9377-f13dd8f6ddae",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Empowering Early Contributors: The community Arbiter Proposal 2.0' is an exact match for the forum proposal with ID 887c50dd-e4b8-4da5-9377-f13dd8f6ddae.",
+    "status": "success",
+    "canonical_proposal_title": "[Non-Constitutional]: Empowering Early Contributors: The community Arbiter Proposal 2.0"
+  },
+  {
+    "snapshot_id": "a7c4346d-1b96-482e-b93d-bf78e3c7772c",
+    "title": "Gaming Catalyst Program (GCP) Council Voting",
+    "canonical_proposal_id": null,
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "This Snapshot represents a specific election event ('Gaming Catalyst Program (GCP) Council Voting') where delegates vote for candidates to fill council seats. While it stems from the parent proposal 'Catalyze Gaming Ecosystem Growth on Arbitrum' (0d17e2e1-80b5-4f67-85f9-8d6190381641), it is a distinct governance event. The specific forum thread for nominations (linked in the description as 'GCP Council Nominations') is not included in the provided list of forum proposals.",
+    "status": "success",
+    "canonical_proposal_title": null
+  },
+  {
+    "snapshot_id": "a9520ef7-d73b-40c5-97b7-431d405c3a86",
+    "title": "STIP-Bridge Operational Budget",
+    "canonical_proposal_id": "6fd6f5f9-6d02-4218-9d32-424cb9f46f24",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot entry has an exact title match with the forum proposal 'STIP-Bridge Operational Budget'. The author mentioned in the Snapshot description (Alex Lumley) matches the author of the forum proposal. The Snapshot description explicitly mentions this is a separate proposal for the operational costs derived from the STIP-Bridge program.",
+    "status": "success",
+    "canonical_proposal_title": "STIP-Bridge Operational Budget"
+  },
+  {
+    "snapshot_id": "a9b31534-9702-4eaf-a1e2-1fc806dc8bff",
+    "title": "AIP: Activate Stylus and Enable Next-Gen WebAssembly Smart Contracts (ArbOS 30)",
+    "canonical_proposal_id": "066f5491-e3e6-49d3-ab03-ddccb7644d16",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal title 'AIP: Activate Stylus and Enable Next-Gen WebAssembly Smart Contracts (ArbOS 30)' is an exact match to the Snapshot entry title.",
+    "status": "success",
+    "canonical_proposal_title": "AIP: Activate Stylus and Enable Next-Gen WebAssembly Smart Contracts (ArbOS 30)"
+  },
+  {
+    "snapshot_id": "aa28c03a-4991-4c97-97ca-10f8eb1876e4",
+    "title": "AIP: Nova Fee Router Proposal (ArbOS 30)",
+    "canonical_proposal_id": "5d7ceb2e-6ee9-4091-9604-48714389e3e8",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot entry title 'AIP: Nova Fee Router Proposal (ArbOS 30)' is an exact character-for-character match with the forum proposal title. The content describes the specific technical mechanism for routing Nova fees to the DAO treasury, which corresponds to the forum discussion.",
+    "status": "success",
+    "canonical_proposal_title": "AIP: Nova Fee Router Proposal (ArbOS 30)"
+  },
+  {
+    "snapshot_id": "ae642512-3962-47aa-aa00-33301ee10fe3",
+    "title": "[Temperature Check] Should we try a Delegate Incentive Program like the Arbitrum Triple Dip?",
+    "canonical_proposal_id": "3135e14f-c274-4b6b-aeb9-edf0ccbe5892",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot description is explicitly titled '# Arbitrum Triple Dip (Delegate Incentive Program)' and outlines the 'Triple Dip' structure. This matches the forum proposal title 'Arbitrum Triple Dip (Delegate Incentive Program)' by Paulo Fonseca perfectly.",
+    "status": "success",
+    "canonical_proposal_title": "Arbitrum Triple Dip (Delegate Incentive Program)"
+  },
+  {
+    "snapshot_id": "af1aeea6-57a4-4cad-bf58-357ec7c61df9",
+    "title": "Proposal: [Non-Constitutional] Funding for Into the Dungeons: Machinata - a PvP Digital Miniature Game V2",
+    "canonical_proposal_id": "715a6847-ec6f-4a82-800d-fa69dd17086f",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Proposal: [Non-Constitutional] Funding for Into the Dungeons: Machinata - a PvP Digital Miniature Game V2' is an exact match for the forum proposal title. The 'V2' identifier distinguishes it from the previous version (ID d8c79d24...), and the Snapshot description confirms it is a revised version.",
+    "status": "success",
+    "canonical_proposal_title": "Proposal: [Non-Constitutional] Funding for Into the Dungeons: Machinata - a PvP Digital Miniature Game V2"
+  },
+  {
+    "snapshot_id": "afeeaada-f83f-47fa-95c0-4c97223e9812",
+    "title": "Arbitrum Growth Circles Event Proposal",
+    "canonical_proposal_id": "e2926f74-c861-4f23-8705-01e5651f9b80",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Arbitrum Growth Circles Event Proposal' is an exact match to the forum proposal title. Additionally, the forum author 'Farstar' is explicitly named as the Event Organizer in the Snapshot description.",
+    "status": "success",
+    "canonical_proposal_title": "Arbitrum Growth Circles Event Proposal"
+  },
+  {
+    "snapshot_id": "b184f9c7-cdf8-4a95-905c-9314e1052706",
+    "title": "Unifying Arbitrum’s Mission, Vision, Purpose (MVP)",
+    "canonical_proposal_id": "ea61eb25-9eac-405b-a9f6-c021c6e47f5e",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal title 'Unifying Arbitrum’s Mission, Vision, Purpose (MVP)' is an exact match to the Snapshot title. The author (Entropy Advisors) matches the context of the Snapshot description.",
+    "status": "success",
+    "canonical_proposal_title": "Unifying Arbitrum’s Mission, Vision, Purpose (MVP)"
+  },
+  {
+    "snapshot_id": "b32033d2-a375-4281-b696-8b57d7788e53",
+    "title": "Constitutional AIP: Proposal to adopt Timeboost, a new transaction ordering policy ",
+    "canonical_proposal_id": "ff0ce443-ab64-4e38-bc93-7c438ecc9fba",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot entry title 'Constitutional AIP: Proposal to adopt Timeboost, a new transaction ordering policy' matches the forum proposal title identically.",
+    "status": "success",
+    "canonical_proposal_title": "Constitutional AIP: Proposal to adopt Timeboost, a new transaction ordering policy"
+  },
+  {
+    "snapshot_id": "b66ab83c-8f83-462d-9ee1-797594b954df",
+    "title": "Should the DAO Create COI & Self Voting Policies?",
+    "canonical_proposal_id": "9d7f6b51-eabd-41de-9a85-c15df05d3160",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot entry title 'Should the DAO Create COI & Self Voting Policies?' matches the forum proposal title exactly. The Snapshot description also provides a direct link to the forum post which corresponds to this candidate.",
+    "status": "success",
+    "canonical_proposal_title": "Should the DAO Create COI & Self Voting Policies?"
+  },
+  {
+    "snapshot_id": "b7274dfb-805d-4c11-9997-d58512d12641",
+    "title": "[CONSTITUTIONAL] AIP: ArbOS Version 40 Callisto",
+    "canonical_proposal_id": "e76ff9a8-79c4-416f-bfe1-28036640f84d",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal title '[CONSTITUTIONAL] AIP: ArbOS Version 40 Callisto' is an exact match to the Snapshot proposal title. The content describes the same technical upgrade (ArbOS 40).",
+    "status": "success",
+    "canonical_proposal_title": "[CONSTITUTIONAL] AIP: ArbOS Version 40 Callisto"
+  },
+  {
+    "snapshot_id": "b874633b-a2ea-4776-923f-4fd461492d6b",
+    "title": "Synthetix LTIP Grant Extension Request",
+    "canonical_proposal_id": "52117f80-c2ec-4c2a-8705-c3219f4cf2d0",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal 'Synthetix LTIP Grant Extension Request' matches the forum proposal titled '[RFC] Synthetix LTIP Grant Extension Request' almost exactly. Both concern the specific request by the Synthetix protocol to extend their Long Term Incentive Pilot (LTIP) grant.",
+    "status": "success",
+    "canonical_proposal_title": "[RFC] Synthetix LTIP Grant Extension Request"
+  },
+  {
+    "snapshot_id": "b933df2d-1bf0-471a-9a2b-e825b29f7844",
+    "title": "[Non-Constitutional] Funds to Bolster Foundation’s Strategic Partnerships Budget",
+    "canonical_proposal_id": "3468a7eb-11df-4db6-8bfe-a298f56b18d9",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The candidate proposal shares the exact identical title '[Non-Constitutional] Funds to Bolster Foundation’s Strategic Partnerships Budget' with the Snapshot entry.",
+    "status": "success",
+    "canonical_proposal_title": "[Non-Constitutional] Funds to Bolster Foundation’s Strategic Partnerships Budget"
+  },
+  {
+    "snapshot_id": "bcb5dd70-aeb3-4c88-8ac7-55bda402324a",
+    "title": "The Watchdog: Arbitrum DAO's Grant Misuse Bounty Program",
+    "canonical_proposal_id": "8b312cb1-622d-4b42-836e-64da66fe78ca",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal title 'The Watchdog: Arbitrum DAO's Grant Misuse Bounty Program' matches the forum proposal title exactly. Additionally, the Snapshot description explicitly mentions 'Entropy Advisors proposes...', which aligns with the forum proposal author 'Entropy Advisors'.",
+    "status": "success",
+    "canonical_proposal_title": "The Watchdog: Arbitrum DAO’s Grant Misuse Bounty Program"
+  },
+  {
+    "snapshot_id": "be0b63fe-e0a9-41c8-b99e-7ad3c3efb268",
+    "title": "[Replace Oversight Committee with MSS] Delegate to Voter Enfranchisement Pool — Event Horizon",
+    "canonical_proposal_id": "046f9a56-cae7-477d-bbc7-d31ea0b8bc34",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title '[Replace Oversight Committee with MSS] Delegate to Voter Enfranchisement Pool — Event Horizon' contains the exact text of the forum proposal 'Delegate to Voter Enfranchisement Pool — Event Horizon'. The bracketed section in the Snapshot title reflects the operational update described in the Snapshot text (replacing the Oversight Committee with the MSS) which was likely finalized during the forum discussion of that specific proposal.",
+    "status": "success",
+    "canonical_proposal_title": "Delegate to Voter Enfranchisement Pool — Event Horizon"
+  },
+  {
+    "snapshot_id": "bf07c7e9-8599-4243-bc6d-cb33b4119b77",
+    "title": "Designing and operating the reporting and information function",
+    "canonical_proposal_id": "ac9d16c9-9106-4a60-a6b8-301539519100",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The title matches exactly word-for-word, and the Snapshot description explicitly provides a link to the forum thread with the same title. The author listed in the forum (Alex Lumley) is also named in the Snapshot text as part of the team.",
+    "status": "success",
+    "canonical_proposal_title": "Designing and Operating the Reporting and Information Function"
+  },
+  {
+    "snapshot_id": "bf316c1a-0229-42e0-abe1-b572cb04d58b",
+    "title": "Multisig Support Service (MSS) Elections",
+    "canonical_proposal_id": "872c8091-a086-4949-b21f-17bae80d5918",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot is for the elections of the Multisig Support Service (MSS). The forum proposal titled 'Arbitrum Multi-sig Support Service (MSS)' (ID 872c8091) is the proposal that established this service and the requirement for these elections. The election Snapshot is the direct execution of the governance framework set up by this proposal.",
+    "status": "success",
+    "canonical_proposal_title": "Arbitrum Multi-sig Support Service (MSS)"
+  },
+  {
+    "snapshot_id": "c0439441-3ba5-4b51-ba9d-49c6b37e4f2c",
+    "title": "[CONSTITUTIONAL] Proposal: For Arbitrum DAO to register the Sky Custom Gateway contracts in the Router",
+    "canonical_proposal_id": "780b8fd8-760b-4355-bef9-07dd8ea4cef4",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal title '[CONSTITUTIONAL] Proposal: For Arbitrum DAO to register the Sky Custom Gateway contracts in the Router' matches the Snapshot title exactly.",
+    "status": "success",
+    "canonical_proposal_title": "[CONSTITUTIONAL] Proposal: For Arbitrum DAO to register the Sky Custom Gateway contracts in the Router"
+  },
+  {
+    "snapshot_id": "c1b47f89-d689-4317-a5af-ce0c7f7da880",
+    "title": "Establishing a DAO Events Budget for 2025",
+    "canonical_proposal_id": "dbc54f07-158c-4c5f-a603-0980c3c95ad7",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The title 'Establishing a DAO Events Budget for 2025' matches exactly between the Snapshot entry and the forum proposal. The author listed in the forum proposal (Entropy Advisors) is explicitly identified as one of the authors in the Snapshot description text.",
+    "status": "success",
+    "canonical_proposal_title": "Establishing a DAO Events Budget for 2025"
+  },
+  {
+    "snapshot_id": "c2491cc7-fd87-4a26-b898-7ac5597cc9e9",
+    "title": "Updating the Code of Conduct & DAO’s Procedures",
+    "canonical_proposal_id": "f00fcce0-cf32-49e1-82c7-dee02a2e3c68",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Updating the Code of Conduct & DAO’s Procedures' matches the forum proposal title exactly. The Snapshot description explicitly states 'Entropy is proposing', which aligns with the forum author 'Entropy Advisors'.",
+    "status": "success",
+    "canonical_proposal_title": "Updating the Code of Conduct & DAO’s Procedures"
+  },
+  {
+    "snapshot_id": "c305a76c-72f7-4996-a4bf-9ec314230d89",
+    "title": "AIP: Raise the gas target, min L2 base fee, & implement improvements to the pricing algorithm",
+    "canonical_proposal_id": "0145ff08-0c72-44bc-b717-56093dbac7df",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title matches the forum proposal title exactly ('AIP: Raise the gas target, min L2 base fee, & implement improvements to the pricing algorithm'). The Snapshot description states the proposal is from Offchain Labs, matching the forum author.",
+    "status": "success",
+    "canonical_proposal_title": "AIP: Raise the gas target, min L2 base fee, & implement improvements to the pricing algorithm"
+  },
+  {
+    "snapshot_id": "c51da4f1-3bbf-428f-8e29-bb4702ae7ec1",
+    "title": "AIP 1.05: Return 700M $ARB to the DAO Treasury ",
+    "canonical_proposal_id": "19111efb-2382-4c58-b19c-9f070a5d428b",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot entry 'AIP 1.05: Return 700M $ARB to the DAO Treasury' matches the forum proposal 'Proposal: Return 700M $ARB to the DAO Treasury'. Both titles refer to the specific action of returning 700M tokens to the treasury following the AIP-1 event.",
+    "status": "success",
+    "canonical_proposal_title": "Proposal: Return 700M $ARB to the DAO Treasury"
+  },
+  {
+    "snapshot_id": "c61cd1f6-b521-4c7a-ae25-78ec1635f3b8",
+    "title": "Improving Predictability in Arbitrum DAO’s Operations",
+    "canonical_proposal_id": "784e8333-60a4-4a68-9911-70e32730a893",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal title 'Improving Predictability in Arbitrum DAO’s Operations' is an exact match to the Snapshot entry. The author (Entropy Advisors) aligns with the context of the proposal description which references previous work by members of that team (Cattin).",
+    "status": "success",
+    "canonical_proposal_title": "Improving Predictability in Arbitrum DAO’s Operations"
+  },
+  {
+    "snapshot_id": "c6fd1069-55d7-48c1-89fe-a4db1257d3bb",
+    "title": "Research on context and retention",
+    "canonical_proposal_id": "ece50e3c-1bed-4a88-ac9b-0c1f8ec063bc",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The title 'Research on context and retention' matches exactly between the Snapshot entry and the forum proposal. The Snapshot description identifies the project as incubated in RnDAO, which aligns with the forum author 'danielo - RnDAO'.",
+    "status": "success",
+    "canonical_proposal_title": "Research on context and retention"
+  },
+  {
+    "snapshot_id": "c8a9aedd-6514-4bdc-839f-b79a3e54e38b",
+    "title": "ArbitrumDAO Procurement Committee Phase II",
+    "canonical_proposal_id": "8a9fa763-d068-42ac-8304-c3e0599e27b2",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'ArbitrumDAO Procurement Committee Phase II' matches the forum title '[NON-CONSTITUTIONAL] Arbitrum DAO Procurement Committee: Phase II Proposal'. The Snapshot author (0x560b...) corresponds to Tyler Bench (Frisson), the author of the forum proposal. The content regarding extending the ADPC term aligns perfectly.",
+    "status": "success",
+    "canonical_proposal_title": "[NON-CONSTITUTIONAL] Arbitrum DAO Procurement Committee: Phase II Proposal"
+  },
+  {
+    "snapshot_id": "c8e4e040-afe7-43fb-9119-23ba585addff",
+    "title": "GCP Council Re-Confirmation Vote for John Kennedy",
+    "canonical_proposal_id": null,
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot vote is for the specific re-confirmation of a GCP Council member (John Kennedy). While this vote stems from the mandate established in the original GCP proposal (0d17e2e1-80b5-4f67-85f9-8d6190381641), there is no distinct proposal in the provided candidate list specifically titled for this re-confirmation or election event. It is a procedural vote derived from existing governance frameworks rather than a new legislative proposal found in the list.",
+    "status": "success",
+    "canonical_proposal_title": null
+  },
+  {
+    "snapshot_id": "cb23ae7f-8edd-4645-b3cf-c98627416bd2",
+    "title": "Transfer 8,500 ETH from the Treasury to ATMC’s ETH Treasury Strategies",
+    "canonical_proposal_id": "30b2f80e-459c-407b-9869-9cf5b1c7ba74",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Transfer 8,500 ETH from the Treasury to ATMC’s ETH Treasury Strategies' is an exact match to the forum proposal title. The author mentioned in the Snapshot description (Entropy) matches the forum author (Entropy Advisors).",
+    "status": "success",
+    "canonical_proposal_title": "Transfer 8,500 ETH from the Treasury to ATMC’s ETH Treasury Strategies"
+  },
+  {
+    "snapshot_id": "cb9da1b8-b91c-4cca-9896-d3f4b53a1995",
+    "title": "[CONSTITUTIONAL] AIP: ArbOS Version 50 Dia",
+    "canonical_proposal_id": "a952f794-c52c-455c-9066-159fad3bd18c",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot entry title '[CONSTITUTIONAL] AIP: ArbOS Version 50 Dia' is an exact text match to the candidate forum proposal. Both proposals concern the specific technical upgrade to ArbOS Version 50 (Dia) and originate from the core team (Offchain Labs).",
+    "status": "success",
+    "canonical_proposal_title": "[CONSTITUTIONAL] AIP: ArbOS Version 50 Dia"
+  },
+  {
+    "snapshot_id": "cd9c7e53-a74d-471e-94ca-8de3f35f9489",
+    "title": "GMC's Preferred Allocations (7,500 ETH)",
+    "canonical_proposal_id": null,
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal 'GMC's Preferred Allocations (7,500 ETH)' refers to a specific allocation decision made by the Growth Management Committee (GMC) established by the 'Treasury Management v1.2' proposal. While the parent proposal 'Treasury Management v1.2' (8700ebe2-ec2c-4fa8-9261-99f9c38b35ea) is present in the list, the specific forum proposal detailing the 7,500 ETH allocation to Camelot, Aave, Lido, and Fluid (which occurred months later after an application process) is not found in the provided candidate list. The closest existing proposal (30b2f80e) refers to a different committee (ATMC) and a different amount (8,500 ETH).",
+    "status": "success",
+    "canonical_proposal_title": null
+  },
+  {
+    "snapshot_id": "d01a8201-d6cd-466f-861b-debae9a6e764",
+    "title": "GCP Council Re-Confirmation Vote for Tim Chang",
+    "canonical_proposal_id": null,
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot entry is a specific operational re-confirmation vote for a GCP Council member (Tim Chang). While this process was mandated by the original Gaming Catalyst Program proposal (0d17e2e1-80b5-4f67-85f9-8d6190381641), there is no specific forum proposal in the provided candidate list that corresponds to this specific re-election/confirmation event. The proposal regarding 'GCP Council Salary Updates' (215c9703) is related to the same body but addresses different topics (compensation/operations) rather than the confirmation vote itself.",
+    "status": "success",
+    "canonical_proposal_title": null
+  },
+  {
+    "snapshot_id": "d070e163-4882-4a21-b3b7-2dc24b4eaa61",
+    "title": "GovHack at ETH CC (Brussels)",
+    "canonical_proposal_id": "9bc9202f-4567-49b6-9bf5-814c46cfb707",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'GovHack at ETH CC (Brussels)' corresponds exactly to the forum proposal title with ID 9bc9202f-4567-49b6-9bf5-814c46cfb707.",
+    "status": "success",
+    "canonical_proposal_title": "GovHack at ETH CC (Brussels)"
+  },
+  {
+    "snapshot_id": "d153a2d3-dcb2-434f-9d8b-71c16c57e282",
+    "title": "[Non-Constitutional] Arbitrum DAO Delegate Incentive Program",
+    "canonical_proposal_id": "2fb9d9e2-b0b8-456d-8d3c-3053b62777ce",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot entry includes a direct link to the forum with the slug 'proposal-delegate-incentive-program-dip'. The forum proposal with ID 2fb9d9e2-b0b8-456d-8d3c-3053b62777ce has the matching title 'Proposal - Delegate Incentive Program (DIP)' and is authored by SEEDGov, whose wallet address matches the Snapshot author (0xAbAb...).",
+    "status": "success",
+    "canonical_proposal_title": "Proposal - Delegate Incentive Program (DIP)"
+  },
+  {
+    "snapshot_id": "d1b1a614-96cd-44dc-bbc1-c4955574ff06",
+    "title": "AIP: BoLD - permissionless validation for Arbitrum",
+    "canonical_proposal_id": "232201b8-fc63-4d1b-8d87-ca3eb3f2f1dd",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'AIP: BoLD - permissionless validation for Arbitrum' matches the forum proposal title 'AIP: BOLD - permissionless validation for Arbitrum' almost exactly (case difference only). The Snapshot description explicitly links to the forum post associated with this title.",
+    "status": "success",
+    "canonical_proposal_title": "AIP: BOLD - permissionless validation for Arbitrum"
+  },
+  {
+    "snapshot_id": "d5abea92-909f-44a5-9080-42d9c65d6de3",
+    "title": "Approval of STEP 2 Committee's Preferred Allocations",
+    "canonical_proposal_id": null,
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal 'Approval of STEP 2 Committee's Preferred Allocations' is a ratification vote for specific service providers (WisdomTree, Spiko, Franklin Templeton) scheduled for May 2025. While the candidate list contains the original proposal establishing the program ('Non-Constitutional: Stable Treasury Endowment Program 2.0', ID 5fa790fc, passed Feb 2025), it does not contain the specific subsequent forum proposal announcing the committee's allocation recommendations for this ratification vote.",
+    "status": "success",
+    "canonical_proposal_title": null
+  },
+  {
+    "snapshot_id": "d624e3e0-80ed-416a-aa7f-6e40ea6bec91",
+    "title": "Pilot Stage – Treasury Backed Vaults research and development",
+    "canonical_proposal_id": "a6034557-17f3-4924-bb9b-19765d039a69",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Pilot Stage – Treasury Backed Vaults research and development' matches the forum proposal title '[Non-Constitutional] Pilot Stage: Treasury Backed Vaults research and development' almost exactly. The description content regarding R&D for borrowing stablecoins against the treasury aligns perfectly.",
+    "status": "success",
+    "canonical_proposal_title": "[Non-Constitutional] Pilot Stage: Treasury Backed Vaults research and development"
+  },
+  {
+    "snapshot_id": "d6efd785-1e10-477a-b762-71ddb5a69419",
+    "title": "Approve the Nova Fee Sweep Action",
+    "canonical_proposal_id": "619a77f3-ea95-43b4-82f2-68307dfd5b9b",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot entry is a temperature check for the 'Nova Fee Sweep Action'. The description explicitly states that this action will be combined with the Timeboost AIP into a single proposal. The forum proposal with ID 619a77f3-ea95-43b4-82f2-68307dfd5b9b is titled 'AIP: Timeboost + Nova Fee Sweep', which perfectly matches the described combined proposal containing the fee sweep action.",
+    "status": "success",
+    "canonical_proposal_title": "AIP: Timeboost + Nova Fee Sweep"
+  },
+  {
+    "snapshot_id": "d72eca89-ae7e-4620-a951-011a3fd022bc",
+    "title": "Revert the Delegate Incentive Program (DIP) to Version 1.5",
+    "canonical_proposal_id": "558ba170-42ee-46ea-88f6-e0a225e8bac7",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal title matches the forum proposal title verbatim ('Revert the Delegate Incentive Program (DIP) to Version 1.5'). The description in the Snapshot entry aligns perfectly with the forum proposal's intent to roll back changes from DIP v1.6/v1.7 and return to the v1.5 framework.",
+    "status": "success",
+    "canonical_proposal_title": "Proposal: Revert the Delegate Incentive Program (DIP) to Version 1.5"
+  },
+  {
+    "snapshot_id": "d8a4a093-1a43-46d8-b772-e3bf8f630438",
+    "title": "Fund the Stylus Sprint",
+    "canonical_proposal_id": "8e6aa3b6-e17a-4d3d-944a-4b6d083f9ffb",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal 'Fund the Stylus Sprint' explicitly links to the forum discussion 'RFC - Fund The Stylus Sprint' in its description. The candidate proposal '8e6aa3b6-e17a-4d3d-944a-4b6d083f9ffb' has the matching title '[RFC] Fund The Stylus Sprint' and is authored by Entropy Advisors, which matches the user linked in the Snapshot description.",
+    "status": "success",
+    "canonical_proposal_title": "[RFC] Fund The Stylus Sprint"
+  },
+  {
+    "snapshot_id": "d95ca125-3023-493f-8ed3-da821f877eed",
+    "title": "Reallocate Redeemed USDM Funds to STEP 2 Budget",
+    "canonical_proposal_id": "68900e2a-c573-4772-b3a4-190bac0d1489",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal has an identical title ('Reallocate Redeemed USDM Funds to STEP 2 Budget') to the Snapshot entry. The author (Entropy Advisors) aligns with the administrative nature of the proposal regarding the STEP program and treasury management described in the Snapshot text.",
+    "status": "success",
+    "canonical_proposal_title": "Reallocate Redeemed USDM Funds to STEP 2 Budget"
+  },
+  {
+    "snapshot_id": "db47ef6f-4e92-42cb-8ffe-d02a45996970",
+    "title": "Proposal: Activate ARB Staking",
+    "canonical_proposal_id": "657759d0-02f7-4ec6-b783-d9f9b3a95c22",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Proposal: Activate ARB Staking' matches the forum title 'Proposal: Activate ARB Staking (FINAL)' nearly exactly. The Snapshot description explicitly details changes made 'Since the RFC Version', indicating it corresponds to the final stage proposal rather than the RFC entry (ID 11aab4c2-8c52-4514-bcbf-5e7264669d0f). The author PlutusDAO is the known proponent of this specific proposal.",
+    "status": "success",
+    "canonical_proposal_title": "Proposal: Activate ARB Staking (FINAL)"
+  },
+  {
+    "snapshot_id": "dc943fb4-525a-4211-94f7-5e5177a373eb",
+    "title": "Approval of STEP committee recommendations",
+    "canonical_proposal_id": null,
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot entry is for the 'Approval of STEP committee recommendations', a specific operational vote to ratify service providers (Securitize, Ondo, etc.) selected by the STEP committee. While the list contains the original proposal that established the program ('Final: Arbitrum Stable Treasury Endowment Program', ID b7efb413-f717-42f7-bc0a-7029a6b9c1ad) and a successor proposal ('STEP 2.0'), it does not contain the specific forum proposal or thread dedicated to the committee's recommendations and the ratification vote. Since this is a distinct governance event occurring significantly later than the program's establishment, there is no direct match in the provided candidates.",
+    "status": "success",
+    "canonical_proposal_title": null
+  },
+  {
+    "snapshot_id": "e029efe1-39ee-4e4b-acd1-500420975df1",
+    "title": "Rewarding Active Delegates (RAD) Program",
+    "canonical_proposal_id": "fec7fc2e-d1e0-44f7-aba7-bd0f0b879e1f",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The title 'Rewarding Active Delegates (RAD) Program' is an exact match. While the Snapshot author is a specific address and the forum entry is attributed to 'System', this is the standard pattern for proposals that have moved from community discussion to formal voting via the DAO's governance pipeline.",
+    "status": "success",
+    "canonical_proposal_title": "Rewarding Active Delegates (RAD) Program"
+  },
+  {
+    "snapshot_id": "e17539e4-5f62-4d12-90e4-f2c41cfbfbb1",
+    "title": "GovMonth Sensemaking - Growth and Innovation",
+    "canonical_proposal_id": null,
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot entry appears to be a signaling poll or sentiment gathering survey ('Sensemaking') conducted during a specific event ('#GovMonth') to rank community priorities regarding growth and innovation. There is no corresponding formal forum proposal (AIP, RFC, or funding request) in the provided list that matches this specific ranking exercise or the 'GovMonth' initiative title.",
+    "status": "success",
+    "canonical_proposal_title": null
+  },
+  {
+    "snapshot_id": "e1b303d9-9c43-44dc-a11a-e5b11be63923",
+    "title": "The DAO Incentive Program (DIP 2.0)",
+    "canonical_proposal_id": "0aa883bd-539b-4d80-b9a8-59cab824ca4f",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'The DAO Incentive Program (DIP 2.0)' is an exact match for the forum proposal title. The Snapshot description describes the program as 'DIP 2.0', a continuation of the previous Delegate Incentive Program, which aligns perfectly with the unique forum proposal.",
+    "status": "success",
+    "canonical_proposal_title": "The DAO Incentive Program (DIP 2.0)"
+  },
+  {
+    "snapshot_id": "e51c1348-f1f3-466b-950e-6faa6c28c373",
+    "title": "[Constitutional] Extend Delay on L2Time Lock ",
+    "canonical_proposal_id": "24a12298-df86-4c2c-b11e-a61e920ff0a2",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The forum proposal title 'Constitutional - Extend Delay on L2Time Lock' is a near-exact match to the Snapshot title '[Constitutional] Extend Delay on L2Time Lock', differing only in punctuation/brackets. Both refer to the specific constitutional action of extending the L2 Time Lock delay.",
+    "status": "success",
+    "canonical_proposal_title": "Constitutional - Extend Delay on L2Time Lock"
+  },
+  {
+    "snapshot_id": "e5ba3098-a349-445c-a498-e79984051a74",
+    "title": "[Constitutional] AIP: DVP Quorum",
+    "canonical_proposal_id": "1ae6c807-cde1-4c8d-85aa-6230cddacfe8",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot entry '[Constitutional] AIP: DVP Quorum' has an exact title match with the candidate forum proposal '[Constitutional] AIP: DVP Quorum' (ID: 1ae6c807-cde1-4c8d-85aa-6230cddacfe8).",
+    "status": "success",
+    "canonical_proposal_title": "[Constitutional] AIP: DVP Quorum"
+  },
+  {
+    "snapshot_id": "e69edb1f-3a36-412b-8b5b-af95ba7403a9",
+    "title": "Proposal: Experimental Incentive System for Active ArbitrumDAO Delegates",
+    "canonical_proposal_id": "476f048d-caa6-4760-a5ee-dc05e7f3a22b",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Proposal: Experimental Incentive System for Active ArbitrumDAO Delegates' matches the forum proposal title exactly. The Snapshot description references previous versions (RFC-2 and DRAFT), which are also found in the candidate list, but the matching ID corresponds to the final 'Proposal' stage indicated by the title.",
+    "status": "success",
+    "canonical_proposal_title": "Proposal: Experimental Incentive System for Active ArbitrumDAO Delegates"
+  },
+  {
+    "snapshot_id": "e7e1d509-41a8-4b2f-b9b0-18cad2836db5",
+    "title": "AGV Council Compensation Calibration: Benchmark for Future Council Terms",
+    "canonical_proposal_id": "82012921-30ba-46a9-8cbd-a85e6852482f",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal 'AGV Council Compensation Calibration: Benchmark for Future Council Terms' corresponds directly to the forum proposal 'Proposal: AGV Council Compensation Calibration: Benchmark for Next Term & Startup-Phase Bonus'. Both share the specific topic of calibrating AGV Council compensation and stem from the same author entity (Arbitrum Gaming Ventures).",
+    "status": "success",
+    "canonical_proposal_title": "Proposal: AGV Council Compensation Calibration: Benchmark for Next Term & Startup-Phase Bonus"
+  },
+  {
+    "snapshot_id": "e907af2a-fcbd-4216-b177-1a058e628650",
+    "title": "GovMonth Sensemaking - Reducing Friction",
+    "canonical_proposal_id": null,
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot entry 'GovMonth Sensemaking - Reducing Friction' appears to be a community signaling or sentiment ranking poll conducted as part of a 'GovMonth' initiative to prioritize ecosystem values (e.g., developer accessibility, inclusion). There is no corresponding formal proposal in the candidate list with a matching title or description. While 'DePolis' (ID eab48ccc) mentions 'sensemaking', it is a funding proposal for a platform, whereas this Snapshot is an operational poll asking users to rank statements.",
+    "status": "success",
+    "canonical_proposal_title": null
+  },
+  {
+    "snapshot_id": "edc3f2c9-0bd0-4a3a-83e4-be4c8485a331",
+    "title": "Terms of Tenure for STEP program manager",
+    "canonical_proposal_id": "7c0b3397-cc1c-4356-8f70-6ee2bcd6fb2f",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Terms of Tenure for STEP program manager' matches the forum proposal title '**Non-Constitutional: Terms of Tenure for STEP Program Manager**' almost perfectly. Both concern the specific operational issue of the STEP program manager's contract and compensation.",
+    "status": "success",
+    "canonical_proposal_title": "**Non-Constitutional: Terms of Tenure for STEP Program Manager**"
+  },
+  {
+    "snapshot_id": "ef278ddc-7edb-4509-a3cd-bd2944505694",
+    "title": "[Non-consitutional]: Top-up for Hackathon Continuation Program",
+    "canonical_proposal_id": "29dbda0a-b61b-46ea-8004-a31b11bb2a1f",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title '[Non-consitutional]: Top-up for Hackathon Continuation Program' matches the forum proposal title 'Proposal [Non-consitutional]: Top-up for Hackathon Continuation Program' almost exactly. The Snapshot description explicitly links to the forum discussion associated with this proposal, and the context regarding the funding shortfall for the Hackathon Continuation Program is consistent across both.",
+    "status": "success",
+    "canonical_proposal_title": "Proposal [Non-consitutional]: Top-up for Hackathon Continuation Program"
+  },
+  {
+    "snapshot_id": "ef84581c-6f56-47a9-b666-0436eb601e66",
+    "title": "ARB Staking: Unlock ARB Utility and Align Governance ",
+    "canonical_proposal_id": "dde796ff-09e5-447d-a61d-cf487a51a70d",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal title 'ARB Staking: Unlock ARB Utility and Align Governance' matches the forum proposal title exactly. Additionally, the Snapshot description contains a direct link to the forum post with this title.",
+    "status": "success",
+    "canonical_proposal_title": "ARB Staking: Unlock ARB Utility and Align Governance"
+  },
+  {
+    "snapshot_id": "f37e29bb-e560-464c-90d2-394d62ef273b",
+    "title": "Arbitrum Audit Program",
+    "canonical_proposal_id": "147ba20a-f48c-4cee-84bc-d84caa3ebc6a",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The candidate proposal shares the exact identical title 'Arbitrum Audit Program' with the Snapshot entry.",
+    "status": "success",
+    "canonical_proposal_title": "Arbitrum Audit Program"
+  },
+  {
+    "snapshot_id": "f3b8f182-0565-4191-92b6-a5daf2318be1",
+    "title": "AIP-1: Arbitrum Improvement Proposal Framework",
+    "canonical_proposal_id": "a6cad78d-173d-4bc0-bc48-6dc947ddeb3a",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The candidate proposal shares an identical title ('AIP-1: Arbitrum Improvement Proposal Framework') with the Snapshot entry. This represents the initial governance framework proposal for Arbitrum DAO.",
+    "status": "success",
+    "canonical_proposal_title": "AIP-1: Arbitrum Improvement Proposal Framework"
+  },
+  {
+    "snapshot_id": "f4eed82b-c42a-4baf-8d60-cb007fe675fb",
+    "title": "AIP-1.2 - Foundation and DAO Governance",
+    "canonical_proposal_id": "5170c7b2-2495-4657-bf9d-01ecee10f000",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot entry title 'AIP-1.2 - Foundation and DAO Governance' matches the forum proposal title 'Proposal: AIP-1.2 - Foundation and DAO Governance' exactly. This proposal was part of the remediation process following the failure of AIP-1.",
+    "status": "success",
+    "canonical_proposal_title": "Proposal: AIP-1.2 - Foundation and DAO Governance"
+  },
+  {
+    "snapshot_id": "f51f8771-a4c3-49f1-a6c4-69f1d0c9c871",
+    "title": "[Constitutional] AIP: Disable Legacy Tether Bridge",
+    "canonical_proposal_id": "fae810b1-485d-4e43-b724-34e2682a7fbc",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot entry title '[Constitutional] AIP: Disable Legacy Tether Bridge' matches exactly with the forum proposal title. Both discuss the technical action of disabling the legacy USDT bridge on Arbitrum One.",
+    "status": "success",
+    "canonical_proposal_title": "[Constitutional] AIP: Disable Legacy Tether Bridge"
+  },
+  {
+    "snapshot_id": "f556939a-3082-4407-824d-d9828a727a3e",
+    "title": "Enhancing Multichain Governance: Upgrading RARI Governance Token on Arbitrum",
+    "canonical_proposal_id": "2032008d-aa79-402e-a4f3-54e0db086e38",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal title 'Enhancing Multichain Governance: Upgrading RARI Governance Token on Arbitrum' is an exact text match to the forum proposal with ID 2032008d-aa79-402e-a4f3-54e0db086e38. Both discuss the upgrade of the RARI governance token and the setup of a custom gateway on Arbitrum.",
+    "status": "success",
+    "canonical_proposal_title": "Enhancing Multichain Governance: Upgrading RARI Governance Token on Arbitrum"
+  },
+  {
+    "snapshot_id": "f8b57572-739b-4372-b026-20dde11e62bc",
+    "title": "AIP-1.1 - Lockup, Budget, Transparency",
+    "canonical_proposal_id": "a406d108-5058-415e-a98d-b7cfd65c5d13",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal title 'AIP-1.1 - Lockup, Budget, Transparency' is an exact text match for the forum proposal 'Proposal: AIP-1.1 - Lockup, Budget, Transparency' (ID a406d108-5058-415e-a98d-b7cfd65c5d13). This is a unique, specific identifier for a major governance proposal.",
+    "status": "success",
+    "canonical_proposal_title": "Proposal: AIP-1.1 - Lockup, Budget, Transparency"
+  },
+  {
+    "snapshot_id": "f8fbc4a1-349d-4236-b9ad-ec311a276def",
+    "title": "Proposal for Approval of DeDaub as the ADPC Security Advisor",
+    "canonical_proposal_id": null,
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot proposal requests approval for a specific low-budget item (22k ARB) to hire DeDaub as an advisor to the ADPC. While there is a proposal in the candidate list by DeDaub (`efc05e5e-0adf-485d-9ac4-da043aa7efb9`), its title ('Continuous Ecosystem Security Provision') refers to a different, major service provision proposal rather than this specific advisory role for the procurement committee. No other proposal in the provided list matches the specific title or scope of this Snapshot entry.",
+    "status": "success",
+    "canonical_proposal_title": null
+  },
+  {
+    "snapshot_id": "fa93e686-f97e-45b0-947b-49cafef635bd",
+    "title": "[Non-constitutional] Proposal to fund Plurality Labs Milestone 1B(ridge)",
+    "canonical_proposal_id": "1fefe065-b5d2-43a4-bd10-5acbe3e91cd6",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title '[Non-constitutional] Proposal to fund Plurality Labs Milestone 1B(ridge)' matches the forum proposal title exactly. The Snapshot description discusses the transition from Milestone 1a to 1b, which aligns with the forum proposal content authored by Disruption Joe.",
+    "status": "success",
+    "canonical_proposal_title": "[Non-constitutional] Proposal to fund Plurality Labs Milestone 1B(ridge)"
+  },
+  {
+    "snapshot_id": "fb7bdee9-ad3b-4747-a3fb-ba98b92f4e89",
+    "title": "Should the DAO Default to using Shielded Voting for Snapshot Votes?",
+    "canonical_proposal_id": "376033c8-02de-4f94-8ec7-3ae12d291d7a",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Should the DAO Default to using Shielded Voting for Snapshot Votes?' matches the forum proposal title exactly. The author 'Entropy Advisors' on the forum aligns with the Snapshot author address often associated with their governance proposals.",
+    "status": "success",
+    "canonical_proposal_title": "Should the DAO Default to using Shielded Voting for Snapshot Votes?"
+  },
+  {
+    "snapshot_id": "fc43a8a2-8e00-4d15-849b-37b99ba66794",
+    "title": "Proposal for Piloting Enhancements and Strengthening the Sustainability of ArbitrumHub in the Year Ahead",
+    "canonical_proposal_id": "b526eec7-4913-4be1-9fe3-6868c692a541",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Proposal for Piloting Enhancements and Strengthening the Sustainability of ArbitrumHub in the Year Ahead' matches the forum proposal title almost exactly (excluding the 'Non-Constitutional:' prefix). The Snapshot description explicitly mentions this is a revised version following previous proposals (which are also listed in the candidates list as distinct IDs), confirming this candidate represents the current iteration.",
+    "status": "success",
+    "canonical_proposal_title": "Non-Constitutional: Proposal for Piloting Enhancements and Strengthening the Sustainability of ArbitrumHub in the Year Ahead"
+  },
+  {
+    "snapshot_id": "fe41579d-ba4f-4f71-b404-de7bd031f4b7",
+    "title": "[Non-Constitutional] Fund the Arbitrum Grants Framework Proposal Milestone 1",
+    "canonical_proposal_id": "30085a33-37f1-4048-a8f5-9caf88ec6f0a",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title '[Non-Constitutional] Fund the Arbitrum Grants Framework Proposal Milestone 1' matches the forum proposal 'AIP - 3 [Non-Constitutional] Fund the Arbitrum Grants Framework Proposal Milestone 1' almost exactly. The author 'Disruption Joe' matches the proposer 'disruptionjoe.eth' listed in the Snapshot description. The content refers to the same Plurality Labs Milestone 1 funding request.",
+    "status": "success",
+    "canonical_proposal_title": "AIP - 3 [Non-Constitutional] Fund the Arbitrum Grants Framework Proposal Milestone 1"
+  },
+  {
+    "snapshot_id": "ffc4fb91-f3e2-4c8c-ab8f-95f23d2dbe4b",
+    "title": "Partner with ETH Bucharest 2025",
+    "canonical_proposal_id": "b35f38ce-cf96-44eb-b428-e45e1281812f",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title 'Partner with ETH Bucharest 2025' directly corresponds to the forum proposal 'Partner with ETH Bucharest 2025 - Eastern Europe’s Leading Ethereum Conference and Hackathon'. Both entries describe a sponsorship proposal for the same event.",
+    "status": "success",
+    "canonical_proposal_title": "Partner with ETH Bucharest 2025 - Eastern Europe’s Leading Ethereum Conference and Hackathon"
+  },
+  {
+    "snapshot_id": "16339df6-6a56-46e5-9f52-c33b57e5589a",
+    "title": "Strategic Treasury Management on Arbitrum",
+    "canonical_proposal_id": "650e3d12-8fd9-44a6-adae-3cf10eeacc95",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The title 'Strategic Treasury Management on Arbitrum' matches exactly between the Snapshot entry and the candidate proposal. The Snapshot description explicitly mentions the proposal involves 'karpatkey', and the candidate author is 'kpk (formerly karpatkey)'. The Snapshot description also links to a forum post titled identically.",
+    "status": "success",
+    "canonical_proposal_title": "Strategic Treasury Management on Arbitrum"
+  },
+  {
+    "snapshot_id": "197bc554-53b1-414a-8a20-1aa41b0a4d0b",
+    "title": "[Pyth Network] Arbitrum LTIPP Extension Request",
+    "canonical_proposal_id": "fe37f1fc-826a-4204-bb60-19b9824e99a1",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot entry '[Pyth Network] Arbitrum LTIPP Extension Request' matches the forum proposal '[RFC] Pyth Network Arbitrum LTIPP Extension Request' almost exactly in title and subject matter. Both request an extension for the Pyth Network's LTIPP grant.",
+    "status": "success",
+    "canonical_proposal_title": "[RFC] Pyth Network Arbitrum LTIPP Extension Request"
+  },
+  {
+    "snapshot_id": "2036abf3-9abe-4407-8d5a-9fda1aa44ef6",
+    "title": "[Constitutional] AIP: Update the Upgrade Executors",
+    "canonical_proposal_id": "e0f1fa85-fc35-4365-ade9-992cd4fcf1ea",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot title '[Constitutional] AIP: Update the Upgrade Executors' is an exact verbatim match to the forum proposal title with ID e0f1fa85-fc35-4365-ade9-992cd4fcf1ea.",
+    "status": "success",
+    "canonical_proposal_title": "[Constitutional] AIP: Update the Upgrade Executors"
+  },
+  {
+    "snapshot_id": "21b03db8-bf8d-4bc4-9380-8f3f88d2a62a",
+    "title": "[Non-Constitutional] Betting on Builders: Infinite Launchpad Proposal",
+    "canonical_proposal_id": "f592a0b9-fb96-498f-b22f-4ef0642490df",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The snapshot proposal title '[Non-Constitutional] Betting on Builders: Infinite Launchpad Proposal' is a near-exact string match to the forum proposal 'Betting on Builders: Infinite Launchpad Proposal'. The snapshot description also links directly to the forum thread associated with this proposal.",
+    "status": "success",
+    "canonical_proposal_title": "Betting on Builders: Infinite Launchpad Proposal"
+  },
+  {
+    "snapshot_id": "23ce61b9-ab49-433b-a117-dcbed410dbf0",
+    "title": "Kwenta x Perennial: Arbitrum Onboarding Incentives",
+    "canonical_proposal_id": "1a55fe98-8f1c-4335-9717-84e38d170f40",
+    "confidence": "high",
+    "confidence_score": 90,
+    "reasoning": "The Snapshot entry title matches the Forum proposal title 'Kwenta x Perennial: Arbitrum Onboarding Incentives (UPDATED)' almost exactly. Furthermore, the Snapshot description explicitly links to the forum discussion associated with this proposal.",
+    "status": "success",
+    "canonical_proposal_title": "Kwenta x Perennial: Arbitrum Onboarding Incentives (UPDATED)"
+  }
+]
