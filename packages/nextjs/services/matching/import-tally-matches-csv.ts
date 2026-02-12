@@ -7,6 +7,7 @@
  * - Links the tally to the proposal
  */
 import { getForumStageByUrl } from "../database/repositories/forum";
+import { getUnprocessedTallyStages, upsertMatchingResult } from "../database/repositories/matching";
 import { getTallyStageByOnchainId, updateTallyProposalId } from "../database/repositories/tally";
 import * as dotenv from "dotenv";
 import * as fs from "fs";
@@ -22,6 +23,17 @@ interface TallyCsvRow {
   forum_title: string;
   forum_url: string;
   proposal_id: string; // Ignored - we derive this from forum_url lookup
+  manual_forum_url?: string;
+  manual_proposal_id?: string;
+  manual_proposal_name?: string;
+}
+
+interface LlmMatchEntry {
+  tally_id: string;
+  title: string;
+  canonical_proposal_id: string | null;
+  confidence_score: number;
+  reasoning: string;
 }
 
 interface ImportResult {
@@ -31,6 +43,8 @@ interface ImportResult {
   skipped: number;
   alreadyLinked: number;
   forumNotFound: number;
+  noMatch: number;
+  noMatchSwept: number;
   errors: string[];
 }
 
@@ -119,6 +133,21 @@ function parseCsv(content: string): TallyCsvRow[] {
 }
 
 /**
+ * Get the effective forum URL from a row, preferring manual override if valid
+ */
+function getEffectiveForumUrl(row: TallyCsvRow): string | null {
+  // Check manual_forum_url first (if it's a valid forum URL)
+  if (row.manual_forum_url && row.manual_forum_url.includes("forum.arbitrum.foundation")) {
+    return decodeHtmlEntities(row.manual_forum_url.trim());
+  }
+  // Fall back to regular forum_url
+  if (row.forum_url && row.forum_url.includes("forum.arbitrum.foundation")) {
+    return decodeHtmlEntities(row.forum_url.trim());
+  }
+  return null;
+}
+
+/**
  * Import tally matches from CSV into the database
  */
 export async function importTallyMatchesFromCsv(): Promise<ImportResult> {
@@ -129,6 +158,8 @@ export async function importTallyMatchesFromCsv(): Promise<ImportResult> {
     skipped: 0,
     alreadyLinked: 0,
     forumNotFound: 0,
+    noMatch: 0,
+    noMatchSwept: 0,
     errors: [],
   };
 
@@ -142,9 +173,25 @@ export async function importTallyMatchesFromCsv(): Promise<ImportResult> {
   const rows = parseCsv(csvContent);
   console.log(`Loaded ${rows.length} rows from CSV`);
 
+  // Load LLM matching results for confidence/reasoning
+  const llmResultsMap = new Map<string, { confidence_score: number; reasoning: string }>();
+  let llmEntries: LlmMatchEntry[] = [];
+  const llmJsonPath = path.join(__dirname, "data", "output-tally-matching.json");
+  if (fs.existsSync(llmJsonPath)) {
+    llmEntries = JSON.parse(fs.readFileSync(llmJsonPath, "utf-8"));
+    for (const entry of llmEntries) {
+      llmResultsMap.set(entry.tally_id, {
+        confidence_score: entry.confidence_score,
+        reasoning: entry.reasoning,
+      });
+    }
+    console.log(`Loaded ${llmResultsMap.size} LLM matching results`);
+  }
+
   for (const row of rows) {
     const onchainId = extractOnchainId(row.tally_url);
-    const forumUrl = decodeHtmlEntities(row.forum_url?.trim());
+    const forumUrl = getEffectiveForumUrl(row);
+    const isManualOverride = !!(row.manual_forum_url && row.manual_forum_url.includes("forum.arbitrum.foundation"));
 
     // Skip rows without valid tally URL
     if (!onchainId) {
@@ -152,53 +199,153 @@ export async function importTallyMatchesFromCsv(): Promise<ImportResult> {
       continue;
     }
 
-    // Skip rows without forum_url (intentionally no match)
-    if (!forumUrl) {
-      result.skipped++;
-      continue;
-    }
-
-    result.matched++;
-
     try {
-      // Find tally_stage by onchain_id (the ID in the URL)
+      // Look up tally_stage early so we have the ID for all branches
       const existingTally = await getTallyStageByOnchainId(onchainId);
 
       if (!existingTally) {
         console.log(`Tally not found in DB: ${onchainId} (${row.tally_title?.slice(0, 50)}...)`);
         result.notFound++;
+        // No stage row in DB -> no matching_result to record
         continue;
       }
+
+      const llmData = llmResultsMap.get(existingTally.id);
+
+      // No forum_url in CSV -> pending_review
+      if (!forumUrl) {
+        result.skipped++;
+        await upsertMatchingResult({
+          source_type: "tally",
+          source_stage_id: existingTally.id,
+          proposal_id: null,
+          status: "pending_review",
+          method: "csv_import",
+          confidence: llmData?.confidence_score ?? null,
+          reasoning: llmData?.reasoning ?? null,
+          source_title: row.tally_title || null,
+          source_url: row.tally_url || null,
+          matched_forum_url: null,
+        });
+        continue;
+      }
+
+      result.matched++;
 
       // Find forum_stage by URL to get the proposal_id
-      const forumStage = await getForumStageByUrl(forumUrl);
+      const forum = await getForumStageByUrl(forumUrl);
 
-      if (!forumStage) {
-        console.log(`Forum not found in DB: ${forumUrl} (for tally: ${row.tally_title?.slice(0, 40)}...)`);
+      if (!forum || !forum.proposal_id) {
+        console.log(
+          !forum
+            ? `Forum not found in DB: ${forumUrl} (for tally: ${row.tally_title?.slice(0, 40)}...)`
+            : `Forum has no proposal_id: ${forumUrl}`,
+        );
         result.forumNotFound++;
+        await upsertMatchingResult({
+          source_type: "tally",
+          source_stage_id: existingTally.id,
+          proposal_id: null,
+          status: "pending_review",
+          method: isManualOverride ? "manual_override" : "csv_import",
+          confidence: !isManualOverride ? (llmData?.confidence_score ?? null) : null,
+          reasoning: !isManualOverride ? (llmData?.reasoning ?? null) : null,
+          source_title: row.tally_title || null,
+          source_url: row.tally_url || null,
+          matched_forum_url: forumUrl,
+        });
         continue;
       }
 
-      const proposalId = forumStage.proposal_id;
-
-      if (!proposalId) {
-        console.log(`Forum has no proposal_id: ${forumUrl}`);
-        result.forumNotFound++;
-        continue;
-      }
+      const proposalId = forum.proposal_id;
 
       // Check if already linked to the same proposal
       if (existingTally.proposal_id === proposalId) {
         result.alreadyLinked++;
+        await upsertMatchingResult({
+          source_type: "tally",
+          source_stage_id: existingTally.id,
+          proposal_id: proposalId,
+          status: "matched",
+          method: isManualOverride ? "manual_override" : "csv_import",
+          confidence: !isManualOverride ? (llmData?.confidence_score ?? null) : null,
+          reasoning: !isManualOverride ? (llmData?.reasoning ?? null) : null,
+          source_title: row.tally_title || null,
+          source_url: row.tally_url || null,
+          matched_forum_url: forumUrl,
+        });
         continue;
       }
 
       await updateTallyProposalId(existingTally.id, proposalId);
 
-      console.log(`Updated: "${row.tally_title?.slice(0, 50)}..." -> ${proposalId}`);
+      await upsertMatchingResult({
+        source_type: "tally",
+        source_stage_id: existingTally.id,
+        proposal_id: proposalId,
+        status: "matched",
+        method: isManualOverride ? "manual_override" : "csv_import",
+        confidence: !isManualOverride ? (llmData?.confidence_score ?? null) : null,
+        reasoning: !isManualOverride ? (llmData?.reasoning ?? null) : null,
+        source_title: row.tally_title || null,
+        source_url: row.tally_url || null,
+        matched_forum_url: forumUrl,
+      });
+
+      const manualNote = isManualOverride ? " [MANUAL]" : "";
+      console.log(`Updated: "${row.tally_title?.slice(0, 50)}..." -> ${proposalId}${manualNote}`);
       result.updated++;
     } catch (error) {
       const errorMessage = `Error processing "${row.tally_title}": ${error}`;
+      console.error(errorMessage);
+      result.errors.push(errorMessage);
+    }
+  }
+
+  // Phase 2: LLM no-match entries (canonical_proposal_id === null in JSON, excluded from CSV)
+  const llmNoMatchEntries = llmEntries.filter(entry => entry.canonical_proposal_id === null);
+  for (const entry of llmNoMatchEntries) {
+    try {
+      await upsertMatchingResult({
+        source_type: "tally",
+        source_stage_id: entry.tally_id,
+        proposal_id: null,
+        status: "no_match",
+        method: "csv_import",
+        confidence: entry.confidence_score ?? null,
+        reasoning: entry.reasoning ?? null,
+        source_title: entry.title || null,
+        source_url: null,
+        matched_forum_url: null,
+      });
+      result.noMatch++;
+    } catch (error) {
+      const errorMessage = `Error processing LLM no-match "${entry.title}": ${error}`;
+      console.error(errorMessage);
+      result.errors.push(errorMessage);
+    }
+  }
+
+  // Phase 3: Sweep unprocessed stages (no matching_result record at all)
+  const unprocessedStages = await getUnprocessedTallyStages();
+  for (const row of unprocessedStages) {
+    try {
+      await upsertMatchingResult({
+        source_type: "tally",
+        source_stage_id: row.tallyStage.id,
+        proposal_id: null,
+        status: "no_match",
+        method: "csv_import",
+        confidence: null,
+        reasoning:
+          "Excluded from LLM matching — likely an incentive program (STIP/LTIPP), election, or operational vote without a corresponding forum proposal",
+        source_title: row.tallyStage.title || null,
+        source_url: row.tallyStage.url || null,
+        matched_forum_url: null,
+      });
+      result.noMatchSwept++;
+    } catch (error) {
+      const errorMessage = `Error sweeping unprocessed tally "${row.tallyStage.title}": ${error}`;
       console.error(errorMessage);
       result.errors.push(errorMessage);
     }
@@ -211,6 +358,8 @@ export async function importTallyMatchesFromCsv(): Promise<ImportResult> {
   console.log(`Tally not found in DB: ${result.notFound}`);
   console.log(`Forum not found in DB: ${result.forumNotFound}`);
   console.log(`Skipped (no forum_url): ${result.skipped}`);
+  console.log(`LLM no-match: ${result.noMatch}`);
+  console.log(`Swept unprocessed: ${result.noMatchSwept}`);
   console.log(`Errors: ${result.errors.length}`);
 
   return result;

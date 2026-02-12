@@ -8,6 +8,7 @@
  * - Supports manual_forum_url for overrides when present
  */
 import { getForumStageByUrl } from "../database/repositories/forum";
+import { getUnprocessedSnapshotStages, upsertMatchingResult } from "../database/repositories/matching";
 import { getSnapshotStageBySnapshotId, updateSnapshotProposalId } from "../database/repositories/snapshot";
 import * as dotenv from "dotenv";
 import * as fs from "fs";
@@ -29,6 +30,14 @@ interface SnapshotCsvRow {
   manual_proposal_title?: string;
 }
 
+interface LlmMatchEntry {
+  snapshot_id: string;
+  title: string;
+  canonical_proposal_id: string | null;
+  confidence_score: number;
+  reasoning: string;
+}
+
 interface ImportResult {
   matched: number;
   updated: number;
@@ -36,6 +45,8 @@ interface ImportResult {
   skipped: number;
   alreadyLinked: number;
   forumNotFound: number;
+  noMatch: number;
+  noMatchSwept: number;
   errors: string[];
 }
 
@@ -148,6 +159,8 @@ export async function importSnapshotMatchesFromCsv(): Promise<ImportResult> {
     skipped: 0,
     alreadyLinked: 0,
     forumNotFound: 0,
+    noMatch: 0,
+    noMatchSwept: 0,
     errors: [],
   };
 
@@ -161,10 +174,25 @@ export async function importSnapshotMatchesFromCsv(): Promise<ImportResult> {
   const rows = parseCsv(csvContent);
   console.log(`Loaded ${rows.length} rows from CSV`);
 
+  // Load LLM matching results for confidence/reasoning
+  const llmResultsMap = new Map<string, { confidence_score: number; reasoning: string }>();
+  let llmEntries: LlmMatchEntry[] = [];
+  const llmJsonPath = path.join(__dirname, "data", "output-snapshot-matching.json");
+  if (fs.existsSync(llmJsonPath)) {
+    llmEntries = JSON.parse(fs.readFileSync(llmJsonPath, "utf-8"));
+    for (const entry of llmEntries) {
+      llmResultsMap.set(entry.snapshot_id, {
+        confidence_score: entry.confidence_score,
+        reasoning: entry.reasoning,
+      });
+    }
+    console.log(`Loaded ${llmResultsMap.size} LLM matching results`);
+  }
+
   for (const row of rows) {
     const snapshotId = extractSnapshotId(row.snapshot_url);
     const forumUrl = getEffectiveForumUrl(row);
-    const isManualOverride = row.manual_forum_url && row.manual_forum_url.includes("forum.arbitrum.foundation");
+    const isManualOverride = !!(row.manual_forum_url && row.manual_forum_url.includes("forum.arbitrum.foundation"));
 
     // Skip rows without valid snapshot URL
     if (!snapshotId) {
@@ -172,54 +200,153 @@ export async function importSnapshotMatchesFromCsv(): Promise<ImportResult> {
       continue;
     }
 
-    // Skip rows without forum_url (intentionally no match)
-    if (!forumUrl) {
-      result.skipped++;
-      continue;
-    }
-
-    result.matched++;
-
     try {
-      // Find snapshot_stage by snapshot_id using repository function
+      // Look up snapshot_stage early so we have the ID for all branches
       const existingSnapshot = await getSnapshotStageBySnapshotId(snapshotId);
 
       if (!existingSnapshot) {
         console.log(`Snapshot not found in DB: ${snapshotId} (${row.snapshot_title?.slice(0, 50)}...)`);
         result.notFound++;
+        // No stage row in DB -> no matching_result to record
         continue;
       }
+
+      const llmData = llmResultsMap.get(existingSnapshot.id);
+
+      // No forum_url in CSV -> pending_review
+      if (!forumUrl) {
+        result.skipped++;
+        await upsertMatchingResult({
+          source_type: "snapshot",
+          source_stage_id: existingSnapshot.id,
+          proposal_id: null,
+          status: "pending_review",
+          method: "csv_import",
+          confidence: llmData?.confidence_score ?? null,
+          reasoning: llmData?.reasoning ?? null,
+          source_title: row.snapshot_title || null,
+          source_url: row.snapshot_url || null,
+          matched_forum_url: null,
+        });
+        continue;
+      }
+
+      result.matched++;
 
       // Find forum_stage by URL to get the proposal_id
-      const forumStage = await getForumStageByUrl(forumUrl);
+      const forum = await getForumStageByUrl(forumUrl);
 
-      if (!forumStage) {
-        console.log(`Forum not found in DB: ${forumUrl} (for snapshot: ${row.snapshot_title?.slice(0, 40)}...)`);
+      if (!forum || !forum.proposal_id) {
+        console.log(
+          !forum
+            ? `Forum not found in DB: ${forumUrl} (for snapshot: ${row.snapshot_title?.slice(0, 40)}...)`
+            : `Forum has no proposal_id: ${forumUrl}`,
+        );
         result.forumNotFound++;
+        await upsertMatchingResult({
+          source_type: "snapshot",
+          source_stage_id: existingSnapshot.id,
+          proposal_id: null,
+          status: "pending_review",
+          method: isManualOverride ? "manual_override" : "csv_import",
+          confidence: !isManualOverride ? (llmData?.confidence_score ?? null) : null,
+          reasoning: !isManualOverride ? (llmData?.reasoning ?? null) : null,
+          source_title: row.snapshot_title || null,
+          source_url: row.snapshot_url || null,
+          matched_forum_url: forumUrl,
+        });
         continue;
       }
 
-      const proposalId = forumStage.proposal_id;
-
-      if (!proposalId) {
-        console.log(`Forum has no proposal_id: ${forumUrl}`);
-        result.forumNotFound++;
-        continue;
-      }
+      const proposalId = forum.proposal_id;
 
       // Check if already linked to the same proposal
       if (existingSnapshot.proposal_id === proposalId) {
         result.alreadyLinked++;
+        await upsertMatchingResult({
+          source_type: "snapshot",
+          source_stage_id: existingSnapshot.id,
+          proposal_id: proposalId,
+          status: "matched",
+          method: isManualOverride ? "manual_override" : "csv_import",
+          confidence: !isManualOverride ? (llmData?.confidence_score ?? null) : null,
+          reasoning: !isManualOverride ? (llmData?.reasoning ?? null) : null,
+          source_title: row.snapshot_title || null,
+          source_url: row.snapshot_url || null,
+          matched_forum_url: forumUrl,
+        });
         continue;
       }
 
       await updateSnapshotProposalId(existingSnapshot.id, proposalId);
+
+      await upsertMatchingResult({
+        source_type: "snapshot",
+        source_stage_id: existingSnapshot.id,
+        proposal_id: proposalId,
+        status: "matched",
+        method: isManualOverride ? "manual_override" : "csv_import",
+        confidence: !isManualOverride ? (llmData?.confidence_score ?? null) : null,
+        reasoning: !isManualOverride ? (llmData?.reasoning ?? null) : null,
+        source_title: row.snapshot_title || null,
+        source_url: row.snapshot_url || null,
+        matched_forum_url: forumUrl,
+      });
 
       const manualNote = isManualOverride ? " [MANUAL]" : "";
       console.log(`Updated: "${row.snapshot_title?.slice(0, 50)}..." -> ${proposalId}${manualNote}`);
       result.updated++;
     } catch (error) {
       const errorMessage = `Error processing "${row.snapshot_title}": ${error}`;
+      console.error(errorMessage);
+      result.errors.push(errorMessage);
+    }
+  }
+
+  // Phase 2: LLM no-match entries (canonical_proposal_id === null in JSON, excluded from CSV)
+  const llmNoMatchEntries = llmEntries.filter(entry => entry.canonical_proposal_id === null);
+  for (const entry of llmNoMatchEntries) {
+    try {
+      await upsertMatchingResult({
+        source_type: "snapshot",
+        source_stage_id: entry.snapshot_id,
+        proposal_id: null,
+        status: "no_match",
+        method: "csv_import",
+        confidence: entry.confidence_score ?? null,
+        reasoning: entry.reasoning ?? null,
+        source_title: entry.title || null,
+        source_url: null,
+        matched_forum_url: null,
+      });
+      result.noMatch++;
+    } catch (error) {
+      const errorMessage = `Error processing LLM no-match "${entry.title}": ${error}`;
+      console.error(errorMessage);
+      result.errors.push(errorMessage);
+    }
+  }
+
+  // Phase 3: Sweep unprocessed stages (no matching_result record at all)
+  const unprocessedStages = await getUnprocessedSnapshotStages();
+  for (const row of unprocessedStages) {
+    try {
+      await upsertMatchingResult({
+        source_type: "snapshot",
+        source_stage_id: row.snapshotStage.id,
+        proposal_id: null,
+        status: "no_match",
+        method: "csv_import",
+        confidence: null,
+        reasoning:
+          "Excluded from LLM matching — likely a incentive program (STIP/LTIPP), election, or operational vote without a corresponding forum proposal",
+        source_title: row.snapshotStage.title || null,
+        source_url: row.snapshotStage.url || null,
+        matched_forum_url: null,
+      });
+      result.noMatchSwept++;
+    } catch (error) {
+      const errorMessage = `Error sweeping unprocessed snapshot "${row.snapshotStage.title}": ${error}`;
       console.error(errorMessage);
       result.errors.push(errorMessage);
     }
@@ -232,6 +359,8 @@ export async function importSnapshotMatchesFromCsv(): Promise<ImportResult> {
   console.log(`Snapshot not found in DB: ${result.notFound}`);
   console.log(`Forum not found in DB: ${result.forumNotFound}`);
   console.log(`Skipped (no forum_url): ${result.skipped}`);
+  console.log(`LLM no-match: ${result.noMatch}`);
+  console.log(`Swept unprocessed: ${result.noMatchSwept}`);
   console.log(`Errors: ${result.errors.length}`);
 
   return result;

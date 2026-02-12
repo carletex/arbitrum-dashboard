@@ -1,4 +1,4 @@
-import { boolean, integer, jsonb, pgTable, text, timestamp, uuid, varchar } from "drizzle-orm/pg-core";
+import { boolean, integer, jsonb, pgTable, text, timestamp, unique, uuid, varchar } from "drizzle-orm/pg-core";
 
 // Canonical proposals table (one row per proposal)
 export const proposals = pgTable("proposal", {
@@ -67,6 +67,27 @@ export const tallyStage = pgTable("tally_stage", {
   last_activity: timestamp("last_activity"),
   updated_at: timestamp("updated_at").defaultNow(),
 });
+
+// Matching results table (audit trail for proposal matching)
+export const matchingResult = pgTable(
+  "matching_result",
+  {
+    id: uuid("id").defaultRandom().primaryKey(),
+    source_type: varchar("source_type", { length: 20 }).notNull(), // "snapshot" or "tally"
+    source_stage_id: uuid("source_stage_id").notNull(), // References snapshot_stage.id or tally_stage.id (app-level, polymorphic)
+    proposal_id: uuid("proposal_id").references(() => proposals.id, { onDelete: "set null" }),
+    status: varchar("status", { length: 20 }).notNull(), // "matched", "pending_review", "no_match"
+    method: varchar("method", { length: 30 }).notNull(), // "csv_import", "manual_override", "llm"
+    confidence: integer("confidence"), // 0-100 score (for future LLM API use)
+    reasoning: text("reasoning"), // LLM explanation (for future LLM API use)
+    source_title: text("source_title"), // Denormalized for debugging
+    source_url: text("source_url"), // Denormalized for debugging
+    matched_forum_url: text("matched_forum_url"), // The forum URL used for lookup
+    created_at: timestamp("created_at").defaultNow(),
+    updated_at: timestamp("updated_at").defaultNow(),
+  },
+  table => [unique().on(table.source_type, table.source_stage_id)],
+);
 
 // Users table for admin management
 export const users = pgTable("user", {
