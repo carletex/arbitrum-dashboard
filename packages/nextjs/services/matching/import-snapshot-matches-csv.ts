@@ -17,6 +17,33 @@ import * as path from "path";
 // Load environment variables before importing database modules
 dotenv.config({ path: path.resolve(__dirname, "../../.env.development") });
 
+const SNAPSHOT_CSV_URL = "https://drive.google.com/uc?export=download&id=1s5hgZbp2WTdhPQicb0APSpwKweb9EyER";
+const SNAPSHOT_LLM_JSON_URL = "https://drive.google.com/uc?export=download&id=1tOWq1lAKFmbLP-oZgRAA59Brz3rtE7d9";
+
+async function readFileContent(localPath: string, driveUrl: string): Promise<string> {
+  if (fs.existsSync(localPath)) {
+    console.log(`Reading from local file: ${localPath}`);
+    return fs.readFileSync(localPath, "utf-8");
+  }
+
+  console.log(`Downloading from: ${driveUrl}`);
+  const res = await fetch(driveUrl);
+  if (!res.ok) {
+    throw new Error(`Failed to download: ${driveUrl} (status ${res.status})`);
+  }
+  const content = await res.text();
+
+  // Save locally for future runs
+  const dir = path.dirname(localPath);
+  if (!fs.existsSync(dir)) {
+    fs.mkdirSync(dir, { recursive: true });
+  }
+  fs.writeFileSync(localPath, content, "utf-8");
+  console.log(`Saved to: ${localPath}`);
+
+  return content;
+}
+
 interface SnapshotCsvRow {
   snapshot_title: string;
   snapshot_url: string;
@@ -166,11 +193,7 @@ export async function importSnapshotMatchesFromCsv(): Promise<ImportResult> {
 
   // Load CSV
   const csvPath = path.join(__dirname, "data", "snapshot_matches.csv");
-  if (!fs.existsSync(csvPath)) {
-    throw new Error(`CSV file not found: ${csvPath}`);
-  }
-
-  const csvContent = fs.readFileSync(csvPath, "utf-8");
+  const csvContent = await readFileContent(csvPath, SNAPSHOT_CSV_URL);
   const rows = parseCsv(csvContent);
   console.log(`Loaded ${rows.length} rows from CSV`);
 
@@ -178,16 +201,15 @@ export async function importSnapshotMatchesFromCsv(): Promise<ImportResult> {
   const llmResultsMap = new Map<string, { confidence_score: number; reasoning: string }>();
   let llmEntries: LlmMatchEntry[] = [];
   const llmJsonPath = path.join(__dirname, "data", "output-snapshot-matching.json");
-  if (fs.existsSync(llmJsonPath)) {
-    llmEntries = JSON.parse(fs.readFileSync(llmJsonPath, "utf-8"));
-    for (const entry of llmEntries) {
-      llmResultsMap.set(entry.snapshot_id, {
-        confidence_score: entry.confidence_score,
-        reasoning: entry.reasoning,
-      });
-    }
-    console.log(`Loaded ${llmResultsMap.size} LLM matching results`);
+  const llmJsonContent = await readFileContent(llmJsonPath, SNAPSHOT_LLM_JSON_URL);
+  llmEntries = JSON.parse(llmJsonContent);
+  for (const entry of llmEntries) {
+    llmResultsMap.set(entry.snapshot_id, {
+      confidence_score: entry.confidence_score,
+      reasoning: entry.reasoning,
+    });
   }
+  console.log(`Loaded ${llmResultsMap.size} LLM matching results`);
 
   for (const row of rows) {
     const snapshotId = extractSnapshotId(row.snapshot_url);
