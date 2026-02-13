@@ -20,18 +20,16 @@ export type ForumStageWithContent = ForumStageData & {
   posts: ForumPost[];
 };
 
-/**
- * Get all original IDs from forum stages.
- * Filters out null values and returns only valid string IDs.
- */
-export async function getAllOriginalIds(): Promise<string[]> {
-  const results = await db.query.forumStage.findMany({
+export async function getAllForumStagesForComparison() {
+  return db.query.forumStage.findMany({
     columns: {
       original_id: true,
+      title: true,
+      message_count: true,
+      last_message_at: true,
+      url: true,
     },
   });
-
-  return results.map(r => r.original_id).filter((id): id is string => id !== null);
 }
 
 export async function createForumStage(forumStageData: ForumStageData) {

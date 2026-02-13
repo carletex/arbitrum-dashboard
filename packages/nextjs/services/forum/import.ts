@@ -5,7 +5,7 @@ import { InferSelectModel } from "drizzle-orm";
 import { forumStage } from "~~/services/database/config/schema";
 import {
   createForumStage,
-  getAllOriginalIds,
+  getAllForumStagesForComparison,
   getForumStageByOriginalId,
   updateForumContent,
   updateForumStageByOriginalId,
@@ -216,6 +216,31 @@ async function createProposalAndForumStageWithContent(
   return await fetchAndStoreForumContent(newForumStage.id, topic.id);
 }
 
+type ExistingForumStage = {
+  original_id: string | null;
+  title: string | null;
+  message_count: number | null;
+  last_message_at: Date | null;
+  url: string | null;
+};
+
+/**
+ * Check if the topic data has changed compared to the existing forum stage
+ */
+const hasChanges = (existing: ExistingForumStage, topic: Topic): boolean => {
+  const newTitle = topic.fancy_title || topic.title;
+  const newUrl = buildPostUrl(topic);
+  const newLastMessageAt = new Date(topic.last_posted_at).getTime();
+  const existingLastMessageAt = existing.last_message_at?.getTime() ?? 0;
+
+  return (
+    existing.title !== newTitle ||
+    existing.message_count !== topic.posts_count ||
+    existingLastMessageAt !== newLastMessageAt ||
+    existing.url !== newUrl
+  );
+};
+
 /**
  * Check if a failed topic should be skipped based on retry count and backoff schedule.
  */
@@ -259,7 +284,12 @@ export async function importForumPosts(options?: { maxPages?: number }): Promise
     stoppedReason: null,
   };
 
-  const existingForumsOriginalIds = new Set(await getAllOriginalIds());
+  const existingForumStages = await getAllForumStagesForComparison();
+  const forumStageMap = new Map(
+    existingForumStages
+      .filter(forumStage => forumStage.original_id)
+      .map(validForumStage => [validForumStage.original_id, validForumStage]),
+  );
   const maxPages = Number.isFinite(options?.maxPages) ? (options?.maxPages as number) : MAX_PAGES;
 
   const trackContentResult = (result: ContentFetchResult) => {
@@ -311,9 +341,9 @@ export async function importForumPosts(options?: { maxPages?: number }): Promise
 
     for (const topic of topics) {
       summary.topicsSeen++;
-      const isNewTopic = !existingForumsOriginalIds.has(topic.id.toString());
+      const existing = forumStageMap.get(topic.id.toString());
 
-      if (isNewTopic) {
+      if (!existing) {
         summary.newTopics++;
         const contentResult = await createProposalAndForumStageWithContent(topic, users);
         summary.proposalsCreated++;
@@ -322,9 +352,11 @@ export async function importForumPosts(options?: { maxPages?: number }): Promise
       } else {
         summary.existingTopics++;
 
-        // Update existing forum stage metadata
-        await updateForumStage(topic);
-        summary.forumStagesUpdated++;
+        // Only update metadata if something changed
+        if (hasChanges(existing, topic)) {
+          await updateForumStage(topic);
+          summary.forumStagesUpdated++;
+        }
 
         // Check if we need to fetch/update content
         const existingForumStage = await getForumStageByOriginalId(topic.id.toString());

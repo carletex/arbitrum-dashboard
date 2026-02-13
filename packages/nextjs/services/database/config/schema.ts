@@ -54,7 +54,6 @@ export const snapshotStage = pgTable("snapshot_stage", {
 
   options: jsonb("options"), // flexible voting options
 
-  last_activity: timestamp("last_activity"),
   updated_at: timestamp("updated_at").defaultNow(),
 });
 
