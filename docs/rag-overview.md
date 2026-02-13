@@ -61,7 +61,7 @@ flowchart TD
 | **LlamaIndex + pgvector** | One datastore for relational data and embeddings. No external vector DB. |
 | **OpenAI models** | `text-embedding-3-large` (1536 dims) for embeddings, `gpt-5-mini` for synthesis. |
 | **Per-post forum documents** | Each forum post = separate document. Enables "who said X on proposal Y?" attribution. |
-| **Manual ingestion** | CLI or admin endpoint. Avoids accidental cost spikes. |
+| **Manual ingestion** | CLI only (`yarn rag:ingest`). Avoids accidental cost spikes. |
 | **IPv4-forced HTTPS** | Bypasses IPv6 timeout issues when fetching from Discourse API. |
 
 ---
@@ -70,7 +70,7 @@ flowchart TD
 
 ### 1. Data Ingestion
 
-**Entry points:** `yarn rag:ingest` (CLI) or `POST /api/rag/ingest` (admin-protected)
+**Entry point:** `yarn rag:ingest` (CLI)
 
 The ingestion pipeline runs in 4 phases:
 
@@ -195,9 +195,8 @@ yarn rag:eval --ids query-001       # Run specific query
 
 | File | Purpose |
 |------|---------|
-| `app/api/rag/ingest/route.ts` | Admin-protected ingestion endpoint |
 | `app/api/rag/query/route.ts` | Query endpoint with validation |
-| `app/admin/rag/page.tsx` | Admin UI for query + ingestion |
+| `app/admin/rag/page.tsx` | Admin UI for query testing |
 
 ---
 
@@ -207,10 +206,10 @@ From `services/rag/config.ts`:
 
 | Setting | Default | Env Var |
 |---------|---------|---------|
-| Embedding model | `text-embedding-3-small` | `OPENAI_EMBEDDING_MODEL` |
-| Chat model | `gpt-4o-mini` | `OPENAI_CHAT_MODEL` |
+| Embedding model | `text-embedding-3-large` | `OPENAI_EMBEDDING_MODEL` |
+| Chat model | `gpt-5-mini` | `OPENAI_CHAT_MODEL` |
 | Embedding dims | 1536 | — |
-| Top-K | 5 (max 20) | `RAG_TOP_K` |
+| Top-K | 15 (max 20) | `RAG_TOP_K` |
 | Chunk size | 512 tokens | — |
 | Chunk overlap | 50 tokens | — |
 | Vector table | `llamaindex_proposal_vectors` | — |
@@ -253,7 +252,12 @@ yarn rag:setup           # Enable pgvector on the connected DB
 yarn rag:ingest          # Ingest proposals into pgvector
 yarn rag:ingest --clear  # Clear + re-ingest
 yarn rag:eval            # Run full evaluation
-yarn rag:eval --retrieval-only  # Just retrieval metrics
+yarn rag:eval --retrieval-only   # Just retrieval metrics (no LLM cost)
+yarn rag:eval --skip-correctness # Skip CorrectnessEvaluator
+yarn rag:eval --output baseline.json  # Save as evaluation-reports/baseline.json
+yarn rag:eval --tags status,factual   # Run only tagged queries
+yarn rag:eval --ids query-001         # Run specific queries
+yarn rag:eval --top-k 10              # Override retrieval TopK
 ```
 
 ---
