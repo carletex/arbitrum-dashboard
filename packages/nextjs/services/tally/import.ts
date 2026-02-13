@@ -210,10 +210,22 @@ const transformProposalData = (proposal: TallyProposal) => {
     return title.replace(/^#+\s*/, "").trim();
   };
 
+  const titleFromDescription = (description: string | null): string | null => {
+    if (!description) return null;
+    const lines = description.split("\n").map(l => l.trim());
+    for (const line of lines) {
+      if (!line) continue;
+      const cleaned = line.replace(/^#+\s*/, "").trim();
+      if (cleaned) return cleaned;
+    }
+    return null;
+  };
+
   return {
     tally_proposal_id: proposal.id,
     title:
       cleanTitle(proposal.metadata.title) ||
+      titleFromDescription(proposal.metadata.description) ||
       (proposal.onchainId ? `Proposal #${proposal.onchainId}` : null) ||
       `Tally Proposal ${proposal.id}`,
     author_name: authorName,
