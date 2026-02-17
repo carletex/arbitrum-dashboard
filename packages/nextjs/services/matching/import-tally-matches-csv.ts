@@ -198,7 +198,7 @@ export async function importTallyMatchesFromCsv(): Promise<ImportResult> {
   const llmJsonContent = await readFileContent(llmJsonPath, TALLY_LLM_JSON_URL);
   llmEntries = JSON.parse(llmJsonContent);
   for (const entry of llmEntries) {
-    llmResultsMap.set(entry.tally_id, {
+    llmResultsMap.set(entry.title?.trim(), {
       confidence_score: entry.confidence_score,
       reasoning: entry.reasoning,
     });
@@ -227,7 +227,7 @@ export async function importTallyMatchesFromCsv(): Promise<ImportResult> {
         continue;
       }
 
-      const llmData = llmResultsMap.get(existingTally.id);
+      const llmData = llmResultsMap.get(row.tally_title?.trim());
 
       // No forum_url in CSV -> pending_review
       if (!forumUrl) {
