@@ -26,3 +26,9 @@ export async function updateForumStageByOriginalId(originalId: string, updates: 
   const [updated] = await db.update(forumStage).set(updates).where(eq(forumStage.original_id, originalId)).returning();
   return updated;
 }
+
+export async function getForumStageByUrl(url: string) {
+  return await db.query.forumStage.findFirst({
+    where: eq(forumStage.url, url),
+  });
+}
