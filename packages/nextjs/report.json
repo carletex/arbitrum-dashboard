@@ -1,0 +1,1100 @@
+{
+  "timestamp": "2026-02-12T12:27:35.956Z",
+  "gitCommit": "11b3cff",
+  "ragConfig": {
+    "chatModel": "gpt-5-mini",
+    "embeddingModel": "text-embedding-3-large",
+    "topK": 15,
+    "chunkSize": 512
+  },
+  "options": {
+    "retrievalOnly": false,
+    "skipCorrectness": false,
+    "outputPath": "report.json"
+  },
+  "summary": {
+    "totalQueries": 15,
+    "successfulQueries": 15,
+    "hitRate": 0,
+    "mrr": 0,
+    "estimatedCostUsd": 0.33,
+    "totalDurationMs": 524592,
+    "avgFaithfulness": 0.9333333333333333,
+    "faithfulnessPassRate": 0.9333333333333333,
+    "avgRelevancy": 0.8666666666666667,
+    "relevancyPassRate": 0.8666666666666667,
+    "avgCorrectness": 5,
+    "correctnessPassRate": 1
+  },
+  "results": [
+    {
+      "queryId": "query-001",
+      "query": "What is the current status of the ArbitrumDAO Constitution proposal?",
+      "answer": "The Constitution amendment proposal titled \"constitutional-extend-delay-on-l2time-lock\" is currently at the Forum stage. It proposes specific Constitution text changes (Phase 4 & Phase 5) and lists a timeline: Feedback Period 23/8/24–29/8/24; Temperature Check 29/8/24–5/9/24; ARDC Review 5/9/24–16/9/24; on-chain vote scheduled 16/9/24. Source: \"constitutional-extend-delay-on-l2time-lock\" (Forum) — https://forum.arbitrum.foundation/t/constitutional-extend-delay-on-l2time-lock/26470/1.",
+      "citations": [
+        {
+          "proposal_id": "e6423f9f-e0fc-4f64-a70d-793a8988a4a4",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/non-constitutional-arbitrum-aegis/30071"
+        },
+        {
+          "proposal_id": "506fe504-450c-40a7-8551-8cd406fc57f9",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/constitutional-aip-arbos-version-40-callisto/28436"
+        },
+        {
+          "proposal_id": "7e87f27c-5806-4af8-92b9-9325fd63e9fb",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/constitutional-extend-delay-on-l2time-lock/26470/1"
+        },
+        {
+          "proposal_id": "f4fa8041-757f-4660-a5c2-76612207d175",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/non-constitutional-arbitrum-dao-delegate-code-of-conduct-formalizing-the-daos-operations/27188"
+        },
+        {
+          "proposal_id": "78651690-2d36-47e9-b8cf-ab410db30a87",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/aip-1-arbitrum-improvement-proposal-framework/30/83"
+        },
+        {
+          "proposal_id": "5ec3f1e5-0ee2-4dae-b883-183778971ed0",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/updating-the-code-of-conduct-daos-procedures/29594/1"
+        },
+        {
+          "proposal_id": "8bd39d65-978c-432a-ade1-9a0eae68be6a",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/non-constitutional-arbitrum-research-and-development-collective-term-2/26922"
+        },
+        {
+          "proposal_id": "b5311f23-e37f-4dd7-be45-76f4d28661b3",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/non-constitutional-arbitrumhub-evolution-the-next-step-in-streamlining-information-access-and-raising-awareness-for-arbitrum-dao/24857"
+        },
+        {
+          "proposal_id": "bba7d46d-5976-472a-8f92-b535389ca5cc",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/non-constitutional-depolis-collective-sensemaking-for-arbitrum-dao/28076"
+        }
+      ],
+      "faithfulness": {
+        "score": 1,
+        "passing": true,
+        "feedback": "YES"
+      },
+      "relevancy": {
+        "score": 1,
+        "passing": true,
+        "feedback": "YES"
+      },
+      "retrieval": {
+        "hit": false,
+        "reciprocalRank": 0,
+        "retrievedProposalIds": [
+          "219ba0ae-ee51-4d93-8926-f5aa4a81a5e3",
+          "bdb07611-bd5a-4142-aa57-f33c88c7c5e7",
+          "78651690-2d36-47e9-b8cf-ab410db30a87",
+          "7e87f27c-5806-4af8-92b9-9325fd63e9fb",
+          "eedab2ea-6e5f-434b-8556-d0e0d9a05edb",
+          "e6423f9f-e0fc-4f64-a70d-793a8988a4a4",
+          "b00c3349-5764-47de-b357-8e799a14a9eb",
+          "9c27ba5e-ac2f-4185-8ebb-ea2f77a0714d",
+          "42079e13-6001-42a5-a6f8-f03004d4ba6e",
+          "ebd603be-79a2-4a16-95a4-f55b9f7cbb22",
+          "3d99ee74-1357-479e-b545-71b25453a9ec"
+        ]
+      },
+      "durationMs": 28210
+    },
+    {
+      "queryId": "query-002",
+      "query": "Which proposals are currently active on Snapshot?",
+      "answer": "Based on the provided context, these proposals are explicitly reported as active on Snapshot:\n\n- AIP-1 — \"AIP-1 Arbitrum Improvement Proposal Framework\" (Forum) — currently on Snapshot (see Matt_StableLab comment referencing the Snapshot vote). Source: AIP-1 forum thread (proposal id 78651690; Matt_StableLab comment).  \n- \"Proposal — Procurement Framework (security / RFP process)\" (Forum) — Snapshot review is live. Source: DK from Premia post announcing \"SNAPSHOT TO REVIEW PROCUREMENT FRAMEWORK IS LIVE\" (proposal id f99a9cc0).\n\nIf you want, I can check other forum posts in the context for Snapshot statuses, but I don't have any additional proposals explicitly marked as currently active on Snapshot in the provided material.",
+      "citations": [
+        {
+          "proposal_id": "2417c755-7f84-4dfc-bf70-1e45b8726eb0",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/rfc-2-delegate-incentive-system-for-arbitrumdao/15720/1"
+        },
+        {
+          "proposal_id": "b1cfafe4-8d8e-4e7a-84cd-e5609cb20c27",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/improving-predictability-in-arbitrum-dao-s-operations/25136/54"
+        },
+        {
+          "proposal_id": "8bd39d65-978c-432a-ade1-9a0eae68be6a",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/non-constitutional-arbitrum-research-and-development-collective-term-2/26922/1"
+        },
+        {
+          "proposal_id": "b00c3349-5764-47de-b357-8e799a14a9eb",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/proposal-time-management-in-arbitrum-s-governance/15941/1"
+        },
+        {
+          "proposal_id": "78651690-2d36-47e9-b8cf-ab410db30a87",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/aip-1-arbitrum-improvement-proposal-framework/30/83"
+        },
+        {
+          "proposal_id": "c738039c-6bab-466a-8931-97d7a1b4ca0b",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/aip-3-non-constitutional-fund-the-arbitrum-grants-framework-proposal-milestone-1/14976/1"
+        },
+        {
+          "proposal_id": "ebd603be-79a2-4a16-95a4-f55b9f7cbb22",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/how-to-submit-a-dao-proposal/13494/1"
+        },
+        {
+          "proposal_id": "49fe2c7f-3412-456b-b9c3-bf8d301a04f9",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/research-on-context-and-retention/26807/1"
+        },
+        {
+          "proposal_id": "76b9a023-71b9-4ab4-8727-bf0c885e64d9",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/proposal-delegate-incentive-program-dip/26496/7"
+        },
+        {
+          "proposal_id": "69cb0e87-652a-467c-84a1-29195876c3bf",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/should-the-dao-default-to-using-shielded-voting-for-snapshot-votes/25884"
+        },
+        {
+          "proposal_id": "f3dab617-1aa9-4af3-99be-4ecad3895836",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/the-incomplete-guide-to-submitting-a-proposal-to-arbitrum-dao/22956/1"
+        },
+        {
+          "proposal_id": "70cade13-448c-483c-bc08-27f72bdfe433",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/arbitrum-strategic-objective-setting-sos-defining-the-dao-s-interim-goals/28102/72"
+        },
+        {
+          "proposal_id": "f99a9cc0-8505-4387-b5d2-241cab449954",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/proposal-procurement-framework-security-non-constitutional-proposal-prev-rfp/19328/1"
+        }
+      ],
+      "faithfulness": {
+        "score": 0,
+        "passing": false,
+        "feedback": "NO"
+      },
+      "relevancy": {
+        "score": 0,
+        "passing": false,
+        "feedback": "NO"
+      },
+      "retrieval": {
+        "hit": false,
+        "reciprocalRank": 0,
+        "retrievedProposalIds": [
+          "5540f2c7-25cf-4b8e-9a8e-dbedfee77439",
+          "da509140-6545-4fc3-b3c0-05d9407baaa5",
+          "a7d9f46e-24a5-40d7-be0e-f0470777200c",
+          "2c6f7d33-2ea1-444e-a250-572fc1a75b98",
+          "b367ba4f-9594-484f-a343-75e47e3d3bf6",
+          "deec594d-3be9-4ae3-b920-000d7dd4f8d8",
+          "ce404c59-9d1d-4432-8381-721914e3729b",
+          "b00c3349-5764-47de-b357-8e799a14a9eb",
+          "76b9a023-71b9-4ab4-8727-bf0c885e64d9",
+          "b1cfafe4-8d8e-4e7a-84cd-e5609cb20c27",
+          "c26a9847-7798-4a46-893d-46b845ff2622",
+          "a533db74-88e4-46bd-9855-9da450e38aab",
+          "0f56c6fb-2489-40dd-8fcc-c86ae30cb9fb"
+        ]
+      },
+      "durationMs": 49636
+    },
+    {
+      "queryId": "query-003",
+      "query": "What proposals have been executed on Tally recently?",
+      "answer": "I don't have information about which proposals have been executed on Tally recently in the available proposals.\n\nProposals in the provided context that mention Tally (for reference):\n- \"ARBITRUM RESEARCH & DEVELOPMENT COLLECTIVE V2\" — Tally proposal (Tally)  \n- \"Expand Tally Support for the Arbitrum DAO\" — Forum discussion (Forum)  \n- \"Ethereum Protocol Attackathon Sponsorship\" — Forum discussion (Forum) (comment notes it was queued on Tally)  \n- \"AIP - 3 Non-Constitutional] Fund the Arbitrum Grants Framework Proposal Milestone 1\" — Forum discussion (Forum) (mentions final version for Tally)  \n- \"Tally front-end interface to force transaction inclusion during sequencer downtime\" — Forum discussion (Forum)\n\nIf you want, I can check any of those specific proposals in the context for more details.",
+      "citations": [
+        {
+          "proposal_id": "8bd39d65-978c-432a-ade1-9a0eae68be6a",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/non-constitutional-arbitrum-research-and-development-collective-term-2/26922/1"
+        },
+        {
+          "proposal_id": "7f47b97e-0621-4a1d-b8ca-54f99db643e8",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/expand-tally-support-for-the-arbitrum-dao/22387"
+        },
+        {
+          "proposal_id": "bc71035e-15fd-4ba5-a1bb-eb002bf14791",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/tally-front-end-interface-to-force-transaction-inclusion-during-sequencer-downtime/21247/46"
+        },
+        {
+          "proposal_id": "daf06e27-fcfa-467c-b669-b71dfdd86ee5",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/ethereum-protocol-attackathon-sponsorship/26122/58"
+        },
+        {
+          "proposal_id": "c738039c-6bab-466a-8931-97d7a1b4ca0b",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/aip-3-non-constitutional-fund-the-arbitrum-grants-framework-proposal-milestone-1/14976/1"
+        },
+        {
+          "proposal_id": "3d7c9543-6ae5-4f6b-a594-ab7eb6578f2e",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/delegate-to-a-public-access-public-good-citizen-enfranchisement-pool-through-event-horizon/21523/70"
+        },
+        {
+          "proposal_id": "241375e9-6726-4960-b666-2a00f299eec7",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/proposal-non-constitutional-injection-of-funding-to-the-arbitrum-research-and-development-collective/25676/6"
+        }
+      ],
+      "faithfulness": {
+        "score": 1,
+        "passing": true,
+        "feedback": "YES"
+      },
+      "relevancy": {
+        "score": 0,
+        "passing": false,
+        "feedback": "NO"
+      },
+      "retrieval": {
+        "hit": false,
+        "reciprocalRank": 0,
+        "retrievedProposalIds": [
+          "7a578b8f-bc89-4793-962d-423b5a736985",
+          "7f47b97e-0621-4a1d-b8ca-54f99db643e8",
+          "9d78f0c5-84a4-47f0-b76f-cce5b6fbc99c",
+          "e46dc223-72fc-4439-8d99-d26c30b610e5",
+          "3de9229c-7184-4ca3-90a1-17440c4eaff8",
+          "80bc54fc-547b-4331-ae68-112d2b5bbe0e",
+          "bc71035e-15fd-4ba5-a1bb-eb002bf14791"
+        ]
+      },
+      "durationMs": 40657
+    },
+    {
+      "queryId": "query-004",
+      "query": "Who proposed the Arbitrum Short-Term Incentive Program (STIP)?",
+      "answer": "The Arbitrum Short-Term Incentive Program (Arbitrum Improvement Proposal) was proposed by tnorm (Arbitrum’s Short-Term Incentive Program — Forum stage). Source: \"Arbitrum’s Short-Term Incentive Program (Arbitrum Improvement Proposal)\" (Forum).",
+      "citations": [
+        {
+          "proposal_id": "71c572cb-272f-425e-9a04-ea9ffc710327",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/arbitrums-short-term-incentive-program-arbitrum-improvement-proposal/16131/1"
+        },
+        {
+          "proposal_id": "8fd25b57-eb97-43fd-8620-b5e283e8081a",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/rfc-fund-an-incentives-working-group/26756/1"
+        },
+        {
+          "proposal_id": "ca0e82b3-1fcd-4be0-bec4-77bfcf1f273a",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/rfc-incentives-detox-proposal/25849/73"
+        },
+        {
+          "proposal_id": "a7d9f46e-24a5-40d7-be0e-f0470777200c",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/long-term-incentives-pilot-program/20223/19"
+        },
+        {
+          "proposal_id": "78498e37-369e-4829-9e44-2cffbe95066d",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/double-down-on-stip-successes-stip-bridge/22353/1"
+        },
+        {
+          "proposal_id": "ff007745-b389-40bc-8a72-ac55621acc92",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/proposal-to-backfund-successful-stip-proposals-savvy-dao-final/19046/1"
+        }
+      ],
+      "faithfulness": {
+        "score": 1,
+        "passing": true,
+        "feedback": "YES"
+      },
+      "relevancy": {
+        "score": 1,
+        "passing": true,
+        "feedback": "YES"
+      },
+      "retrieval": {
+        "hit": false,
+        "reciprocalRank": 0,
+        "retrievedProposalIds": [
+          "71c572cb-272f-425e-9a04-ea9ffc710327",
+          "78498e37-369e-4829-9e44-2cffbe95066d",
+          "ca0e82b3-1fcd-4be0-bec4-77bfcf1f273a",
+          "8fd25b57-eb97-43fd-8620-b5e283e8081a",
+          "36effd12-eac1-468e-8f8e-4a3fe6a93406",
+          "a7d9f46e-24a5-40d7-be0e-f0470777200c",
+          "ff007745-b389-40bc-8a72-ac55621acc92"
+        ]
+      },
+      "durationMs": 13991
+    },
+    {
+      "queryId": "query-005",
+      "query": "What proposals has Plurality Labs authored?",
+      "answer": "Based on the available proposals in the context, Plurality Labs (posts by Disruption Joe / DisruptionJoe) authored the following forum proposals:\n\n- \"AIP‑3 — Fund the Arbitrum Grants Framework Proposal (Milestone 1)\" — Forum. (AIP‑3 / source_id 14976)  \n  URL: https://forum.arbitrum.foundation/t/aip-3-non-constitutional-fund-the-arbitrum-grants-framework-proposal-milestone-1/14976/1\n\n- \"Request for comment — Draft proposal: Building a Pluralist Grants Framework (Milestone 1)\" — Forum. (source_id 14730)  \n  URL: https://forum.arbitrum.foundation/t/request-for-comment-draft-proposal-building-a-pluralist-grants-framework-milestone-1/14730/16\n\n- \"Non‑constitutional — Thank ARB by Plurality Labs (Milestone 2: Scaling Value Creation in the DAO)\" — Forum. (source_id 20534)  \n  URL: https://forum.arbitrum.foundation/t/non-constitutional-thank-arb-by-plurality-labs-milestone-2-scaling-value-creation-in-the-dao/20534/1\n\n- \"Non‑constitutional proposal to fund Plurality Labs Milestone 1b (Ridge)\" — Forum. (source_id 21332)  \n  URL: https://forum.arbitrum.foundation/t/non-constitutional-proposal-to-fund-plurality-labs-milestone-1b-ridge/21332/74\n\nIf you want, I can extract specific details (funding ask, timelines, or deliverables) from any one of these — tell me which proposal.",
+      "citations": [
+        {
+          "proposal_id": "d29d2e55-ee8d-4f28-93a8-74b8aeb8c232",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/non-constitutional-proposal-to-fund-plurality-labs-milestone-1b-ridge/21332/74"
+        },
+        {
+          "proposal_id": "40f89750-443e-45b2-97ff-935ad310d74e",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/non-constitutional-thank-arb-by-plurality-labs-milestone-2-scaling-value-creation-in-the-dao/20534/19"
+        },
+        {
+          "proposal_id": "3dc3e0a8-6cd7-40b4-acaa-75dae6641c2b",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/request-for-comment-draft-proposal-building-a-pluralist-grants-framework-milestone-1/14730/16"
+        },
+        {
+          "proposal_id": "c738039c-6bab-466a-8931-97d7a1b4ca0b",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/aip-3-non-constitutional-fund-the-arbitrum-grants-framework-proposal-milestone-1/14976/1"
+        },
+        {
+          "proposal_id": "7f47b97e-0621-4a1d-b8ca-54f99db643e8",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/expand-tally-support-for-the-arbitrum-dao/22387/13"
+        },
+        {
+          "proposal_id": "78651690-2d36-47e9-b8cf-ab410db30a87",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/aip-1-arbitrum-improvement-proposal-framework/30/90"
+        }
+      ],
+      "faithfulness": {
+        "score": 1,
+        "passing": true,
+        "feedback": "YES"
+      },
+      "relevancy": {
+        "score": 1,
+        "passing": true,
+        "feedback": "YES"
+      },
+      "retrieval": {
+        "hit": false,
+        "reciprocalRank": 0,
+        "retrievedProposalIds": [
+          "40f89750-443e-45b2-97ff-935ad310d74e",
+          "d29d2e55-ee8d-4f28-93a8-74b8aeb8c232",
+          "3dc3e0a8-6cd7-40b4-acaa-75dae6641c2b",
+          "c738039c-6bab-466a-8931-97d7a1b4ca0b",
+          "deec594d-3be9-4ae3-b920-000d7dd4f8d8"
+        ]
+      },
+      "durationMs": 30097
+    },
+    {
+      "queryId": "query-006",
+      "query": "What concerns were raised in the forum discussion about the Gaming Catalyst Program?",
+      "answer": "Concise summary of concerns raised in the forum discussion about the Gaming Catalyst Program (GCP):\n\n- Large overall ask / budget size — seen as “exorbitant” and risky; some delegates argued for a much smaller, more targeted program. (Catalyze gaming ecosystem growth on Arbitrum — Forum; AbdullahUmar, post 147)\n\n- Risk of misallocation / inefficiency and insufficient transparency over how funds will be deployed and overseen. (Catalyze gaming ecosystem growth on Arbitrum — Forum; Sky, post 27)\n\n- Lack of legal clarity, treasury/funds-management separation, and an explicit clawback or asset-protection mechanism. (Catalyze gaming ecosystem growth on Arbitrum — Forum; karpatkey, post 195) — and multiple comments specifically called for a clawback/failure protections. (Non‑constitutional: GCP Clawback — Forum; Argonaut, post 20)\n\n- High industry failure risk (GameFi metrics cited) and request for explicit failure metrics, KPIs, and stop/exit conditions to justify continued funding. (Non‑constitutional: GCP Clawback — Forum; Argonaut, post 20)\n\n- Concerns about governance, accountability, and insufficient detail on roles (Catalyst Team vs Council vs Arbitrum Foundation), including calls to separate the Foundation from grant decisioning. (Catalyze gaming ecosystem growth on Arbitrum — Forum; Treasure / Karel Vuong, post 72)\n\n- Operational cost / staffing worries: need for an experienced, resourced team (not merely additional bureaucracy or “paychecks”); timeline and hiring capacity may slow execution. (Catalyze gaming ecosystem growth on Arbitrum — Forum; thedereksmart, post 148; Treasure / Karel Vuong, post 55; McFly, post 144)\n\n- Over-reliance on publishers and potential crowding out of independent developers; calls for clearer definitions and different rules for publishers vs independent builders. (Catalyze gaming ecosystem growth on Arbitrum — Forum; Sky, post 27; Treasure / Karel Vuong, post 72)\n\n- Concern that funding terms / deal sizes could become late‑stage M&A territory — suggestions for per-deal caps and minimum publisher co-investment. (Catalyze gaming ecosystem growth on Arbitrum — Forum; Treasure / Karel Vuong, post 72)\n\n- Worries about tokenomics / P2E incentives and sustainability of funded games (risk of short‑lived, incentive-driven play rather than lasting game quality). (Catalyze gaming ecosystem growth on Arbitrum — Forum; thedereksmart, post 148)\n\n- Questions about DAO distributions of game assets and practical difficulties in transferring or managing in‑DAO asset distributions. (Proposal: Into the Dungeons — Forum; Treasure / Karel Vuong, post 55)\n\nIf you want, I can pull exact comment excerpts and authors for any of the bullets above.",
+      "citations": [
+        {
+          "proposal_id": "da509140-6545-4fc3-b3c0-05d9407baaa5",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/catalyze-gaming-ecosystem-growth-on-arbitrum/22368/72"
+        },
+        {
+          "proposal_id": "73ee4a98-4a40-4e27-8b2c-01886041a9f1",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/non-constitutional-gcp-clawback/28809/20"
+        },
+        {
+          "proposal_id": "1417e0e1-2b04-4fd2-a4bc-90bbc919b70b",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/non-constitutional-rfc-arbitrum-d-a-o-domain-allocator-offerings-grant-program-season-3/27584/14"
+        },
+        {
+          "proposal_id": "dfcc37bb-9233-49a8-a003-7fcaf1dfee0e",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/proposal-non-constitutional-funding-for-into-the-dungeons-machinata-a-pvp-digital-miniature-game-v2/21025/55"
+        }
+      ],
+      "faithfulness": {
+        "score": 1,
+        "passing": true,
+        "feedback": "YES"
+      },
+      "relevancy": {
+        "score": 1,
+        "passing": true,
+        "feedback": "YES"
+      },
+      "retrieval": {
+        "hit": false,
+        "reciprocalRank": 0,
+        "retrievedProposalIds": [
+          "73ee4a98-4a40-4e27-8b2c-01886041a9f1",
+          "da509140-6545-4fc3-b3c0-05d9407baaa5"
+        ]
+      },
+      "durationMs": 40457
+    },
+    {
+      "queryId": "query-007",
+      "query": "Summarize the community feedback on the Arbitrum Research & Development Collective proposal.",
+      "answer": "Below is a concise summary of community feedback on the Arbitrum Research & Development Collective (ARDC) drawn from the available forum comments.\n\nKey takeaways\n- General recognition of value and past contributions: several commenters acknowledge ARDC’s useful research and deliverables and support continuing its work. (See: \"Proposal [Non-Constitutional]: Establish the ‘Arbitrum Research & Development Collective’\" — Forum; and comments on \"Arbitrum Research & Development Collective (V2) / Term 2\" — Forum, Alex Lumley.)  \n- Support for continuation/extension with oversight: some delegates support a V2 extension and a supervisory council, while asking for clearer KPIs and approval/oversight mechanics. (See: \"Arbitrum Research and Development Collective V2 - Extension\" — Forum; comment by Alex Lumley on \"Arbitrum Research & Development Collective (V2) / Term 2\" — Forum.)  \n- Requests for clearer prioritization and community input: commenters praised ARDC’s prioritization framework and solicitation of delegate input, and encouraged ongoing alignment with DAO needs. (See: \"Arbitrum Research and Development Collective V2 - Extension\" — Forum; comment by JuanRah.)  \n- Concerns about overlap and role clarity: some community members flagged potential overlap between ARDC and other proposed bodies (e.g., a Procurement Committee), asking who is responsible for procurement/frameworks and how roles will interact. (See: \"Proposal [Non-Constitutional]: Establish the ArbitrumDAO Procurement Committee\" — Forum; comment by kpk / karpatkey.)  \n- Concerns about administrative burden and engagement: at least one commenter warned that overly onerous reporting/rules could discourage participation from council members. (See: \"Non-Constitutional: Arbitrum Research & Development Collective Term 2\" — Forum; comment by Larva.)  \n- Preference to avoid fragmentation / reuse of outputs: some suggested leveraging ARDC’s existing research instead of creating additional groups, to prevent duplicated effort and resource fragmentation. (See: \"RFC: Incentives Detox Proposal\" — Forum; comment by duokongcrypto.)  \n- Suggestions for comparative research scope and governance process improvements: community members encouraged broader comparative research (other chains/ecosystems) and clearer social rules around proposal discussion periods before Snapshot. (See: \"Non-Constitutional: User Research — Why do people build on Arbitrum?\" — Forum; comment by Tané.)\n\nSources cited (forum stage)\n- \"Proposal [Non-Constitutional]: Establish the ‘Arbitrum Research & Development Collective’\" — Forum  \n- \"Arbitrum Research and Development Collective V2 - Extension\" — Forum  \n- \"Non-Constitutional: Arbitrum Research & Development Collective Term 2\" (comment by Alex Lumley / Larva) — Forum  \n- \"RFC: Incentives Detox Proposal\" (comment by duokongcrypto) — Forum  \n- \"Proposal [Non-Constitutional]: Establish the ArbitrumDAO Procurement Committee\" (comment by kpk / karpatkey) — Forum  \n- \"Non-Consitutional: User Research — Why do people even build on Arbitrum anyway?\" (comment by Tané) — Forum\n\nIf you want, I can extract exact comment excerpts or map which concerns came from which specific forum posts.",
+      "citations": [
+        {
+          "proposal_id": "c016a434-9253-41e8-8a71-4d0f093cd5e1",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/proposal-non-constitutional-establish-the-arbitrum-research-development-collective/19899/1"
+        },
+        {
+          "proposal_id": "d4137172-7239-479d-9257-c3891a8c66a7",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/proposal-request-for-comment-recognizing-and-rewarding-offchain-labs-hackathon-participants-and-github-contributors-through-the-arbitrum-dao/15384/1"
+        },
+        {
+          "proposal_id": "8bd39d65-978c-432a-ade1-9a0eae68be6a",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/non-constitutional-arbitrum-research-and-development-collective-term-2/26922/76"
+        },
+        {
+          "proposal_id": "a88fd796-f124-48c4-a018-93c465898256",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/arbitrum-research-and-development-collective-v2-extension/29476/6"
+        },
+        {
+          "proposal_id": "ec77d61a-9a40-45fa-b6d3-fecdef642cdc",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/non-consitutional-user-research-why-do-people-even-build-on-arbitrum-anyway/27608/79"
+        },
+        {
+          "proposal_id": "04ced34b-88f4-49d9-a16b-fb9bb65134ee",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/proposal-non-constitutional-establish-the-arbitrumdao-procurement-committee/20064/10"
+        },
+        {
+          "proposal_id": "ca0e82b3-1fcd-4be0-bec4-77bfcf1f273a",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/rfc-incentives-detox-proposal/25849/79"
+        },
+        {
+          "proposal_id": "78651690-2d36-47e9-b8cf-ab410db30a87",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/aip-1-arbitrum-improvement-proposal-framework/30/154"
+        }
+      ],
+      "faithfulness": {
+        "score": 1,
+        "passing": true,
+        "feedback": "YES"
+      },
+      "relevancy": {
+        "score": 1,
+        "passing": true,
+        "feedback": "YES"
+      },
+      "retrieval": {
+        "hit": false,
+        "reciprocalRank": 0,
+        "retrievedProposalIds": [
+          "8bd39d65-978c-432a-ade1-9a0eae68be6a",
+          "c016a434-9253-41e8-8a71-4d0f093cd5e1",
+          "ca0e82b3-1fcd-4be0-bec4-77bfcf1f273a",
+          "ec77d61a-9a40-45fa-b6d3-fecdef642cdc",
+          "d4137172-7239-479d-9257-c3891a8c66a7",
+          "aebba008-09a1-4c0b-8043-51656f80d3e9",
+          "a88fd796-f124-48c4-a018-93c465898256",
+          "7f47b97e-0621-4a1d-b8ca-54f99db643e8",
+          "909ee2d1-65a1-49a5-9623-35d13ccaccd7",
+          "43c124f9-2734-49ac-8eaf-951fe8139019"
+        ]
+      },
+      "durationMs": 42583
+    },
+    {
+      "queryId": "query-008",
+      "query": "What are the key arguments for and against the Treasury Management proposal?",
+      "answer": "Here are the key arguments for and against the treasury-management efforts reflected in the provided proposals and forum discussion.\n\nKey arguments FOR\n- Reduce fragmentation, streamline decision-making, and consolidate STEP/TMC/GMC into a single council to improve coordination and speed of execution (Arbitrum Treasury Management Council: Consolidating Efforts — Forum).  \n- Put idle treasury assets to productive use (deploy ETH/stablecoins into yield-bearing strategies, build a cash-like reserve) to cover dollar-denominated service-provider shortfalls and support OpEx (Non‑Constitutional Treasury Management v1.2 — Forum; Arbitrum Treasury Management Council — Forum).  \n- Enable diversified, risk-aware deployment (protocol-owned liquidity, RWAs, stablecoins, seeding on‑chain liquidity) to foster ecosystem growth and long‑term sustainability (Strategic Treasury Management on Arbitrum — Forum; Non‑Constitutional Treasury Management v1.2 — Forum).  \n- Increase transparency and accountability via regular reporting, tooling (Safes/Zodiac), and DAO-approved allocation/withdrawal processes (Strategic Treasury Management on Arbitrum — Forum; Non‑Constitutional Treasury Management v1.2 — Forum).\n\nKey arguments AGAINST / CONCERNS\n- Concentration of power: giving a single Execution Body or Treasurer (e.g., Entropy) wide authority creates dependency and risks; proposals to make the role replaceable and competitive were suggested (Arbitrum Treasury Management Council: Consolidating Efforts — Forum; Non‑Constitutional Treasury Management v1.2 — Forum).  \n- Lack of cost transparency and accountability: unclear breakdown of manager costs, fixed compensation regardless of performance, and missing KPIs were raised (Arbitrum Treasury Management Council: Consolidating Efforts — Forum).  \n- Market & governance risks from ARB/ETH conversions: unclear ARB liquidation strategy, potential market impact from selling ARB, and concerns that reducing ARB holdings could weaken governance security (Non‑Constitutional Treasury Management v1.2 — Forum; Strategic Treasury Management on Arbitrum — Forum).  \n- Timing and data gaps: launching parallel programs (e.g., STEP 2) before STEP 1 results are fully available and limited data justifying specific allocation sizes drew criticism (Strategic Treasury Management on Arbitrum — Forum; Non‑Constitutional Treasury Management v1.2 — Forum).  \n- Operational controls: requests for clearer reporting cadence, whitelisted strategies/protocols, onboarding processes for managers, and budget caps to limit execution risk (Non‑Constitutional Treasury Management v1.2 — Forum; Arbitrum Treasury Management Council — Forum).\n\nSources:  \n- Strategic Treasury Management on Arbitrum — Forum  \n- [Non‑Constitutional] Treasury Management v1.2 — Forum  \n- Arbitrum Treasury Management Council: Consolidating Efforts — Forum\n\nIf you want, I can extract the specific forum posts/comments that express each point.",
+      "citations": [
+        {
+          "proposal_id": "f8acceba-4240-466b-96c1-68847071cce3",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/arbitrum-treasury-management-council-consolidating-efforts/29334/13"
+        },
+        {
+          "proposal_id": "59d9ec7e-e4a1-4ae0-9203-dbd075204a6a",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/strategic-treasury-management-on-arbitrum/25301"
+        },
+        {
+          "proposal_id": "cd21145b-1631-49e0-9cb9-35a73574601e",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/non-constitutional-stable-treasury-endowment-program-2-0/26819/99"
+        },
+        {
+          "proposal_id": "3d3c871d-54c4-479d-8273-003f660c9f9e",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/non-constitutional-treasury-management-v1-2/26967/48"
+        }
+      ],
+      "faithfulness": {
+        "score": 1,
+        "passing": true,
+        "feedback": "YES"
+      },
+      "relevancy": {
+        "score": 1,
+        "passing": true,
+        "feedback": "YES"
+      },
+      "retrieval": {
+        "hit": false,
+        "reciprocalRank": 0,
+        "retrievedProposalIds": [
+          "f8acceba-4240-466b-96c1-68847071cce3",
+          "daf7c5de-7a81-493c-ab4a-7597a300b989",
+          "59d9ec7e-e4a1-4ae0-9203-dbd075204a6a",
+          "cd21145b-1631-49e0-9cb9-35a73574601e",
+          "ff0a9205-df64-44d6-8f17-b9cd34e962f4",
+          "3d3c871d-54c4-479d-8273-003f660c9f9e"
+        ]
+      },
+      "durationMs": 32054
+    },
+    {
+      "queryId": "query-009",
+      "query": "How did the Snapshot vote results compare with forum sentiment for the STIP proposal?",
+      "answer": "Short answer: Forum sentiment was mixed and often critical (calling for more audits, PM oversight, tighter criteria and concern about operational strain), but the Snapshot temperature-check/result was successful and leaned toward funding—Snapshot ultimately landed on 50M ARB and the STIP-Bridge-related proposals passed Snapshot checkpoints. Several proposers then updated the proposal to address forum concerns and some participants proceeded to vote FOR on Tally.\n\nEvidence from the available proposals:\n- Snapshot result / funding level: \"Double down on STIP successes - STIP-Bridge\" (Forum) — proposers refer to a \"successful Snapshot vote\" and the community ultimately decided on 50M ARB via Snapshot (Savvy DAO, 78498e37 — Forum; VendingMachine, ca0e82b3/25849 — Forum).\n- Forum concerns and calls for improvements: requests for performance audits, stronger infrastructure, advisor/PM roles, and better monitoring to avoid passive/indiscriminate distribution (Savvy DAO, 78498e37 — Forum; VendingMachine, ca0e82b3/25849 — Forum).\n- Scrutiny and analysis: Blockworks Research posted qualitative data / a summary on STIP-Bridge applicants requiring challenge votes (BlockworksResearch, proposal thread 78498e37 — Forum).\n- Post‑Snapshot follow-up: some forum participants noted their Snapshot concerns were addressed in updates and then supported the proposal on Tally (Princeton Blockchain Club, 78498e37 — Forum), and other supporters indicated they voted in favor on Snapshot (Blockworks Advisory re: STIP-Bridge Operational Budget, d7334fac — Forum).\n\nSources: \"Double down on STIP successes - STIP-Bridge\" (Forum), \"RFC: Incentives Detox Proposal\" (Forum), \"STIP-Bridge Operational Budget\" (Forum), BlockworksResearch comment linking STIP analysis (Forum).",
+      "citations": [
+        {
+          "proposal_id": "78498e37-369e-4829-9e44-2cffbe95066d",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/double-down-on-stip-successes-stip-bridge/22353/99"
+        },
+        {
+          "proposal_id": "ca0e82b3-1fcd-4be0-bec4-77bfcf1f273a",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/rfc-incentives-detox-proposal/25849/73"
+        },
+        {
+          "proposal_id": "2417c755-7f84-4dfc-bf70-1e45b8726eb0",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/rfc-2-delegate-incentive-system-for-arbitrumdao/15720/1"
+        },
+        {
+          "proposal_id": "d7334fac-3e92-48b9-a3cf-896e889edc2b",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/stip-bridge-operational-budget/26489/16"
+        },
+        {
+          "proposal_id": "69cb0e87-652a-467c-84a1-29195876c3bf",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/should-the-dao-default-to-using-shielded-voting-for-snapshot-votes/25884/17"
+        },
+        {
+          "proposal_id": "c738039c-6bab-466a-8931-97d7a1b4ca0b",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/aip-3-non-constitutional-fund-the-arbitrum-grants-framework-proposal-milestone-1/14976/1"
+        },
+        {
+          "proposal_id": "e46dc223-72fc-4439-8d99-d26c30b610e5",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/request-to-increase-the-stylus-sprint-committee-s-budget/28312/81"
+        },
+        {
+          "proposal_id": "0b13e70c-0831-4264-ba60-b81c3f9b2032",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/arbitrum-audit-program/28368/82"
+        },
+        {
+          "proposal_id": "78651690-2d36-47e9-b8cf-ab410db30a87",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/aip-1-arbitrum-improvement-proposal-framework/30/78"
+        }
+      ],
+      "faithfulness": {
+        "score": 1,
+        "passing": true,
+        "feedback": "YES"
+      },
+      "relevancy": {
+        "score": 1,
+        "passing": true,
+        "feedback": "YES"
+      },
+      "retrieval": {
+        "hit": false,
+        "reciprocalRank": 0,
+        "retrievedProposalIds": [
+          "78498e37-369e-4829-9e44-2cffbe95066d",
+          "8bd39d65-978c-432a-ade1-9a0eae68be6a",
+          "1b0b9b17-487f-4ec3-a228-7a0edcd8ee58",
+          "d7334fac-3e92-48b9-a3cf-896e889edc2b",
+          "e46dc223-72fc-4439-8d99-d26c30b610e5",
+          "027ed3f0-077a-42aa-8dc3-0f25b249a1c5",
+          "3de9229c-7184-4ca3-90a1-17440c4eaff8",
+          "e650fa07-52ba-4cae-9c71-6eedd815632a",
+          "70cade13-448c-483c-bc08-27f72bdfe433",
+          "9d78f0c5-84a4-47f0-b76f-cce5b6fbc99c",
+          "3bb77c3f-21ef-479e-9c49-5d66ba320bf1"
+        ]
+      },
+      "durationMs": 46997
+    },
+    {
+      "queryId": "query-010",
+      "query": "Track the full lifecycle of the Security Council Elections proposal from forum to on-chain vote.",
+      "answer": "Summary timeline (tracked only from the provided proposals)\n\n1) Forum — \"AIP - 6 : Security Council Elections\" (Forum)\n- Initial forum proposal to enact the Security Council elections, describe the on‑chain election system, and publish the code and audits. The proposal text notes the election architecture is final and links the code and Trail of Bits / Code4Rena audit results. (AIP - 6 : Security Council Elections — Forum; source: https://forum.arbitrum.foundation/t/aip-6-security-council-elections/15425)\n\n2) Forum — \"Constitutional AIP: Changes to the Constitution and the Security Council Election Process\" / \"Constitutional AIP — Security Council Election Process Improvements\" (Forum)\n- Follow-up forum AIP proposing textual changes to Section 4 of the Constitution (new timeline, compliance step, installation timing, etc.), noting the Governance Action contract deployment and that the election contract software is installed. (AIP changes / improvements — Forum; source: https://forum.arbitrum.foundation/t/aip-changes-to-the-constitution-and-the-security-council-election-process/20856 and https://forum.arbitrum.foundation/t/constitutional-aip-security-council-election-process-improvements/29848)\n\n3) Forum — \"Proposal: Update Security Council Election Start Date to Ensure Time for Security Audit\" (Forum)\n- A forum proposal to adjust the election start date to allow for a security audit; discussion followed. (Proposal: Update Security Council Election Start Date to Ensure Time for Security Audit — Forum; source: https://forum.arbitrum.foundation/t/proposal-update-security-council-election-start-date-to-ensure-time-for-security-audit/15426)\n\n4) On‑chain (Tally) — Security Council elections implementation vote (Tally)\n- The implementation was put up for on‑chain governance voting via Tally (link to the Tally proposal). A forum comment notes the proposal had passed quorum and that the Tally vote was in progress and near completion; the forum thread was closed. (Tally on‑chain vote; source: https://www.tally.xyz/gov/arbitrum/proposal/108413626736577087081818577238162267924459697981830202052718122463860611528602 and the forum comment reporting quorum and closure: https://forum.arbitrum.foundation/t/proposal-update-security-council-election-start-date-to-ensure-time-for-security-audit/15426/12)\n\nNotes / evidence cited in the proposals\n- Code and audits referenced in the AIP-6 forum post (commit and audits) (AIP - 6 : Security Council Elections — Forum).  \n- Constitutional AIP notes the Governance Action contract deployment (Arbiscan) and states the election contract software is installed (Constitutional AIP — Forum).  \n- Forum comment reporting quorum and pointing to the active Tally vote (Proposal: Update Security Council Election Start Date — Forum).\n\nIf you want, I can extract the exact forum URLs and the Tally link referenced above into a simple checklist you can follow.",
+      "citations": [
+        {
+          "proposal_id": "42079e13-6001-42a5-a6f8-f03004d4ba6e",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/aip-6-security-council-elections/15425/1"
+        },
+        {
+          "proposal_id": "c44fd087-f13a-46f7-971e-10ac0b06917b",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/constitutional-aip-security-council-election-process-improvements/29848/1"
+        },
+        {
+          "proposal_id": "6dcc947d-f364-47c3-9e42-3c416b3f388f",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/proposal-update-security-council-election-start-date-to-ensure-time-for-security-audit/15426"
+        },
+        {
+          "proposal_id": "52eff26d-c6f7-4110-a861-520fe4f1cb8e",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/aip-changes-to-the-constitution-and-the-security-council-election-process/20856/1"
+        }
+      ],
+      "faithfulness": {
+        "score": 1,
+        "passing": true,
+        "feedback": "YES"
+      },
+      "relevancy": {
+        "score": 1,
+        "passing": true,
+        "feedback": "YES"
+      },
+      "retrieval": {
+        "hit": false,
+        "reciprocalRank": 0,
+        "retrievedProposalIds": [
+          "6dcc947d-f364-47c3-9e42-3c416b3f388f",
+          "42079e13-6001-42a5-a6f8-f03004d4ba6e",
+          "c44fd087-f13a-46f7-971e-10ac0b06917b",
+          "219ba0ae-ee51-4d93-8926-f5aa4a81a5e3"
+        ]
+      },
+      "durationMs": 47903
+    },
+    {
+      "queryId": "query-011",
+      "query": "What is the budget requested in the Questbook DDA program proposal?",
+      "answer": "The \"Questbook DDA Program Phase 2 Request for Continuation\" (Forum) requests a budget of $4,000,000 for two quarters. Source: Questbook DDA Program Phase 2 Request for Continuation — Forum.",
+      "citations": [
+        {
+          "proposal_id": "5540f2c7-25cf-4b8e-9a8e-dbedfee77439",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/proposal-build-optimal-onboarding-for-stip-teams-boost/19114/28"
+        },
+        {
+          "proposal_id": "deec594d-3be9-4ae3-b920-000d7dd4f8d8",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/questbook-dda-program-phase-2-request-for-continuation/21326"
+        },
+        {
+          "proposal_id": "5ab255f7-a2cc-4811-a916-4822b10554a4",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/non-constitutional-proposal-for-maintenance-and-continuous-enhancement-of-arbitrumhub-to-meet-the-evolving-needs-of-the-arbitrum-ecosystem-and-dao/27667/18"
+        },
+        {
+          "proposal_id": "d75da74f-c431-44e4-b7f2-8f4ce06264da",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/request-for-additional-funding-for-the-arbitrum-dda-program/24862/1"
+        },
+        {
+          "proposal_id": "e5f5f660-65de-4483-ae3c-4d4e1faef01b",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/proposal-arbitrum-sponsorship-at-rwa-paris-2025/28086/42"
+        },
+        {
+          "proposal_id": "5ba7d515-8511-403e-824d-0702e0c1c516",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/partner-with-eth-bucharest-2025-eastern-europe-s-leading-ethereum-conference-and-hackathon/27606/52"
+        },
+        {
+          "proposal_id": "1417e0e1-2b04-4fd2-a4bc-90bbc919b70b",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/non-constitutional-rfc-arbitrum-d-a-o-domain-allocator-offerings-grant-program-season-3/27584/1"
+        },
+        {
+          "proposal_id": "909ee2d1-65a1-49a5-9623-35d13ccaccd7",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/rfc-fund-completion-of-cex-dex-incentive-research/27416/8"
+        },
+        {
+          "proposal_id": "358bedf6-3717-4106-9918-7c8794442ea2",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/jumpstart-fund-for-dao-improvement/25557/1"
+        }
+      ],
+      "faithfulness": {
+        "score": 1,
+        "passing": true,
+        "feedback": "YES"
+      },
+      "relevancy": {
+        "score": 1,
+        "passing": true,
+        "feedback": "YES"
+      },
+      "retrieval": {
+        "hit": false,
+        "reciprocalRank": 0,
+        "retrievedProposalIds": [
+          "5ba7d515-8511-403e-824d-0702e0c1c516",
+          "deec594d-3be9-4ae3-b920-000d7dd4f8d8",
+          "d75da74f-c431-44e4-b7f2-8f4ce06264da",
+          "5ab255f7-a2cc-4811-a916-4822b10554a4",
+          "f11c2f8c-a3c1-4ebc-aebb-e1b1e0d95059",
+          "c26a9847-7798-4a46-893d-46b845ff2622",
+          "da509140-6545-4fc3-b3c0-05d9407baaa5",
+          "a823dabc-4337-450d-aaf1-2bb78b3ee18a"
+        ]
+      },
+      "durationMs": 13963
+    },
+    {
+      "queryId": "query-012",
+      "query": "What voting options were available for the ARB Staking proposal on Snapshot?",
+      "answer": "The ARB Staking proposal (\"Proposal: Activate ARB Staking (FINAL)\" — Forum) used ranked‑choice voting on Snapshot with five options (from the proposal text):\n\n- Fund staking with 1.75% of the total ARB supply (175M ARB)  \n- Fund staking with 1.5% of the total ARB supply (150M ARB)  \n- Fund staking with 1.25% of the total ARB supply (125M ARB)  \n- Fund staking with 1% of the total ARB supply (100M ARB)  \n- Do not fund staking\n\nSource: \"Proposal: Activate ARB Staking (FINAL)\" — Forum (PlutusDAO).",
+      "citations": [
+        {
+          "proposal_id": "9d78f0c5-84a4-47f0-b76f-cce5b6fbc99c",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/proposal-activate-arb-staking-final/19068/1"
+        },
+        {
+          "proposal_id": "0f56c6fb-2489-40dd-8fcc-c86ae30cb9fb",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/proposal-agv-council-compensation-calibration-benchmark-for-next-term-startup-phase-bonus/29424/25"
+        },
+        {
+          "proposal_id": "8f951d6b-5f61-4f6f-b5c5-2828f9d02bee",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/gcp-council-salary-updates-ops-improvements-and-transparency-cadence/28362/6"
+        },
+        {
+          "proposal_id": "dfde6c34-48a4-4455-82fd-4d1d4b7becaf",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/arb-staking-unlock-arb-utility-and-align-governance/25084/166"
+        },
+        {
+          "proposal_id": "2417c755-7f84-4dfc-bf70-1e45b8726eb0",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/rfc-2-delegate-incentive-system-for-arbitrumdao/15720/1"
+        },
+        {
+          "proposal_id": "8bd39d65-978c-432a-ade1-9a0eae68be6a",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/non-constitutional-arbitrum-research-and-development-collective-term-2/26922/1"
+        },
+        {
+          "proposal_id": "05bc2288-9870-4c41-ae91-92695bebf6da",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/non-constitutional-pilot-phase-arbitrum-venture-initiative/24247/1"
+        },
+        {
+          "proposal_id": "3140a42e-a65e-4cdd-95ee-5c38af3bb0f1",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/proposal-non-constitutional-defending-open-source-a-united-stand-for-developer-rights-and-software-freedom/23047/59"
+        },
+        {
+          "proposal_id": "78651690-2d36-47e9-b8cf-ab410db30a87",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/aip-1-arbitrum-improvement-proposal-framework/30/83"
+        },
+        {
+          "proposal_id": "80bc54fc-547b-4331-ae68-112d2b5bbe0e",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/transfer-8-500-eth-from-the-treasury-to-atmc-s-eth-treasury-strategies/29983/34"
+        }
+      ],
+      "faithfulness": {
+        "score": 1,
+        "passing": true,
+        "feedback": "YES"
+      },
+      "relevancy": {
+        "score": 1,
+        "passing": true,
+        "feedback": "YES"
+      },
+      "retrieval": {
+        "hit": false,
+        "reciprocalRank": 0,
+        "retrievedProposalIds": [
+          "9d78f0c5-84a4-47f0-b76f-cce5b6fbc99c",
+          "0f56c6fb-2489-40dd-8fcc-c86ae30cb9fb",
+          "dfde6c34-48a4-4455-82fd-4d1d4b7becaf",
+          "c8ede47c-dae8-4aef-8cb2-8ea522c0bb40",
+          "ce404c59-9d1d-4432-8381-721914e3729b",
+          "40c0c170-d3d2-4c81-b859-9de0d2b68b83",
+          "5540f2c7-25cf-4b8e-9a8e-dbedfee77439",
+          "3140a42e-a65e-4cdd-95ee-5c38af3bb0f1"
+        ]
+      },
+      "durationMs": 16677
+    },
+    {
+      "queryId": "query-013",
+      "query": "What are the three stages a proposal goes through in Arbitrum governance?",
+      "answer": "The three stages are:\n\n- Discourse / Forum discussion — initial proposal posted on the forum for comment (source: \"How to submit a DAO Proposal\" — Forum).  \n- Snapshot — an off-chain temperature-check poll (source: \"How to submit a DAO Proposal\" — Snapshot).  \n- Tally — the on-chain voting stage for AIPs (source: \"How to submit a DAO Proposal\" — Tally).",
+      "citations": [
+        {
+          "proposal_id": "f3dab617-1aa9-4af3-99be-4ecad3895836",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/the-incomplete-guide-to-submitting-a-proposal-to-arbitrum-dao/22956/1"
+        },
+        {
+          "proposal_id": "ebd603be-79a2-4a16-95a4-f55b9f7cbb22",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/how-to-submit-a-dao-proposal/13494/1"
+        },
+        {
+          "proposal_id": "78651690-2d36-47e9-b8cf-ab410db30a87",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/aip-1-arbitrum-improvement-proposal-framework/30/90"
+        },
+        {
+          "proposal_id": "9d78f0c5-84a4-47f0-b76f-cce5b6fbc99c",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/proposal-activate-arb-staking-final/19068/1"
+        },
+        {
+          "proposal_id": "506fe504-450c-40a7-8551-8cd406fc57f9",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/constitutional-aip-arbos-version-40-callisto/28436/8"
+        },
+        {
+          "proposal_id": "2f5e6431-a914-4791-a540-77026410cda7",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/proposal-high-council-x-arbitrum-for-advancing-decentralized-collaboration-and-governance/15300"
+        },
+        {
+          "proposal_id": "bba7d46d-5976-472a-8f92-b535389ca5cc",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/non-constitutional-depolis-collective-sensemaking-for-arbitrum-dao/28076/1"
+        }
+      ],
+      "faithfulness": {
+        "score": 1,
+        "passing": true,
+        "feedback": "YES"
+      },
+      "relevancy": {
+        "score": 1,
+        "passing": true,
+        "feedback": "YES"
+      },
+      "correctness": {
+        "score": 5,
+        "passing": true,
+        "feedback": "The generated answer correctly lists the three stages (forum/discourse discussion, Snapshot off-chain temperature check, and Tally on-chain vote), matches the reference, and gives accurate brief descriptions."
+      },
+      "retrieval": {
+        "hit": false,
+        "reciprocalRank": 0,
+        "retrievedProposalIds": [
+          "ebd603be-79a2-4a16-95a4-f55b9f7cbb22",
+          "baec6a0b-3db1-452a-9d07-3141283b6e22",
+          "f3dab617-1aa9-4af3-99be-4ecad3895836",
+          "7e87f27c-5806-4af8-92b9-9325fd63e9fb",
+          "42079e13-6001-42a5-a6f8-f03004d4ba6e",
+          "1417e0e1-2b04-4fd2-a4bc-90bbc919b70b",
+          "78651690-2d36-47e9-b8cf-ab410db30a87",
+          "9d78f0c5-84a4-47f0-b76f-cce5b6fbc99c",
+          "71c572cb-272f-425e-9a04-ea9ffc710327",
+          "ff007745-b389-40bc-8a72-ac55621acc92",
+          "7f47b97e-0621-4a1d-b8ca-54f99db643e8"
+        ]
+      },
+      "durationMs": 25418
+    },
+    {
+      "queryId": "query-014",
+      "query": "What is the role of the Security Council in Arbitrum governance?",
+      "answer": "Briefly — the Security Council is a 12‑member body that serves as an emergency / risk‑management check on Arbitrum governance. Its main roles (as described in the available proposals) are:\n\n- Address ecosystem risks by applying emergency and non‑emergency actions to protect the chains (e.g., respond to critical vulnerabilities or fraudulent proposals where waiting for the normal multi‑week AIP process would be harmful). (AIP-1 \"Arbitrum Improvement Proposal Framework\" — Forum)  \n- In emergencies it can act faster than the full constitutional AIP process and may execute emergency actions (including certain on‑chain changes). (AIP-1 — Forum)  \n- Serve as a check on token‑holder governance by having the ability to block DAO proposals in some cases. (AIP-6 \"Security Council Elections\" — Forum)  \n- Be authorized to approve/implement routine software upgrades, maintenance, and parameter adjustments in non‑emergency settings per the Constitution (though commentary notes routine upgrades often still go through full governance in practice). (Constitutional AIP \"Security Council Improvement Proposal\" — Forum; AIP-6 — Forum)  \n- Operate via Gnosis multisigs/timelocked upgrade flows (examples in the proposals: a 9/12 emergency multisig and a 7/12 multisig with delayed upgrade power) and use timelocks/withdrawal delays to preserve users’ exit windows when upgrades occur. (Constitutional AIP \"Security Council Improvement Proposal\" — Forum; AIP-6 — Forum)  \n\nSources:  \n- Constitutional AIP: Security Council Improvement Proposal (Forum)  \n- AIP-6: Security Council Elections (Forum)  \n- AIP-1: Arbitrum Improvement Proposal Framework (Forum)",
+      "citations": [
+        {
+          "proposal_id": "219ba0ae-ee51-4d93-8926-f5aa4a81a5e3",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/constitutional-aip-security-council-improvement-proposal/20541/1"
+        },
+        {
+          "proposal_id": "42079e13-6001-42a5-a6f8-f03004d4ba6e",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/aip-6-security-council-elections/15425/1"
+        },
+        {
+          "proposal_id": "c44fd087-f13a-46f7-971e-10ac0b06917b",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/constitutional-aip-security-council-election-process-improvements/29848/12"
+        },
+        {
+          "proposal_id": "78651690-2d36-47e9-b8cf-ab410db30a87",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/aip-1-arbitrum-improvement-proposal-framework/30/90"
+        },
+        {
+          "proposal_id": "a7d9f46e-24a5-40d7-be0e-f0470777200c",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/long-term-incentives-pilot-program/20223/41"
+        }
+      ],
+      "faithfulness": {
+        "score": 1,
+        "passing": true,
+        "feedback": "YES"
+      },
+      "relevancy": {
+        "score": 1,
+        "passing": true,
+        "feedback": "YES"
+      },
+      "correctness": {
+        "score": 5,
+        "passing": true,
+        "feedback": "The generated answer is directly relevant and gives a correct, accurate, and appropriately detailed description of the Security Council’s role (emergency risk management, faster emergency actions, routine upgrades/maintenance, and governance checks), matching the reference while adding useful specifics (12 members, multisig/timelock mechanics and cited AIPs). Minor omissions (e.g., not explicitly stating the semi‑annual election cadence) do not materially affect correctness."
+      },
+      "retrieval": {
+        "hit": false,
+        "reciprocalRank": 0,
+        "retrievedProposalIds": [
+          "cf937bec-334f-4a0b-a783-2c6c900a545f",
+          "78651690-2d36-47e9-b8cf-ab410db30a87",
+          "42079e13-6001-42a5-a6f8-f03004d4ba6e",
+          "219ba0ae-ee51-4d93-8926-f5aa4a81a5e3",
+          "c44fd087-f13a-46f7-971e-10ac0b06917b",
+          "2f5e6431-a914-4791-a540-77026410cda7"
+        ]
+      },
+      "durationMs": 35084
+    },
+    {
+      "queryId": "query-015",
+      "query": "How does the Snapshot voting process work for Arbitrum proposals?",
+      "answer": "Short answer — based on the available proposals:\n\n- Snapshot is used as an off‑chain \"temperature check\" (non‑binding) before on‑chain voting. (How to submit a DAO proposal — Forum; The incomplete guide to submitting a proposal to Arbitrum DAO — Forum)\n\n- Typical timing: Snapshot polls run for one week (7 days). Outcomes are decided by a simple majority and there is no required participation quorum for the Snapshot poll itself. (How to submit a DAO proposal — Forum; The incomplete guide to submitting a proposal to Arbitrum DAO — Forum; Proposal: Activate ARB Staking — Forum)\n\n- Who can create a Snapshot poll: the guide states a wallet representing at least 0.01% of votable tokens (1,000,000 ARB) is required to post a Snapshot vote; otherwise a proposer can ask an eligible delegate to post on their behalf. (The incomplete guide to submitting a proposal to Arbitrum DAO — Forum)\n\n- Purpose and follow‑up: Snapshot is intended to gather community sentiment; a successful Snapshot is typically followed by an on‑chain Tally vote (which is the binding/executable stage). Snapshot is lower‑barrier because it does not move funds. (To clarify… — Proposal AIP‑1/1.2: Foundation and DAO governance — Forum; How to submit a DAO proposal — Forum)\n\n- Practical notes from past discussion: Snapshot turnout is generally higher than Tally turnout (many proposals show far more voters on Snapshot than on Tally), and proponents are advised to link the Snapshot poll back to their forum post for discussion. (RFC‑2: Delegate Incentive System for ArbitrumDAO — Forum; The incomplete guide to submitting a proposal to Arbitrum DAO — Forum)\n\nIf you want the exact text or links cited above, tell me which citation you want and I’ll repeat it (title + stage).",
+      "citations": [
+        {
+          "proposal_id": "ebd603be-79a2-4a16-95a4-f55b9f7cbb22",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/how-to-submit-a-dao-proposal/13494/1"
+        },
+        {
+          "proposal_id": "bdb07611-bd5a-4142-aa57-f33c88c7c5e7",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/proposal-aip-1-2-foundation-and-dao-governance/13362/17"
+        },
+        {
+          "proposal_id": "f3dab617-1aa9-4af3-99be-4ecad3895836",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/the-incomplete-guide-to-submitting-a-proposal-to-arbitrum-dao/22956/1"
+        },
+        {
+          "proposal_id": "2417c755-7f84-4dfc-bf70-1e45b8726eb0",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/rfc-2-delegate-incentive-system-for-arbitrumdao/15720/1"
+        },
+        {
+          "proposal_id": "80bc54fc-547b-4331-ae68-112d2b5bbe0e",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/transfer-8-500-eth-from-the-treasury-to-atmc-s-eth-treasury-strategies/29983/34"
+        },
+        {
+          "proposal_id": "69cb0e87-652a-467c-84a1-29195876c3bf",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/should-the-dao-default-to-using-shielded-voting-for-snapshot-votes/25884/17"
+        },
+        {
+          "proposal_id": "b00c3349-5764-47de-b357-8e799a14a9eb",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/proposal-time-management-in-arbitrum-s-governance/15941/1"
+        },
+        {
+          "proposal_id": "a7d9f46e-24a5-40d7-be0e-f0470777200c",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/long-term-incentives-pilot-program/20223/41"
+        },
+        {
+          "proposal_id": "3d7c9543-6ae5-4f6b-a594-ab7eb6578f2e",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/delegate-to-a-public-access-public-good-citizen-enfranchisement-pool-through-event-horizon/21523/70"
+        },
+        {
+          "proposal_id": "78651690-2d36-47e9-b8cf-ab410db30a87",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/aip-1-arbitrum-improvement-proposal-framework/30/90"
+        },
+        {
+          "proposal_id": "f4fa8041-757f-4660-a5c2-76612207d175",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/non-constitutional-arbitrum-dao-delegate-code-of-conduct-formalizing-the-daos-operations/27188/79"
+        },
+        {
+          "proposal_id": "9d78f0c5-84a4-47f0-b76f-cce5b6fbc99c",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/proposal-activate-arb-staking-final/19068/1"
+        },
+        {
+          "proposal_id": "f99a9cc0-8505-4387-b5d2-241cab449954",
+          "stage": "forum",
+          "url": "https://forum.arbitrum.foundation/t/proposal-procurement-framework-security-non-constitutional-proposal-prev-rfp/19328/1"
+        }
+      ],
+      "faithfulness": {
+        "score": 1,
+        "passing": true,
+        "feedback": "YES"
+      },
+      "relevancy": {
+        "score": 1,
+        "passing": true,
+        "feedback": "YES"
+      },
+      "correctness": {
+        "score": 5,
+        "passing": true,
+        "feedback": "The generated answer directly and accurately explains Snapshot as an off‑chain, non‑binding \"temperature check\" for ARB holders (no gas fees) and correctly states its role preceding an on‑chain Tally vote. It also adds useful, accurate details (typical 7‑day duration, simple‑majority/no quorum nature, proposer posting threshold, and practical turnout/format notes) that match Arbitrum guidance. No significant inaccuracies were found."
+      },
+      "retrieval": {
+        "hit": false,
+        "reciprocalRank": 0,
+        "retrievedProposalIds": [
+          "da509140-6545-4fc3-b3c0-05d9407baaa5",
+          "c26a9847-7798-4a46-893d-46b845ff2622",
+          "deec594d-3be9-4ae3-b920-000d7dd4f8d8",
+          "42079e13-6001-42a5-a6f8-f03004d4ba6e",
+          "76b9a023-71b9-4ab4-8727-bf0c885e64d9",
+          "b00c3349-5764-47de-b357-8e799a14a9eb",
+          "bdb07611-bd5a-4142-aa57-f33c88c7c5e7",
+          "ce404c59-9d1d-4432-8381-721914e3729b",
+          "69cb0e87-652a-467c-84a1-29195876c3bf",
+          "78651690-2d36-47e9-b8cf-ab410db30a87",
+          "ebd603be-79a2-4a16-95a4-f55b9f7cbb22",
+          "0b13e70c-0831-4264-ba60-b81c3f9b2032",
+          "9d78f0c5-84a4-47f0-b76f-cce5b6fbc99c",
+          "f3dab617-1aa9-4af3-99be-4ecad3895836",
+          "2417c755-7f84-4dfc-bf70-1e45b8726eb0"
+        ]
+      },
+      "durationMs": 60862
+    }
+  ]
+}

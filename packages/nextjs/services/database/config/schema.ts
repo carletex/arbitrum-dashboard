@@ -25,6 +25,15 @@ export const forumStage = pgTable("forum_stage", {
   message_count: integer("message_count").default(0),
   last_message_at: timestamp("last_message_at"),
   updated_at: timestamp("updated_at").defaultNow(),
+
+  // Content fields for forum post enrichment
+  posts_json: jsonb("posts_json"),
+  content_fetched_at: timestamp("content_fetched_at"),
+  content_fetch_status: varchar("content_fetch_status", { length: 20 }).default("pending"), // pending | success | failed | partial
+  last_fetched_post_count: integer("last_fetched_post_count"),
+  fetch_error_log: text("fetch_error_log"),
+  fetch_retry_count: integer("fetch_retry_count").default(0),
+  next_fetch_attempt: timestamp("next_fetch_attempt"),
 });
 
 // Snapshot stage (nullable foreign key; linked later)

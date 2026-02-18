@@ -16,12 +16,23 @@ export async function POST(request: NextRequest) {
       );
     }
 
-    console.log("Importing forum posts...");
-    await importForumPosts();
+    const maxPagesParam = request.nextUrl.searchParams.get("maxPages");
+    const maxPages = maxPagesParam ? Number.parseInt(maxPagesParam, 10) : undefined;
+
+    console.log("Importing forum posts...", {
+      maxPages: Number.isFinite(maxPages) ? maxPages : undefined,
+    });
+
+    const summary = await importForumPosts({
+      maxPages: Number.isFinite(maxPages) ? maxPages : undefined,
+    });
+
+    console.log("Forum posts import summary:", summary);
 
     return NextResponse.json({
       success: true,
       message: "Forum posts imported successfully",
+      summary,
     });
   } catch (error) {
     console.error("Error importing forum posts:", error);
