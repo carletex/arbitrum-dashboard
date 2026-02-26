@@ -1,5 +1,5 @@
 import { PRODUCTION_DATABASE_HOSTNAME } from "./config/postgresClient";
-import { forumStage, proposals, snapshotStage, tallyStage, users } from "./config/schema";
+import { forumStage, matchingResult, proposals, snapshotStage, tallyStage, users } from "./config/schema";
 import { spawnSync } from "child_process";
 import * as dotenv from "dotenv";
 import { drizzle } from "drizzle-orm/node-postgres";
@@ -29,7 +29,7 @@ async function seed() {
   });
   await client.connect();
   const db = drizzle(client, {
-    schema: { proposals, forumStage, snapshotStage, tallyStage, users },
+    schema: { proposals, forumStage, snapshotStage, tallyStage, matchingResult, users },
     casing: "snake_case",
   });
 
