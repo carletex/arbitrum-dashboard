@@ -35,7 +35,7 @@
     "dotenv": "^17.2.2",
     "drizzle-orm": "^0.44.5",
     "kubo-rpc-client": "~5.0.2",
-    "next": "~15.2.3",
+    "next": "~15.2.6",
     "next-auth": "^4.24.11",
     "next-nprogress-bar": "~2.3.13",
     "next-themes": "~0.3.0",
