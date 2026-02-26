@@ -9,8 +9,8 @@
 import { getForumStageByUrl } from "../database/repositories/forum";
 import { getUnprocessedTallyStages, upsertMatchingResult } from "../database/repositories/matching";
 import { getTallyStageByOnchainId, updateTallyProposalId } from "../database/repositories/tally";
+import { ImportResult, decodeHtmlEntities, parseCsvLine, readFileContent } from "./csv-utils";
 import * as dotenv from "dotenv";
-import * as fs from "fs";
 import * as path from "path";
 
 // Load environment variables before importing database modules
@@ -18,25 +18,6 @@ dotenv.config({ path: path.resolve(__dirname, "../../.env.development") });
 
 const TALLY_CSV_URL = "https://drive.google.com/uc?export=download&id=1yH0BcHPPPu205HvDfWRLHYakL-i2V-Fl";
 const TALLY_LLM_JSON_URL = "https://drive.google.com/uc?export=download&id=1r9x6jfa_X7il2DcwExtaf-QrljNDA94N";
-
-async function readFileContent(localPath: string, driveUrl: string): Promise<string> {
-  console.log(`Downloading from: ${driveUrl}`);
-  const res = await fetch(driveUrl);
-  if (!res.ok) {
-    throw new Error(`Failed to download: ${driveUrl} (status ${res.status})`);
-  }
-  const content = await res.text();
-
-  // Save locally
-  const dir = path.dirname(localPath);
-  if (!fs.existsSync(dir)) {
-    fs.mkdirSync(dir, { recursive: true });
-  }
-  fs.writeFileSync(localPath, content, "utf-8");
-  console.log(`Saved to: ${localPath}`);
-
-  return content;
-}
 
 interface TallyCsvRow {
   tally_title: string;
@@ -58,18 +39,6 @@ interface LlmMatchEntry {
   reasoning: string;
 }
 
-interface ImportResult {
-  matched: number;
-  updated: number;
-  notFound: number;
-  skipped: number;
-  alreadyLinked: number;
-  forumNotFound: number;
-  noMatch: number;
-  noMatchSwept: number;
-  errors: string[];
-}
-
 /**
  * Extract onchain_id from tally URL
  * Example: https://www.tally.xyz/gov/arbitrum/proposal/71941171835710778457735937894689629320431683601089057868136768380925169329077
@@ -79,57 +48,6 @@ function extractOnchainId(url: string): string | null {
   if (!url) return null;
   const match = url.match(/\/proposal\/(\d+)/);
   return match ? match[1] : null;
-}
-
-/**
- * Decode common HTML entities in URLs
- */
-function decodeHtmlEntities(text: string): string {
-  if (!text) return text;
-  return text
-    .replace(/&amp;/g, "&")
-    .replace(/&lt;/g, "<")
-    .replace(/&gt;/g, ">")
-    .replace(/&quot;/g, '"')
-    .replace(/&#39;/g, "'")
-    .replace(/&rsquo;/g, "'")
-    .replace(/&lsquo;/g, "'")
-    .replace(/&ldquo;/g, '"')
-    .replace(/&rdquo;/g, '"')
-    .replace(/&ndash;/g, "–")
-    .replace(/&mdash;/g, "—");
-}
-
-/**
- * Parse a single CSV line handling quoted fields
- */
-function parseCsvLine(line: string, delimiter: string = ";"): string[] {
-  const result: string[] = [];
-  let current = "";
-  let inQuotes = false;
-
-  for (let i = 0; i < line.length; i++) {
-    const char = line[i];
-
-    if (char === '"') {
-      if (inQuotes && line[i + 1] === '"') {
-        // Escaped quote
-        current += '"';
-        i++;
-      } else {
-        // Toggle quote state
-        inQuotes = !inQuotes;
-      }
-    } else if (char === delimiter && !inQuotes) {
-      result.push(current.trim());
-      current = "";
-    } else {
-      current += char;
-    }
-  }
-
-  result.push(current.trim());
-  return result;
 }
 
 /**
