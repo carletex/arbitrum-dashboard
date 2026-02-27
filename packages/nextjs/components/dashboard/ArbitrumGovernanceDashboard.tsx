@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 import { StatsCard } from "./StatsCard";
+import { VotingStageCell } from "./VotingStageCell";
 import { ArrowTopRightOnSquareIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
 import type { DashboardProposal } from "~~/services/database/repositories/proposals";
 import { STAT_CARD_CONFIG, computeStats } from "~~/utils/governanceStats";
@@ -16,10 +17,17 @@ const getStatus = (p: DashboardProposal) => {
   return "Draft";
 };
 
+export const STAGE_COLORS = {
+  snapshot: { border: "border-purple-200", bg: "bg-purple-100", text: "text-purple-600" },
+  tally: { border: "border-cyan-200", bg: "bg-cyan-100", text: "text-cyan-600" },
+  forum: { border: "border-orange-200", bg: "bg-orange-100", text: "text-orange-600" },
+} as const;
+
 const getBadgeColor = (p: DashboardProposal) => {
-  if (p.tallyLink) return "border-cyan-200 bg-cyan-100 text-cyan-600";
-  if (p.snapshotLink) return "border-purple-200 bg-purple-100 text-purple-600";
-  return "border-orange-200 bg-orange-100 text-orange-600";
+  if (p.tallyLink) return `${STAGE_COLORS.tally.border} ${STAGE_COLORS.tally.bg} ${STAGE_COLORS.tally.text}`;
+  if (p.snapshotLink)
+    return `${STAGE_COLORS.snapshot.border} ${STAGE_COLORS.snapshot.bg} ${STAGE_COLORS.snapshot.text}`;
+  return `${STAGE_COLORS.forum.border} ${STAGE_COLORS.forum.bg} ${STAGE_COLORS.forum.text}`;
 };
 
 export const ArbitrumGovernanceDashboard = ({ proposals }: { proposals: DashboardProposal[] }) => {
@@ -154,32 +162,20 @@ export const ArbitrumGovernanceDashboard = ({ proposals }: { proposals: Dashboar
                     <div className={`badge badge-sm whitespace-nowrap border ${getBadgeColor(p)}`}>{getStatus(p)}</div>
                   </td>
                   <td>
-                    {p.snapshotStatus ? (
-                      <div className="flex flex-col gap-1">
-                        <div className="badge badge-sm whitespace-nowrap border border-purple-200 bg-purple-100 text-purple-600">
-                          {p.snapshotStatus}
-                        </div>
-                        {p.snapshotLastUpdate && (
-                          <span className="text-xs text-base-content/60">{p.snapshotLastUpdate}</span>
-                        )}
-                      </div>
-                    ) : (
-                      <span className="text-xs text-base-content/60">Not started</span>
-                    )}
+                    <VotingStageCell
+                      status={p.snapshotStatus}
+                      lastUpdate={p.snapshotLastUpdate}
+                      history={p.snapshotHistory}
+                      colorScheme={STAGE_COLORS.snapshot}
+                    />
                   </td>
                   <td>
-                    {p.tallyStatus ? (
-                      <div className="flex flex-col gap-1">
-                        <div className="badge badge-sm whitespace-nowrap border border-cyan-200 bg-cyan-100 text-cyan-600">
-                          {p.tallyStatus.startsWith("Pending execution")
-                            ? p.tallyStatus.replace("Pending execution (", "").replace(")", "")
-                            : p.tallyStatus}
-                        </div>
-                        {p.tallyLastUpdate && <span className="text-xs text-base-content/60">{p.tallyLastUpdate}</span>}
-                      </div>
-                    ) : (
-                      <span className="text-xs text-base-content/60">Not started</span>
-                    )}
+                    <VotingStageCell
+                      status={p.tallyDisplayStatus}
+                      lastUpdate={p.tallyLastUpdate}
+                      history={p.tallyHistory}
+                      colorScheme={STAGE_COLORS.tally}
+                    />
                   </td>
                   <td>
                     <div className="badge badge-sm whitespace-nowrap border border-base-300 bg-transparent text-base-content/70">

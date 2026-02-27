@@ -21,6 +21,23 @@ export async function createProposal(proposalData: ProposalData) {
   return newProposal;
 }
 
+export type VotingStageItem = {
+  id: string;
+  status: string | null;
+  displayStatus: string | null;
+  lastUpdate: string | null;
+  link: string | null;
+  title: string | null;
+  votes?: { for: string; against: string; total: string };
+};
+
+// Strip "Pending execution (...)" wrapper for compact badge display
+function formatDisplayStatus(status: string | null): string | null {
+  if (!status) return null;
+  if (status.startsWith("Pending execution")) return status.replace("Pending execution (", "").replace(")", "");
+  return status;
+}
+
 export async function getDashboardProposals() {
   const rows = await db.query.proposals.findMany({
     with: {
@@ -30,11 +47,9 @@ export async function getDashboardProposals() {
       },
       snapshotStages: {
         orderBy: (snapshotStage, { desc }) => [desc(snapshotStage.updated_at)],
-        limit: 1,
       },
       tallyStages: {
         orderBy: (tallyStage, { desc }) => [desc(tallyStage.updated_at)],
-        limit: 1,
       },
     },
     orderBy: (proposals, { desc }) => [desc(proposals.updated_at)],
@@ -48,6 +63,35 @@ export async function getDashboardProposals() {
     const snapshotOptions = snapshot?.options as SnapshotOptions | null;
     const tallyOptions = tally?.options as TallyOptions | null;
 
+    // Map older snapshot stages (skip index 0, which is the latest)
+    const snapshotHistory: VotingStageItem[] = row.snapshotStages.slice(1).map(s => {
+      const opts = s.options as SnapshotOptions | null;
+      const status = resolveSnapshotResult(s.status ?? null, opts);
+      return {
+        id: s.id,
+        status,
+        displayStatus: status,
+        lastUpdate: timeAgo(s.voting_end ?? s.voting_start ?? null),
+        link: s.url ?? null,
+        title: s.title ?? null,
+      };
+    });
+
+    // Map older tally stages (skip index 0, which is the latest)
+    const tallyHistory: VotingStageItem[] = row.tallyStages.slice(1).map(t => {
+      const opts = t.options as TallyOptions | null;
+      const status = mapTallyStatus(t.status ?? null, t.substatus ?? null);
+      return {
+        id: t.id,
+        status,
+        displayStatus: formatDisplayStatus(status),
+        lastUpdate: timeAgo(t.last_activity ?? t.updated_at ?? null),
+        link: t.url ?? null,
+        title: t.title ?? null,
+        votes: extractTallyVotes(opts),
+      };
+    });
+
     return {
       id: row.id,
       title: row.title,
@@ -57,12 +101,15 @@ export async function getDashboardProposals() {
       forumStatus: forum ? (snapshot || tally ? "Completed" : "Active Discussion") : null,
       snapshotStatus: resolveSnapshotResult(snapshot?.status ?? null, snapshotOptions),
       tallyStatus: mapTallyStatus(tally?.status ?? null, tally?.substatus ?? null),
+      tallyDisplayStatus: formatDisplayStatus(mapTallyStatus(tally?.status ?? null, tally?.substatus ?? null)),
       forumLastUpdate: timeAgo(forum?.last_message_at ?? null),
       snapshotLastUpdate: timeAgo(snapshot?.voting_end ?? snapshot?.voting_start ?? null),
       tallyLastUpdate: timeAgo(tally?.last_activity ?? tally?.updated_at ?? null),
       category: row.category ?? "Uncategorized",
       author: row.author_name ?? "Unknown",
       votes: extractTallyVotes(tallyOptions),
+      snapshotHistory,
+      tallyHistory,
     };
   });
 }
