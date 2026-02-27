@@ -1,5 +1,4 @@
-// ── JSONB shapes stored in the DB ──
-
+// JSONB shapes stored in the DB
 export type SnapshotOptions = {
   choices: string[];
   scores: number[];
@@ -15,27 +14,7 @@ export type TallyOptions = {
   executableCalls?: Array<unknown>;
 };
 
-// ── UI-facing type ──
-
-export type DashboardProposal = {
-  id: string;
-  title: string;
-  forumLink: string | null;
-  snapshotLink: string | null;
-  tallyLink: string | null;
-  forumStatus: "Active Discussion" | "Completed" | null;
-  snapshotStatus: string | null;
-  tallyStatus: string | null;
-  forumLastUpdate: string | null;
-  snapshotLastUpdate: string | null;
-  tallyLastUpdate: string | null;
-  category: string;
-  author: string;
-  votes?: { for: string; against: string; total: string };
-};
-
-// ── Helpers ──
-
+// Helpers
 export function formatVoteCount(raw: string): string {
   const num = Number(raw) / 1e18;
   if (num >= 1_000_000) return `${(num / 1_000_000).toFixed(2)}M`;

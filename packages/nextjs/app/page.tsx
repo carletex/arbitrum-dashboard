@@ -1,7 +1,6 @@
 import type { NextPage } from "next";
 import { ArbitrumGovernanceDashboard } from "~~/components/dashboard/ArbitrumGovernanceDashboard";
-import { getDashboardProposals } from "~~/services/database/repositories/proposals";
-import type { DashboardProposal } from "~~/utils/proposalTransforms";
+import { type DashboardProposal, getDashboardProposals } from "~~/services/database/repositories/proposals";
 
 const Home: NextPage = async () => {
   let proposals: DashboardProposal[];

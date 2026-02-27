@@ -3,8 +3,8 @@
 import { useMemo, useState } from "react";
 import { StatsCard } from "./StatsCard";
 import { ArrowTopRightOnSquareIcon, MagnifyingGlassIcon } from "@heroicons/react/24/outline";
+import type { DashboardProposal } from "~~/services/database/repositories/proposals";
 import { STAT_CARD_CONFIG, computeStats } from "~~/utils/governanceStats";
-import type { DashboardProposal } from "~~/utils/proposalTransforms";
 
 const getStatus = (p: DashboardProposal) => {
   if (p.tallyStatus === "Executed") return "Executed";

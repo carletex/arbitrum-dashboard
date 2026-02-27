@@ -2,7 +2,6 @@ import { proposals } from "../config/schema";
 import { InferInsertModel } from "drizzle-orm";
 import { db } from "~~/services/database/config/postgresClient";
 import {
-  type DashboardProposal,
   type SnapshotOptions,
   type TallyOptions,
   extractTallyVotes,
@@ -22,7 +21,7 @@ export async function createProposal(proposalData: ProposalData) {
   return newProposal;
 }
 
-export async function getDashboardProposals(): Promise<DashboardProposal[]> {
+export async function getDashboardProposals() {
   const rows = await db.query.proposals.findMany({
     with: {
       forumStages: {
@@ -67,3 +66,5 @@ export async function getDashboardProposals(): Promise<DashboardProposal[]> {
     };
   });
 }
+
+export type DashboardProposal = Awaited<ReturnType<typeof getDashboardProposals>>[number];
