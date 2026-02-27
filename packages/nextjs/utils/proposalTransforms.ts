@@ -22,17 +22,32 @@ export function formatVoteCount(raw: string): string {
   return num.toFixed(2);
 }
 
+// TODO: Maybe we cna use date-fns if require this / other function instead of creating our own
 export function timeAgo(date: Date | null): string | null {
   if (!date) return null;
   const diffMs = Date.now() - date.getTime();
-  const diffDays = Math.floor(diffMs / 86_400_000);
-  const diffHours = Math.floor(diffMs / 3_600_000);
   const diffMinutes = Math.floor(diffMs / 60_000);
+  const diffHours = Math.floor(diffMs / 3_600_000);
+  const diffDays = Math.floor(diffMs / 86_400_000);
 
-  if (diffDays > 0) return `${diffDays}d ago`;
-  if (diffHours > 0) return `${diffHours}h ago`;
-  if (diffMinutes > 0) return `${diffMinutes}m ago`;
-  return "just now";
+  if (diffDays < 1) {
+    if (diffHours > 0) return `${diffHours}h ago`;
+    if (diffMinutes > 0) return `${diffMinutes}m ago`;
+    return "just now";
+  }
+
+  if (diffDays < 30) return `${diffDays}d ago`;
+
+  const years = Math.floor(diffDays / 365);
+  const months = Math.floor((diffDays % 365) / 30);
+  const days = diffDays % 30;
+
+  const parts: string[] = [];
+  if (years > 0) parts.push(`${years}y`);
+  if (months > 0) parts.push(`${months}mo`);
+  if (days > 0 && years === 0) parts.push(`${days}d`);
+
+  return `${parts.join(" ")} ago`;
 }
 
 export function mapTallyStatus(status: string | null, substatus: string | null): string | null {

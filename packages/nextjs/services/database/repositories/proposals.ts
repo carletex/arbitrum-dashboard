@@ -58,7 +58,7 @@ export async function getDashboardProposals() {
       snapshotStatus: resolveSnapshotResult(snapshot?.status ?? null, snapshotOptions),
       tallyStatus: mapTallyStatus(tally?.status ?? null, tally?.substatus ?? null),
       forumLastUpdate: timeAgo(forum?.last_message_at ?? null),
-      snapshotLastUpdate: timeAgo(snapshot?.updated_at ?? null),
+      snapshotLastUpdate: timeAgo(snapshot?.voting_end ?? snapshot?.voting_start ?? null),
       tallyLastUpdate: timeAgo(tally?.last_activity ?? tally?.updated_at ?? null),
       category: row.category ?? "Uncategorized",
       author: row.author_name ?? "Unknown",
