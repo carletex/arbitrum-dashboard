@@ -1,3 +1,4 @@
+import { relations } from "drizzle-orm";
 import { boolean, integer, jsonb, pgTable, text, timestamp, unique, uuid, varchar } from "drizzle-orm/pg-core";
 
 // Canonical proposals table (one row per proposal)
@@ -95,3 +96,30 @@ export const users = pgTable("user", {
   isAdmin: boolean("is_admin").default(false).notNull(),
   createdAt: timestamp("created_at").defaultNow(),
 });
+
+export const proposalsRelations = relations(proposals, ({ many }) => ({
+  forumStages: many(forumStage),
+  snapshotStages: many(snapshotStage),
+  tallyStages: many(tallyStage),
+}));
+
+export const forumStageRelations = relations(forumStage, ({ one }) => ({
+  proposal: one(proposals, {
+    fields: [forumStage.proposal_id],
+    references: [proposals.id],
+  }),
+}));
+
+export const snapshotStageRelations = relations(snapshotStage, ({ one }) => ({
+  proposal: one(proposals, {
+    fields: [snapshotStage.proposal_id],
+    references: [proposals.id],
+  }),
+}));
+
+export const tallyStageRelations = relations(tallyStage, ({ one }) => ({
+  proposal: one(proposals, {
+    fields: [tallyStage.proposal_id],
+    references: [proposals.id],
+  }),
+}));
