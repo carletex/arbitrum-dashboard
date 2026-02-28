@@ -1,13 +1,3 @@
-/**
- * CLI script for running LLM-based matching of snapshot/tally stages to proposals.
- *
- * Usage:
- *   yarn match:llm --type tally --id <stage-uuid>    # Match a specific tally stage
- *   yarn match:llm --type snapshot --id <stage-uuid>  # Match a specific snapshot stage
- *   yarn match:llm --type tally --all                 # Match all unprocessed tally stages
- *   yarn match:llm --type snapshot --all              # Match all unprocessed snapshot stages
- *   yarn match:llm --all                              # Match all unprocessed stages (both types)
- */
 import { matchAllUnprocessed, matchStage } from "./llm-matching";
 import * as dotenv from "dotenv";
 import * as path from "path";

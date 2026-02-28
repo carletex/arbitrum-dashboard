@@ -19,6 +19,13 @@ TALLY_API_KEY=your_tally_api_key_here
 # Set a secure random string for production
 CRON_SECRET=your_cron_secret_here
 
+# Gemini API key for LLM-based matching
+# Get your API key from https://aistudio.google.com/apikey
+GEMINI_API_KEY=your_gemini_api_key_here
+
+# Gemini model to use (optional, defaults to gemini-2.5-flash-lite)
+GEMINI_MODEL=gemini-2.5-flash-lite
+
 **Note:** The `.env.local` file is gitignored and should not be committed to version control.
 
 ## Quickstart
@@ -100,3 +107,20 @@ curl -X POST http://localhost:3000/api/import-snapshot-proposals \
 curl -X POST http://localhost:3000/api/import-tally-proposals \
   -H "Authorization: Bearer my-cron-secret"
 ```
+
+### LLM Matching
+
+Match snapshot/tally stages to canonical proposals using Gemini:
+
+```sh
+# Match a specific stage
+yarn match:llm --type tally --id <stage-uuid>
+yarn match:llm --type snapshot --id <stage-uuid>
+
+# Match all unprocessed stages
+yarn match:llm --type tally --all
+yarn match:llm --type snapshot --all
+yarn match:llm --all
+```
+
+> **Note:** The default model (`gemini-2.5-flash-lite`) can produce false positives on ambiguous stages. For hard cases, use a stronger model like `gemini-3.1-pro-preview` via the `GEMINI_MODEL` env var.

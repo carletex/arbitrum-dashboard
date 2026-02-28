@@ -1,9 +1,3 @@
-/**
- * LLM-based matching for new snapshot/tally stages to canonical proposals.
- *
- * Uses Gemini Flash 2.0 to match unprocessed stages against the full list
- * of canonical proposals, producing structured JSON results.
- */
 import {
   getUnprocessedSnapshotStages,
   getUnprocessedTallyStages,
