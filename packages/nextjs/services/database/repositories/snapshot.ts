@@ -44,6 +44,12 @@ export async function getAllSnapshotStages() {
   return await db.query.snapshotStage.findMany();
 }
 
+export async function getSnapshotStageById(id: string) {
+  return await db.query.snapshotStage.findFirst({
+    where: eq(snapshotStage.id, id),
+  });
+}
+
 export async function getSnapshotStageBySnapshotId(snapshotId: string) {
   return await db.query.snapshotStage.findFirst({
     where: eq(snapshotStage.snapshot_id, snapshotId),

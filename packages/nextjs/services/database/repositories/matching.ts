@@ -1,5 +1,5 @@
-import { matchingResult, snapshotStage, tallyStage } from "../config/schema";
-import { InferInsertModel, and, eq, sql } from "drizzle-orm";
+import { matchingResult, proposals, snapshotStage, tallyStage } from "../config/schema";
+import { InferInsertModel, and, desc, eq, sql } from "drizzle-orm";
 import { db } from "~~/services/database/config/postgresClient";
 
 type MatchingResultInsert = InferInsertModel<typeof matchingResult>;
@@ -52,6 +52,29 @@ export async function getMatchingResultsBySourceType(sourceType: "snapshot" | "t
   return await db.query.matchingResult.findMany({
     where: eq(matchingResult.source_type, sourceType),
   });
+}
+
+export async function getAllMatchingResults() {
+  return await db
+    .select({
+      id: matchingResult.id,
+      source_type: matchingResult.source_type,
+      source_stage_id: matchingResult.source_stage_id,
+      proposal_id: matchingResult.proposal_id,
+      status: matchingResult.status,
+      method: matchingResult.method,
+      confidence: matchingResult.confidence,
+      reasoning: matchingResult.reasoning,
+      source_title: matchingResult.source_title,
+      source_url: matchingResult.source_url,
+      matched_forum_url: matchingResult.matched_forum_url,
+      created_at: matchingResult.created_at,
+      updated_at: matchingResult.updated_at,
+      proposal_title: proposals.title,
+    })
+    .from(matchingResult)
+    .leftJoin(proposals, eq(matchingResult.proposal_id, proposals.id))
+    .orderBy(desc(matchingResult.updated_at));
 }
 
 export async function getMatchingSummary() {

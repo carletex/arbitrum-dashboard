@@ -10,6 +10,7 @@
     "import:snapshot-csv": "tsx services/matching/import-snapshot-matches-csv.ts",
     "import:tally-csv": "tsx services/matching/import-tally-matches-csv.ts",
     "import:all-csv": "tsx services/matching/import-all-matches-csv.ts",
+    "match:llm": "tsx services/matching/run-llm-matching.ts",
     "drizzle-kit": "drizzle-kit",
     "dev": "next dev",
     "format": "prettier --write . '!(node_modules|.next|contracts)/**/*'",
@@ -22,6 +23,7 @@
     "vercel:login": "vercel login"
   },
   "dependencies": {
+    "@google/generative-ai": "^0.24.1",
     "@heroicons/react": "~2.1.5",
     "@neondatabase/serverless": "^1.0.1",
     "@rainbow-me/rainbowkit": "2.2.8",
