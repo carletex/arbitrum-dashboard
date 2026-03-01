@@ -17,8 +17,8 @@ export function PendingStagesTable({ stages, runningJobs, onMatch, onMatchAll }:
   }
 
   return (
-    <div className="overflow-x-auto">
-      <div className="flex items-center justify-between mb-3">
+    <div className="card bg-base-100 border border-base-300 shadow-sm rounded-xl">
+      <div className="p-3 lg:p-4 border-b border-base-300 flex items-center justify-between">
         <span className="text-sm text-base-content/60">{stages.length} pending stage(s)</span>
         <button className="btn btn-primary btn-sm" onClick={onMatchAll} disabled={runningJobs.size > 0}>
           {runningJobs.size > 0 ? (
@@ -30,55 +30,62 @@ export function PendingStagesTable({ stages, runningJobs, onMatch, onMatchAll }:
           )}
         </button>
       </div>
-      <table className="table table-sm w-full">
-        <thead>
-          <tr>
-            <th>Type</th>
-            <th>Title</th>
-            <th>Author</th>
-            <th>URL</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          {stages.map(stage => {
-            const isRunning = runningJobs.has(stage.stageId);
-            return (
-              <tr key={stage.stageId}>
-                <td>
-                  <span
-                    className={`badge badge-sm ${stage.sourceType === "snapshot" ? "badge-info" : "badge-warning"}`}
-                  >
-                    {stage.sourceType}
-                  </span>
-                </td>
-                <td className="max-w-xs truncate" title={stage.title ?? ""}>
-                  {stage.title ?? "—"}
-                </td>
-                <td className="max-w-[120px] truncate">{stage.authorName ?? "—"}</td>
-                <td>
-                  {stage.url ? (
-                    <a href={stage.url} target="_blank" rel="noopener noreferrer" className="link link-primary text-xs">
-                      View
-                    </a>
-                  ) : (
-                    "—"
-                  )}
-                </td>
-                <td>
-                  <button
-                    className="btn btn-ghost btn-xs"
-                    onClick={() => onMatch(stage.sourceType, stage.stageId)}
-                    disabled={isRunning}
-                  >
-                    {isRunning ? <span className="loading loading-spinner loading-xs" /> : "Match"}
-                  </button>
-                </td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
+      <div className="relative w-full overflow-x-auto">
+        <table className="table table-sm w-full">
+          <thead>
+            <tr>
+              <th>Type</th>
+              <th>Title</th>
+              <th>Author</th>
+              <th>URL</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            {stages.map(stage => {
+              const isRunning = runningJobs.has(stage.stageId);
+              return (
+                <tr key={stage.stageId}>
+                  <td>
+                    <span
+                      className={`badge badge-sm ${stage.sourceType === "snapshot" ? "badge-info" : "badge-warning"}`}
+                    >
+                      {stage.sourceType}
+                    </span>
+                  </td>
+                  <td className="max-w-xs truncate" title={stage.title ?? ""}>
+                    {stage.title ?? "—"}
+                  </td>
+                  <td className="max-w-[120px] truncate">{stage.authorName ?? "—"}</td>
+                  <td>
+                    {stage.url ? (
+                      <a
+                        href={stage.url}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="link link-primary text-xs"
+                      >
+                        View
+                      </a>
+                    ) : (
+                      "—"
+                    )}
+                  </td>
+                  <td>
+                    <button
+                      className="btn btn-primary btn-xs"
+                      onClick={() => onMatch(stage.sourceType, stage.stageId)}
+                      disabled={isRunning}
+                    >
+                      {isRunning ? <span className="loading loading-spinner loading-xs" /> : "Match"}
+                    </button>
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
     </div>
   );
 }

@@ -136,7 +136,7 @@ export function MatchingDashboard() {
   }
 
   return (
-    <div className="flex flex-col gap-8">
+    <div className="flex flex-col gap-4">
       {error && (
         <div className="alert alert-error">
           <span>{error}</span>
@@ -147,12 +147,12 @@ export function MatchingDashboard() {
       )}
 
       <section>
-        <h2 className="text-2xl font-semibold mb-4">Pending Stages</h2>
+        <h2 className="text-2xl font-semibold mb-2">Pending Stages</h2>
         <PendingStagesTable stages={pending} runningJobs={runningJobs} onMatch={executeMatch} onMatchAll={matchAll} />
       </section>
 
       <section>
-        <h2 className="text-2xl font-semibold mb-4">Matching Results</h2>
+        <h2 className="text-2xl font-semibold mb-2">Matching Results</h2>
         <MatchingResultsTable results={results} runningJobs={runningJobs} onRematch={executeMatch} />
       </section>
     </div>

@@ -1,6 +1,6 @@
 "use client";
 
-import { useRef, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import { MatchingResultRow } from "./types";
 
 interface Props {
@@ -9,21 +9,23 @@ interface Props {
   onRematch: (sourceType: "snapshot" | "tally", stageId: string) => void;
 }
 
-function statusBadge(status: string) {
+function statusBadgeColor(status: string) {
   switch (status) {
     case "matched":
-      return "badge-success";
+      return "border-green-200 bg-green-100 text-green-600";
     case "no_match":
-      return "badge-error";
+      return "border-red-200 bg-red-100 text-red-600";
     case "pending_review":
-      return "badge-warning";
+      return "border-yellow-200 bg-yellow-100 text-yellow-600";
     default:
-      return "badge-ghost";
+      return "border-base-300 bg-transparent text-base-content/70";
   }
 }
 
-function typeBadge(sourceType: string) {
-  return sourceType === "snapshot" ? "badge-info" : "badge-warning";
+function typeBadgeColor(sourceType: string) {
+  return sourceType === "snapshot"
+    ? "border-purple-200 bg-purple-100 text-purple-600"
+    : "border-cyan-200 bg-cyan-100 text-cyan-600";
 }
 
 function relativeTime(dateStr: string | null): string {
@@ -73,7 +75,9 @@ function ResultDetailModal({
         <div className="mb-3">
           <div className="text-xs text-base-content/60 mb-1">Source</div>
           <div className="flex items-start gap-2">
-            <span className={`badge badge-sm ${typeBadge(result.source_type)} shrink-0 mt-0.5`}>
+            <span
+              className={`badge badge-sm whitespace-nowrap border ${typeBadgeColor(result.source_type)} shrink-0 mt-0.5`}
+            >
               {result.source_type}
             </span>
             <span className="font-medium">{result.source_title ?? "—"}</span>
@@ -94,7 +98,9 @@ function ResultDetailModal({
         <div className="flex gap-6 mb-3">
           <div>
             <div className="text-xs text-base-content/60 mb-1">Status</div>
-            <span className={`badge badge-sm ${statusBadge(result.status)}`}>{result.status}</span>
+            <span className={`badge badge-sm whitespace-nowrap border ${statusBadgeColor(result.status)}`}>
+              {result.status}
+            </span>
           </div>
           <div>
             <div className="text-xs text-base-content/60 mb-1">Confidence</div>
@@ -166,65 +172,131 @@ function ResultDetailModal({
 
 export function MatchingResultsTable({ results, runningJobs, onRematch }: Props) {
   const [selectedResult, setSelectedResult] = useState<MatchingResultRow | null>(null);
+  const [searchTerm, setSearchTerm] = useState("");
+  const [statusFilter, setStatusFilter] = useState("");
+  const [sourceTypeFilter, setSourceTypeFilter] = useState("");
+  const [methodFilter, setMethodFilter] = useState("");
+
+  const filtered = useMemo(() => {
+    return results.filter(row => {
+      if (searchTerm && !(row.source_title ?? "").toLowerCase().includes(searchTerm.toLowerCase())) return false;
+      if (statusFilter && row.status !== statusFilter) return false;
+      if (sourceTypeFilter && row.source_type !== sourceTypeFilter) return false;
+      if (methodFilter && row.method !== methodFilter) return false;
+      return true;
+    });
+  }, [results, searchTerm, statusFilter, sourceTypeFilter, methodFilter]);
 
   if (results.length === 0) {
     return <div className="bg-base-200 rounded-xl p-6 text-center text-base-content/60">No matching results yet.</div>;
   }
 
   return (
-    <div className="overflow-x-auto">
-      <span className="text-sm text-base-content/60 mb-3 block">{results.length} result(s)</span>
-      <table className="table table-sm w-full">
-        <thead>
-          <tr>
-            <th>Source Title</th>
-            <th>Status</th>
-            <th>Confidence</th>
-            <th>Method</th>
-            <th>Updated</th>
-            <th>Action</th>
-          </tr>
-        </thead>
-        <tbody>
-          {results.map(row => {
-            const isRunning = runningJobs.has(row.source_stage_id);
-            return (
-              <tr key={row.id}>
-                <td className="max-w-[320px]">
-                  <div className="flex items-center gap-2">
-                    <span className={`badge badge-sm ${typeBadge(row.source_type)} shrink-0`}>{row.source_type}</span>
-                    <span className="truncate" title={row.source_title ?? ""}>
-                      {row.source_title ?? "—"}
+    <div className="card bg-base-100 border border-base-300 shadow-sm rounded-xl">
+      <div className="p-3 lg:p-4 border-b border-base-300 flex flex-wrap items-center gap-2">
+        <input
+          type="text"
+          placeholder="Search by title…"
+          className="input input-bordered input-sm w-56"
+          value={searchTerm}
+          onChange={e => setSearchTerm(e.target.value)}
+        />
+        <select
+          className="select select-bordered select-sm"
+          value={statusFilter}
+          onChange={e => setStatusFilter(e.target.value)}
+        >
+          <option value="">All Statuses</option>
+          <option value="matched">matched</option>
+          <option value="no_match">no_match</option>
+          <option value="pending_review">pending_review</option>
+        </select>
+        <select
+          className="select select-bordered select-sm"
+          value={sourceTypeFilter}
+          onChange={e => setSourceTypeFilter(e.target.value)}
+        >
+          <option value="">All Sources</option>
+          <option value="snapshot">snapshot</option>
+          <option value="tally">tally</option>
+        </select>
+        <select
+          className="select select-bordered select-sm"
+          value={methodFilter}
+          onChange={e => setMethodFilter(e.target.value)}
+        >
+          <option value="">All Methods</option>
+          <option value="llm">llm</option>
+          <option value="csv_import">csv_import</option>
+          <option value="manual_override">manual_override</option>
+        </select>
+        <p className="text-sm text-base-content/60 p-0 m-0 ml-auto">
+          Showing {filtered.length} of {results.length} result(s)
+        </p>
+      </div>
+      <div className="relative w-full overflow-x-auto">
+        <table className="table table-sm w-full">
+          <thead>
+            <tr>
+              <th>Source Title</th>
+              <th>Status</th>
+              <th className="hidden xl:table-cell">Confidence</th>
+              <th className="hidden xl:table-cell">Method</th>
+              <th className="hidden lg:table-cell">Updated</th>
+              <th>Action</th>
+            </tr>
+          </thead>
+          <tbody>
+            {filtered.map(row => {
+              const isRunning = runningJobs.has(row.source_stage_id);
+              return (
+                <tr key={row.id}>
+                  <td className="max-w-[200px] lg:max-w-sm xl:max-w-xl">
+                    <div className="flex items-center gap-2">
+                      <span
+                        className={`badge badge-sm whitespace-nowrap border ${typeBadgeColor(row.source_type)} shrink-0`}
+                      >
+                        {row.source_type}
+                      </span>
+                      <span className="font-medium text-sm truncate" title={row.source_title ?? ""}>
+                        {row.source_title ?? "—"}
+                      </span>
+                    </div>
+                  </td>
+                  <td>
+                    <div className="flex items-center gap-2">
+                      <span className={`badge badge-sm whitespace-nowrap border ${statusBadgeColor(row.status)}`}>
+                        {row.status}
+                      </span>
+                      <button className="link text-xs" onClick={() => setSelectedResult(row)}>
+                        Details
+                      </button>
+                    </div>
+                  </td>
+                  <td className="hidden xl:table-cell font-mono text-sm">{row.confidence ?? "—"}</td>
+                  <td className="hidden xl:table-cell">
+                    <span className="badge badge-sm whitespace-nowrap border border-base-300 bg-transparent text-base-content/70">
+                      {row.method}
                     </span>
-                  </div>
-                </td>
-                <td>
-                  <div className="flex items-center gap-2">
-                    <span className={`badge badge-sm ${statusBadge(row.status)}`}>{row.status}</span>
-                    <button className="link text-xs" onClick={() => setSelectedResult(row)}>
-                      Details
+                  </td>
+                  <td className="hidden lg:table-cell text-xs text-base-content/70" title={formatDate(row.updated_at)}>
+                    {relativeTime(row.updated_at)}
+                  </td>
+                  <td>
+                    <button
+                      className="btn btn-primary btn-xs"
+                      onClick={() => onRematch(row.source_type as "snapshot" | "tally", row.source_stage_id)}
+                      disabled={isRunning}
+                    >
+                      {isRunning ? <span className="loading loading-spinner loading-xs" /> : "Re-match"}
                     </button>
-                  </div>
-                </td>
-                <td className="font-mono text-sm">{row.confidence ?? "—"}</td>
-                <td className="text-xs text-base-content/70">{row.method}</td>
-                <td className="text-xs text-base-content/70" title={formatDate(row.updated_at)}>
-                  {relativeTime(row.updated_at)}
-                </td>
-                <td>
-                  <button
-                    className="btn btn-ghost btn-xs"
-                    onClick={() => onRematch(row.source_type as "snapshot" | "tally", row.source_stage_id)}
-                    disabled={isRunning}
-                  >
-                    {isRunning ? <span className="loading loading-spinner loading-xs" /> : "Re-match"}
-                  </button>
-                </td>
-              </tr>
-            );
-          })}
-        </tbody>
-      </table>
+                  </td>
+                </tr>
+              );
+            })}
+          </tbody>
+        </table>
+      </div>
 
       {selectedResult && (
         <ResultDetailModal
